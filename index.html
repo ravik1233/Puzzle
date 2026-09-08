@@ -2,53 +2,75 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-<title>Traffic Jam — Parking Escape</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Everyday Puzzles</title>
+<style>
+  :root {
+    --bg-top: #eef2fb;
+    --bg-bottom: #dbe4f5;
+    --card-bg: #ffffff;
+    --text: #1f2430;
+    --muted: #6b7280;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+  }
+  .wrap { width: 100%; max-width: 640px; }
+  h1 { text-align: center; margin: 0 0 6px; font-size: 2rem; }
+  .sub { text-align: center; color: var(--muted); margin: 0 0 32px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+  }
+  a.card {
+    display: block;
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 22px 20px;
+    text-decoration: none;
+    color: var(--text);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  a.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+  .emoji { font-size: 2rem; }
+  .card h2 { margin: 8px 0 4px; font-size: 1.15rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.4; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: linear-gradient(180deg, #14171c 0%, #1c2027 100%); color: #f0f2f5; }
+    a.card { background: #20242c; color: #f0f2f5; }
+    .sub { color: #9aa3af; }
+    .card p { color: #9aa3af; }
+  }
+</style>
 </head>
 <body>
-  <div class="app">
-    <header class="topbar">
-      <h1>🚗 Traffic Jam</h1>
-      <p class="tagline">Slide the parked cars out of the way and drive your red car through the exit.</p>
-    </header>
-
-    <div class="levels" id="levelBar"></div>
-
-    <div class="hud">
-      <div class="stat">
-        <span class="stat-label">Moves</span>
-        <span class="stat-value" id="moveCount">0</span>
-      </div>
-      <div class="stat">
-        <span class="stat-label">Time</span>
-        <span class="stat-value" id="timeCount">0:00</span>
-      </div>
-      <div class="stat">
-        <span class="stat-label">Best</span>
-        <span class="stat-value" id="bestCount">–</span>
-      </div>
-      <button class="btn" id="resetBtn">Reset</button>
-    </div>
-
-    <div class="board-wrap">
-      <div class="board" id="board" aria-label="Parking lot puzzle board"></div>
-    </div>
-
-    <p class="hint">Drag a car along its lane, or click to select it and use the arrow keys.</p>
-
-    <div class="win-overlay" id="winOverlay" hidden>
-      <div class="win-card">
-        <h2>🏁 You're out!</h2>
-        <p id="winStats"></p>
-        <div class="win-actions">
-          <button class="btn" id="replayBtn">Replay</button>
-          <button class="btn btn-primary" id="nextBtn">Next Level</button>
-        </div>
-      </div>
+  <div class="wrap">
+    <h1>🧩 Everyday Puzzles</h1>
+    <p class="sub">Small games based on ordinary things — never quite what you'd expect.</p>
+    <div class="grid">
+      <a class="card" href="games/traffic-jam/index.html">
+        <div class="emoji">🚗</div>
+        <h2>Traffic Jam</h2>
+        <p>Slide parked cars out of the way to free your red car through the exit.</p>
+      </a>
+      <a class="card" href="games/dinner-rush/index.html">
+        <div class="emoji">🍽️</div>
+        <h2>Dinner Rush</h2>
+        <p>Schedule real recipes onto the oven, stovetop and counter so every dish lands hot at once.</p>
+      </a>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>

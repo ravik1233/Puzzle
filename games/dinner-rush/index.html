@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<title>Dinner Rush — Kitchen Timing Puzzle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <a class="back-link" href="../../index.html">&larr; All puzzles</a>
+    <header class="topbar">
+      <h1>🍽️ Dinner Rush</h1>
+      <p class="tagline">Schedule every dish onto the oven, stovetop and counter so everything comes out hot at the same moment.</p>
+    </header>
+
+    <div class="levels" id="levelBar"></div>
+
+    <div class="status-panel" id="statusPanel"></div>
+
+    <div class="board-wrap">
+      <div class="board-scroll">
+        <div class="board" id="board">
+          <div class="serve-line" id="serveLine"><span>Serve!</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tray" id="tray"></div>
+
+    <div class="controls">
+      <button class="btn" id="resetBtn">Reset</button>
+      <button class="btn btn-primary" id="serveBtn">Serve Dinner!</button>
+    </div>
+
+    <p class="hint">Drag a step onto a matching lane (oven / burner / counter). Steps for one dish must run in order. Every dish's last step must end exactly at Serve time.</p>
+
+    <div class="win-overlay" id="winOverlay" hidden>
+      <div class="win-card">
+        <h2>🎉 Dinner is served!</h2>
+        <p id="winStats"></p>
+        <div class="win-actions">
+          <button class="btn" id="replayBtn">Replay</button>
+          <button class="btn btn-primary" id="nextBtn">Next Level</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
