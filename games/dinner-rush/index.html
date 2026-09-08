@@ -14,7 +14,15 @@
       <p class="tagline">Schedule every dish onto the oven, stovetop and counter so everything comes out hot at the same moment.</p>
     </header>
 
-    <div class="levels" id="levelBar"></div>
+    <div class="level-nav">
+      <button class="nav-arrow" id="prevLevelBtn" aria-label="Previous level">‹</button>
+      <div class="level-nav-info">
+        <span class="level-nav-title" id="levelTitle">Stage 1</span>
+        <span class="level-nav-sub" id="levelSub">1 / 100</span>
+      </div>
+      <button class="nav-arrow" id="nextLevelBtn" aria-label="Next level">›</button>
+    </div>
+    <div class="level-map" id="levelMap"></div>
 
     <div class="status-panel" id="statusPanel"></div>
 
@@ -47,6 +55,8 @@
     </div>
   </div>
 
+  <script src="engine.js"></script>
+  <script src="levels-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
