@@ -320,6 +320,68 @@ body {
   left: var(--label-w, 84px);
 }
 
+/* ---------- time ruler ---------- */
+.time-ruler {
+  position: relative;
+  height: 22px;
+  border-bottom: 1px solid var(--line);
+}
+.ruler-label {
+  height: 22px;
+  font-size: 0.6rem;
+  color: var(--muted);
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+}
+.ruler-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--label-w, 84px);
+}
+.ruler-tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+.ruler-tick span {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ---------- measured gap to Serve ---------- */
+.gap-connector {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 2px dashed var(--voided);
+  pointer-events: none;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gap-connector span {
+  background: var(--surface);
+  color: var(--voided);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  padding: 1px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-shadow: 0 0 0 1px var(--voided);
+}
+
 .landing-zone {
   position: absolute;
   height: calc(var(--row-h, 42px) - 6px);

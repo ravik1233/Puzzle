@@ -7,6 +7,7 @@
   const PX_PER_MIN = 18;
   const ROW_H = 42;
   const LABEL_W = 84;
+  const RULER_H = 22;
 
   const levelMapEl = document.getElementById("levelMap");
   const levelTitleEl = document.getElementById("levelTitle");
@@ -109,10 +110,37 @@
   }
 
   function renderBoard() {
-    boardEl.querySelectorAll(".lane-row").forEach((el) => el.remove());
+    boardEl.querySelectorAll(".lane-row, .time-ruler").forEach((el) => el.remove());
     const totalWidth = level.boardMinutes * PX_PER_MIN;
     boardEl.style.width = LABEL_W + totalWidth + "px";
-    boardEl.style.height = lanes.length * ROW_H + "px";
+    boardEl.style.height = RULER_H + lanes.length * ROW_H + "px";
+
+    // Time ruler: makes distances on the board legible at rest, so a gap
+    // between two chips reads as "N minutes," not just empty space.
+    const ruler = document.createElement("div");
+    ruler.className = "time-ruler";
+    ruler.style.width = LABEL_W + totalWidth + "px";
+    const rulerLabel = document.createElement("div");
+    rulerLabel.className = "lane-label ruler-label";
+    rulerLabel.style.setProperty("--label-w", LABEL_W + "px");
+    rulerLabel.textContent = "Time";
+    ruler.appendChild(rulerLabel);
+    const rulerTrack = document.createElement("div");
+    rulerTrack.className = "lane-track ruler-track";
+    rulerTrack.style.setProperty("--label-w", LABEL_W + "px");
+    rulerTrack.style.width = totalWidth + "px";
+    const tickStep = level.boardMinutes <= 45 ? 10 : level.boardMinutes <= 100 ? 20 : 30;
+    for (let t = 0; t <= level.boardMinutes; t += tickStep) {
+      const tick = document.createElement("div");
+      tick.className = "ruler-tick";
+      tick.style.left = t * PX_PER_MIN + "px";
+      const tickLabel = document.createElement("span");
+      tickLabel.textContent = t === 0 ? "Start" : `${t}m`;
+      tick.appendChild(tickLabel);
+      rulerTrack.appendChild(tick);
+    }
+    ruler.appendChild(rulerTrack);
+    boardEl.insertBefore(ruler, serveLineEl);
 
     lanes.forEach((lane) => {
       const row = document.createElement("div");
@@ -140,11 +168,11 @@
     });
 
     serveLineEl.style.left = LABEL_W + totalWidth + "px";
-    serveLineEl.style.height = lanes.length * ROW_H + "px";
+    serveLineEl.style.height = RULER_H + lanes.length * ROW_H + "px";
   }
 
   function renderChipsOnBoard(invalid) {
-    boardEl.querySelectorAll(".chip").forEach((el) => el.remove());
+    boardEl.querySelectorAll(".chip, .gap-connector").forEach((el) => el.remove());
     placements.forEach((p, key) => {
       const [dishId, idxStr] = key.split(".");
       const dish = getDish(dishId);
@@ -163,6 +191,22 @@
       if (isFinal) chip.title = `${dish.name} is ready once this ends — it must reach the Serve line exactly.`;
       attachChipDrag(chip, dishId, idx);
       track.appendChild(chip);
+
+      // Draw the actual gap, measured, between a final step and Serve —
+      // this is the concrete answer to "what does the empty space mean."
+      if (isFinal && !invalid.has(key)) {
+        const gap = level.boardMinutes - (p.start + step.duration);
+        if (gap > 0) {
+          const connector = document.createElement("div");
+          connector.className = "gap-connector";
+          connector.style.left = (p.start + step.duration) * PX_PER_MIN + "px";
+          connector.style.width = gap * PX_PER_MIN + "px";
+          const gapLabel = document.createElement("span");
+          gapLabel.textContent = `${gap}m short of Serve`;
+          connector.appendChild(gapLabel);
+          track.appendChild(connector);
+        }
+      }
     });
   }
 
@@ -267,7 +311,7 @@
       const lane = laneId && lanes.find((l) => l.id === laneId);
       if (lane && lane.type === step.type) {
         const laneIndex = lanes.indexOf(lane);
-        landingZone.style.top = laneIndex * ROW_H + 3 + "px";
+        landingZone.style.top = RULER_H + laneIndex * ROW_H + 3 + "px";
         landingZone.style.left = LABEL_W + (level.boardMinutes - step.duration) * PX_PER_MIN + "px";
         landingZone.hidden = false;
       } else {
