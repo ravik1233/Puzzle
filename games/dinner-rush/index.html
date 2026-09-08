@@ -3,20 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-<title>Dinner Rush — Kitchen Timing Puzzle</title>
+<title>Dinner Rush</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="app">
     <a class="back-link" href="../../index.html">&larr; All puzzles</a>
-    <header class="topbar">
-      <h1>🍽️ Dinner Rush</h1>
-      <p class="tagline">Schedule every dish onto the oven, stovetop and counter so everything comes out hot at the same moment.</p>
+
+    <header class="rail-header">
+      <div class="wordmark">
+        <svg class="bell-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 15.5C4 10 7.5 6 12 6s8 4 8 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M2.5 15.5h19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="3" r="1.4" fill="currentColor"/>
+          <path d="M9.5 18.5c0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <p class="kicker">The Line &middot; Kitchen Timing</p>
+          <h1>Dinner Rush</h1>
+        </div>
+      </div>
+      <p class="tagline">Schedule every dish onto the oven, stovetop and counter so it all lands hot, at once.</p>
     </header>
 
-    <div class="level-nav">
+    <div class="ticket level-nav">
       <button class="nav-arrow" id="prevLevelBtn" aria-label="Previous level">‹</button>
       <div class="level-nav-info">
+        <span class="level-nav-eyebrow">Stage</span>
         <span class="level-nav-title" id="levelTitle">Stage 1</span>
         <span class="level-nav-sub" id="levelSub">1 / 100</span>
       </div>
@@ -45,7 +60,8 @@
 
     <div class="win-overlay" id="winOverlay" hidden>
       <div class="win-card">
-        <h2>🎉 Dinner is served!</h2>
+        <p class="stamp">Service</p>
+        <h2>Ticket cleared</h2>
         <p id="winStats"></p>
         <div class="win-actions">
           <button class="btn" id="replayBtn">Replay</button>
