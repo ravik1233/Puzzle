@@ -148,17 +148,20 @@
     placements.forEach((p, key) => {
       const [dishId, idxStr] = key.split(".");
       const dish = getDish(dishId);
-      const step = dish.steps[Number(idxStr)];
+      const idx = Number(idxStr);
+      const step = dish.steps[idx];
+      const isFinal = idx === dish.steps.length - 1;
       const track = boardEl.querySelector(`.lane-row[data-lane="${p.laneId}"] .lane-track`);
       if (!track) return;
       const chip = document.createElement("div");
-      chip.className = "chip" + (invalid.has(key) ? " invalid" : "");
+      chip.className = "chip" + (invalid.has(key) ? " invalid" : "") + (isFinal ? " final-step" : "");
       chip.dataset.key = key;
       chip.style.background = dish.color;
       chip.style.left = p.start * PX_PER_MIN + "px";
       chip.style.width = step.duration * PX_PER_MIN - 2 + "px";
       chip.textContent = `${dish.emoji} ${step.label}`;
-      attachChipDrag(chip, dishId, Number(idxStr));
+      if (isFinal) chip.title = `${dish.name} is ready once this ends — it must reach the Serve line exactly.`;
+      attachChipDrag(chip, dishId, idx);
       track.appendChild(chip);
     });
   }
@@ -196,11 +199,13 @@
       dish.steps.forEach((step, i) => {
         const key = stepKey(dish.id, i);
         const isPlaced = placements.has(key);
+        const isFinal = i === dish.steps.length - 1;
         const chip = document.createElement("div");
-        chip.className = "tray-chip" + (isPlaced ? " placed" : "");
+        chip.className = "tray-chip" + (isPlaced ? " placed" : "") + (isFinal ? " final-step" : "");
         chip.style.background = dish.color;
         chip.textContent = `${step.label} · ${step.duration}m`;
         chip.dataset.key = key;
+        if (isFinal) chip.title = `${dish.name} is ready once this ends — it must reach the Serve line exactly.`;
         if (!isPlaced) attachChipDrag(chip, dish.id, i, true);
         chipsWrap.appendChild(chip);
       });
@@ -218,10 +223,20 @@
     });
   }
 
+  function hitTestLane(clientY) {
+    let targetLane = null;
+    boardEl.querySelectorAll(".lane-row").forEach((row) => {
+      const r = row.getBoundingClientRect();
+      if (clientY >= r.top && clientY <= r.bottom) targetLane = row.dataset.lane;
+    });
+    return targetLane;
+  }
+
   function startDrag(e, dishId, stepIndex) {
     const dish = getDish(dishId);
     const step = dish.steps[stepIndex];
     const key = stepKey(dishId, stepIndex);
+    const isFinal = stepIndex === dish.steps.length - 1;
 
     const ghost = document.createElement("div");
     ghost.className = "drag-ghost";
@@ -235,27 +250,50 @@
     placements.delete(key);
     render();
 
+    // For a dish's final step, show exactly where it must land: flush
+    // against the Serve line, in whichever matching lane is hovered.
+    let landingZone = null;
+    if (isFinal) {
+      landingZone = document.createElement("div");
+      landingZone.className = "landing-zone";
+      landingZone.style.width = step.duration * PX_PER_MIN - 2 + "px";
+      landingZone.hidden = true;
+      boardEl.appendChild(landingZone);
+    }
+
+    function updateLandingZone(clientY) {
+      if (!landingZone) return;
+      const laneId = hitTestLane(clientY);
+      const lane = laneId && lanes.find((l) => l.id === laneId);
+      if (lane && lane.type === step.type) {
+        const laneIndex = lanes.indexOf(lane);
+        landingZone.style.top = laneIndex * ROW_H + 3 + "px";
+        landingZone.style.left = LABEL_W + (level.boardMinutes - step.duration) * PX_PER_MIN + "px";
+        landingZone.hidden = false;
+      } else {
+        landingZone.hidden = true;
+      }
+    }
+
     function moveGhost(clientX, clientY) {
       ghost.style.left = clientX - ghost.offsetWidth / 2 + "px";
       ghost.style.top = clientY - ghost.offsetHeight / 2 + "px";
     }
     moveGhost(e.clientX, e.clientY);
+    updateLandingZone(e.clientY);
 
     function onMove(ev) {
       moveGhost(ev.clientX, ev.clientY);
+      updateLandingZone(ev.clientY);
     }
 
     function onUp(ev) {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
       ghost.remove();
+      if (landingZone) landingZone.remove();
 
-      const rows = boardEl.querySelectorAll(".lane-row");
-      let targetLane = null;
-      rows.forEach((row) => {
-        const r = row.getBoundingClientRect();
-        if (ev.clientY >= r.top && ev.clientY <= r.bottom) targetLane = row.dataset.lane;
-      });
+      const targetLane = hitTestLane(ev.clientY);
 
       if (targetLane) {
         const lane = lanes.find((l) => l.id === targetLane);
