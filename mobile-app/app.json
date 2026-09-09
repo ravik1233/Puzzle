@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "Dinner Rush",
+    "slug": "dinner-rush",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#1a1d1f",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ravik1233.dinnerrush"
+    },
+    "android": {
+      "package": "com.ravik1233.dinnerrush",
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1d1f",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      }
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#1a1d1f",
+      "resizeMode": "contain"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}
