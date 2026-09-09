@@ -2,75 +2,103 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Everyday Puzzles</title>
-<style>
-  :root {
-    --bg-top: #eef2fb;
-    --bg-bottom: #dbe4f5;
-    --card-bg: #ffffff;
-    --text: #1f2430;
-    --muted: #6b7280;
-    color-scheme: light;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    padding: 40px 16px;
-  }
-  .wrap { width: 100%; max-width: 640px; }
-  h1 { text-align: center; margin: 0 0 6px; font-size: 2rem; }
-  .sub { text-align: center; color: var(--muted); margin: 0 0 32px; }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
-  }
-  a.card {
-    display: block;
-    background: var(--card-bg);
-    border-radius: 16px;
-    padding: 22px 20px;
-    text-decoration: none;
-    color: var(--text);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  a.card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
-  .emoji { font-size: 2rem; }
-  .card h2 { margin: 8px 0 4px; font-size: 1.15rem; }
-  .card p { margin: 0; color: var(--muted); font-size: 0.88rem; line-height: 1.4; }
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Dinner Rush</title>
+<meta name="description" content="Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.">
 
-  @media (prefers-color-scheme: dark) {
-    body { background: linear-gradient(180deg, #14171c 0%, #1c2027 100%); color: #f0f2f5; }
-    a.card { background: #20242c; color: #f0f2f5; }
-    .sub { color: #9aa3af; }
-    .card p { color: #9aa3af; }
-  }
-</style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a1d1f">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Dinner Rush">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta property="og:title" content="Dinner Rush">
+<meta property="og:description" content="Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <h1>🧩 Everyday Puzzles</h1>
-    <p class="sub">Small games based on ordinary things — never quite what you'd expect.</p>
-    <div class="grid">
-      <a class="card" href="games/traffic-jam/index.html">
-        <div class="emoji">🚗</div>
-        <h2>Traffic Jam</h2>
-        <p>Slide parked cars out of the way to free your red car through the exit.</p>
-      </a>
-      <a class="card" href="games/dinner-rush/index.html">
-        <div class="emoji">🍽️</div>
-        <h2>Dinner Rush</h2>
-        <p>Real recipes from an 1896 cookbook. Find the true ingredients, then put the real instructions back in order.</p>
-      </a>
+  <div class="app">
+    <header class="rail-header">
+      <div class="wordmark">
+        <svg class="bell-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 15.5C4 10 7.5 6 12 6s8 4 8 9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M2.5 15.5h19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="12" cy="3" r="1.4" fill="currentColor"/>
+          <path d="M9.5 18.5c0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <p class="kicker">1896 Recipes &middot; Real Puzzles</p>
+          <h1>Dinner Rush</h1>
+        </div>
+      </div>
+      <p class="tagline">Every recipe here is real, from Fannie Farmer's 1896 cookbook. Find the true ingredients, then put her real instructions back in order.</p>
+    </header>
+
+    <div class="ticket level-nav">
+      <button class="nav-arrow" id="prevLevelBtn" aria-label="Previous level">‹</button>
+      <div class="level-nav-info">
+        <span class="level-nav-eyebrow">Stage</span>
+        <span class="level-nav-title" id="levelTitle">Stage 1</span>
+        <span class="level-nav-sub" id="levelSub">1 / 100</span>
+      </div>
+      <button class="nav-arrow" id="nextLevelBtn" aria-label="Next level">›</button>
+    </div>
+    <div class="level-map" id="levelMap"></div>
+
+    <div class="recipe-card">
+      <p class="recipe-eyebrow">Today's recipe</p>
+      <h2 id="recipeName">Recipe Name</h2>
+    </div>
+
+    <section class="phase-block" id="pantryPhase">
+      <div class="phase-head">
+        <h3>Pantry</h3>
+        <p>Tap the ingredients this recipe really uses. Wrong picks get sent back.</p>
+        <span class="phase-progress" id="pantryProgress">0 / 0 found</span>
+      </div>
+      <div class="pantry-grid" id="pantryGrid"></div>
+      <button class="btn btn-primary" id="confirmPantryBtn">Confirm Pantry</button>
+    </section>
+
+    <section class="phase-block" id="methodPhase" hidden>
+      <div class="phase-head">
+        <h3>Method</h3>
+        <p>Drag Fannie Farmer's real instructions back into the order she wrote them.</p>
+        <span class="phase-progress" id="methodProgress">0 / 0 in place</span>
+      </div>
+      <ol class="method-list" id="methodList"></ol>
+      <button class="btn btn-primary" id="confirmMethodBtn">Confirm Method</button>
+    </section>
+
+    <div class="controls">
+      <button class="btn" id="resetBtn">Reset Stage</button>
+    </div>
+
+    <p class="hint">Pantry: correct picks lock in green; wrong picks bounce back. Method: drag cards to reorder, then confirm — right spots glow green, wrong ones flash red so you know what to move.</p>
+
+    <div class="win-overlay" id="winOverlay" hidden>
+      <div class="win-card">
+        <p class="stamp">Service</p>
+        <h2>Ticket cleared</h2>
+        <p id="winStats"></p>
+        <div class="win-actions">
+          <button class="btn" id="replayBtn">Replay</button>
+          <button class="btn btn-primary" id="nextBtn">Next Level</button>
+        </div>
+      </div>
     </div>
   </div>
+
+  <script src="engine.js"></script>
+  <script src="levels-data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
