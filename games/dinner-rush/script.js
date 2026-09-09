@@ -2,37 +2,42 @@
   "use strict";
 
   const LEVELS = window.DINNER_RUSH_LEVELS;
-  const { computeValidity, buildLanes, stepKey, getDish: engineGetDish } = window.DinnerRushEngine;
-
-  const PX_PER_MIN = 18;
-  const ROW_H = 42;
-  const LABEL_W = 84;
-  const RULER_H = 22;
+  const { pantryCards, methodState } = window.DinnerRushEngine;
 
   const levelMapEl = document.getElementById("levelMap");
   const levelTitleEl = document.getElementById("levelTitle");
   const levelSubEl = document.getElementById("levelSub");
   const prevLevelBtn = document.getElementById("prevLevelBtn");
   const nextLevelBtn = document.getElementById("nextLevelBtn");
-  const statusPanelEl = document.getElementById("statusPanel");
-  const boardEl = document.getElementById("board");
-  const serveLineEl = document.getElementById("serveLine");
-  const trayEl = document.getElementById("tray");
+  const recipeNameEl = document.getElementById("recipeName");
+
+  const pantryPhaseEl = document.getElementById("pantryPhase");
+  const pantryGridEl = document.getElementById("pantryGrid");
+  const pantryProgressEl = document.getElementById("pantryProgress");
+  const confirmPantryBtn = document.getElementById("confirmPantryBtn");
+
+  const methodPhaseEl = document.getElementById("methodPhase");
+  const methodListEl = document.getElementById("methodList");
+  const methodProgressEl = document.getElementById("methodProgress");
+  const confirmMethodBtn = document.getElementById("confirmMethodBtn");
+
   const resetBtn = document.getElementById("resetBtn");
-  const serveBtn = document.getElementById("serveBtn");
   const winOverlay = document.getElementById("winOverlay");
   const winStats = document.getElementById("winStats");
   const replayBtn = document.getElementById("replayBtn");
   const nextBtn = document.getElementById("nextBtn");
 
-  const PROGRESS_KEY = "dinnerrush.progress.v1";
+  const PROGRESS_KEY = "dinnerrush.progress.v2";
   const progress = loadProgress();
 
   let currentLevelIndex = 0;
   let level = null;
-  let lanes = [];
-  // placements: Map "dishId.stepIndex" -> { laneId, start }
-  let placements = new Map();
+  let pantryShuffled = [];
+  let pantrySelected = new Set();
+  let pantryFound = new Set();
+  let pantrySolved = false;
+  let methodOrder = [];
+  let methodFeedback = null; // array of booleans per position, or null
   let won = false;
 
   function loadProgress() {
@@ -47,8 +52,13 @@
     catch (e) { /* ignore */ }
   }
 
-  function getDish(dishId) {
-    return engineGetDish(level, dishId);
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
   }
 
   // ---------- Level map / nav ----------
@@ -90,280 +100,168 @@
   function loadLevel(index) {
     currentLevelIndex = index;
     level = LEVELS[index];
-    lanes = buildLanes(level);
-    placements = new Map();
     won = false;
     hideWin();
-    render();
+
+    pantryShuffled = shuffle(pantryCards(level));
+    pantrySelected = new Set();
+    pantryFound = new Set();
+    pantrySolved = false;
+
+    let order = shuffle(level.steps);
+    if (level.steps.length > 1 && order.every((s, i) => s === level.steps[i])) order = shuffle(level.steps);
+    methodOrder = order;
+    methodFeedback = null;
+
+    recipeNameEl.textContent = level.recipeName;
+    pantryPhaseEl.hidden = false;
+    methodPhaseEl.hidden = true;
+
+    renderPantry();
+    renderMethod();
     updateNav();
     updateLevelMapActive();
   }
 
-  // ---------- Rendering ----------
-  function render() {
-    renderBoard();
-    const { invalid, dishState } = computeValidity(level, placements);
-    renderStatus(dishState);
-    renderChipsOnBoard(invalid);
-    renderTray(invalid);
-    checkWin(dishState, invalid);
-  }
-
-  function renderBoard() {
-    boardEl.querySelectorAll(".lane-row, .time-ruler").forEach((el) => el.remove());
-    const totalWidth = level.boardMinutes * PX_PER_MIN;
-    boardEl.style.width = LABEL_W + totalWidth + "px";
-    boardEl.style.height = RULER_H + lanes.length * ROW_H + "px";
-
-    // Time ruler: makes distances on the board legible at rest, so a gap
-    // between two chips reads as "N minutes," not just empty space.
-    const ruler = document.createElement("div");
-    ruler.className = "time-ruler";
-    ruler.style.width = LABEL_W + totalWidth + "px";
-    const rulerLabel = document.createElement("div");
-    rulerLabel.className = "lane-label ruler-label";
-    rulerLabel.style.setProperty("--label-w", LABEL_W + "px");
-    rulerLabel.textContent = "Time";
-    ruler.appendChild(rulerLabel);
-    const rulerTrack = document.createElement("div");
-    rulerTrack.className = "lane-track ruler-track";
-    rulerTrack.style.setProperty("--label-w", LABEL_W + "px");
-    rulerTrack.style.width = totalWidth + "px";
-    const tickStep = level.boardMinutes <= 45 ? 10 : level.boardMinutes <= 100 ? 20 : 30;
-    for (let t = 0; t <= level.boardMinutes; t += tickStep) {
-      const tick = document.createElement("div");
-      tick.className = "ruler-tick";
-      tick.style.left = t * PX_PER_MIN + "px";
-      const tickLabel = document.createElement("span");
-      tickLabel.textContent = t === 0 ? "Start" : `${t}m`;
-      tick.appendChild(tickLabel);
-      rulerTrack.appendChild(tick);
-    }
-    ruler.appendChild(rulerTrack);
-    boardEl.insertBefore(ruler, serveLineEl);
-
-    lanes.forEach((lane) => {
-      const row = document.createElement("div");
-      row.className = "lane-row";
-      row.dataset.lane = lane.id;
-      row.style.width = LABEL_W + totalWidth + "px";
-
-      const label = document.createElement("div");
-      label.className = "lane-label";
-      label.style.setProperty("--label-w", LABEL_W + "px");
-      label.textContent = lane.label;
-      row.appendChild(label);
-
-      const track = document.createElement("div");
-      track.className = "lane-track";
-      track.style.setProperty("--label-w", LABEL_W + "px");
-      track.style.width = totalWidth + "px";
-      track.style.backgroundImage =
-        "repeating-linear-gradient(to right, rgba(0,0,0,0.08) 0, rgba(0,0,0,0.08) 1px, transparent 1px, transparent " +
-        (30 * PX_PER_MIN) + "px), repeating-linear-gradient(to right, rgba(0,0,0,0.04) 0, rgba(0,0,0,0.04) 1px, transparent 1px, transparent " +
-        (PX_PER_MIN * level.gridStep) + "px)";
-      row.appendChild(track);
-
-      boardEl.insertBefore(row, serveLineEl);
-    });
-
-    serveLineEl.style.left = LABEL_W + totalWidth + "px";
-    serveLineEl.style.height = RULER_H + lanes.length * ROW_H + "px";
-  }
-
-  function renderChipsOnBoard(invalid) {
-    boardEl.querySelectorAll(".chip, .gap-connector").forEach((el) => el.remove());
-    placements.forEach((p, key) => {
-      const [dishId, idxStr] = key.split(".");
-      const dish = getDish(dishId);
-      const idx = Number(idxStr);
-      const step = dish.steps[idx];
-      const isFinal = idx === dish.steps.length - 1;
-      const track = boardEl.querySelector(`.lane-row[data-lane="${p.laneId}"] .lane-track`);
-      if (!track) return;
-      const chip = document.createElement("div");
-      chip.className = "chip" + (invalid.has(key) ? " invalid" : "") + (isFinal ? " final-step" : "");
-      chip.dataset.key = key;
-      chip.style.background = dish.color;
-      chip.style.left = p.start * PX_PER_MIN + "px";
-      chip.style.width = step.duration * PX_PER_MIN - 2 + "px";
-      chip.textContent = `${dish.emoji} ${step.label}`;
-      if (isFinal) chip.title = `${dish.name} is ready once this ends — it must reach the Serve line exactly.`;
-      attachChipDrag(chip, dishId, idx);
-      track.appendChild(chip);
-
-      // Draw the actual gap, measured, between a final step and Serve —
-      // this is the concrete answer to "what does the empty space mean."
-      if (isFinal && !invalid.has(key)) {
-        const gap = level.boardMinutes - (p.start + step.duration);
-        if (gap > 0) {
-          const connector = document.createElement("div");
-          connector.className = "gap-connector";
-          connector.style.left = (p.start + step.duration) * PX_PER_MIN + "px";
-          connector.style.width = gap * PX_PER_MIN + "px";
-          const gapLabel = document.createElement("span");
-          gapLabel.textContent = `${gap}m short of Serve`;
-          connector.appendChild(gapLabel);
-          track.appendChild(connector);
-        }
+  // ---------- Pantry phase ----------
+  function renderPantry() {
+    pantryGridEl.innerHTML = "";
+    pantryShuffled.forEach((ing) => {
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "pantry-card";
+      card.textContent = ing;
+      if (pantryFound.has(ing)) {
+        card.classList.add("found");
+        card.disabled = true;
+      } else if (pantrySelected.has(ing)) {
+        card.classList.add("selected");
       }
-    });
-  }
-
-  function renderStatus(dishState) {
-    statusPanelEl.innerHTML = "";
-    level.dishes.forEach((dish) => {
-      const st = dishState[dish.id];
-      const chip = document.createElement("div");
-      chip.className = "status-chip";
-      chip.style.setProperty("--dish-color", dish.color);
-      let text;
-      if (st.state === "ready") { chip.classList.add("ready"); text = "Ready!"; }
-      else if (st.state === "conflict") { chip.classList.add("off"); text = "Conflict"; }
-      else if (st.state === "early") { chip.classList.add("off"); text = `${st.offBy}m early`; }
-      else if (st.state === "partial") { text = `${st.placedCount}/${st.total} placed`; }
-      else { text = "Not started"; }
-      chip.innerHTML = `<span>${dish.emoji} ${dish.name}</span><span class="state">${text}</span>`;
-      statusPanelEl.appendChild(chip);
-    });
-  }
-
-  function renderTray(invalid) {
-    trayEl.innerHTML = "";
-    level.dishes.forEach((dish) => {
-      const card = document.createElement("div");
-      card.className = "dish-card";
-      card.style.setProperty("--dish-color", dish.color);
-      const name = document.createElement("div");
-      name.className = "dish-name";
-      name.textContent = `${dish.emoji} ${dish.name}`;
-      card.appendChild(name);
-      const chipsWrap = document.createElement("div");
-      chipsWrap.className = "tray-chips";
-      dish.steps.forEach((step, i) => {
-        const key = stepKey(dish.id, i);
-        const isPlaced = placements.has(key);
-        const isFinal = i === dish.steps.length - 1;
-        const chip = document.createElement("div");
-        chip.className = "tray-chip" + (isPlaced ? " placed" : "") + (isFinal ? " final-step" : "");
-        chip.style.background = dish.color;
-        chip.textContent = `${step.label} · ${step.duration}m`;
-        chip.dataset.key = key;
-        if (isFinal) chip.title = `${dish.name} is ready once this ends — it must reach the Serve line exactly.`;
-        if (!isPlaced) attachChipDrag(chip, dish.id, i, true);
-        chipsWrap.appendChild(chip);
+      card.addEventListener("click", () => {
+        if (pantryFound.has(ing) || pantrySolved) return;
+        if (pantrySelected.has(ing)) pantrySelected.delete(ing);
+        else pantrySelected.add(ing);
+        renderPantry();
       });
-      card.appendChild(chipsWrap);
-      trayEl.appendChild(card);
+      pantryGridEl.appendChild(card);
     });
+    pantryProgressEl.textContent = `${pantryFound.size} / ${level.ingredients.length} found`;
   }
 
-  // ---------- Drag & drop ----------
-  function attachChipDrag(el, dishId, stepIndex) {
+  confirmPantryBtn.addEventListener("click", () => {
+    if (pantrySolved) return;
+    const wrongPicks = [];
+    pantrySelected.forEach((ing) => {
+      if (level.ingredients.includes(ing)) pantryFound.add(ing);
+      else wrongPicks.push(ing);
+    });
+    pantrySelected = new Set();
+    renderPantry();
+
+    if (wrongPicks.length) {
+      wrongPicks.forEach((ing) => {
+        const card = [...pantryGridEl.children].find((c) => c.textContent === ing);
+        if (card) {
+          card.classList.add("wrong-flash");
+          card.addEventListener("animationend", () => card.classList.remove("wrong-flash"), { once: true });
+        }
+      });
+    }
+
+    if (pantryFound.size === level.ingredients.length) {
+      pantrySolved = true;
+      setTimeout(() => {
+        pantryPhaseEl.hidden = true;
+        methodPhaseEl.hidden = false;
+        methodPhaseEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 350);
+    }
+  });
+
+  // ---------- Method phase ----------
+  function renderMethod() {
+    methodListEl.innerHTML = "";
+    methodOrder.forEach((step, i) => {
+      const li = document.createElement("li");
+      li.className = "method-item";
+      if (methodFeedback) li.classList.add(methodFeedback[i] ? "correct" : "incorrect");
+      const badge = document.createElement("span");
+      badge.className = "method-index";
+      badge.textContent = i + 1;
+      const text = document.createElement("span");
+      text.className = "method-text";
+      text.textContent = step;
+      li.appendChild(badge);
+      li.appendChild(text);
+      attachMethodDrag(li, i);
+      methodListEl.appendChild(li);
+    });
+    const correctNow = methodFeedback ? methodFeedback.filter(Boolean).length : 0;
+    methodProgressEl.textContent = `${correctNow} / ${level.steps.length} in place`;
+  }
+
+  function attachMethodDrag(el, index) {
     el.addEventListener("pointerdown", (e) => {
       if (won) return;
       e.preventDefault();
-      startDrag(e, dishId, stepIndex);
+      startMethodDrag(e, index);
     });
   }
 
-  function hitTestLane(clientY) {
-    let targetLane = null;
-    boardEl.querySelectorAll(".lane-row").forEach((row) => {
-      const r = row.getBoundingClientRect();
-      if (clientY >= r.top && clientY <= r.bottom) targetLane = row.dataset.lane;
-    });
-    return targetLane;
-  }
-
-  function startDrag(e, dishId, stepIndex) {
-    const dish = getDish(dishId);
-    const step = dish.steps[stepIndex];
-    const key = stepKey(dishId, stepIndex);
-    const isFinal = stepIndex === dish.steps.length - 1;
+  function startMethodDrag(e, index) {
+    methodFeedback = null;
+    const step = methodOrder[index];
+    const sourceEl = methodListEl.children[index];
+    const rect = sourceEl.getBoundingClientRect();
 
     const ghost = document.createElement("div");
-    ghost.className = "drag-ghost";
-    ghost.style.background = dish.color;
-    ghost.style.width = step.duration * PX_PER_MIN + "px";
-    ghost.style.height = ROW_H - 6 + "px";
-    ghost.textContent = `${dish.emoji} ${step.label}`;
+    ghost.className = "method-ghost";
+    ghost.style.width = rect.width + "px";
+    ghost.textContent = step;
+    ghost.style.left = rect.left + "px";
+    ghost.style.top = rect.top + "px";
     document.body.appendChild(ghost);
+    sourceEl.classList.add("drag-source");
 
-    // remove from placements while dragging so it doesn't collide with itself
-    placements.delete(key);
-    render();
+    const offsetY = e.clientY - rect.top;
 
-    // For a dish's final step, show exactly where it must land: flush
-    // against the Serve line, in whichever matching lane is hovered.
-    let landingZone = null;
-    if (isFinal) {
-      landingZone = document.createElement("div");
-      landingZone.className = "landing-zone";
-      landingZone.style.width = step.duration * PX_PER_MIN - 2 + "px";
-      landingZone.hidden = true;
-      boardEl.appendChild(landingZone);
+    function moveGhost(clientY) {
+      ghost.style.top = clientY - offsetY + "px";
     }
-
-    function updateLandingZone(clientY) {
-      if (!landingZone) return;
-      const laneId = hitTestLane(clientY);
-      const lane = laneId && lanes.find((l) => l.id === laneId);
-      if (lane && lane.type === step.type) {
-        const laneIndex = lanes.indexOf(lane);
-        landingZone.style.top = RULER_H + laneIndex * ROW_H + 3 + "px";
-        landingZone.style.left = LABEL_W + (level.boardMinutes - step.duration) * PX_PER_MIN + "px";
-        landingZone.hidden = false;
-      } else {
-        landingZone.hidden = true;
-      }
-    }
-
-    function moveGhost(clientX, clientY) {
-      ghost.style.left = clientX - ghost.offsetWidth / 2 + "px";
-      ghost.style.top = clientY - ghost.offsetHeight / 2 + "px";
-    }
-    moveGhost(e.clientX, e.clientY);
-    updateLandingZone(e.clientY);
+    moveGhost(e.clientY);
 
     function onMove(ev) {
-      moveGhost(ev.clientX, ev.clientY);
-      updateLandingZone(ev.clientY);
+      moveGhost(ev.clientY);
     }
 
     function onUp(ev) {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
       ghost.remove();
-      if (landingZone) landingZone.remove();
 
-      const targetLane = hitTestLane(ev.clientY);
-
-      if (targetLane) {
-        const lane = lanes.find((l) => l.id === targetLane);
-        if (lane.type === step.type) {
-          const trackRect = boardEl.getBoundingClientRect();
-          const relX = ev.clientX - trackRect.left - LABEL_W - (step.duration * PX_PER_MIN) / 2;
-          let startMin = Math.round(relX / PX_PER_MIN / level.gridStep) * level.gridStep;
-          startMin = Math.max(0, Math.min(startMin, level.boardMinutes - step.duration));
-          if (!isNaN(startMin)) {
-            placements.set(key, { laneId: lane.id, start: startMin });
-          }
-        }
+      const items = [...methodListEl.children];
+      let targetIndex = items.length - 1;
+      for (let i = 0; i < items.length; i++) {
+        const r = items[i].getBoundingClientRect();
+        if (ev.clientY < r.top + r.height / 2) { targetIndex = i; break; }
       }
-      // if not placed above, it stays unplaced (back to tray)
-      render();
+
+      const [moved] = methodOrder.splice(index, 1);
+      methodOrder.splice(targetIndex, 0, moved);
+      renderMethod();
     }
 
     window.addEventListener("pointermove", onMove);
     window.addEventListener("pointerup", onUp);
   }
 
-  // ---------- Win ----------
-  function checkWin(dishState, invalid) {
-    if (invalid.size > 0) return;
-    const allReady = level.dishes.every((d) => dishState[d.id].state === "ready");
-    if (allReady && !won) {
+  confirmMethodBtn.addEventListener("click", () => {
+    if (won) return;
+    const state = methodState(level, methodOrder);
+    methodFeedback = methodOrder.map((s, i) => s === level.steps[i]);
+    renderMethod();
+
+    if (state.solved) {
       won = true;
       progress.solved[level.id] = true;
       const levelNumber = currentLevelIndex + 1;
@@ -373,15 +271,16 @@
       saveProgress();
       buildLevelMap();
       updateNav();
-      setTimeout(showWin, 200);
+      setTimeout(showWin, 300);
     }
-  }
+  });
 
+  // ---------- Win ----------
   function showWin() {
     const isLast = currentLevelIndex >= LEVELS.length - 1;
     winStats.textContent = isLast
-      ? `${level.name} complete — you've cleared all ${LEVELS.length} stages!`
-      : `${level.name} complete — every dish hit the table hot!`;
+      ? `${level.recipeName} complete — you've cleared all ${LEVELS.length} recipes!`
+      : `${level.recipeName}, solved straight from the real 1896 recipe.`;
     winOverlay.hidden = false;
     nextBtn.disabled = isLast;
     nextBtn.style.opacity = isLast ? 0.5 : 1;
@@ -402,14 +301,6 @@
   nextLevelBtn.addEventListener("click", () => {
     if (currentLevelIndex < progress.highestUnlocked - 1 && currentLevelIndex < LEVELS.length - 1) {
       loadLevel(currentLevelIndex + 1);
-    }
-  });
-  serveBtn.addEventListener("click", () => {
-    const { invalid, dishState } = computeValidity(level, placements);
-    checkWin(dishState, invalid);
-    if (!won) {
-      serveBtn.classList.add("invalid");
-      setTimeout(() => serveBtn.classList.remove("invalid"), 600);
     }
   });
 

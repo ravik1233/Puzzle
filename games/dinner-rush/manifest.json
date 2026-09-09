@@ -1,7 +1,7 @@
 {
   "name": "Dinner Rush",
   "short_name": "Dinner Rush",
-  "description": "Schedule real recipes onto the oven, stovetop and counter so every dish lands hot at once. 100 stages.",
+  "description": "Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

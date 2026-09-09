@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Dinner Rush</title>
-<meta name="description" content="Schedule real recipes onto the oven, stovetop and counter so every dish lands hot at once. 100 stages.">
+<meta name="description" content="Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.">
 
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1d1f">
@@ -17,7 +17,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta property="og:title" content="Dinner Rush">
-<meta property="og:description" content="Schedule real recipes onto the oven, stovetop and counter so every dish lands hot at once. 100 stages.">
+<meta property="og:description" content="Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,11 +37,11 @@
           <path d="M9.5 18.5c0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
         <div>
-          <p class="kicker">The Line &middot; Kitchen Timing</p>
+          <p class="kicker">1896 Recipes &middot; Real Puzzles</p>
           <h1>Dinner Rush</h1>
         </div>
       </div>
-      <p class="tagline">Schedule every dish onto the oven, stovetop and counter so it all lands hot, at once.</p>
+      <p class="tagline">Every recipe here is real, from Fannie Farmer's 1896 cookbook. Find the true ingredients, then put her real instructions back in order.</p>
     </header>
 
     <div class="ticket level-nav">
@@ -55,24 +55,36 @@
     </div>
     <div class="level-map" id="levelMap"></div>
 
-    <div class="status-panel" id="statusPanel"></div>
-
-    <div class="board-wrap">
-      <div class="board-scroll">
-        <div class="board" id="board">
-          <div class="serve-line" id="serveLine"><span>Serve!</span></div>
-        </div>
-      </div>
+    <div class="recipe-card">
+      <p class="recipe-eyebrow">Today's recipe</p>
+      <h2 id="recipeName">Recipe Name</h2>
     </div>
 
-    <div class="tray" id="tray"></div>
+    <section class="phase-block" id="pantryPhase">
+      <div class="phase-head">
+        <h3>Pantry</h3>
+        <p>Tap the ingredients this recipe really uses. Wrong picks get sent back.</p>
+        <span class="phase-progress" id="pantryProgress">0 / 0 found</span>
+      </div>
+      <div class="pantry-grid" id="pantryGrid"></div>
+      <button class="btn btn-primary" id="confirmPantryBtn">Confirm Pantry</button>
+    </section>
+
+    <section class="phase-block" id="methodPhase" hidden>
+      <div class="phase-head">
+        <h3>Method</h3>
+        <p>Drag Fannie Farmer's real instructions back into the order she wrote them.</p>
+        <span class="phase-progress" id="methodProgress">0 / 0 in place</span>
+      </div>
+      <ol class="method-list" id="methodList"></ol>
+      <button class="btn btn-primary" id="confirmMethodBtn">Confirm Method</button>
+    </section>
 
     <div class="controls">
-      <button class="btn" id="resetBtn">Reset</button>
-      <button class="btn btn-primary" id="serveBtn">Serve Dinner!</button>
+      <button class="btn" id="resetBtn">Reset Stage</button>
     </div>
 
-    <p class="hint">Drag each step onto a matching lane. Earlier steps just need to finish before the next one starts — gaps are fine. A step marked <span class="flag-swatch" aria-hidden="true"></span> is a dish's <em>last</em> step: it must land flush against the red Serve line, or the dish won't be hot in time. Drag one to see the dashed landing zone show you exactly where.</p>
+    <p class="hint">Pantry: correct picks lock in green; wrong picks bounce back. Method: drag cards to reorder, then confirm — right spots glow green, wrong ones flash red so you know what to move.</p>
 
     <div class="win-overlay" id="winOverlay" hidden>
       <div class="win-card">

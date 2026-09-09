@@ -1,4 +1,4 @@
-const CACHE = "dinner-rush-v1";
+const CACHE = "dinner-rush-v2";
 const APP_SHELL = [
   "./index.html",
   "./style.css",

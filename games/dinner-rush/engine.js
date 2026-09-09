@@ -7,120 +7,45 @@
 })(typeof self !== "undefined" ? self : this, function () {
   "use strict";
 
-  const RESOURCE_LABELS = { oven: "Oven", stovetop: "Burner", counter: "Counter" };
+  // A level is one real recipe:
+  //   { id, recipeName, ingredients: [string], decoys: [string], steps: [string] }
+  // ingredients/steps are in their correct (original) order/set; decoys are
+  // wrong ingredients mixed into the pantry grid.
 
-  function stepKey(dishId, stepIndex) {
-    return dishId + "." + stepIndex;
+  function pantryCards(level) {
+    return [...level.ingredients, ...level.decoys];
   }
 
-  function getDish(level, dishId) {
-    return level.dishes.find((d) => d.id === dishId);
+  // selected: Set of ingredient strings currently chosen in the pantry grid.
+  function pantryState(level, selected) {
+    const correctSet = new Set(level.ingredients);
+    let foundCorrect = 0;
+    let wrongSelected = 0;
+    selected.forEach((ing) => {
+      if (correctSet.has(ing)) foundCorrect++;
+      else wrongSelected++;
+    });
+    return {
+      foundCorrect,
+      wrongSelected,
+      total: level.ingredients.length,
+      solved: foundCorrect === level.ingredients.length && wrongSelected === 0,
+    };
   }
 
-  function buildLanes(level) {
-    const out = [];
-    ["oven", "stovetop", "counter"].forEach((type) => {
-      const count = level.resources[type] || 0;
-      for (let i = 1; i <= count; i++) {
-        out.push({
-          id: type + i,
-          type,
-          label: count > 1 ? `${RESOURCE_LABELS[type]} ${i}` : RESOURCE_LABELS[type],
-        });
-      }
-    });
-    return out;
+  // order: array of step strings in the player's current arrangement
+  // (must be a permutation of level.steps for a meaningful check).
+  function methodState(level, order) {
+    let correctPositions = 0;
+    for (let i = 0; i < level.steps.length; i++) {
+      if (order[i] === level.steps[i]) correctPositions++;
+    }
+    return {
+      correctPositions,
+      total: level.steps.length,
+      solved: order.length === level.steps.length && correctPositions === level.steps.length,
+    };
   }
 
-  // placements: Map "dishId.stepIndex" -> { laneId, start }
-  function computeValidity(level, placements) {
-    const invalid = new Set();
-    const lanes = buildLanes(level);
-
-    lanes.forEach((lane) => {
-      const items = [];
-      placements.forEach((p, key) => {
-        if (p.laneId === lane.id) {
-          const [dishId, idxStr] = key.split(".");
-          const step = getDish(level, dishId).steps[Number(idxStr)];
-          items.push({ key, start: p.start, end: p.start + step.duration });
-        }
-      });
-      for (let i = 0; i < items.length; i++) {
-        for (let j = i + 1; j < items.length; j++) {
-          if (items[i].start < items[j].end && items[j].start < items[i].end) {
-            invalid.add(items[i].key);
-            invalid.add(items[j].key);
-          }
-        }
-      }
-    });
-
-    level.dishes.forEach((dish) => {
-      for (let i = 0; i < dish.steps.length - 1; i++) {
-        const aKey = stepKey(dish.id, i);
-        const bKey = stepKey(dish.id, i + 1);
-        const a = placements.get(aKey);
-        const b = placements.get(bKey);
-        if (a && b) {
-          const aEnd = a.start + dish.steps[i].duration;
-          if (b.start < aEnd) {
-            invalid.add(aKey);
-            invalid.add(bKey);
-          }
-        }
-      }
-    });
-
-    (level.dependencies || []).forEach((dep) => {
-      const fromKey = stepKey(dep.afterDish, dep.afterStep);
-      const toKey = stepKey(dep.dish, dep.step);
-      const from = placements.get(fromKey);
-      const to = placements.get(toKey);
-      if (from && to) {
-        const fromDish = getDish(level, dep.afterDish);
-        const fromEnd = from.start + fromDish.steps[dep.afterStep].duration;
-        if (to.start < fromEnd) {
-          invalid.add(fromKey);
-          invalid.add(toKey);
-        }
-      }
-    });
-
-    const dishState = {};
-    level.dishes.forEach((dish) => {
-      const total = dish.steps.length;
-      let placedCount = 0;
-      let anyInvalid = false;
-      dish.steps.forEach((step, i) => {
-        const key = stepKey(dish.id, i);
-        if (placements.has(key)) placedCount++;
-        if (invalid.has(key)) anyInvalid = true;
-      });
-      let state = "empty";
-      let offBy = null;
-      if (placedCount === total) {
-        const lastKey = stepKey(dish.id, total - 1);
-        const last = placements.get(lastKey);
-        const lastDur = dish.steps[total - 1].duration;
-        offBy = level.boardMinutes - (last.start + lastDur);
-        if (anyInvalid) state = "conflict";
-        else if (offBy === 0) state = "ready";
-        else state = "early";
-      } else if (placedCount > 0) {
-        state = "partial";
-      }
-      dishState[dish.id] = { state, offBy, placedCount, total };
-    });
-
-    return { invalid, dishState };
-  }
-
-  function isSolved(level, placements) {
-    const { invalid, dishState } = computeValidity(level, placements);
-    if (invalid.size > 0) return false;
-    return level.dishes.every((d) => dishState[d.id].state === "ready");
-  }
-
-  return { RESOURCE_LABELS, stepKey, getDish, buildLanes, computeValidity, isSolved };
+  return { pantryCards, pantryState, methodState };
 });
