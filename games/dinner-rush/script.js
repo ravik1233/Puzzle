@@ -415,4 +415,10 @@
 
   buildLevelMap();
   loadLevel(Math.min(progress.highestUnlocked, LEVELS.length) - 1);
+
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch(() => { /* offline support is optional */ });
+    });
+  }
 })();
