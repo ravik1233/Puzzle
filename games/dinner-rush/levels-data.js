@@ -5,7 +5,7 @@
   {
     "id": "stage-1",
     "name": "Stage 1: The Whole Menu",
-    "boardMinutes": 30,
+    "boardMinutes": 45,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -14,33 +14,43 @@
     },
     "dishes": [
       {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Toast Rice"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
+            "duration": 20,
+            "label": "Simmer"
           }
         ]
       },
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
+        "id": "pancakes",
+        "name": "Pancakes",
+        "emoji": "🥞",
+        "color": "#e8a13c",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Toast & Mash"
+            "label": "Mix Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Stack & Butter"
           }
         ]
       }
@@ -49,8 +59,8 @@
   },
   {
     "id": "stage-2",
-    "name": "Stage 2: Big Night In",
-    "boardMinutes": 35,
+    "name": "Stage 2: The Whole Menu",
+    "boardMinutes": 45,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -59,33 +69,38 @@
     },
     "dishes": [
       {
-        "id": "shrimpscampi",
-        "name": "Shrimp Scampi",
-        "emoji": "🍤",
-        "color": "#e76f51",
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Prep"
+            "duration": 5,
+            "label": "Lay Out"
           },
           {
             "type": "stovetop",
             "duration": 10,
-            "label": "Sauté"
+            "label": "Fry"
           }
         ]
       },
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
         "steps": [
           {
-            "type": "counter",
+            "type": "stovetop",
             "duration": 10,
-            "label": "Toast & Mash"
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
           }
         ]
       }
@@ -95,7 +110,7 @@
   {
     "id": "stage-3",
     "name": "Stage 3: Big Night In",
-    "boardMinutes": 30,
+    "boardMinutes": 45,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -104,50 +119,23 @@
     },
     "dishes": [
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
         "steps": [
           {
-            "type": "counter",
+            "type": "stovetop",
             "duration": 10,
-            "label": "Toast & Mash"
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
           }
         ]
       },
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-4",
-    "name": "Stage 4: Full Spread",
-    "boardMinutes": 55,
-    "gridStep": 5,
-    "resources": {
-      "oven": 0,
-      "stovetop": 1,
-      "counter": 2
-    },
-    "dishes": [
       {
         "id": "caesarsalad",
         "name": "Caesar Salad",
@@ -160,32 +148,14 @@
             "label": "Chop & Toss"
           }
         ]
-      },
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
       }
     ],
     "dependencies": []
   },
   {
-    "id": "stage-5",
-    "name": "Stage 5: Family Dinner",
-    "boardMinutes": 60,
+    "id": "stage-4",
+    "name": "Stage 4: Morning Rush",
+    "boardMinutes": 45,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -194,20 +164,120 @@
     },
     "dishes": [
       {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
+        "id": "omelette",
+        "name": "Omelette",
+        "emoji": "🍳",
+        "color": "#f4a259",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Whisk & Fill"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fold & Cook"
+          }
+        ]
+      },
+      {
+        "id": "pancakes",
+        "name": "Pancakes",
+        "emoji": "🥞",
+        "color": "#e8a13c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Mix Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Stack & Butter"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-5",
+    "name": "Stage 5: The Whole Menu",
+    "boardMinutes": 90,
+    "gridStep": 5,
+    "resources": {
+      "oven": 0,
+      "stovetop": 1,
+      "counter": 2
+    },
+    "dishes": [
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Sear & Dice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 45,
+            "label": "Simmer"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-6",
+    "name": "Stage 6: Family Dinner",
+    "boardMinutes": 55,
+    "gridStep": 5,
+    "resources": {
+      "oven": 0,
+      "stovetop": 1,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "broccoli",
+        "name": "Steamed Broccoli",
+        "emoji": "🥦",
+        "color": "#2a9d8f",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Cut Florets"
           },
           {
             "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
+            "duration": 10,
+            "label": "Steam"
           }
         ]
       },
@@ -220,7 +290,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Peel & Cube"
           },
           {
             "type": "stovetop",
@@ -230,52 +300,7 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-6",
-    "name": "Stage 6: Big Night In",
-    "boardMinutes": 55,
-    "gridStep": 5,
-    "resources": {
-      "oven": 0,
-      "stovetop": 1,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
+            "label": "Mash & Butter"
           }
         ]
       }
@@ -284,8 +309,8 @@
   },
   {
     "id": "stage-7",
-    "name": "Stage 7: The Whole Menu",
-    "boardMinutes": 35,
+    "name": "Stage 7: Full Spread",
+    "boardMinutes": 95,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -294,33 +319,43 @@
     },
     "dishes": [
       {
-        "id": "shrimpscampi",
-        "name": "Shrimp Scampi",
-        "emoji": "🍤",
-        "color": "#e76f51",
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Prep"
+            "duration": 15,
+            "label": "Sear & Dice"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
+            "duration": 45,
+            "label": "Simmer"
           }
         ]
       },
       {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
           }
         ]
       }
@@ -329,7 +364,7 @@
   },
   {
     "id": "stage-8",
-    "name": "Stage 8: Full Spread",
+    "name": "Stage 8: Big Night In",
     "boardMinutes": 40,
     "gridStep": 5,
     "resources": {
@@ -347,7 +382,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Shred"
+            "label": "Shred Potatoes"
           },
           {
             "type": "stovetop",
@@ -357,20 +392,20 @@
         ]
       },
       {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
+        "id": "grilledcheese",
+        "name": "Grilled Cheese",
+        "emoji": "🧀",
+        "color": "#e8622c",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
+            "duration": 5,
+            "label": "Butter Bread"
           },
           {
             "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
+            "duration": 10,
+            "label": "Grill"
           }
         ]
       }
@@ -379,8 +414,8 @@
   },
   {
     "id": "stage-9",
-    "name": "Stage 9: Big Night In",
-    "boardMinutes": 35,
+    "name": "Stage 9: The Whole Menu",
+    "boardMinutes": 45,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -389,55 +424,28 @@
     },
     "dishes": [
       {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Assemble"
+            "label": "Season"
           },
           {
             "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
             "duration": 5,
-            "label": "Toast"
+            "label": "Plate & Drizzle"
           }
         ]
       },
-      {
-        "id": "omelette",
-        "name": "Omelette",
-        "emoji": "🍳",
-        "color": "#f4a259",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep Fillings"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Cook"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-10",
-    "name": "Stage 10: The Whole Menu",
-    "boardMinutes": 35,
-    "gridStep": 5,
-    "resources": {
-      "oven": 0,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
       {
         "id": "gardensalad",
         "name": "Garden Salad",
@@ -447,7 +455,104 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Wash & Chop"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-10",
+    "name": "Stage 10: Full Spread",
+    "boardMinutes": 60,
+    "gridStep": 5,
+    "resources": {
+      "oven": 0,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
+          }
+        ]
+      },
+      {
+        "id": "mashedpotatoes",
+        "name": "Mashed Potatoes",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Cube"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Mash & Butter"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-11",
+    "name": "Stage 11: The Whole Menu",
+    "boardMinutes": 50,
+    "gridStep": 5,
+    "resources": {
+      "oven": 0,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
           }
         ]
       },
@@ -460,7 +565,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Peel & Devein"
           },
           {
             "type": "stovetop",
@@ -473,59 +578,9 @@
     "dependencies": []
   },
   {
-    "id": "stage-11",
-    "name": "Stage 11: Weeknight Table",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 0,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
     "id": "stage-12",
-    "name": "Stage 12: Full Spread",
-    "boardMinutes": 30,
+    "name": "Stage 12: Big Night In",
+    "boardMinutes": 35,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -534,33 +589,43 @@
     },
     "dishes": [
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
         "steps": [
           {
             "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
             "duration": 10,
-            "label": "Toast & Mash"
+            "label": "Simmer"
           }
         ]
       },
       {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
+            "duration": 5,
+            "label": "Measure Oats"
           },
           {
             "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
             "duration": 5,
-            "label": "Toast"
+            "label": "Add Toppings"
           }
         ]
       }
@@ -570,7 +635,7 @@
   {
     "id": "stage-13",
     "name": "Stage 13: The Whole Menu",
-    "boardMinutes": 30,
+    "boardMinutes": 45,
     "gridStep": 5,
     "resources": {
       "oven": 0,
@@ -579,15 +644,70 @@
     },
     "dishes": [
       {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Whisk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Scramble"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-14",
+    "name": "Stage 14: Weeknight Table",
+    "boardMinutes": 35,
+    "gridStep": 5,
+    "resources": {
+      "oven": 0,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
           },
           {
             "type": "stovetop",
@@ -597,60 +717,20 @@
         ]
       },
       {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-14",
-    "name": "Stage 14: Big Night In",
-    "boardMinutes": 30,
-    "gridStep": 5,
-    "resources": {
-      "oven": 0,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "bacon",
-        "name": "Bacon",
-        "emoji": "🥓",
-        "color": "#c1666b",
+        "id": "corn",
+        "name": "Corn on the Cob",
+        "emoji": "🌽",
+        "color": "#f4d35e",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Lay Out"
+            "label": "Husk"
           },
           {
             "type": "stovetop",
             "duration": 10,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
+            "label": "Boil"
           }
         ]
       }
@@ -659,7 +739,7 @@
   },
   {
     "id": "stage-15",
-    "name": "Stage 15: Full Spread",
+    "name": "Stage 15: Big Night In",
     "boardMinutes": 35,
     "gridStep": 5,
     "resources": {
@@ -669,15 +749,70 @@
     },
     "dishes": [
       {
-        "id": "quesadilla",
-        "name": "Quesadilla",
-        "emoji": "🫓",
-        "color": "#e9b44c",
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Fill"
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-16",
+    "name": "Stage 16: Big Night In",
+    "boardMinutes": 70,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "grilledcheese",
+        "name": "Grilled Cheese",
+        "emoji": "🧀",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Butter Bread"
           },
           {
             "type": "stovetop",
@@ -687,75 +822,20 @@
         ]
       },
       {
-        "id": "omelette",
-        "name": "Omelette",
-        "emoji": "🍳",
-        "color": "#f4a259",
+        "id": "roastedpotatoes",
+        "name": "Roasted Potatoes",
+        "emoji": "🥔",
+        "color": "#dda15e",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep Fillings"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Cook"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-16",
-    "name": "Stage 16: Full Spread",
-    "boardMinutes": 115,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "corn",
-        "name": "Corn on the Cob",
-        "emoji": "🌽",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
+            "label": "Cube & Toss"
           },
           {
             "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
+            "duration": 35,
+            "label": "Roast"
           }
         ]
       }
@@ -765,7 +845,7 @@
   {
     "id": "stage-17",
     "name": "Stage 17: Full Spread",
-    "boardMinutes": 30,
+    "boardMinutes": 50,
     "gridStep": 5,
     "resources": {
       "oven": 1,
@@ -774,38 +854,43 @@
     },
     "dishes": [
       {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
+        "id": "tomatosoup",
+        "name": "Tomato Soup",
+        "emoji": "🍅",
+        "color": "#3a86ff",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
+            "duration": 10,
+            "label": "Chop Veg"
           },
           {
             "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
+            "duration": 15,
+            "label": "Simmer & Blend"
           }
         ]
       },
       {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
+            "duration": 10,
+            "label": "Dip in Batter"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
           }
         ]
       }
@@ -815,56 +900,6 @@
   {
     "id": "stage-18",
     "name": "Stage 18: Big Night In",
-    "boardMinutes": 30,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "bacon",
-        "name": "Bacon",
-        "emoji": "🥓",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Lay Out"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Fry"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-19",
-    "name": "Stage 19: Weeknight Table",
     "boardMinutes": 70,
     "gridStep": 5,
     "resources": {
@@ -874,1025 +909,20 @@
     },
     "dishes": [
       {
-        "id": "stuffing",
-        "name": "Stuffing",
-        "emoji": "🍞",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-20",
-    "name": "Stage 20: Breakfast Special",
-    "boardMinutes": 40,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Dip"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-21",
-    "name": "Stage 21: Big Night In",
-    "boardMinutes": 105,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Butter & Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-22",
-    "name": "Stage 22: The Whole Menu",
-    "boardMinutes": 120,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "lasagna",
-        "name": "Lasagna",
-        "emoji": "🧆",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 25,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "gravy",
-        "name": "Gravy",
-        "emoji": "🥣",
-        "color": "#8a5a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-23",
-    "name": "Stage 23: Big Night In",
-    "boardMinutes": 105,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "pumpkinpie",
-        "name": "Pumpkin Pie",
-        "emoji": "🎃",
-        "color": "#dd6e42",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 50,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "bacon",
-        "name": "Bacon",
-        "emoji": "🥓",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Lay Out"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "omelette",
-        "name": "Omelette",
-        "emoji": "🍳",
-        "color": "#f4a259",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep Fillings"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Cook"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-24",
-    "name": "Stage 24: Family Dinner",
-    "boardMinutes": 305,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "gravy",
-        "name": "Gravy",
-        "emoji": "🥣",
-        "color": "#8a5a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "corn",
-        "name": "Corn on the Cob",
-        "emoji": "🌽",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          }
-        ]
-      },
-      {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 180,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": []
-  },
-  {
-    "id": "stage-25",
-    "name": "Stage 25: Big Night In",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "dinnerrolls",
-        "name": "Dinner Rolls",
-        "emoji": "🥐",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Shape & Proof"
-          },
-          {
-            "type": "oven",
-            "duration": 20,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "dinnerrolls",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-26",
-    "name": "Stage 26: Full Spread",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "carrots",
-        "name": "Roasted Carrots",
-        "emoji": "🥕",
-        "color": "#f3722c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 25,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "cranberrysauce",
-        "step": 0,
-        "afterDish": "carrots",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-27",
-    "name": "Stage 27: Full Spread",
-    "boardMinutes": 45,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
+        "id": "friedrice",
+        "name": "Fried Rice",
         "emoji": "🍚",
         "color": "#e9c46a",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "shrimpscampi",
-        "name": "Shrimp Scampi",
-        "emoji": "🍤",
-        "color": "#e76f51",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "shrimpscampi",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-28",
-    "name": "Stage 28: Home Cooking",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Mash"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "greenbeans",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-29",
-    "name": "Stage 29: The Whole Menu",
-    "boardMinutes": 75,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
+            "label": "Chop Veg"
           },
           {
             "type": "stovetop",
             "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "roastedpotatoes",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-30",
-    "name": "Stage 30: Big Night In",
-    "boardMinutes": 75,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "oatmeal",
-        "step": 0,
-        "afterDish": "grilledchicken",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-31",
-    "name": "Stage 31: The Whole Menu",
-    "boardMinutes": 125,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "tomatosoup",
-        "name": "Tomato Soup",
-        "emoji": "🍅",
-        "color": "#3a86ff",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Blend"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      },
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "tomatosoup",
-        "step": 0,
-        "afterDish": "meatsauce",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-32",
-    "name": "Stage 32: Big Night In",
-    "boardMinutes": 100,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "broccoli",
-        "step": 0,
-        "afterDish": "meatloaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-33",
-    "name": "Stage 33: The Whole Menu",
-    "boardMinutes": 75,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Mash"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
+            "label": "Stir-fry"
           }
         ]
       },
@@ -1905,7 +935,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Mix Batter"
+            "label": "Melt & Mix"
           },
           {
             "type": "oven",
@@ -1915,168 +945,11 @@
         ]
       }
     ],
-    "dependencies": [
-      {
-        "dish": "oatmeal",
-        "step": 0,
-        "afterDish": "brownies",
-        "afterStep": 0
-      }
-    ]
+    "dependencies": []
   },
   {
-    "id": "stage-34",
-    "name": "Stage 34: Big Night In",
-    "boardMinutes": 90,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "quiche",
-        "name": "Quiche",
-        "emoji": "🥧",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Dip"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Griddle"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "ricepilaf",
-        "step": 0,
-        "afterDish": "quiche",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-35",
-    "name": "Stage 35: Full Spread",
-    "boardMinutes": 105,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "grilledsalmon",
-        "name": "Grilled Salmon",
-        "emoji": "🐟",
-        "color": "#457b9d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Season"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "pumpkinpie",
-        "name": "Pumpkin Pie",
-        "emoji": "🎃",
-        "color": "#dd6e42",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 50,
-            "label": "Bake"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "grilledsalmon",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-36",
-    "name": "Stage 36: Family Dinner",
+    "id": "stage-19",
+    "name": "Stage 19: The Whole Menu",
     "boardMinutes": 115,
     "gridStep": 5,
     "resources": {
@@ -2086,33 +959,15 @@
     },
     "dishes": [
       {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "lasagna",
-        "name": "Lasagna",
-        "emoji": "🧆",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 25,
-            "label": "Assemble"
+            "duration": 20,
+            "label": "Roll Crust & Fill"
           },
           {
             "type": "oven",
@@ -2121,65 +976,8 @@
           },
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
             "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "greenbeans",
-        "step": 0,
-        "afterDish": "cranberrysauce",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-37",
-    "name": "Stage 37: Big Night In",
-    "boardMinutes": 300,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
+            "label": "Cool"
           }
         ]
       },
@@ -2192,7 +990,7 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Cut Florets"
           },
           {
             "type": "stovetop",
@@ -2200,44 +998,142 @@
             "label": "Steam"
           }
         ]
-      },
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-20",
+    "name": "Stage 20: The Whole Menu",
+    "boardMinutes": 55,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
       {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
-            "duration": 20,
-            "label": "Prep"
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "cookies",
+        "name": "Chocolate Chip Cookies",
+        "emoji": "🍪",
+        "color": "#6f4518",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cream Butter & Sugar"
           },
           {
             "type": "oven",
-            "duration": 180,
+            "duration": 15,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cool on Rack"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-21",
+    "name": "Stage 21: Big Night In",
+    "boardMinutes": 70,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "roastedpotatoes",
+        "name": "Roasted Potatoes",
+        "emoji": "🥔",
+        "color": "#dda15e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Cube & Toss"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
             "label": "Roast"
-          },
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
           {
             "type": "counter",
-            "duration": 20,
-            "label": "Rest"
+            "duration": 10,
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      },
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
           }
         ]
       }
     ],
-    "dependencies": [
-      {
-        "dish": "broccoli",
-        "step": 0,
-        "afterDish": "brownies",
-        "afterStep": 0
-      }
-    ]
+    "dependencies": []
   },
   {
-    "id": "stage-38",
-    "name": "Stage 38: The Whole Menu",
-    "boardMinutes": 80,
+    "id": "stage-22",
+    "name": "Stage 22: Full Spread",
+    "boardMinutes": 160,
     "gridStep": 5,
     "resources": {
       "oven": 1,
@@ -2246,183 +1142,20 @@
     },
     "dishes": [
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "corn",
-        "name": "Corn on the Cob",
-        "emoji": "🌽",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          }
-        ]
-      },
-      {
-        "id": "quiche",
-        "name": "Quiche",
-        "emoji": "🥧",
+        "id": "dinnerrolls",
+        "name": "Dinner Rolls",
+        "emoji": "🥐",
         "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Bake"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "corn",
-        "step": 0,
-        "afterDish": "quiche",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-39",
-    "name": "Stage 39: The Whole Menu",
-    "boardMinutes": 85,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 3
-    },
-    "dishes": [
-      {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Dip"
-          },
-          {
-            "type": "stovetop",
             "duration": 15,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
+            "label": "Shape & Proof"
           },
           {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "quiche",
-        "name": "Quiche",
-        "emoji": "🥧",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
+            "type": "oven",
             "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
             "label": "Bake"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "frenchtoast",
-        "step": 0,
-        "afterDish": "quiche",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-40",
-    "name": "Stage 40: Home Cooking",
-    "boardMinutes": 150,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "bakedziti",
-        "name": "Baked Ziti",
-        "emoji": "🫕",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
           }
         ]
       },
@@ -2435,7 +1168,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
+            "label": "Truss & Season"
           },
           {
             "type": "oven",
@@ -2445,51 +1178,70 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Rest"
+            "label": "Rest & Carve"
           }
         ]
-      }
-    ],
-    "dependencies": [
+      },
       {
-        "dish": "broccoli",
-        "step": 0,
-        "afterDish": "bakedziti",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-41",
-    "name": "Stage 41: Weeknight Table",
-    "boardMinutes": 105,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 2,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
         "steps": [
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
+            "label": "Chop & Toss"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-23",
+    "name": "Stage 23: Family Dinner",
+    "boardMinutes": 75,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "corn",
+        "name": "Corn on the Cob",
+        "emoji": "🌽",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Husk"
           },
           {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          }
+        ]
+      },
+      {
+        "id": "roastedpotatoes",
+        "name": "Roasted Potatoes",
+        "emoji": "🥔",
+        "color": "#dda15e",
+        "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Rest"
+            "label": "Cube & Toss"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Roast"
           }
         ]
       },
@@ -2502,7 +1254,7 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Toast Rice"
           },
           {
             "type": "stovetop",
@@ -2510,25 +1262,169 @@
             "label": "Simmer"
           }
         ]
-      },
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-24",
+    "name": "Stage 24: Big Night In",
+    "boardMinutes": 180,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
       {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
+            "duration": 10,
+            "label": "Sauté Mushrooms"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
           }
         ]
       },
+      {
+        "id": "hashbrowns",
+        "name": "Hash Browns",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Shred Potatoes"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Score & Glaze"
+          },
+          {
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "id": "stage-25",
+    "name": "Stage 25: Big Night In",
+    "boardMinutes": 90,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk & Pour"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "devilledeggs",
+        "step": 0,
+        "afterDish": "quiche",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-26",
+    "name": "Stage 26: Full Spread",
+    "boardMinutes": 125,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
       {
         "id": "garlicbread",
         "name": "Garlic Bread",
@@ -2538,12 +1434,298 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Butter & Herb"
           },
           {
             "type": "oven",
             "duration": 10,
             "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "mashedpotatoes",
+        "name": "Mashed Potatoes",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Cube"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Mash & Butter"
+          }
+        ]
+      },
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "garlicbread",
+        "step": 0,
+        "afterDish": "mashedpotatoes",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-27",
+    "name": "Stage 27: Big Night In",
+    "boardMinutes": 75,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      },
+      {
+        "id": "roastedpotatoes",
+        "name": "Roasted Potatoes",
+        "emoji": "🥔",
+        "color": "#dda15e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Cube & Toss"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Roast"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledsalmon",
+        "step": 0,
+        "afterDish": "roastedpotatoes",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-28",
+    "name": "Stage 28: The Whole Menu",
+    "boardMinutes": 140,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      },
+      {
+        "id": "hashbrowns",
+        "name": "Hash Browns",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Shred Potatoes"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "hashbrowns",
+        "step": 0,
+        "afterDish": "lasagna",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-29",
+    "name": "Stage 29: The Whole Menu",
+    "boardMinutes": 45,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "broccoli",
+        "name": "Steamed Broccoli",
+        "emoji": "🥦",
+        "color": "#2a9d8f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cut Florets"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Steam"
+          }
+        ]
+      },
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
           }
         ]
       }
@@ -2558,579 +1740,281 @@
     ]
   },
   {
-    "id": "stage-42",
-    "name": "Stage 42: The Whole Menu",
-    "boardMinutes": 85,
+    "id": "stage-30",
+    "name": "Stage 30: Weeknight Table",
+    "boardMinutes": 50,
     "gridStep": 5,
     "resources": {
       "oven": 1,
       "stovetop": 2,
-      "counter": 4
+      "counter": 3
     },
     "dishes": [
       {
-        "id": "quiche",
-        "name": "Quiche",
-        "emoji": "🥧",
+        "id": "spaghetti",
+        "name": "Spaghetti",
+        "emoji": "🍝",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Salt the Water"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil Pasta"
+          }
+        ]
+      },
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      },
+      {
+        "id": "garlicbread",
+        "name": "Garlic Bread",
+        "emoji": "🥖",
         "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
-            "duration": 20,
-            "label": "Prep"
+            "duration": 5,
+            "label": "Butter & Herb"
           },
           {
             "type": "oven",
-            "duration": 35,
+            "duration": 10,
             "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "ricepilaf",
+        "dish": "garlicbread",
         "step": 0,
-        "afterDish": "quiche",
+        "afterDish": "grilledsalmon",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-43",
-    "name": "Stage 43: The Whole Menu",
-    "boardMinutes": 110,
+    "id": "stage-31",
+    "name": "Stage 31: The Whole Menu",
+    "boardMinutes": 135,
     "gridStep": 5,
     "resources": {
       "oven": 1,
       "stovetop": 2,
-      "counter": 4
+      "counter": 3
     },
     "dishes": [
       {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Butter & Assemble"
+            "duration": 15,
+            "label": "Sear & Dice"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
+            "duration": 45,
+            "label": "Simmer"
           }
         ]
       },
       {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      },
+      {
+        "id": "porkchops",
+        "name": "Pan-Seared Pork Chops",
+        "emoji": "🍖",
+        "color": "#a4633b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Brine & Pat Dry"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Sear"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "beefstew",
+        "step": 0,
+        "afterDish": "applepie",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-32",
+    "name": "Stage 32: Big Night In",
+    "boardMinutes": 300,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
         "color": "#9d0208",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Prep"
+            "duration": 20,
+            "label": "Brine & Truss"
           },
           {
             "type": "oven",
-            "duration": 45,
-            "label": "Bake"
+            "duration": 180,
+            "label": "Roast"
           },
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
             "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "corn",
+        "name": "Corn on the Cob",
+        "emoji": "🌽",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Husk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
             "label": "Boil"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
           },
           {
             "type": "counter",
             "duration": 5,
-            "label": "Mash"
+            "label": "Add Toppings"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "grilledcheese",
+        "dish": "corn",
         "step": 0,
-        "afterDish": "grilledchicken",
+        "afterDish": "oatmeal",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-44",
-    "name": "Stage 44: The Whole Menu",
-    "boardMinutes": 75,
+    "id": "stage-33",
+    "name": "Stage 33: Full Spread",
+    "boardMinutes": 95,
     "gridStep": 5,
     "resources": {
       "oven": 1,
       "stovetop": 2,
-      "counter": 4
+      "counter": 3
     },
     "dishes": [
       {
-        "id": "hashbrowns",
-        "name": "Hash Browns",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Shred"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "shrimpscampi",
-        "name": "Shrimp Scampi",
-        "emoji": "🍤",
-        "color": "#e76f51",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "bakedziti",
-        "name": "Baked Ziti",
-        "emoji": "🫕",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "shrimpscampi",
-        "step": 0,
-        "afterDish": "bakedziti",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-45",
-    "name": "Stage 45: The Whole Menu",
-    "boardMinutes": 65,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
+        "id": "friedrice",
+        "name": "Fried Rice",
         "emoji": "🍚",
         "color": "#e9c46a",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "carrots",
-        "name": "Roasted Carrots",
-        "emoji": "🥕",
-        "color": "#f3722c",
-        "steps": [
-          {
-            "type": "counter",
             "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 25,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
+            "label": "Chop Veg"
           },
           {
             "type": "stovetop",
             "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledchicken",
-        "step": 0,
-        "afterDish": "carrots",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-46",
-    "name": "Stage 46: Full Spread",
-    "boardMinutes": 95,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "bakedziti",
-        "name": "Baked Ziti",
-        "emoji": "🫕",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-47",
-    "name": "Stage 47: Full Spread",
-    "boardMinutes": 105,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "pumpkinpie",
-        "name": "Pumpkin Pie",
-        "emoji": "🎃",
-        "color": "#dd6e42",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 50,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Butter & Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheese",
-        "step": 0,
-        "afterDish": "devilledeggs",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-48",
-    "name": "Stage 48: Full Spread",
-    "boardMinutes": 95,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
+            "label": "Stir-fry"
           }
         ]
       },
@@ -3143,35 +2027,384 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep Fillings"
+            "label": "Whisk & Fill"
           },
           {
             "type": "stovetop",
             "duration": 10,
-            "label": "Cook"
+            "label": "Fold & Cook"
           }
         ]
       },
       {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
+        "id": "creamebrulee",
+        "name": "Crème Brûlée",
+        "emoji": "🍮",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Temper Custard"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Torch Sugar Top"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "omelette",
+        "step": 0,
+        "afterDish": "creamebrulee",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-34",
+    "name": "Stage 34: Big Night In",
+    "boardMinutes": 65,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "dinnerrolls",
+        "name": "Dinner Rolls",
+        "emoji": "🥐",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Shape & Proof"
+          },
+          {
+            "type": "oven",
+            "duration": 20,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "meatsauce",
+        "name": "Meat Sauce",
+        "emoji": "🍲",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dice Onion & Garlic"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "hashbrowns",
+        "name": "Hash Browns",
         "emoji": "🥔",
         "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Shred Potatoes"
           },
           {
             "type": "stovetop",
+            "duration": 15,
+            "label": "Fry"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "hashbrowns",
+        "step": 0,
+        "afterDish": "meatsauce",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-35",
+    "name": "Stage 35: Weeknight Table",
+    "boardMinutes": 105,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
             "duration": 20,
-            "label": "Boil"
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "shrimpscampi",
+        "step": 0,
+        "afterDish": "beefwellington",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-36",
+    "name": "Stage 36: Big Night In",
+    "boardMinutes": 120,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "porkchops",
+        "name": "Pan-Seared Pork Chops",
+        "emoji": "🍖",
+        "color": "#a4633b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Brine & Pat Dry"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Sear"
           },
           {
             "type": "counter",
             "duration": 5,
-            "label": "Mash"
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "porkchops",
+        "step": 0,
+        "afterDish": "applepie",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-37",
+    "name": "Stage 37: Full Spread",
+    "boardMinutes": 75,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "hashbrowns",
+        "name": "Hash Browns",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Shred Potatoes"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "stuffing",
+        "name": "Stuffing",
+        "emoji": "🍞",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Toast Bread Cubes"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "ricepilaf",
+        "step": 0,
+        "afterDish": "stuffing",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-38",
+    "name": "Stage 38: Big Night In",
+    "boardMinutes": 120,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 3
+    },
+    "dishes": [
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
           }
         ]
       },
@@ -3189,170 +2422,69 @@
           {
             "type": "stovetop",
             "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "omelette",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-49",
-    "name": "Stage 49: The Whole Menu",
-    "boardMinutes": 70,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
+            "label": "Scramble"
           }
         ]
       },
       {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      },
-      {
-        "id": "stuffing",
-        "name": "Stuffing",
-        "emoji": "🍞",
-        "color": "#bc6c25",
+        "id": "cheesecake",
+        "name": "Cheesecake",
+        "emoji": "🍰",
+        "color": "#e6c288",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Prep"
+            "duration": 20,
+            "label": "Press Crust & Whip"
           },
           {
             "type": "oven",
-            "duration": 30,
+            "duration": 55,
             "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "pancakes",
-        "name": "Pancakes",
-        "emoji": "🥞",
-        "color": "#e8a13c",
-        "steps": [
+          },
           {
             "type": "counter",
             "duration": 10,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Griddle"
+            "label": "Chill & Set"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "pancakes",
+        "dish": "eggs",
         "step": 0,
-        "afterDish": "stuffing",
-        "afterStep": 0
+        "afterDish": "cheesecake",
+        "afterStep": 1
       }
     ]
   },
   {
-    "id": "stage-50",
-    "name": "Stage 50: Full Spread",
-    "boardMinutes": 45,
+    "id": "stage-39",
+    "name": "Stage 39: The Whole Menu",
+    "boardMinutes": 30,
     "gridStep": 5,
     "resources": {
       "oven": 1,
-      "stovetop": 3,
-      "counter": 4
+      "stovetop": 2,
+      "counter": 3
     },
     "dishes": [
       {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Whisk"
           },
           {
             "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
             "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "friedrice",
-        "name": "Fried Rice",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Stir-fry"
+            "label": "Scramble"
           }
         ]
       },
@@ -3366,603 +2498,6 @@
             "type": "counter",
             "duration": 15,
             "label": "Chop & Toss"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "oatmeal",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-51",
-    "name": "Stage 51: Big Night In",
-    "boardMinutes": 45,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "garlicbread",
-        "name": "Garlic Bread",
-        "emoji": "🥖",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 10,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Butter & Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "grilledsalmon",
-        "name": "Grilled Salmon",
-        "emoji": "🐟",
-        "color": "#457b9d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Season"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "broccoli",
-        "step": 0,
-        "afterDish": "grilledsalmon",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-52",
-    "name": "Stage 52: Family Dinner",
-    "boardMinutes": 75,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "stuffing",
-        "name": "Stuffing",
-        "emoji": "🍞",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      },
-      {
-        "id": "gravy",
-        "name": "Gravy",
-        "emoji": "🥣",
-        "color": "#8a5a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "gravy",
-        "step": 0,
-        "afterDish": "devilledeggs",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-53",
-    "name": "Stage 53: The Whole Menu",
-    "boardMinutes": 55,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      },
-      {
-        "id": "garlicbread",
-        "name": "Garlic Bread",
-        "emoji": "🥖",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 10,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "garlicbread",
-        "step": 0,
-        "afterDish": "devilledeggs",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-54",
-    "name": "Stage 54: Big Night In",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "friedrice",
-        "name": "Fried Rice",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Stir-fry"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "oatmeal",
-        "step": 0,
-        "afterDish": "mashedpotatoes",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-55",
-    "name": "Stage 55: Big Night In",
-    "boardMinutes": 45,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "hashbrowns",
-        "name": "Hash Browns",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Shred"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "gravy",
-        "name": "Gravy",
-        "emoji": "🥣",
-        "color": "#8a5a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "tomatosoup",
-        "name": "Tomato Soup",
-        "emoji": "🍅",
-        "color": "#3a86ff",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Blend"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "gravy",
-        "step": 0,
-        "afterDish": "hashbrowns",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-56",
-    "name": "Stage 56: Full Spread",
-    "boardMinutes": 50,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "carrots",
-        "name": "Roasted Carrots",
-        "emoji": "🥕",
-        "color": "#f3722c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 25,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "spaghetti",
-        "step": 0,
-        "afterDish": "carrots",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-57",
-    "name": "Stage 57: Big Night In",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "cookies",
-        "name": "Chocolate Chip Cookies",
-        "emoji": "🍪",
-        "color": "#6f4518",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Mix Dough"
-          },
-          {
-            "type": "oven",
-            "duration": 15,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Butter & Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
           }
         ]
       },
@@ -3975,87 +2510,92 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Husk"
           },
           {
             "type": "stovetop",
             "duration": 10,
             "label": "Boil"
-          }
-        ]
-      },
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Mash"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "corn",
+        "dish": "eggs",
         "step": 0,
-        "afterDish": "cookies",
+        "afterDish": "corn",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-58",
-    "name": "Stage 58: The Whole Menu",
-    "boardMinutes": 45,
+    "id": "stage-40",
+    "name": "Stage 40: Big Night In",
+    "boardMinutes": 90,
     "gridStep": 5,
     "resources": {
       "oven": 1,
-      "stovetop": 3,
+      "stovetop": 2,
       "counter": 4
     },
     "dishes": [
       {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
+            "duration": 10,
+            "label": "Season"
           },
           {
             "type": "stovetop",
             "duration": 15,
-            "label": "Simmer"
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
           }
         ]
       },
       {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
+        "id": "creamebrulee",
+        "name": "Crème Brûlée",
+        "emoji": "🍮",
+        "color": "#e9c46a",
         "steps": [
           {
             "type": "counter",
+            "duration": 15,
+            "label": "Temper Custard"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Torch Sugar Top"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
           },
           {
             "type": "stovetop",
@@ -4063,409 +2603,182 @@
             "label": "Sauté"
           }
         ]
-      },
+      }
+    ],
+    "dependencies": [
       {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
+        "dish": "shrimpscampi",
+        "step": 0,
+        "afterDish": "grilledsalmon",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-41",
+    "name": "Stage 41: The Whole Menu",
+    "boardMinutes": 305,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "avocadotoast",
+        "name": "Avocado Toast",
+        "emoji": "🥑",
+        "color": "#6a994e",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Dip"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Griddle"
+            "label": "Toast & Mash"
           }
         ]
       },
       {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Brine & Truss"
+          },
+          {
+            "type": "oven",
+            "duration": 180,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "greenbeans",
+        "dish": "grilledcheeseclub",
         "step": 0,
-        "afterDish": "cranberrysauce",
+        "afterDish": "turkey",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-59",
-    "name": "Stage 59: Full Spread",
-    "boardMinutes": 155,
+    "id": "stage-42",
+    "name": "Stage 42: Full Spread",
+    "boardMinutes": 80,
     "gridStep": 5,
     "resources": {
       "oven": 1,
-      "stovetop": 3,
+      "stovetop": 2,
       "counter": 4
     },
     "dishes": [
       {
-        "id": "pancakes",
-        "name": "Pancakes",
-        "emoji": "🥞",
-        "color": "#e8a13c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "lasagna",
-        "name": "Lasagna",
-        "emoji": "🧆",
+        "id": "bakedziti",
+        "name": "Baked Ziti",
+        "emoji": "🫕",
         "color": "#9c6644",
         "steps": [
           {
             "type": "counter",
-            "duration": 25,
-            "label": "Assemble"
+            "duration": 15,
+            "label": "Layer & Assemble"
           },
           {
             "type": "oven",
-            "duration": 45,
+            "duration": 30,
             "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
           }
         ]
       },
       {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
         "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
+        "color": "#c1666b",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Dip"
+            "label": "Marinate"
           },
           {
             "type": "stovetop",
             "duration": 15,
-            "label": "Griddle"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "frenchtoast",
-        "step": 0,
-        "afterDish": "roastchicken",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-60",
-    "name": "Stage 60: The Whole Menu",
-    "boardMinutes": 100,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
-        "steps": [
+            "label": "Grill"
+          },
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Layer Fillings"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "tomatosoup",
-        "name": "Tomato Soup",
-        "emoji": "🍅",
-        "color": "#3a86ff",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Blend"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "garlicbread",
-        "name": "Garlic Bread",
-        "emoji": "🥖",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
             "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 10,
-            "label": "Bake"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "garlicbread",
-        "step": 0,
-        "afterDish": "tomatosoup",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-61",
-    "name": "Stage 61: The Whole Menu",
-    "boardMinutes": 120,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      },
-      {
-        "id": "pancakes",
-        "name": "Pancakes",
-        "emoji": "🥞",
-        "color": "#e8a13c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "pancakes",
-        "step": 0,
-        "afterDish": "roastedpotatoes",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-62",
-    "name": "Stage 62: The Whole Menu",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
+            "label": "Toast"
           }
         ]
       },
@@ -4484,6 +2797,543 @@
             "type": "stovetop",
             "duration": 15,
             "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledsalmon",
+        "step": 0,
+        "afterDish": "bakedziti",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-43",
+    "name": "Stage 43: Full Spread",
+    "boardMinutes": 45,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Scramble"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "eggs",
+        "step": 0,
+        "afterDish": "ricepilaf",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-44",
+    "name": "Stage 44: Home Cooking",
+    "boardMinutes": 315,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 2,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "porkchops",
+        "name": "Pan-Seared Pork Chops",
+        "emoji": "🍖",
+        "color": "#a4633b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Brine & Pat Dry"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Sear"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Brine & Truss"
+          },
+          {
+            "type": "oven",
+            "duration": 180,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "meatsauce",
+        "name": "Meat Sauce",
+        "emoji": "🍲",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dice Onion & Garlic"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "meatsauce",
+        "step": 0,
+        "afterDish": "turkey",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-45",
+    "name": "Stage 45: Full Spread",
+    "boardMinutes": 50,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "grilledcheese",
+        "name": "Grilled Cheese",
+        "emoji": "🧀",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Butter Bread"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "porkchops",
+        "name": "Pan-Seared Pork Chops",
+        "emoji": "🍖",
+        "color": "#a4633b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Brine & Pat Dry"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Sear"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledcheese",
+        "step": 0,
+        "afterDish": "porkchops",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-46",
+    "name": "Stage 46: Weeknight Table",
+    "boardMinutes": 150,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "garlicbread",
+        "name": "Garlic Bread",
+        "emoji": "🥖",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Butter & Herb"
+          },
+          {
+            "type": "oven",
+            "duration": 10,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Sauté Mushrooms"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
+          }
+        ]
+      },
+      {
+        "id": "roastchicken",
+        "name": "Roast Chicken",
+        "emoji": "🍗",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Truss & Season"
+          },
+          {
+            "type": "oven",
+            "duration": 75,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "garlicbread",
+        "step": 0,
+        "afterDish": "roastchicken",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-47",
+    "name": "Stage 47: Big Night In",
+    "boardMinutes": 100,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledcheeseclub",
+        "step": 0,
+        "afterDish": "beefwellington",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-48",
+    "name": "Stage 48: The Whole Menu",
+    "boardMinutes": 95,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Sear & Dice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 45,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
           }
         ]
       },
@@ -4506,143 +3356,6 @@
         ]
       },
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "greenbeans",
-        "step": 0,
-        "afterDish": "grilledsalmon",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-63",
-    "name": "Stage 63: Full Spread",
-    "boardMinutes": 125,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "devilledeggs",
-        "step": 0,
-        "afterDish": "meatloaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-64",
-    "name": "Stage 64: Big Night In",
-    "boardMinutes": 40,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
         "id": "bacon",
         "name": "Bacon",
         "emoji": "🥓",
@@ -4659,52 +3372,21 @@
             "label": "Fry"
           }
         ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "tomatosoup",
-        "name": "Tomato Soup",
-        "emoji": "🍅",
-        "color": "#3a86ff",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Blend"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
       }
     ],
     "dependencies": [
       {
         "dish": "bacon",
         "step": 0,
-        "afterDish": "tomatosoup",
+        "afterDish": "beefstew",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-65",
-    "name": "Stage 65: The Whole Menu",
-    "boardMinutes": 100,
+    "id": "stage-49",
+    "name": "Stage 49: Full Spread",
+    "boardMinutes": 95,
     "gridStep": 5,
     "resources": {
       "oven": 1,
@@ -4713,162 +3395,33 @@
     },
     "dishes": [
       {
-        "id": "hashbrowns",
-        "name": "Hash Browns",
-        "emoji": "🥔",
-        "color": "#e9b44c",
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Shred"
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Sear & Dice"
           },
           {
             "type": "stovetop",
-            "duration": 15,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Butter & Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
             "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheese",
-        "step": 0,
-        "afterDish": "cranberrysauce",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-66",
-    "name": "Stage 66: Full Spread",
-    "boardMinutes": 70,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
+            "label": "Simmer"
           }
         ]
       },
@@ -4881,185 +3434,17 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Fill"
+            "label": "Fill Tortilla"
           },
           {
             "type": "stovetop",
             "duration": 10,
             "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Dip"
           },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Griddle"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "quesadilla",
-        "step": 0,
-        "afterDish": "brownies",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-67",
-    "name": "Stage 67: The Whole Menu",
-    "boardMinutes": 110,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheese",
-        "name": "Grilled Cheese",
-        "emoji": "🧀",
-        "color": "#e8622c",
-        "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Butter & Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheese",
-        "step": 0,
-        "afterDish": "meatsauce",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-68",
-    "name": "Stage 68: Full Spread",
-    "boardMinutes": 60,
-    "gridStep": 5,
-    "resources": {
-      "oven": 1,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "dinnerrolls",
-        "name": "Dinner Rolls",
-        "emoji": "🥐",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Shape & Proof"
-          },
-          {
-            "type": "oven",
-            "duration": 20,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "shrimpscampi",
-        "name": "Shrimp Scampi",
-        "emoji": "🍤",
-        "color": "#e76f51",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
+            "label": "Slice & Plate"
           }
         ]
       },
@@ -5072,7 +3457,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Peel & Cube"
           },
           {
             "type": "stovetop",
@@ -5082,20 +3467,190 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Mash"
+            "label": "Mash & Butter"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "quesadilla",
+        "step": 0,
+        "afterDish": "mashedpotatoes",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-50",
+    "name": "Stage 50: The Whole Menu",
+    "boardMinutes": 105,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
           }
         ]
       },
       {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "meatloaf",
+        "name": "Meatloaf",
+        "emoji": "🥩",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mix & Shape"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "ricepilaf",
+        "step": 0,
+        "afterDish": "meatloaf",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-51",
+    "name": "Stage 51: Big Night In",
+    "boardMinutes": 110,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "pumpkinpie",
+        "name": "Pumpkin Pie",
+        "emoji": "🎃",
+        "color": "#dd6e42",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk Filling"
+          },
+          {
+            "type": "oven",
+            "duration": 50,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Sauté Mushrooms"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
           }
         ]
       },
@@ -5113,7 +3668,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Fill"
+            "label": "Mash & Fill"
           }
         ]
       }
@@ -5122,15 +3677,1255 @@
       {
         "dish": "devilledeggs",
         "step": 0,
-        "afterDish": "mashedpotatoes",
+        "afterDish": "risotto",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-69",
-    "name": "Stage 69: Full Spread",
-    "boardMinutes": 145,
+    "id": "stage-52",
+    "name": "Stage 52: The Whole Menu",
+    "boardMinutes": 75,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "bakedziti",
+        "name": "Baked Ziti",
+        "emoji": "🫕",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Layer & Assemble"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
+          }
+        ]
+      },
+      {
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "hashbrowns",
+        "name": "Hash Browns",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Shred Potatoes"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Fry"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "frenchtoast",
+        "step": 0,
+        "afterDish": "bakedziti",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-53",
+    "name": "Stage 53: Big Night In",
+    "boardMinutes": 160,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "meatloaf",
+        "name": "Meatloaf",
+        "emoji": "🥩",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mix & Shape"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "roastchicken",
+        "name": "Roast Chicken",
+        "emoji": "🍗",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Truss & Season"
+          },
+          {
+            "type": "oven",
+            "duration": 75,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "quesadilla",
+        "step": 0,
+        "afterDish": "meatloaf",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-54",
+    "name": "Stage 54: Full Spread",
+    "boardMinutes": 65,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "carrots",
+        "name": "Roasted Carrots",
+        "emoji": "🥕",
+        "color": "#f3722c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Chop"
+          },
+          {
+            "type": "oven",
+            "duration": 25,
+            "label": "Roast"
+          }
+        ]
+      },
+      {
+        "id": "spaghetti",
+        "name": "Spaghetti",
+        "emoji": "🍝",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Salt the Water"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil Pasta"
+          }
+        ]
+      },
+      {
+        "id": "cookies",
+        "name": "Chocolate Chip Cookies",
+        "emoji": "🍪",
+        "color": "#6f4518",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cream Butter & Sugar"
+          },
+          {
+            "type": "oven",
+            "duration": 15,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cool on Rack"
+          }
+        ]
+      },
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "spaghetti",
+        "step": 0,
+        "afterDish": "grilledsalmon",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-55",
+    "name": "Stage 55: The Whole Menu",
+    "boardMinutes": 155,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk & Pour"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "friedrice",
+        "name": "Fried Rice",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Stir-fry"
+          }
+        ]
+      },
+      {
+        "id": "roastchicken",
+        "name": "Roast Chicken",
+        "emoji": "🍗",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Truss & Season"
+          },
+          {
+            "type": "oven",
+            "duration": 75,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "friedrice",
+        "step": 0,
+        "afterDish": "roastchicken",
+        "afterStep": 1
+      }
+    ]
+  },
+  {
+    "id": "stage-56",
+    "name": "Stage 56: The Whole Menu",
+    "boardMinutes": 120,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      },
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "creamebrulee",
+        "name": "Crème Brûlée",
+        "emoji": "🍮",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Temper Custard"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Torch Sugar Top"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "bacon",
+        "step": 0,
+        "afterDish": "applepie",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-57",
+    "name": "Stage 57: The Whole Menu",
+    "boardMinutes": 70,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "tomatosoup",
+        "name": "Tomato Soup",
+        "emoji": "🍅",
+        "color": "#3a86ff",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer & Blend"
+          }
+        ]
+      },
+      {
+        "id": "spaghetti",
+        "name": "Spaghetti",
+        "emoji": "🍝",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Salt the Water"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil Pasta"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "brownies",
+        "name": "Brownies",
+        "emoji": "🍫",
+        "color": "#4a2c2a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Melt & Mix"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "spaghetti",
+        "step": 0,
+        "afterDish": "oatmeal",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-58",
+    "name": "Stage 58: Big Night In",
+    "boardMinutes": 55,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "avocadotoast",
+        "name": "Avocado Toast",
+        "emoji": "🥑",
+        "color": "#6a994e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Toast & Mash"
+          }
+        ]
+      },
+      {
+        "id": "meatsauce",
+        "name": "Meat Sauce",
+        "emoji": "🍲",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dice Onion & Garlic"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "broccoli",
+        "name": "Steamed Broccoli",
+        "emoji": "🥦",
+        "color": "#2a9d8f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cut Florets"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Steam"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "broccoli",
+        "step": 0,
+        "afterDish": "meatsauce",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-59",
+    "name": "Stage 59: Big Night In",
+    "boardMinutes": 70,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "brownies",
+        "name": "Brownies",
+        "emoji": "🍫",
+        "color": "#4a2c2a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Melt & Mix"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledchicken",
+        "step": 0,
+        "afterDish": "brownies",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-60",
+    "name": "Stage 60: Full Spread",
+    "boardMinutes": 70,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
+          }
+        ]
+      },
+      {
+        "id": "spaghetti",
+        "name": "Spaghetti",
+        "emoji": "🍝",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Salt the Water"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil Pasta"
+          }
+        ]
+      },
+      {
+        "id": "stuffing",
+        "name": "Stuffing",
+        "emoji": "🍞",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Toast Bread Cubes"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "spaghetti",
+        "step": 0,
+        "afterDish": "devilledeggs",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-61",
+    "name": "Stage 61: Full Spread",
+    "boardMinutes": 170,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "omelette",
+        "name": "Omelette",
+        "emoji": "🍳",
+        "color": "#f4a259",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Whisk & Fill"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fold & Cook"
+          }
+        ]
+      },
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "cookies",
+        "name": "Chocolate Chip Cookies",
+        "emoji": "🍪",
+        "color": "#6f4518",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cream Butter & Sugar"
+          },
+          {
+            "type": "oven",
+            "duration": 15,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cool on Rack"
+          }
+        ]
+      },
+      {
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Score & Glaze"
+          },
+          {
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "omelette",
+        "step": 0,
+        "afterDish": "grilledchicken",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-62",
+    "name": "Stage 62: Big Night In",
+    "boardMinutes": 60,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "carrots",
+        "name": "Roasted Carrots",
+        "emoji": "🥕",
+        "color": "#f3722c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Chop"
+          },
+          {
+            "type": "oven",
+            "duration": 25,
+            "label": "Roast"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "shrimpscampi",
+        "step": 0,
+        "afterDish": "ricepilaf",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-63",
+    "name": "Stage 63: The Whole Menu",
+    "boardMinutes": 115,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "carrots",
+        "name": "Roasted Carrots",
+        "emoji": "🥕",
+        "color": "#f3722c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Chop"
+          },
+          {
+            "type": "oven",
+            "duration": 25,
+            "label": "Roast"
+          }
+        ]
+      },
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "gravy",
+        "step": 0,
+        "afterDish": "lasagna",
+        "afterStep": 1
+      }
+    ]
+  },
+  {
+    "id": "stage-64",
+    "name": "Stage 64: The Whole Menu",
+    "boardMinutes": 55,
     "gridStep": 5,
     "resources": {
       "oven": 1,
@@ -5147,12 +4942,985 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Toast Rice"
           },
           {
             "type": "stovetop",
             "duration": 20,
             "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Scramble"
+          }
+        ]
+      },
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "eggs",
+        "step": 0,
+        "afterDish": "grilledsalmon",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-65",
+    "name": "Stage 65: The Whole Menu",
+    "boardMinutes": 170,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      },
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "tomatosoup",
+        "name": "Tomato Soup",
+        "emoji": "🍅",
+        "color": "#3a86ff",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer & Blend"
+          }
+        ]
+      },
+      {
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Score & Glaze"
+          },
+          {
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledcheeseclub",
+        "step": 0,
+        "afterDish": "cranberrysauce",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-66",
+    "name": "Stage 66: Big Night In",
+    "boardMinutes": 95,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
+          }
+        ]
+      },
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk & Pour"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "meatsauce",
+        "name": "Meat Sauce",
+        "emoji": "🍲",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dice Onion & Garlic"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "mashedpotatoes",
+        "name": "Mashed Potatoes",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Cube"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Mash & Butter"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledchicken",
+        "step": 0,
+        "afterDish": "quiche",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-67",
+    "name": "Stage 67: Big Night In",
+    "boardMinutes": 75,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "broccoli",
+        "name": "Steamed Broccoli",
+        "emoji": "🥦",
+        "color": "#2a9d8f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cut Florets"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Steam"
+          }
+        ]
+      },
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk & Pour"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "broccoli",
+        "step": 0,
+        "afterDish": "oatmeal",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-68",
+    "name": "Stage 68: Full Spread",
+    "boardMinutes": 165,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Score & Glaze"
+          },
+          {
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Sauté Mushrooms"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "quesadilla",
+        "step": 0,
+        "afterDish": "risotto",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-69",
+    "name": "Stage 69: Full Spread",
+    "boardMinutes": 150,
+    "gridStep": 5,
+    "resources": {
+      "oven": 1,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "broccoli",
+        "name": "Steamed Broccoli",
+        "emoji": "🥦",
+        "color": "#2a9d8f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cut Florets"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Steam"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "pumpkinpie",
+        "name": "Pumpkin Pie",
+        "emoji": "🎃",
+        "color": "#dd6e42",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk Filling"
+          },
+          {
+            "type": "oven",
+            "duration": 50,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "roastchicken",
+        "name": "Roast Chicken",
+        "emoji": "🍗",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Truss & Season"
+          },
+          {
+            "type": "oven",
+            "duration": 75,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "broccoli",
+        "step": 0,
+        "afterDish": "pumpkinpie",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-70",
+    "name": "Stage 70: The Whole Menu",
+    "boardMinutes": 70,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "dinnerrolls",
+        "name": "Dinner Rolls",
+        "emoji": "🥐",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Shape & Proof"
+          },
+          {
+            "type": "oven",
+            "duration": 20,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "corn",
+        "name": "Corn on the Cob",
+        "emoji": "🌽",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Husk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "brownies",
+        "name": "Brownies",
+        "emoji": "🍫",
+        "color": "#4a2c2a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Melt & Mix"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "shrimpscampi",
+        "step": 0,
+        "afterDish": "dinnerrolls",
+        "afterStep": 0
+      },
+      {
+        "dish": "corn",
+        "step": 0,
+        "afterDish": "brownies",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-71",
+    "name": "Stage 71: Big Night In",
+    "boardMinutes": 115,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      },
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "carrots",
+        "name": "Roasted Carrots",
+        "emoji": "🥕",
+        "color": "#f3722c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Chop"
+          },
+          {
+            "type": "oven",
+            "duration": 25,
+            "label": "Roast"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "bacon",
+        "step": 0,
+        "afterDish": "grilledsalmon",
+        "afterStep": 0
+      },
+      {
+        "dish": "carrots",
+        "step": 0,
+        "afterDish": "lasagna",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-72",
+    "name": "Stage 72: Big Night In",
+    "boardMinutes": 110,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "tomatosoup",
+        "name": "Tomato Soup",
+        "emoji": "🍅",
+        "color": "#3a86ff",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer & Blend"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "avocadotoast",
+        "name": "Avocado Toast",
+        "emoji": "🥑",
+        "color": "#6a994e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Toast & Mash"
+          }
+        ]
+      },
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
           }
         ]
       },
@@ -5173,17 +5941,38 @@
             "label": "Bake"
           }
         ]
-      },
+      }
+    ],
+    "dependencies": [
       {
-        "id": "shrimpscampi",
-        "name": "Shrimp Scampi",
-        "emoji": "🍤",
-        "color": "#e76f51",
+        "dish": "dinnerrolls",
+        "step": 0,
+        "afterDish": "lasagna",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-73",
+    "name": "Stage 73: Full Spread",
+    "boardMinutes": 55,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 4
+    },
+    "dishes": [
+      {
+        "id": "greenbeans",
+        "name": "Green Beans",
+        "emoji": "🫛",
+        "color": "#3a9d5d",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Prep"
+            "duration": 5,
+            "label": "Trim Ends"
           },
           {
             "type": "stovetop",
@@ -5193,311 +5982,15 @@
         ]
       },
       {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-70",
-    "name": "Stage 70: Full Spread",
-    "boardMinutes": 140,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "hashbrowns",
-        "name": "Hash Browns",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Shred"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "devilledeggs",
-        "name": "Deviled Eggs",
-        "emoji": "🥚",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Fill"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "hashbrowns",
-        "step": 0,
-        "afterDish": "roastchicken",
-        "afterStep": 0
-      },
-      {
-        "dish": "oatmeal",
-        "step": 0,
-        "afterDish": "devilledeggs",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-71",
-    "name": "Stage 71: Big Night In",
-    "boardMinutes": 100,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "pumpkinpie",
-        "name": "Pumpkin Pie",
-        "emoji": "🎃",
-        "color": "#dd6e42",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 50,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "eggs",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      },
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "pumpkinpie",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-72",
-    "name": "Stage 72: Full Spread",
-    "boardMinutes": 65,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
+            "label": "Wash & Chop"
           }
         ]
       },
@@ -5528,180 +6021,39 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Fill"
+            "label": "Mash & Fill"
           }
         ]
       },
       {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
+        "id": "cookies",
+        "name": "Chocolate Chip Cookies",
+        "emoji": "🍪",
+        "color": "#6f4518",
         "steps": [
           {
             "type": "counter",
             "duration": 15,
-            "label": "Mix Batter"
+            "label": "Cream Butter & Sugar"
           },
           {
             "type": "oven",
-            "duration": 30,
+            "duration": 15,
             "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Cool on Rack"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "eggs",
+        "dish": "greenbeans",
         "step": 0,
         "afterDish": "devilledeggs",
-        "afterStep": 0
-      },
-      {
-        "dish": "broccoli",
-        "step": 0,
-        "afterDish": "brownies",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-73",
-    "name": "Stage 73: The Whole Menu",
-    "boardMinutes": 145,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 4
-    },
-    "dishes": [
-      {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "lasagna",
-        "name": "Lasagna",
-        "emoji": "🧆",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 25,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "eggs",
-        "step": 0,
-        "afterDish": "lasagna",
-        "afterStep": 0
-      },
-      {
-        "dish": "cranberrysauce",
-        "step": 0,
-        "afterDish": "roastchicken",
         "afterStep": 0
       }
     ]
@@ -5709,7 +6061,7 @@
   {
     "id": "stage-74",
     "name": "Stage 74: Big Night In",
-    "boardMinutes": 85,
+    "boardMinutes": 80,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -5718,102 +6070,107 @@
     },
     "dishes": [
       {
-        "id": "grilledsalmon",
-        "name": "Grilled Salmon",
-        "emoji": "🐟",
-        "color": "#457b9d",
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Season"
+            "duration": 5,
+            "label": "Whisk Roux"
           },
           {
             "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
+            "duration": 10,
+            "label": "Simmer"
           }
         ]
       },
       {
-        "id": "dinnerrolls",
-        "name": "Dinner Rolls",
-        "emoji": "🥐",
+        "id": "meatsauce",
+        "name": "Meat Sauce",
+        "emoji": "🍲",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dice Onion & Garlic"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "greenbeans",
+        "name": "Green Beans",
+        "emoji": "🫛",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Trim Ends"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
         "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Shape & Proof"
+            "duration": 20,
+            "label": "Whisk & Pour"
           },
           {
             "type": "oven",
-            "duration": 20,
+            "duration": 35,
             "label": "Bake"
           }
         ]
       },
       {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
         "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
           {
             "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
+            "duration": 10,
+            "label": "Boil"
+          },
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
+            "label": "Mash & Fill"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "grilledsalmon",
+        "dish": "gravy",
         "step": 0,
-        "afterDish": "beefstew",
+        "afterDish": "devilledeggs",
         "afterStep": 0
       },
       {
-        "dish": "eggs",
+        "dish": "meatsauce",
         "step": 0,
-        "afterDish": "dinnerrolls",
+        "afterDish": "quiche",
         "afterStep": 0
       }
     ]
@@ -5821,7 +6178,7 @@
   {
     "id": "stage-75",
     "name": "Stage 75: Big Night In",
-    "boardMinutes": 55,
+    "boardMinutes": 290,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -5829,6 +6186,156 @@
       "counter": 5
     },
     "dishes": [
+      {
+        "id": "tomatosoup",
+        "name": "Tomato Soup",
+        "emoji": "🍅",
+        "color": "#3a86ff",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer & Blend"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Brine & Truss"
+          },
+          {
+            "type": "oven",
+            "duration": 180,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "tomatosoup",
+        "step": 0,
+        "afterDish": "beefwellington",
+        "afterStep": 0
+      },
+      {
+        "dish": "ricepilaf",
+        "step": 0,
+        "afterDish": "turkey",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-76",
+    "name": "Stage 76: Full Spread",
+    "boardMinutes": 165,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "omelette",
+        "name": "Omelette",
+        "emoji": "🍳",
+        "color": "#f4a259",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Whisk & Fill"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fold & Cook"
+          }
+        ]
+      },
       {
         "id": "frenchtoast",
         "name": "French Toast",
@@ -5838,89 +6345,109 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Dip"
+            "label": "Dip in Batter"
           },
           {
             "type": "stovetop",
             "duration": 15,
             "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "hashbrowns",
-        "name": "Hash Browns",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Shred"
           },
           {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Fry"
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
           }
         ]
       },
       {
-        "id": "bacon",
-        "name": "Bacon",
-        "emoji": "🥓",
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
         "color": "#c1666b",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Lay Out"
+            "duration": 15,
+            "label": "Score & Glaze"
           },
           {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Fry"
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
           }
         ]
       },
       {
-        "id": "carrots",
-        "name": "Roasted Carrots",
-        "emoji": "🥕",
-        "color": "#f3722c",
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
         "steps": [
           {
             "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
             "duration": 10,
-            "label": "Prep"
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
           },
           {
             "type": "oven",
-            "duration": 25,
-            "label": "Roast"
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "bacon",
+        "dish": "omelette",
         "step": 0,
         "afterDish": "frenchtoast",
         "afterStep": 0
       },
       {
-        "dish": "hashbrowns",
+        "dish": "oatmeal",
         "step": 0,
-        "afterDish": "carrots",
+        "afterDish": "applepie",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-76",
-    "name": "Stage 76: Big Night In",
-    "boardMinutes": 135,
+    "id": "stage-77",
+    "name": "Stage 77: Big Night In",
+    "boardMinutes": 100,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -5937,7 +6464,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Cube & Toss"
           },
           {
             "type": "oven",
@@ -5947,73 +6474,84 @@
         ]
       },
       {
-        "id": "corn",
-        "name": "Corn on the Cob",
-        "emoji": "🌽",
-        "color": "#f4d35e",
+        "id": "pumpkinpie",
+        "name": "Pumpkin Pie",
+        "emoji": "🎃",
+        "color": "#dd6e42",
         "steps": [
           {
             "type": "counter",
+            "duration": 20,
+            "label": "Whisk Filling"
+          },
+          {
+            "type": "oven",
+            "duration": 50,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Dust & Plate"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
           },
           {
             "type": "stovetop",
             "duration": 10,
-            "label": "Boil"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
+            "label": "Sauté"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "corn",
+        "dish": "shrimpscampi",
         "step": 0,
-        "afterDish": "roastchicken",
+        "afterDish": "pumpkinpie",
+        "afterStep": 0
+      },
+      {
+        "dish": "frenchtoast",
+        "step": 0,
+        "afterDish": "roastedpotatoes",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-77",
-    "name": "Stage 77: Full Spread",
-    "boardMinutes": 140,
+    "id": "stage-78",
+    "name": "Stage 78: Big Night In",
+    "boardMinutes": 90,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -6022,66 +6560,147 @@
     },
     "dishes": [
       {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
+        "id": "roastedpotatoes",
+        "name": "Roasted Potatoes",
         "emoji": "🥔",
-        "color": "#e9b44c",
+        "color": "#dda15e",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Cube & Toss"
           },
           {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
+            "type": "oven",
+            "duration": 35,
+            "label": "Roast"
+          }
+        ]
+      },
+      {
+        "id": "cookies",
+        "name": "Chocolate Chip Cookies",
+        "emoji": "🍪",
+        "color": "#6f4518",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cream Butter & Sugar"
+          },
+          {
+            "type": "oven",
+            "duration": 15,
+            "label": "Bake"
           },
           {
             "type": "counter",
             "duration": 5,
-            "label": "Mash"
+            "label": "Cool on Rack"
           }
         ]
       },
       {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "grilledsalmon",
-        "name": "Grilled Salmon",
-        "emoji": "🐟",
-        "color": "#457b9d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Season"
+            "duration": 5,
+            "label": "Rinse Berries"
           },
           {
             "type": "stovetop",
             "duration": 15,
-            "label": "Grill"
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "creamebrulee",
+        "name": "Crème Brûlée",
+        "emoji": "🍮",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Temper Custard"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Torch Sugar Top"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "cranberrysauce",
+        "step": 0,
+        "afterDish": "roastedpotatoes",
+        "afterStep": 0
+      },
+      {
+        "dish": "shrimpscampi",
+        "step": 0,
+        "afterDish": "cookies",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-79",
+    "name": "Stage 79: The Whole Menu",
+    "boardMinutes": 55,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
           }
         ]
       },
@@ -6094,7 +6713,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Assemble"
+            "label": "Layer Fillings"
           },
           {
             "type": "stovetop",
@@ -6103,6 +6722,183 @@
           }
         ]
       },
+      {
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
+          }
+        ]
+      },
+      {
+        "id": "mashedpotatoes",
+        "name": "Mashed Potatoes",
+        "emoji": "🥔",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Cube"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Mash & Butter"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledcheeseclub",
+        "step": 0,
+        "afterDish": "ricepilaf",
+        "afterStep": 0
+      },
+      {
+        "dish": "devilledeggs",
+        "step": 0,
+        "afterDish": "mashedpotatoes",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-80",
+    "name": "Stage 80: Weeknight Table",
+    "boardMinutes": 95,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Sauté Mushrooms"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
+          }
+        ]
+      },
+      {
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
+          }
+        ]
+      },
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "cranberrysauce",
+        "step": 0,
+        "afterDish": "beefwellington",
+        "afterStep": 0
+      },
+      {
+        "dish": "devilledeggs",
+        "step": 0,
+        "afterDish": "risotto",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-81",
+    "name": "Stage 81: Big Night In",
+    "boardMinutes": 290,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
       {
         "id": "grilledchicken",
         "name": "Grilled Chicken Breast",
@@ -6118,148 +6914,32 @@
             "type": "stovetop",
             "duration": 15,
             "label": "Grill"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "grilledsalmon",
-        "afterStep": 0
-      },
-      {
-        "dish": "grilledchicken",
-        "step": 0,
-        "afterDish": "mashedpotatoes",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-78",
-    "name": "Stage 78: Full Spread",
-    "boardMinutes": 90,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "carrots",
-        "name": "Roasted Carrots",
-        "emoji": "🥕",
-        "color": "#f3722c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
           },
           {
-            "type": "oven",
-            "duration": 25,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
             "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
+            "duration": 5,
+            "label": "Rest & Slice"
           }
         ]
       },
       {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Measure"
+            "label": "Rinse Berries"
           },
           {
             "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
             "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
             "label": "Simmer"
           }
         ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "oatmeal",
-        "step": 0,
-        "afterDish": "carrots",
-        "afterStep": 0
       },
-      {
-        "dish": "brownies",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-79",
-    "name": "Stage 79: The Whole Menu",
-    "boardMinutes": 280,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
       {
         "id": "roastchicken",
         "name": "Roast Chicken",
@@ -6269,7 +6949,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
+            "label": "Truss & Season"
           },
           {
             "type": "oven",
@@ -6279,43 +6959,30 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Rest"
+            "label": "Rest & Carve"
           }
         ]
       },
       {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
+        "id": "cheesecake",
+        "name": "Cheesecake",
+        "emoji": "🍰",
+        "color": "#e6c288",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
+            "duration": 20,
+            "label": "Press Crust & Whip"
           },
           {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
-        "steps": [
+            "type": "oven",
+            "duration": 55,
+            "label": "Bake"
+          },
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
             "duration": 10,
-            "label": "Sauté"
+            "label": "Chill & Set"
           }
         ]
       },
@@ -6328,7 +6995,7 @@
           {
             "type": "counter",
             "duration": 20,
-            "label": "Prep"
+            "label": "Brine & Truss"
           },
           {
             "type": "oven",
@@ -6338,48 +7005,30 @@
           {
             "type": "counter",
             "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
+            "label": "Rest & Carve"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "grilledcheeseclub",
+        "dish": "cranberrysauce",
         "step": 0,
-        "afterDish": "ricepilaf",
+        "afterDish": "grilledchicken",
         "afterStep": 0
       },
       {
-        "dish": "greenbeans",
+        "dish": "cheesecake",
         "step": 0,
-        "afterDish": "turkey",
+        "afterDish": "roastchicken",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-80",
-    "name": "Stage 80: Big Night In",
-    "boardMinutes": 275,
+    "id": "stage-82",
+    "name": "Stage 82: Full Spread",
+    "boardMinutes": 295,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -6388,219 +7037,61 @@
     },
     "dishes": [
       {
-        "id": "frenchtoast",
-        "name": "French Toast",
-        "emoji": "🍞",
-        "color": "#d4a373",
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Dip"
+            "duration": 15,
+            "label": "Sear & Dice"
           },
           {
             "type": "stovetop",
-            "duration": 15,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
             "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      },
-      {
-        "id": "omelette",
-        "name": "Omelette",
-        "emoji": "🍳",
-        "color": "#f4a259",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep Fillings"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 180,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "omelette",
-        "step": 0,
-        "afterDish": "turkey",
-        "afterStep": 1
-      },
-      {
-        "dish": "frenchtoast",
-        "step": 0,
-        "afterDish": "applepie",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-81",
-    "name": "Stage 81: The Whole Menu",
-    "boardMinutes": 115,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
             "label": "Simmer"
           }
         ]
       },
       {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      },
-      {
-        "id": "cookies",
-        "name": "Chocolate Chip Cookies",
-        "emoji": "🍪",
-        "color": "#6f4518",
+        "id": "roastchicken",
+        "name": "Roast Chicken",
+        "emoji": "🍗",
+        "color": "#c1121f",
         "steps": [
           {
             "type": "counter",
             "duration": 15,
-            "label": "Mix Dough"
+            "label": "Truss & Season"
           },
           {
             "type": "oven",
-            "duration": 15,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
+            "duration": 75,
             "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "pumpkinpie",
+        "name": "Pumpkin Pie",
+        "emoji": "🎃",
+        "color": "#dd6e42",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk Filling"
+          },
+          {
+            "type": "oven",
+            "duration": 50,
+            "label": "Bake"
           }
         ]
       },
@@ -6613,7 +7104,7 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Whisk Roux"
           },
           {
             "type": "stovetop",
@@ -6621,142 +7112,61 @@
             "label": "Simmer"
           }
         ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "spaghetti",
-        "step": 0,
-        "afterDish": "cookies",
-        "afterStep": 0
       },
       {
-        "dish": "gravy",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-82",
-    "name": "Stage 82: The Whole Menu",
-    "boardMinutes": 110,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Prep"
+            "duration": 20,
+            "label": "Brine & Truss"
           },
           {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
+            "type": "oven",
+            "duration": 180,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Rest & Carve"
           }
         ]
       },
       {
-        "id": "omelette",
-        "name": "Omelette",
-        "emoji": "🍳",
-        "color": "#f4a259",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep Fillings"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "dinnerrolls",
-        "name": "Dinner Rolls",
-        "emoji": "🥐",
+        "id": "garlicbread",
+        "name": "Garlic Bread",
+        "emoji": "🥖",
         "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Shape & Proof"
+            "duration": 5,
+            "label": "Butter & Herb"
           },
           {
             "type": "oven",
-            "duration": 20,
+            "duration": 10,
             "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "eggs",
+        "dish": "gravy",
         "step": 0,
-        "afterDish": "applepie",
-        "afterStep": 0
+        "afterDish": "roastchicken",
+        "afterStep": 1
       },
       {
-        "dish": "omelette",
+        "dish": "garlicbread",
         "step": 0,
-        "afterDish": "meatsauce",
-        "afterStep": 0
+        "afterDish": "turkey",
+        "afterStep": 1
       }
     ]
   },
@@ -6772,348 +7182,6 @@
     },
     "dishes": [
       {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "corn",
-        "name": "Corn on the Cob",
-        "emoji": "🌽",
-        "color": "#f4d35e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil"
-          }
-        ]
-      },
-      {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Cool"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "spaghetti",
-        "step": 0,
-        "afterDish": "applepie",
-        "afterStep": 0
-      },
-      {
-        "dish": "corn",
-        "step": 0,
-        "afterDish": "grilledchicken",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-84",
-    "name": "Stage 84: The Whole Menu",
-    "boardMinutes": 275,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 180,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "pancakes",
-        "name": "Pancakes",
-        "emoji": "🥞",
-        "color": "#e8a13c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "garlicbread",
-        "name": "Garlic Bread",
-        "emoji": "🥖",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 10,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "garlicbread",
-        "step": 0,
-        "afterDish": "turkey",
-        "afterStep": 1
-      },
-      {
-        "dish": "eggs",
-        "step": 0,
-        "afterDish": "roastchicken",
-        "afterStep": 1
-      }
-    ]
-  },
-  {
-    "id": "stage-85",
-    "name": "Stage 85: Full Spread",
-    "boardMinutes": 280,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
-          }
-        ]
-      },
-      {
-        "id": "tomatosoup",
-        "name": "Tomato Soup",
-        "emoji": "🍅",
-        "color": "#3a86ff",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Blend"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
         "id": "beefstew",
         "name": "Beef Stew",
         "emoji": "🍖",
@@ -7122,7 +7190,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
+            "label": "Sear & Dice"
           },
           {
             "type": "stovetop",
@@ -7131,417 +7199,6 @@
           }
         ]
       },
-      {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 180,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "tomatosoup",
-        "step": 0,
-        "afterDish": "brownies",
-        "afterStep": 0
-      },
-      {
-        "dish": "grilledcheeseclub",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-86",
-    "name": "Stage 86: The Whole Menu",
-    "boardMinutes": 40,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "grilledsalmon",
-        "name": "Grilled Salmon",
-        "emoji": "🐟",
-        "color": "#457b9d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Season"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      },
-      {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "spaghetti",
-        "step": 0,
-        "afterDish": "grilledsalmon",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-87",
-    "name": "Stage 87: Full Spread",
-    "boardMinutes": 90,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "pancakes",
-        "name": "Pancakes",
-        "emoji": "🥞",
-        "color": "#e8a13c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Griddle"
-          }
-        ]
-      },
-      {
-        "id": "stuffing",
-        "name": "Stuffing",
-        "emoji": "🍞",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "bakedziti",
-        "name": "Baked Ziti",
-        "emoji": "🫕",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "pancakes",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      },
-      {
-        "dish": "broccoli",
-        "step": 0,
-        "afterDish": "bakedziti",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-88",
-    "name": "Stage 88: Full Spread",
-    "boardMinutes": 70,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "stuffing",
-        "name": "Stuffing",
-        "emoji": "🍞",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "bacon",
-        "name": "Bacon",
-        "emoji": "🥓",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Lay Out"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Fry"
-          }
-        ]
-      },
-      {
-        "id": "cranberrysauce",
-        "name": "Cranberry Sauce",
-        "emoji": "🍒",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "friedrice",
-        "name": "Fried Rice",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Stir-fry"
-          }
-        ]
-      },
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "bacon",
-        "step": 0,
-        "afterDish": "cranberrysauce",
-        "afterStep": 0
-      },
-      {
-        "dish": "friedrice",
-        "step": 0,
-        "afterDish": "stuffing",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-89",
-    "name": "Stage 89: Full Spread",
-    "boardMinutes": 135,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
       {
         "id": "meatsauce",
         "name": "Meat Sauce",
@@ -7551,7 +7208,7 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Dice Onion & Garlic"
           },
           {
             "type": "stovetop",
@@ -7561,178 +7218,25 @@
         ]
       },
       {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "friedrice",
-        "name": "Fried Rice",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Stir-fry"
-          }
-        ]
-      },
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
+            "duration": 20,
+            "label": "Wrap in Pastry"
           },
           {
             "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "greenbeans",
-        "step": 0,
-        "afterDish": "roastchicken",
-        "afterStep": 1
-      },
-      {
-        "dish": "friedrice",
-        "step": 0,
-        "afterDish": "roastedpotatoes",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-90",
-    "name": "Stage 90: The Whole Menu",
-    "boardMinutes": 65,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "oven",
-            "duration": 30,
+            "duration": 40,
             "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "grilledsalmon",
-        "name": "Grilled Salmon",
-        "emoji": "🐟",
-        "color": "#457b9d",
-        "steps": [
+          },
           {
             "type": "counter",
             "duration": 10,
-            "label": "Season"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
-      {
-        "id": "tomatosoup",
-        "name": "Tomato Soup",
-        "emoji": "🍅",
-        "color": "#3a86ff",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Chop & Blend"
-          },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Simmer"
+            "label": "Rest & Slice"
           }
         ]
       },
@@ -7750,38 +7254,66 @@
         ]
       },
       {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
+        "id": "friedrice",
+        "name": "Fried Rice",
+        "emoji": "🍚",
+        "color": "#e9c46a",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Stir-fry"
+          }
+        ]
+      },
+      {
+        "id": "pancakes",
+        "name": "Pancakes",
+        "emoji": "🥞",
+        "color": "#e8a13c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Mix Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Stack & Butter"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "eggs",
+        "dish": "pancakes",
         "step": 0,
-        "afterDish": "grilledsalmon",
+        "afterDish": "beefwellington",
         "afterStep": 0
       },
       {
-        "dish": "tomatosoup",
+        "dish": "friedrice",
         "step": 0,
-        "afterDish": "brownies",
+        "afterDish": "meatsauce",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-91",
-    "name": "Stage 91: Full Spread",
-    "boardMinutes": 135,
+    "id": "stage-84",
+    "name": "Stage 84: The Whole Menu",
+    "boardMinutes": 100,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -7790,74 +7322,97 @@
     },
     "dishes": [
       {
-        "id": "gravy",
-        "name": "Gravy",
-        "emoji": "🥣",
-        "color": "#8a5a3d",
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
-            "duration": 5,
-            "label": "Prep"
+            "duration": 10,
+            "label": "Fill Tortilla"
           },
           {
             "type": "stovetop",
             "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk & Pour"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Scramble"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
             "label": "Simmer"
           }
         ]
       },
       {
-        "id": "carrots",
-        "name": "Roasted Carrots",
-        "emoji": "🥕",
-        "color": "#f3722c",
+        "id": "omelette",
+        "name": "Omelette",
+        "emoji": "🍳",
+        "color": "#f4a259",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 25,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "broccoli",
-        "name": "Steamed Broccoli",
-        "emoji": "🥦",
-        "color": "#2a9d8f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
+            "label": "Whisk & Fill"
           },
           {
             "type": "stovetop",
             "duration": 10,
-            "label": "Steam"
-          }
-        ]
-      },
-      {
-        "id": "grilledcheeseclub",
-        "name": "Club Sandwich",
-        "emoji": "🥪",
-        "color": "#bc6c25",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Assemble"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Toast"
+            "label": "Fold & Cook"
           }
         ]
       },
@@ -7870,7 +7425,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
+            "label": "Mix & Shape"
           },
           {
             "type": "oven",
@@ -7880,53 +7435,30 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 75,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Rest"
+            "label": "Rest & Slice"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "broccoli",
+        "dish": "quesadilla",
         "step": 0,
-        "afterDish": "carrots",
+        "afterDish": "quiche",
         "afterStep": 0
       },
       {
-        "dish": "grilledcheeseclub",
+        "dish": "ricepilaf",
         "step": 0,
-        "afterDish": "roastchicken",
-        "afterStep": 1
+        "afterDish": "meatloaf",
+        "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-92",
-    "name": "Stage 92: Full Spread",
-    "boardMinutes": 270,
+    "id": "stage-85",
+    "name": "Stage 85: The Whole Menu",
+    "boardMinutes": 60,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -7935,56 +7467,15 @@
     },
     "dishes": [
       {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      },
-      {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 180,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
+        "id": "bakedziti",
+        "name": "Baked Ziti",
+        "emoji": "🫕",
+        "color": "#9c6644",
         "steps": [
           {
             "type": "counter",
             "duration": 15,
-            "label": "Mix Batter"
+            "label": "Layer & Assemble"
           },
           {
             "type": "oven",
@@ -7994,23 +7485,104 @@
         ]
       },
       {
-        "id": "hashbrowns",
-        "name": "Hash Browns",
-        "emoji": "🥔",
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "gardensalad",
+        "name": "Garden Salad",
+        "emoji": "🥬",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Scramble"
+          }
+        ]
+      },
+      {
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
         "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Shred"
+            "label": "Fill Tortilla"
           },
           {
             "type": "stovetop",
-            "duration": 15,
-            "label": "Fry"
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
           }
         ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "quesadilla",
+        "step": 0,
+        "afterDish": "bakedziti",
+        "afterStep": 0
       },
+      {
+        "dish": "eggs",
+        "step": 0,
+        "afterDish": "gravy",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-86",
+    "name": "Stage 86: Big Night In",
+    "boardMinutes": 270,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
       {
         "id": "devilledeggs",
         "name": "Deviled Eggs",
@@ -8025,53 +7597,117 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Fill"
+            "label": "Mash & Fill"
           }
         ]
       },
       {
-        "id": "roastchicken",
-        "name": "Roast Chicken",
-        "emoji": "🍗",
-        "color": "#c1121f",
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Prep"
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
           },
           {
             "type": "oven",
-            "duration": 75,
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Brine & Truss"
+          },
+          {
+            "type": "oven",
+            "duration": 180,
             "label": "Roast"
           },
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Rest"
+            "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "spaghetti",
+        "dish": "devilledeggs",
         "step": 0,
-        "afterDish": "hashbrowns",
+        "afterDish": "turkey",
         "afterStep": 0
       },
       {
-        "dish": "devilledeggs",
+        "dish": "grilledcheeseclub",
         "step": 0,
-        "afterDish": "brownies",
+        "afterDish": "oatmeal",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-93",
-    "name": "Stage 93: Big Night In",
-    "boardMinutes": 100,
+    "id": "stage-87",
+    "name": "Stage 87: The Whole Menu",
+    "boardMinutes": 110,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -8079,91 +7715,6 @@
       "counter": 5
     },
     "dishes": [
-      {
-        "id": "quiche",
-        "name": "Quiche",
-        "emoji": "🥧",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Bake"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 25,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "eggs",
-        "name": "Scrambled Eggs",
-        "emoji": "🍳",
-        "color": "#f0c419",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Whisk"
-          },
-          {
-            "type": "stovetop",
-            "duration": 5,
-            "label": "Cook"
-          }
-        ]
-      },
       {
         "id": "meatloaf",
         "name": "Meatloaf",
@@ -8173,7 +7724,7 @@
           {
             "type": "counter",
             "duration": 15,
-            "label": "Prep"
+            "label": "Mix & Shape"
           },
           {
             "type": "oven",
@@ -8183,88 +7734,30 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Rest"
+            "label": "Rest & Slice"
           }
         ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "meatsauce",
-        "step": 0,
-        "afterDish": "meatloaf",
-        "afterStep": 0
       },
       {
-        "dish": "eggs",
-        "step": 0,
-        "afterDish": "quiche",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-94",
-    "name": "Stage 94: The Whole Menu",
-    "boardMinutes": 100,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Fill Tortilla"
           },
           {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "applepie",
-        "name": "Apple Pie",
-        "emoji": "🥧",
-        "color": "#c17a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
           },
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Cool"
+            "duration": 5,
+            "label": "Slice & Plate"
           }
         ]
       },
@@ -8282,31 +7775,10 @@
           {
             "type": "stovetop",
             "duration": 5,
-            "label": "Cook"
+            "label": "Scramble"
           }
         ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "eggs",
-        "step": 0,
-        "afterDish": "roastedpotatoes",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-95",
-    "name": "Stage 95: The Whole Menu",
-    "boardMinutes": 90,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
+      },
       {
         "id": "grilledsalmon",
         "name": "Grilled Salmon",
@@ -8322,101 +7794,57 @@
             "type": "stovetop",
             "duration": 15,
             "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "grilledchicken",
-        "name": "Grilled Chicken Breast",
-        "emoji": "🍗",
-        "color": "#c1666b",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Marinate"
           },
-          {
-            "type": "stovetop",
-            "duration": 15,
-            "label": "Grill"
-          }
-        ]
-      },
-      {
-        "id": "roastedpotatoes",
-        "name": "Roasted Potatoes",
-        "emoji": "🥔",
-        "color": "#dda15e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 35,
-            "label": "Roast"
-          }
-        ]
-      },
-      {
-        "id": "oatmeal",
-        "name": "Oatmeal",
-        "emoji": "🥣",
-        "color": "#a9744f",
-        "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Measure"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
+            "label": "Plate & Drizzle"
           }
         ]
       },
       {
-        "id": "pumpkinpie",
-        "name": "Pumpkin Pie",
-        "emoji": "🎃",
-        "color": "#dd6e42",
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
         "steps": [
           {
             "type": "counter",
-            "duration": 20,
-            "label": "Prep"
+            "duration": 25,
+            "label": "Layer Noodles"
           },
           {
             "type": "oven",
-            "duration": 50,
+            "duration": 45,
             "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "grilledchicken",
+        "dish": "quesadilla",
         "step": 0,
-        "afterDish": "roastedpotatoes",
+        "afterDish": "lasagna",
         "afterStep": 0
       },
       {
-        "dish": "oatmeal",
+        "dish": "grilledsalmon",
         "step": 0,
-        "afterDish": "grilledsalmon",
+        "afterDish": "meatloaf",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-96",
-    "name": "Stage 96: The Whole Menu",
-    "boardMinutes": 85,
+    "id": "stage-88",
+    "name": "Stage 88: The Whole Menu",
+    "boardMinutes": 160,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -8425,51 +7853,216 @@
     },
     "dishes": [
       {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
         "steps": [
           {
             "type": "counter",
-            "duration": 15,
-            "label": "Prep"
+            "duration": 10,
+            "label": "Sauté Mushrooms"
           },
           {
             "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
           }
         ]
       },
       {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Score & Glaze"
+          },
+          {
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "pancakes",
+        "name": "Pancakes",
+        "emoji": "🥞",
+        "color": "#e8a13c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Mix Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Stack & Butter"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "pancakes",
+        "step": 0,
+        "afterDish": "glazedham",
+        "afterStep": 0
+      },
+      {
+        "dish": "risotto",
+        "step": 0,
+        "afterDish": "lasagna",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-89",
+    "name": "Stage 89: The Whole Menu",
+    "boardMinutes": 105,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
         "steps": [
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Whisk"
           },
           {
             "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
+            "duration": 5,
+            "label": "Scramble"
           }
         ]
       },
       {
-        "id": "brownies",
-        "name": "Brownies",
-        "emoji": "🍫",
-        "color": "#4a2c2a",
+        "id": "greenbeans",
+        "name": "Green Beans",
+        "emoji": "🫛",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Trim Ends"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "stuffing",
+        "name": "Stuffing",
+        "emoji": "🍞",
+        "color": "#bc6c25",
         "steps": [
           {
             "type": "counter",
             "duration": 15,
-            "label": "Mix Batter"
+            "label": "Toast Bread Cubes"
           },
           {
             "type": "oven",
@@ -8493,19 +8086,74 @@
             "type": "stovetop",
             "duration": 10,
             "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Stack & Butter"
           }
         ]
       },
       {
-        "id": "gardensalad",
-        "name": "Garden Salad",
-        "emoji": "🥬",
-        "color": "#3a9d5d",
+        "id": "corn",
+        "name": "Corn on the Cob",
+        "emoji": "🌽",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Husk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "greenbeans",
+        "step": 0,
+        "afterDish": "pancakes",
+        "afterStep": 0
+      },
+      {
+        "dish": "corn",
+        "step": 0,
+        "afterDish": "stuffing",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-90",
+    "name": "Stage 90: Full Spread",
+    "boardMinutes": 150,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "hashbrowns",
+        "name": "Hash Browns",
+        "emoji": "🥔",
+        "color": "#e9b44c",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Shred Potatoes"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Fry"
           }
         ]
       },
@@ -8518,350 +8166,12 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Cube & Toss"
           },
           {
             "type": "oven",
             "duration": 35,
             "label": "Roast"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "pancakes",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      },
-      {
-        "dish": "roastedpotatoes",
-        "step": 0,
-        "afterDish": "beefstew",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-97",
-    "name": "Stage 97: The Whole Menu",
-    "boardMinutes": 255,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "turkey",
-        "name": "Roast Turkey",
-        "emoji": "🦃",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 180,
-            "label": "Roast"
-          },
-          {
-            "type": "counter",
-            "duration": 20,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "greenbeans",
-        "name": "Green Beans",
-        "emoji": "🫛",
-        "color": "#3a9d5d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Sauté"
-          }
-        ]
-      },
-      {
-        "id": "meatloaf",
-        "name": "Meatloaf",
-        "emoji": "🥩",
-        "color": "#9d0208",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "gravy",
-        "name": "Gravy",
-        "emoji": "🥣",
-        "color": "#8a5a3d",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Simmer"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "greenbeans",
-        "step": 0,
-        "afterDish": "turkey",
-        "afterStep": 1
-      },
-      {
-        "dish": "gravy",
-        "step": 0,
-        "afterDish": "meatloaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-98",
-    "name": "Stage 98: Full Spread",
-    "boardMinutes": 100,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "mashedpotatoes",
-        "name": "Mashed Potatoes",
-        "emoji": "🥔",
-        "color": "#e9b44c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Boil"
-          },
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Mash"
-          }
-        ]
-      },
-      {
-        "id": "lasagna",
-        "name": "Lasagna",
-        "emoji": "🧆",
-        "color": "#9c6644",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 25,
-            "label": "Assemble"
-          },
-          {
-            "type": "oven",
-            "duration": 45,
-            "label": "Bake"
-          },
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Rest"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "caesarsalad",
-        "name": "Caesar Salad",
-        "emoji": "🥗",
-        "color": "#588157",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Chop & Toss"
-          }
-        ]
-      },
-      {
-        "id": "spaghetti",
-        "name": "Spaghetti",
-        "emoji": "🍝",
-        "color": "#e8622c",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Boil Pasta"
-          }
-        ]
-      }
-    ],
-    "dependencies": [
-      {
-        "dish": "mashedpotatoes",
-        "step": 0,
-        "afterDish": "lasagna",
-        "afterStep": 0
-      },
-      {
-        "dish": "spaghetti",
-        "step": 0,
-        "afterDish": "ricepilaf",
-        "afterStep": 0
-      }
-    ]
-  },
-  {
-    "id": "stage-99",
-    "name": "Stage 99: Big Night In",
-    "boardMinutes": 75,
-    "gridStep": 5,
-    "resources": {
-      "oven": 2,
-      "stovetop": 3,
-      "counter": 5
-    },
-    "dishes": [
-      {
-        "id": "avocadotoast",
-        "name": "Avocado Toast",
-        "emoji": "🥑",
-        "color": "#6a994e",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Toast & Mash"
-          }
-        ]
-      },
-      {
-        "id": "ricepilaf",
-        "name": "Rice Pilaf",
-        "emoji": "🍚",
-        "color": "#e9c46a",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 5,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 20,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "beefstew",
-        "name": "Beef Stew",
-        "emoji": "🍖",
-        "color": "#7f4f24",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 15,
-            "label": "Prep"
-          },
-          {
-            "type": "stovetop",
-            "duration": 45,
-            "label": "Simmer"
-          }
-        ]
-      },
-      {
-        "id": "omelette",
-        "name": "Omelette",
-        "emoji": "🍳",
-        "color": "#f4a259",
-        "steps": [
-          {
-            "type": "counter",
-            "duration": 10,
-            "label": "Prep Fillings"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Cook"
           }
         ]
       },
@@ -8874,24 +8184,239 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Chop & Toss"
+            "label": "Wash & Chop"
+          }
+        ]
+      },
+      {
+        "id": "glazedham",
+        "name": "Glazed Ham",
+        "emoji": "🍖",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Score & Glaze"
+          },
+          {
+            "type": "oven",
+            "duration": 90,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "garlicbread",
+        "name": "Garlic Bread",
+        "emoji": "🥖",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Butter & Herb"
+          },
+          {
+            "type": "oven",
+            "duration": 10,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "grilledchicken",
+        "name": "Grilled Chicken Breast",
+        "emoji": "🍗",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Marinate"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "omelette",
+        "dish": "roastedpotatoes",
         "step": 0,
-        "afterDish": "ricepilaf",
+        "afterDish": "glazedham",
+        "afterStep": 0
+      },
+      {
+        "dish": "garlicbread",
+        "step": 0,
+        "afterDish": "grilledchicken",
         "afterStep": 0
       }
     ]
   },
   {
-    "id": "stage-100",
-    "name": "Stage 100: Big Night In",
-    "boardMinutes": 110,
+    "id": "stage-91",
+    "name": "Stage 91: Big Night In",
+    "boardMinutes": 115,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "greenbeans",
+        "name": "Green Beans",
+        "emoji": "🫛",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Trim Ends"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "meatsauce",
+        "name": "Meat Sauce",
+        "emoji": "🍲",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dice Onion & Garlic"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      },
+      {
+        "id": "cheesecake",
+        "name": "Cheesecake",
+        "emoji": "🍰",
+        "color": "#e6c288",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Press Crust & Whip"
+          },
+          {
+            "type": "oven",
+            "duration": 55,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chill & Set"
+          }
+        ]
+      },
+      {
+        "id": "friedrice",
+        "name": "Fried Rice",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chop Veg"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Stir-fry"
+          }
+        ]
+      },
+      {
+        "id": "brownies",
+        "name": "Brownies",
+        "emoji": "🍫",
+        "color": "#4a2c2a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Melt & Mix"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "greenbeans",
+        "step": 0,
+        "afterDish": "friedrice",
+        "afterStep": 0
+      },
+      {
+        "dish": "brownies",
+        "step": 0,
+        "afterDish": "cheesecake",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-92",
+    "name": "Stage 92: Home Cooking",
+    "boardMinutes": 105,
     "gridStep": 5,
     "resources": {
       "oven": 2,
@@ -8908,12 +8433,53 @@
           {
             "type": "counter",
             "duration": 5,
-            "label": "Prep"
+            "label": "Toast Rice"
           },
           {
             "type": "stovetop",
             "duration": 20,
             "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "spaghetti",
+        "name": "Spaghetti",
+        "emoji": "🍝",
+        "color": "#e8622c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Salt the Water"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil Pasta"
+          }
+        ]
+      },
+      {
+        "id": "lasagna",
+        "name": "Lasagna",
+        "emoji": "🧆",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 25,
+            "label": "Layer Noodles"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
           }
         ]
       },
@@ -8936,20 +8502,383 @@
         ]
       },
       {
-        "id": "meatsauce",
-        "name": "Meat Sauce",
-        "emoji": "🍲",
-        "color": "#c1121f",
+        "id": "stuffing",
+        "name": "Stuffing",
+        "emoji": "🍞",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Toast Bread Cubes"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "spaghetti",
+        "step": 0,
+        "afterDish": "dinnerrolls",
+        "afterStep": 0
+      },
+      {
+        "dish": "ricepilaf",
+        "step": 0,
+        "afterDish": "stuffing",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-93",
+    "name": "Stage 93: Full Spread",
+    "boardMinutes": 145,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "creamebrulee",
+        "name": "Crème Brûlée",
+        "emoji": "🍮",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Temper Custard"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Torch Sugar Top"
+          }
+        ]
+      },
+      {
+        "id": "friedrice",
+        "name": "Fried Rice",
+        "emoji": "🍚",
+        "color": "#e9c46a",
         "steps": [
           {
             "type": "counter",
             "duration": 10,
-            "label": "Prep"
+            "label": "Chop Veg"
           },
           {
             "type": "stovetop",
+            "duration": 15,
+            "label": "Stir-fry"
+          }
+        ]
+      },
+      {
+        "id": "cheesecake",
+        "name": "Cheesecake",
+        "emoji": "🍰",
+        "color": "#e6c288",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Press Crust & Whip"
+          },
+          {
+            "type": "oven",
+            "duration": 55,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chill & Set"
+          }
+        ]
+      },
+      {
+        "id": "shrimpscampi",
+        "name": "Shrimp Scampi",
+        "emoji": "🍤",
+        "color": "#e76f51",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Devein"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "grilledsalmon",
+        "name": "Grilled Salmon",
+        "emoji": "🐟",
+        "color": "#457b9d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Season"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Plate & Drizzle"
+          }
+        ]
+      },
+      {
+        "id": "roastchicken",
+        "name": "Roast Chicken",
+        "emoji": "🍗",
+        "color": "#c1121f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Truss & Season"
+          },
+          {
+            "type": "oven",
+            "duration": 75,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "creamebrulee",
+        "step": 0,
+        "afterDish": "roastchicken",
+        "afterStep": 0
+      },
+      {
+        "dish": "shrimpscampi",
+        "step": 0,
+        "afterDish": "cheesecake",
+        "afterStep": 1
+      }
+    ]
+  },
+  {
+    "id": "stage-94",
+    "name": "Stage 94: Big Night In",
+    "boardMinutes": 110,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "bakedziti",
+        "name": "Baked Ziti",
+        "emoji": "🫕",
+        "color": "#9c6644",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Layer & Assemble"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "carrots",
+        "name": "Roasted Carrots",
+        "emoji": "🥕",
+        "color": "#f3722c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Peel & Chop"
+          },
+          {
+            "type": "oven",
             "duration": 25,
+            "label": "Roast"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
             "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "cheesecake",
+        "name": "Cheesecake",
+        "emoji": "🍰",
+        "color": "#e6c288",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Press Crust & Whip"
+          },
+          {
+            "type": "oven",
+            "duration": 55,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chill & Set"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "ricepilaf",
+        "step": 0,
+        "afterDish": "carrots",
+        "afterStep": 0
+      },
+      {
+        "dish": "oatmeal",
+        "step": 0,
+        "afterDish": "cheesecake",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-95",
+    "name": "Stage 95: Full Spread",
+    "boardMinutes": 260,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Chop & Toss"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
           }
         ]
       },
@@ -8962,12 +8891,439 @@
           {
             "type": "counter",
             "duration": 20,
-            "label": "Prep"
+            "label": "Whisk & Pour"
           },
           {
             "type": "oven",
             "duration": 35,
             "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "greenbeans",
+        "name": "Green Beans",
+        "emoji": "🫛",
+        "color": "#3a9d5d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Trim Ends"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Sauté"
+          }
+        ]
+      },
+      {
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Sauté Mushrooms"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
+          }
+        ]
+      },
+      {
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Brine & Truss"
+          },
+          {
+            "type": "oven",
+            "duration": 180,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "oatmeal",
+        "step": 0,
+        "afterDish": "risotto",
+        "afterStep": 0
+      },
+      {
+        "dish": "greenbeans",
+        "step": 0,
+        "afterDish": "quiche",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-96",
+    "name": "Stage 96: Full Spread",
+    "boardMinutes": 40,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "porkchops",
+        "name": "Pan-Seared Pork Chops",
+        "emoji": "🍖",
+        "color": "#a4633b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Brine & Pat Dry"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Sear"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "grilledcheeseclub",
+        "name": "Club Sandwich",
+        "emoji": "🥪",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Layer Fillings"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Toast"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "grilledcheeseclub",
+        "step": 0,
+        "afterDish": "cranberrysauce",
+        "afterStep": 0
+      },
+      {
+        "dish": "oatmeal",
+        "step": 0,
+        "afterDish": "porkchops",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-97",
+    "name": "Stage 97: Big Night In",
+    "boardMinutes": 110,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "bacon",
+        "name": "Bacon",
+        "emoji": "🥓",
+        "color": "#c1666b",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Lay Out"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Fry"
+          }
+        ]
+      },
+      {
+        "id": "ricepilaf",
+        "name": "Rice Pilaf",
+        "emoji": "🍚",
+        "color": "#e9c46a",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Toast Rice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 20,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "cheesecake",
+        "name": "Cheesecake",
+        "emoji": "🍰",
+        "color": "#e6c288",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Press Crust & Whip"
+          },
+          {
+            "type": "oven",
+            "duration": 55,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Chill & Set"
+          }
+        ]
+      },
+      {
+        "id": "beefwellington",
+        "name": "Beef Wellington",
+        "emoji": "🥩",
+        "color": "#7a2626",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Wrap in Pastry"
+          },
+          {
+            "type": "oven",
+            "duration": 40,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Rest & Slice"
+          }
+        ]
+      },
+      {
+        "id": "eggs",
+        "name": "Scrambled Eggs",
+        "emoji": "🍳",
+        "color": "#f0c419",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk"
+          },
+          {
+            "type": "stovetop",
+            "duration": 5,
+            "label": "Scramble"
+          }
+        ]
+      },
+      {
+        "id": "quesadilla",
+        "name": "Quesadilla",
+        "emoji": "🫓",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Fill Tortilla"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Grill"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Slice & Plate"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "eggs",
+        "step": 0,
+        "afterDish": "bacon",
+        "afterStep": 0
+      },
+      {
+        "dish": "quesadilla",
+        "step": 0,
+        "afterDish": "cheesecake",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-98",
+    "name": "Stage 98: The Whole Menu",
+    "boardMinutes": 110,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "garlicbread",
+        "name": "Garlic Bread",
+        "emoji": "🥖",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Butter & Herb"
+          },
+          {
+            "type": "oven",
+            "duration": 10,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "oatmeal",
+        "name": "Oatmeal",
+        "emoji": "🥣",
+        "color": "#a9744f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Measure Oats"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Add Toppings"
+          }
+        ]
+      },
+      {
+        "id": "quiche",
+        "name": "Quiche",
+        "emoji": "🥧",
+        "color": "#e9b44c",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Whisk & Pour"
+          },
+          {
+            "type": "oven",
+            "duration": 35,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Sear & Dice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 45,
+            "label": "Simmer"
           }
         ]
       },
@@ -8980,7 +9336,7 @@
           {
             "type": "counter",
             "duration": 25,
-            "label": "Assemble"
+            "label": "Layer Noodles"
           },
           {
             "type": "oven",
@@ -8990,40 +9346,284 @@
           {
             "type": "counter",
             "duration": 10,
-            "label": "Rest"
+            "label": "Rest & Slice"
           }
         ]
       },
       {
-        "id": "pancakes",
-        "name": "Pancakes",
-        "emoji": "🥞",
-        "color": "#e8a13c",
+        "id": "caesarsalad",
+        "name": "Caesar Salad",
+        "emoji": "🥗",
+        "color": "#588157",
         "steps": [
           {
             "type": "counter",
-            "duration": 10,
-            "label": "Mix Batter"
-          },
-          {
-            "type": "stovetop",
-            "duration": 10,
-            "label": "Griddle"
+            "duration": 15,
+            "label": "Chop & Toss"
           }
         ]
       }
     ],
     "dependencies": [
       {
-        "dish": "pancakes",
+        "dish": "garlicbread",
         "step": 0,
         "afterDish": "lasagna",
-        "afterStep": 1
+        "afterStep": 0
       },
       {
-        "dish": "meatsauce",
+        "dish": "oatmeal",
         "step": 0,
-        "afterDish": "quiche",
+        "afterDish": "beefstew",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-99",
+    "name": "Stage 99: Full Spread",
+    "boardMinutes": 260,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "avocadotoast",
+        "name": "Avocado Toast",
+        "emoji": "🥑",
+        "color": "#6a994e",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Toast & Mash"
+          }
+        ]
+      },
+      {
+        "id": "cranberrysauce",
+        "name": "Cranberry Sauce",
+        "emoji": "🍒",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Rinse Berries"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "frenchtoast",
+        "name": "French Toast",
+        "emoji": "🍞",
+        "color": "#d4a373",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Dip in Batter"
+          },
+          {
+            "type": "stovetop",
+            "duration": 15,
+            "label": "Griddle"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Dust & Plate"
+          }
+        ]
+      },
+      {
+        "id": "turkey",
+        "name": "Roast Turkey",
+        "emoji": "🦃",
+        "color": "#9d0208",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Brine & Truss"
+          },
+          {
+            "type": "oven",
+            "duration": 180,
+            "label": "Roast"
+          },
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Rest & Carve"
+          }
+        ]
+      },
+      {
+        "id": "applepie",
+        "name": "Apple Pie",
+        "emoji": "🥧",
+        "color": "#c17a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 20,
+            "label": "Roll Crust & Fill"
+          },
+          {
+            "type": "oven",
+            "duration": 45,
+            "label": "Bake"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Cool"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "cranberrysauce",
+        "step": 0,
+        "afterDish": "frenchtoast",
+        "afterStep": 0
+      },
+      {
+        "dish": "applepie",
+        "step": 0,
+        "afterDish": "turkey",
+        "afterStep": 0
+      }
+    ]
+  },
+  {
+    "id": "stage-100",
+    "name": "Stage 100: Home Cooking",
+    "boardMinutes": 80,
+    "gridStep": 5,
+    "resources": {
+      "oven": 2,
+      "stovetop": 3,
+      "counter": 5
+    },
+    "dishes": [
+      {
+        "id": "beefstew",
+        "name": "Beef Stew",
+        "emoji": "🍖",
+        "color": "#7f4f24",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Sear & Dice"
+          },
+          {
+            "type": "stovetop",
+            "duration": 45,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "stuffing",
+        "name": "Stuffing",
+        "emoji": "🍞",
+        "color": "#bc6c25",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Toast Bread Cubes"
+          },
+          {
+            "type": "oven",
+            "duration": 30,
+            "label": "Bake"
+          }
+        ]
+      },
+      {
+        "id": "gravy",
+        "name": "Gravy",
+        "emoji": "🥣",
+        "color": "#8a5a3d",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Whisk Roux"
+          },
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Simmer"
+          }
+        ]
+      },
+      {
+        "id": "risotto",
+        "name": "Mushroom Risotto",
+        "emoji": "🍚",
+        "color": "#6b7a3f",
+        "steps": [
+          {
+            "type": "counter",
+            "duration": 10,
+            "label": "Sauté Mushrooms"
+          },
+          {
+            "type": "stovetop",
+            "duration": 25,
+            "label": "Stir & Ladle Stock"
+          },
+          {
+            "type": "counter",
+            "duration": 5,
+            "label": "Fold In Parmesan"
+          }
+        ]
+      },
+      {
+        "id": "devilledeggs",
+        "name": "Deviled Eggs",
+        "emoji": "🥚",
+        "color": "#f4d35e",
+        "steps": [
+          {
+            "type": "stovetop",
+            "duration": 10,
+            "label": "Boil"
+          },
+          {
+            "type": "counter",
+            "duration": 15,
+            "label": "Mash & Fill"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dish": "gravy",
+        "step": 0,
+        "afterDish": "beefstew",
+        "afterStep": 0
+      },
+      {
+        "dish": "devilledeggs",
+        "step": 0,
+        "afterDish": "stuffing",
         "afterStep": 0
       }
     ]
