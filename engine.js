@@ -8,9 +8,8 @@
   "use strict";
 
   // A level is one real recipe:
-  //   { id, recipeName, ingredients: [string], decoys: [string], steps: [string] }
-  // ingredients/steps are in their correct (original) order/set; decoys are
-  // wrong ingredients mixed into the pantry grid.
+  //   { id, recipeName, ingredients: [string], decoys: [string],
+  //     steps: [{ text, station: 'counter'|'stovetop'|'oven' }] }
 
   function pantryCards(level) {
     return [...level.ingredients, ...level.decoys];
@@ -33,19 +32,22 @@
     };
   }
 
-  // order: array of step strings in the player's current arrangement
-  // (must be a permutation of level.steps for a meaningful check).
-  function methodState(level, order) {
-    let correctPositions = 0;
-    for (let i = 0; i < level.steps.length; i++) {
-      if (order[i] === level.steps[i]) correctPositions++;
-    }
+  // placements: Map stepIndex(number) -> station string, the player's
+  // current tentative placement for every step they've dropped into a zone.
+  function stationsState(level, placements) {
+    let correctCount = 0;
+    let wrongCount = 0;
+    placements.forEach((station, idx) => {
+      if (level.steps[idx] && level.steps[idx].station === station) correctCount++;
+      else wrongCount++;
+    });
     return {
-      correctPositions,
+      correctCount,
+      wrongCount,
       total: level.steps.length,
-      solved: order.length === level.steps.length && correctPositions === level.steps.length,
+      solved: correctCount === level.steps.length && wrongCount === 0,
     };
   }
 
-  return { pantryCards, pantryState, methodState };
+  return { pantryCards, pantryState, stationsState };
 });

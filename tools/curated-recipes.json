@@ -10,75 +10,18 @@
       "Lukewarm water"
     ],
     "steps": [
-      "Add sweetening and salt to milk; cool, and when lukewarm add dissolved yeast cake and flour; beat well, cover, and let rise to double its bulk",
-      "Again beat, and turn into greased bread pans, having pans one-half full; let rise, and bake",
-      "Entire Wheat Bread should not quite double its bulk during last rising",
-      "This mixture may be baked in gem pans"
-    ]
-  },
-  {
-    "name": "Graham Bread",
-    "ingredients": [
-      "Hot liquid",
-      "Molasses",
-      "Salt",
-      "Yeast cake dissolved in",
-      "Lukewarm water",
-      "Flour"
-    ],
-    "steps": [
-      "Prepare and bake as Entire Wheat Bread",
-      "The bran remaining in sieve after sifting Graham flour should be discarded"
-    ]
-  },
-  {
-    "name": "Third Bread",
-    "ingredients": [
-      "Lukewarm water",
-      "Yeast cake",
-      "Salt",
-      "Molasses",
-      "Rye flour",
-      "Granulated corn meal"
-    ],
-    "steps": [
-      "Dissolve yeast cake in water, add remaining ingredients, and mix thoroughly",
-      "Let rise, shape, let rise again, and bake as Entire Wheat Bread"
-    ]
-  },
-  {
-    "name": "Rolled Oats Bread",
-    "ingredients": [
-      "Boiling water",
-      "Molasses",
-      "Salt",
-      "Butter",
-      "Yeast cake dissolved in",
-      "Lukewarm water",
-      "Rolled Oats"
-    ],
-    "steps": [
-      "Add boiling water to oats and let stand one hour; add molasses, salt, butter, dissolved yeast cake, and flour; let rise, beat thoroughly, turn into buttered bread pans, let rise again, and bake",
-      "By using one-half cup less flour, the dough is better suited for biscuits, but, being soft, is difficult to handle",
-      "To make shaping of biscuits easy, take up mixture by spoonfuls, drop into plate of flour, and have palms of hands well covered with flour before attempting to shape"
-    ]
-  },
-  {
-    "name": "Boston Brown Bread",
-    "ingredients": [
-      "Rye meal",
-      "Granulated corn meal",
-      "Graham flour",
-      "Soda",
-      "Salt",
-      "Molasses"
-    ],
-    "steps": [
-      "Mix and sift dry ingredients, add molasses and milk, stir until well mixed, turn into a well-buttered mould, and steam three and one-half hours",
-      "The cover should be buttered before being placed on mould, and then tied down with string; otherwise the bread in rising might force off cover",
-      "Mould should never be filled more than two-thirds full",
-      "A melon mould or one-pound baking-powder boxes make the most attractive-shaped loaves, but a five-pound lard pail answers the purpose",
-      "For steaming, place mould on a trivet in kettle containing boiling water, allowing water to come half-way up around mould, cover closely, and steam, adding, as needed, more boiling water"
+      {
+        "text": "Add sweetening and salt to milk; cool, and when lukewarm add dissolved yeast cake and flour; beat well, cover, and let rise to double its bulk",
+        "station": "counter"
+      },
+      {
+        "text": "Again beat, and turn into greased bread pans, having pans one-half full; let rise, and bake",
+        "station": "oven"
+      },
+      {
+        "text": "Entire Wheat Bread should not quite double its bulk during last rising",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -93,25 +36,18 @@
       "Egg whites"
     ],
     "steps": [
-      "Add butter, sugar, and salt to milk; when lukewarm, add dissolved yeast cake, white of egg well beaten, and flour",
-      "Knead, let rise, shape, let rise again, and start baking in a hot oven, reducing heat, that sticks may be crisp and dry",
-      "To shape sticks, first shape as small biscuits, roll on board (where there is no flour) with hands until eight inches in length, keeping of uniform size and rounded ends, which may be done by bringing fingers close to, but not over, ends of sticks"
-    ]
-  },
-  {
-    "name": "Rusks (Zweiback)",
-    "ingredients": [
-      "Scalded milk",
-      "Salt",
-      "Yeast cakes",
-      "Sugar",
-      "Melted butter",
-      "Eggs"
-    ],
-    "steps": [
-      "Dissolve yeast cakes in milk; when lukewarm, add salt and one cup flour; cover, and let rise until very light; then add sugar, butter, eggs unbeaten, and flour enough to handle",
-      "Shape as finger rolls, and place close together on a buttered sheet in parallel rows, two inches apart; let rise again and bake twenty minutes",
-      "When cold, cut diagonally in one-half inch slices, and brown evenly in oven"
+      {
+        "text": "Add butter, sugar, and salt to milk; when lukewarm, add dissolved yeast cake, white of egg well beaten, and flour",
+        "station": "counter"
+      },
+      {
+        "text": "Knead, let rise, shape, let rise again, and start baking in a hot oven, reducing heat, that sticks may be crisp and dry",
+        "station": "oven"
+      },
+      {
+        "text": "To shape sticks, first shape as small biscuits, roll on board (where there is no flour) with hands until eight inches in length, keeping of uniform size and rounded ends, which may be done by bringing fingers close to, but not over, ends of sticks",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -128,11 +64,26 @@
       "Flour"
     ],
     "steps": [
-      "Cool milk; when lukewarm, add yeast cakes, and when they are dissolved add remaining ingredients, and beat thoroughly with hand ten minutes; let rise six hours",
-      "Keep in ice-box over night; in morning turn on floured board, roll in long rectangular piece one-fourth inch thick; spread with softened butter, fold from sides toward centre to make three layers",
-      "Cut off pieces three-fourths inch wide; cover and let rise",
-      "Take each piece separately in hands and twist from ends in opposite directions, coil and bring ends together at top of cake",
-      "Let rise in pans and bake twenty minutes in a moderate oven; cool and brush over with confectioners’ sugar, moistened with boiling water to spread, and flavored with vanilla"
+      {
+        "text": "Cool milk; when lukewarm, add yeast cakes, and when they are dissolved add remaining ingredients, and beat thoroughly with hand ten minutes; let rise six hours",
+        "station": "counter"
+      },
+      {
+        "text": "Keep in ice-box over night; in morning turn on floured board, roll in long rectangular piece one-fourth inch thick; spread with softened butter, fold from sides toward centre to make three layers",
+        "station": "counter"
+      },
+      {
+        "text": "Cut off pieces three-fourths inch wide; cover and let rise",
+        "station": "counter"
+      },
+      {
+        "text": "Take each piece separately in hands and twist from ends in opposite directions, coil and bring ends together at top of cake",
+        "station": "counter"
+      },
+      {
+        "text": "Let rise in pans and bake twenty minutes in a moderate oven; cool and brush over with confectioners’ sugar, moistened with boiling water to spread, and flavored with vanilla",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -147,27 +98,22 @@
       "Salt"
     ],
     "steps": [
-      "Add yeast cake to one-half cup milk which has been allowed to cool until lukewarm; as soon as dissolved add one-half cup flour, beat thoroughly, cover, and let rise",
-      "When light, add remaining milk and four and one-half cups flour",
-      "Stir until thoroughly mixed, cover, and again let rise; then add remaining ingredients and one and one-half cups flour",
-      "Toss on a floured cloth and knead, using one-half cup flour, cover, and again let rise",
-      "Shape as Swedish Tea Braid or Tea Ring I or II, and bake"
-    ]
-  },
-  {
-    "name": "Raised Muffins",
-    "ingredients": [
-      "Scalded milk",
-      "Boiling water",
-      "Butter",
-      "Sugar",
-      "Salt",
-      "Yeast cake",
-      "Egg"
-    ],
-    "steps": [
-      "Add butter, sugar, and salt to milk and water; when lukewarm, add yeast cake, and when dissolved, egg well beaten, and flour; beat thoroughly, cover, and let rise over night",
-      "In morning, fill buttered muffin rings two-thirds full; let rise until rings are full, and bake thirty minutes in hot oven"
+      {
+        "text": "Add yeast cake to one-half cup milk which has been allowed to cool until lukewarm; as soon as dissolved add one-half cup flour, beat thoroughly, cover, and let rise",
+        "station": "counter"
+      },
+      {
+        "text": "Stir until thoroughly mixed, cover, and again let rise; then add remaining ingredients and one and one-half cups flour",
+        "station": "counter"
+      },
+      {
+        "text": "Toss on a floured cloth and knead, using one-half cup flour, cover, and again let rise",
+        "station": "counter"
+      },
+      {
+        "text": "Shape as Swedish Tea Braid or Tea Ring I or II, and bake",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -182,10 +128,22 @@
       "Lukewarm water"
     ],
     "steps": [
-      "Mix first five ingredients; when lukewarm add yeast cake, dissolved in lukewarm water and flour",
-      "Cover, and let rise over night",
-      "In the morning cut down, fill hot buttered gem pans two-thirds full, let rise one hour, and bake in a moderate oven",
-      "Unless cooked hominy is rather stiff more flour will be needed"
+      {
+        "text": "Mix first five ingredients; when lukewarm add yeast cake, dissolved in lukewarm water and flour",
+        "station": "counter"
+      },
+      {
+        "text": "Cover, and let rise over night",
+        "station": "counter"
+      },
+      {
+        "text": "In the morning cut down, fill hot buttered gem pans two-thirds full, let rise one hour, and bake in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Unless cooked hominy is rather stiff more flour will be needed",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -199,10 +157,22 @@
       "Cold cooked oatmeal"
     ],
     "steps": [
-      "Add sugar and salt to scalded milk; when lukewarm, add dissolved yeast cake",
-      "Work oatmeal into flour with tips of fingers, and add to first mixture; beat thoroughly, cover, and let rise over night",
-      "In morning, fill buttered iron gem pans two-thirds full, let rise on back of range that pan may gradually heat and mixture rise to fill pan",
-      "Bake in moderate oven twenty-five to thirty minutes"
+      {
+        "text": "Add sugar and salt to scalded milk; when lukewarm, add dissolved yeast cake",
+        "station": "counter"
+      },
+      {
+        "text": "Work oatmeal into flour with tips of fingers, and add to first mixture; beat thoroughly, cover, and let rise over night",
+        "station": "counter"
+      },
+      {
+        "text": "In morning, fill buttered iron gem pans two-thirds full, let rise on back of range that pan may gradually heat and mixture rise to fill pan",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bake in moderate oven twenty-five to thirty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -216,26 +186,18 @@
       "Lukewarm water"
     ],
     "steps": [
-      "Mix first four ingredients, add yeast cake dissolved in lukewarm water, and flour to knead",
-      "Cover, and let rise over night",
-      "In the morning cut down, fill hot buttered gem pans two-thirds full and bake in a moderate oven",
-      "This mixture, when baked in a loaf, makes a delicious bread"
-    ]
-  },
-  {
-    "name": "Squash Biscuits",
-    "ingredients": [
-      "Squash",
-      "Sugar",
-      "Salt",
-      "Scalded milk",
-      "Yeast cake dissolved in",
-      "Lukewarm water",
-      "Butter"
-    ],
-    "steps": [
-      "Add squash, sugar, salt, and butter to milk; when lukewarm, add dissolved yeast cake and flour; cover, and let rise over night",
-      "In morning shape into biscuits, let rise, and bake"
+      {
+        "text": "Mix first four ingredients, add yeast cake dissolved in lukewarm water, and flour to knead",
+        "station": "counter"
+      },
+      {
+        "text": "Cover, and let rise over night",
+        "station": "counter"
+      },
+      {
+        "text": "In the morning cut down, fill hot buttered gem pans two-thirds full and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -249,9 +211,18 @@
       "Butter"
     ],
     "steps": [
-      "Add sugar and salt to milk; when lukewarm add dissolved yeast cake, and one and one-fourth cups flour",
-      "Cover, and let rise until light, then add corn meal, remaining flour, and butter",
-      "Let rise over night; in the morning fill buttered muffin rings two-thirds full; let rise until rings are full and bake thirty minutes in hot oven"
+      {
+        "text": "Add sugar and salt to milk; when lukewarm add dissolved yeast cake, and one and one-fourth cups flour",
+        "station": "counter"
+      },
+      {
+        "text": "Cover, and let rise until light, then add corn meal, remaining flour, and butter",
+        "station": "counter"
+      },
+      {
+        "text": "Let rise over night; in the morning fill buttered muffin rings two-thirds full; let rise until rings are full and bake thirty minutes in hot oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -263,10 +234,22 @@
       "Milk"
     ],
     "steps": [
-      "Beat eggs slightly, add salt, sugar, and milk; strain into a shallow dish",
-      "Soak bread in mixture until soft",
-      "Cook on a hot, well-greased griddle; brown on one side, turn and brown other side",
-      "Serve for breakfast or luncheon, or with a sauce for dessert"
+      {
+        "text": "Beat eggs slightly, add salt, sugar, and milk; strain into a shallow dish",
+        "station": "counter"
+      },
+      {
+        "text": "Soak bread in mixture until soft",
+        "station": "counter"
+      },
+      {
+        "text": "Cook on a hot, well-greased griddle; brown on one side, turn and brown other side",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve for breakfast or luncheon, or with a sauce for dessert",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -280,56 +263,22 @@
       "Eggs"
     ],
     "steps": [
-      "Mix and sift together flour, baking powder, sugar, and salt",
-      "Rub in butter with tips of fingers; add eggs well beaten, and cream",
-      "Toss on a floured board, pat, and roll to three-fourths inch in thickness",
-      "Cut in squares, brush with white of egg, sprinkle with sugar, and bake in a hot oven fifteen minutes"
-    ]
-  },
-  {
-    "name": "Twin Mountain Muffins",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Egg",
-      "Milk",
-      "Flour"
-    ],
-    "steps": [
-      "Cream the butter; add sugar and egg well beaten; sift baking powder with flour, and add to the first mixture, alternating with milk",
-      "Bake in buttered tin gem pans twenty-five minutes"
-    ]
-  },
-  {
-    "name": "Rice Muffins",
-    "ingredients": [
-      "Flour",
-      "Hot cooked rice",
-      "Baking powder",
-      "Sugar",
-      "Milk",
-      "Egg",
-      "Melted butter"
-    ],
-    "steps": [
-      "Mix and sift flour, sugar, salt, and baking powder; add one-half milk, egg well beaten, the remainder of the milk mixed with rice, and beat thoroughly; then add butter",
-      "Bake in buttered muffin rings placed in buttered pan or buttered gem pans"
-    ]
-  },
-  {
-    "name": "Rye Gems",
-    "ingredients": [
-      "Rye flour",
-      "Flour",
-      "Baking powder",
-      "Salt",
-      "Molasses",
-      "Milk",
-      "Eggs"
-    ],
-    "steps": [
-      "Mix and sift dry ingredients, add molasses, milk, eggs well beaten, and butter",
-      "Bake in hot oven in buttered gem pans twenty-five minutes"
+      {
+        "text": "Mix and sift together flour, baking powder, sugar, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Rub in butter with tips of fingers; add eggs well beaten, and cream",
+        "station": "counter"
+      },
+      {
+        "text": "Toss on a floured board, pat, and roll to three-fourths inch in thickness",
+        "station": "counter"
+      },
+      {
+        "text": "Cut in squares, brush with white of egg, sprinkle with sugar, and bake in a hot oven fifteen minutes",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -345,44 +294,26 @@
       "Eggs"
     ],
     "steps": [
-      "Add hominy mixed with salt to boiling water and let stand until hominy absorbs water",
-      "Add scalded milk to corn meal, then add sugar and butter",
-      "Combine mixtures, cool slightly, add yolks of eggs beaten until thick, and whites of eggs beaten until stiff",
-      "Sift in baking powder and beat thoroughly",
-      "Bake in hot buttered gem pans"
-    ]
-  },
-  {
-    "name": "Berkshire Muffins",
-    "ingredients": [
-      "Corn meal",
-      "Flour",
-      "Cooked rice",
-      "Sugar",
-      "Salt",
-      "Scalded milk",
-      "Egg",
-      "Melted butter"
-    ],
-    "steps": [
-      "Turn scalded milk on meal, let stand five minutes; add rice, and flour mixed and sifted with remaining dry ingredients",
-      "Add yolk of egg well beaten, butter, and white of egg beaten stiff and dry"
-    ]
-  },
-  {
-    "name": "Golden Corn Cake",
-    "ingredients": [
-      "Corn meal",
-      "Flour",
-      "Sugar",
-      "Baking powder",
-      "Salt",
-      "Milk",
-      "Egg"
-    ],
-    "steps": [
-      "Mix and sift dry ingredients",
-      "Add milk, egg well beaten, and butter; bake in shallowed buttered pan in hot oven twenty minutes"
+      {
+        "text": "Add hominy mixed with salt to boiling water and let stand until hominy absorbs water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add scalded milk to corn meal, then add sugar and butter",
+        "station": "counter"
+      },
+      {
+        "text": "Combine mixtures, cool slightly, add yolks of eggs beaten until thick, and whites of eggs beaten until stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Sift in baking powder and beat thoroughly",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in hot buttered gem pans",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -397,55 +328,18 @@
       "Baking powder"
     ],
     "steps": [
-      "Cream the butter; add sugar gradually; add milk, alternating with dry ingredients, mixed and sifted",
-      "Beat thoroughly; add whites of eggs beaten stiff",
-      "Bake in buttered cake pan thirty minutes"
-    ]
-  },
-  {
-    "name": "Susie’s Spider Corn Cake",
-    "ingredients": [
-      "Corn meal",
-      "Sour milk",
-      "Soda",
-      "Salt",
-      "Eggs"
-    ],
-    "steps": [
-      "Mix soda, salt, and corn meal; gradually add eggs well beaten and milk",
-      "Heat frying-pan, grease sides and bottom of pan with butter, turn in the mixture, place on middle grate in hot oven, and cook twenty minutes"
-    ]
-  },
-  {
-    "name": "Zante Muffins",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Eggs",
-      "Milk",
-      "Corn meal",
-      "Flour",
-      "Salt",
-      "Baking powder"
-    ],
-    "steps": [
-      "Cream the butter; add sugar, gradually, eggs well beaten, and milk; then add dry ingredients mixed and sifted, and currants",
-      "Bake in buttered individual tins"
-    ]
-  },
-  {
-    "name": "Waffles",
-    "ingredients": [
-      "Flour",
-      "Baking powder",
-      "Salt",
-      "Milk",
-      "Egg yolks",
-      "Egg whites"
-    ],
-    "steps": [
-      "Mix and sift dry ingredients; add milk gradually, yolks of eggs well beaten, butter, and whites of eggs beaten stiff; cook on a greased hot waffle-iron",
-      "Serve with maple syrup"
+      {
+        "text": "Cream the butter; add sugar gradually; add milk, alternating with dry ingredients, mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Beat thoroughly; add whites of eggs beaten stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in buttered cake pan thirty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -459,9 +353,55 @@
       "Egg"
     ],
     "steps": [
-      "Beat egg until light; add milk, dry ingredients mixed and sifted, and melted butter",
-      "Drop by spoonfuls in hot, new, deep fat; fry until light brown and cooked through, which must at first be determined by piercing with a skewer, or breaking apart",
-      "Remove with a skimmer, and drain on brown paper"
+      {
+        "text": "Beat egg until light; add milk, dry ingredients mixed and sifted, and melted butter",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drop by spoonfuls in hot, new, deep fat; fry until light brown and cooked through, which must at first be determined by piercing with a skewer, or breaking apart",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove with a skimmer, and drain on brown paper",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "name": "Fruit Short Cake",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Egg",
+      "Milk",
+      "Flour",
+      "Baking powder"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, and egg well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour, baking powder, and salt, adding alternately with milk to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Beat thoroughly, and bake in a buttered round tin",
+        "station": "oven"
+      },
+      {
+        "text": "Cool, spread thickly with sweetened fruit, and cover with Cream Sauce I or II",
+        "station": "counter"
+      },
+      {
+        "text": "Fresh strawberries, peaches, apricots, raspberries, or canned quince or pineapple may be used",
+        "station": "counter"
+      },
+      {
+        "text": "Dilute cream for Cream Sauce with fruit syrup in place of milk",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -473,24 +413,18 @@
       "Salt"
     ],
     "steps": [
-      "Mix cereal, salt, and cold water; add to boiling water placed on front of range",
-      "Boil five minutes, steam in double boiler thirty minutes; stir in dates, and serve with cream",
-      "To serve for breakfast, or as a simple dessert"
-    ]
-  },
-  {
-    "name": "Boiled Rice",
-    "ingredients": [
-      "Rice",
-      "Boiling water",
-      "Salt"
-    ],
-    "steps": [
-      "Pick over rice; add slowly to boiling, salted water, so as not to check boiling of water",
-      "Boil thirty minutes, or until soft, which may be determined by testing kernels",
-      "Old rice absorbs much more water than new rice, and takes longer for cooking",
-      "Drain in coarse strainer, and pour over one quart hot water; return to kettle in which it was cooked; cover, place on back of range, and let stand to dry off, when kernels are distinct",
-      "When stirring rice, always use a fork to avoid breaking kernels"
+      {
+        "text": "Mix cereal, salt, and cold water; add to boiling water placed on front of range",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil five minutes, steam in double boiler thirty minutes; stir in dates, and serve with cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "To serve for breakfast, or as a simple dessert",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -502,9 +436,18 @@
       "Brown Stock"
     ],
     "steps": [
-      "Melt butter in hot frying-pan, add rice, and stir constantly until rice is well browned",
-      "Add stock heated to boiling-point, and cook in double boiler until soft",
-      "Turn on a serving dish, garnish with pimentoes cut in fancy shapes, and cover with"
+      {
+        "text": "Melt butter in hot frying-pan, add rice, and stir constantly until rice is well browned",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add stock heated to boiling-point, and cook in double boiler until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn on a serving dish, garnish with pimentoes cut in fancy shapes, and cover with",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -518,9 +461,18 @@
       "Salt and paprika"
     ],
     "steps": [
-      "Break macaroni in one-inch pieces and cook in boiling salted water, drain, and reheat in sauce made of butter, flour, and milk, to which is added cheese",
-      "As soon as cheese is melted, season with salt and paprika, and turn on to a serving dish",
-      "Sprinkle with ham, and garnish with parsley"
+      {
+        "text": "Break macaroni in one-inch pieces and cook in boiling salted water, drain, and reheat in sauce made of butter, flour, and milk, to which is added cheese",
+        "station": "stovetop"
+      },
+      {
+        "text": "As soon as cheese is melted, season with salt and paprika, and turn on to a serving dish",
+        "station": "stovetop"
+      },
+      {
+        "text": "Sprinkle with ham, and garnish with parsley",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -534,11 +486,22 @@
       "Cayenne"
     ],
     "steps": [
-      "Heat a small omelet pan, put in butter, and when melted, add cream",
-      "Slip in the eggs one at a time, sprinkle with salt, pepper, and a few grains of cayenne",
-      "When whites are nearly firm, sprinkle with cheese",
-      "Finish cooking, and serve on buttered toast",
-      "Strain cream over the toast"
+      {
+        "text": "Heat a small omelet pan, put in butter, and when melted, add cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Slip in the eggs one at a time, sprinkle with salt, pepper, and a few grains of cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Finish cooking, and serve on buttered toast",
+        "station": "stovetop"
+      },
+      {
+        "text": "Strain cream over the toast",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -550,9 +513,18 @@
       "Pepper"
     ],
     "steps": [
-      "Beat eggs slightly with silver fork; add salt, pepper, and milk",
-      "Heat omelet pan, put in butter, and when melted, turn in the mixture",
-      "Cook until of creamy consistency, stirring and scraping from bottom of the pan"
+      {
+        "text": "Beat eggs slightly with silver fork; add salt, pepper, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Heat omelet pan, put in butter, and when melted, turn in the mixture",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook until of creamy consistency, stirring and scraping from bottom of the pan",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -563,10 +535,22 @@
       "Fine stale bread crumbs"
     ],
     "steps": [
-      "Mix cream, bread crumbs, and salt",
-      "Put one-half tablespoon of mixture in egg-shirrer",
-      "Slip in egg, and cover with remaining mixture",
-      "Bake six minutes in moderate oven"
+      {
+        "text": "Mix cream, bread crumbs, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Put one-half tablespoon of mixture in egg-shirrer",
+        "station": "counter"
+      },
+      {
+        "text": "Slip in egg, and cover with remaining mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Bake six minutes in moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -580,25 +564,102 @@
       "Salt"
     ],
     "steps": [
-      "Cream the butter, add flour, and pour on gradually scalded milk and cream",
-      "Cook in double boiler five minutes, and add yolks of eggs, beaten until thick and lemon-colored",
-      "Remove from fire, add seasonings, and fold in whites of eggs beaten until stiff and dry",
-      "Turn into a buttered dish, or buttered individual moulds, set in pan of hot water, and bake in a slow oven until firm",
-      "Egg Soufflé may be served with White Sauce I, highly seasoned with celery salt, paprika, and onion juice"
+      {
+        "text": "Cream the butter, add flour, and pour on gradually scalded milk and cream",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in double boiler five minutes, and add yolks of eggs, beaten until thick and lemon-colored",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, add seasonings, and fold in whites of eggs beaten until stiff and dry",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered dish, or buttered individual moulds, set in pan of hot water, and bake in a slow oven until firm",
+        "station": "oven"
+      },
+      {
+        "text": "Egg Soufflé may be served with White Sauce I, highly seasoned with celery salt, paprika, and onion juice",
+        "station": "counter"
+      }
     ]
   },
   {
-    "name": "Bread Omelet",
+    "name": "Egg Croquettes",
     "ingredients": [
       "Eggs",
-      "Milk",
-      "Stale bread crumbs",
+      "Butter",
+      "Onion",
+      "Flour",
+      "White stock",
       "Salt",
-      "Pepper"
+      "Pepper",
+      "Egg yolks",
+      "Stale bread crumbs"
     ],
     "steps": [
-      "Soak bread crumbs fifteen minutes in milk, add beaten yolks and seasonings, fold in whites",
-      "Cook and serve as Plain Omelet"
+      {
+        "text": "Poach eggs and dry on a towel",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook butter with onion three minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add flour and, gradually, stock",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt and pepper; then add yolks of eggs slightly beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Cook one minute, and cool",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cover eggs with mixture, roll in bread crumbs and cheese, using equal parts, dip in egg, again roll in crumbs, fry in deep fat, and drain on brown paper",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "name": "Plain Omelet",
+    "ingredients": [
+      "Eggs",
+      "Salt",
+      "Few grains pepper",
+      "Hot water",
+      "Butter"
+    ],
+    "steps": [
+      {
+        "text": "Separate yolks from whites",
+        "station": "counter"
+      },
+      {
+        "text": "Beat yolks until thick and lemon-colored; add salt, pepper, and hot water",
+        "station": "counter"
+      },
+      {
+        "text": "Beat whites until stiff and dry, cutting and folding them into first mixture until they have taken up mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Heat omelet pan, and butter sides and bottom",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn in mixture, spread evenly, place on range where it will cook slowly, occasionally turning the pan that omelet may brown evenly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Fold, and turn on hot platter, and pour around one and one-half cups Thin White Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -610,10 +671,22 @@
       "Pepper"
     ],
     "steps": [
-      "Beat eggs slightly, just enough to blend yolks and whites, add the milk and seasonings",
-      "Put butter in hot omelet pan; when melted, turn in the mixture; as it cooks, prick and pick up with a fork until the whole is of creamy consistency",
-      "Place on hotter part of range that it may brown quickly underneath",
-      "Fold, and turn on hot platter"
+      {
+        "text": "Beat eggs slightly, just enough to blend yolks and whites, add the milk and seasonings",
+        "station": "counter"
+      },
+      {
+        "text": "Put butter in hot omelet pan; when melted, turn in the mixture; as it cooks, prick and pick up with a fork until the whole is of creamy consistency",
+        "station": "stovetop"
+      },
+      {
+        "text": "Place on hotter part of range that it may brown quickly underneath",
+        "station": "counter"
+      },
+      {
+        "text": "Fold, and turn on hot platter",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -626,11 +699,26 @@
       "Butter"
     ],
     "steps": [
-      "Mix salt and flour, and add gradually milk",
-      "Beat eggs until thick and lemon-colored, then add to first mixture",
-      "Heat iron frying-pan and put in two-thirds of the butter; when butter is melted, pour in mixture",
-      "As it cooks, lift with a griddle-cake turner so that uncooked part may run underneath; add remaining butter as needed, and continue lifting the cooked part until it is firm throughout",
-      "Place on hotter part of range to brown; roll, and turn on hot platter"
+      {
+        "text": "Mix salt and flour, and add gradually milk",
+        "station": "counter"
+      },
+      {
+        "text": "Beat eggs until thick and lemon-colored, then add to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Heat iron frying-pan and put in two-thirds of the butter; when butter is melted, pour in mixture",
+        "station": "stovetop"
+      },
+      {
+        "text": "As it cooks, lift with a griddle-cake turner so that uncooked part may run underneath; add remaining butter as needed, and continue lifting the cooked part until it is firm throughout",
+        "station": "stovetop"
+      },
+      {
+        "text": "Place on hotter part of range to brown; roll, and turn on hot platter",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -646,9 +734,18 @@
       "Salt"
     ],
     "steps": [
-      "Soak beans over night; in the morning drain and add cold water; cook until soft, and rub through a sieve",
-      "Cut vegetables in small cubes, and cook five minutes in half the butter; remove vegetables, add flour, salt, and pepper, and stir into boiling soup",
-      "Add cream, reheat, strain, and add remaining butter in small pieces"
+      {
+        "text": "Soak beans over night; in the morning drain and add cold water; cook until soft, and rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cut vegetables in small cubes, and cook five minutes in half the butter; remove vegetables, add flour, salt, and pepper, and stir into boiling soup",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add cream, reheat, strain, and add remaining butter in small pieces",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -663,10 +760,22 @@
       "Salt"
     ],
     "steps": [
-      "Chop the corn, add water, and simmer twenty minutes; rub through a sieve",
-      "Scald milk with onion, remove onion, and add milk to corn",
-      "Bind with butter and flour cooked together",
-      "Add salt and pepper"
+      {
+        "text": "Chop the corn, add water, and simmer twenty minutes; rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Scald milk with onion, remove onion, and add milk to corn",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bind with butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add salt and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -681,11 +790,26 @@
       "Salt"
     ],
     "steps": [
-      "Rub fish through a sieve",
-      "Scald milk with onion and mace",
-      "Remove seasonings, and add fish",
-      "Bind with half the butter and flour cooked together",
-      "Add salt, pepper, and the remaining butter in small pieces"
+      {
+        "text": "Rub fish through a sieve",
+        "station": "counter"
+      },
+      {
+        "text": "Scald milk with onion and mace",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove seasonings, and add fish",
+        "station": "counter"
+      },
+      {
+        "text": "Bind with half the butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add salt, pepper, and the remaining butter in small pieces",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -701,10 +825,22 @@
       "Salt"
     ],
     "steps": [
-      "Drain peas from their liquor, add sugar and cold water, and simmer twenty minutes",
-      "Rub through a sieve, reheat, and thicken with butter and flour cooked together",
-      "Scald milk with onion, remove onion, and add milk to pea mixture, season with salt and pepper",
-      "Peas too old to serve as a vegetable may be utilized for soups"
+      {
+        "text": "Drain peas from their liquor, add sugar and cold water, and simmer twenty minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Rub through a sieve, reheat, and thicken with butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Scald milk with onion, remove onion, and add milk to pea mixture, season with salt and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Peas too old to serve as a vegetable may be utilized for soups",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -720,46 +856,22 @@
       "Pepper"
     ],
     "steps": [
-      "Pick over peas and soak several hours, drain, add cold water, pork, and onion",
-      "Simmer three or four hours, or until soft; rub through a sieve",
-      "Add butter and flour cooked together, salt, and pepper",
-      "Dilute with milk, adding more if necessary",
-      "The water in which a ham has been cooked may be used; in such case omit salt"
-    ]
-  },
-  {
-    "name": "Kornlet Soup",
-    "ingredients": [
-      "Kornlet",
-      "Cold water",
-      "Milk, scalded",
-      "Butter",
-      "Chopped onion",
-      "Flour",
-      "Salt"
-    ],
-    "steps": [
-      "Cook kornlet in cold water twenty minutes; rub through a sieve, and add milk",
-      "Fry butter and onion three minutes; remove onion, add flour, salt, and pepper, and stir into boiling soup"
-    ]
-  },
-  {
-    "name": "Potato Soup",
-    "ingredients": [
-      "Potatoes",
-      "Milk",
-      "Onion",
-      "Butter",
-      "Flour",
-      "Salt",
-      "Celery salt",
-      "Pepper",
-      "Few grains cayenne"
-    ],
-    "steps": [
-      "Cook potatoes in boiling salted water; when soft, rub through a strainer",
-      "Scald milk with onion, remove onion, and add milk slowly to potatoes",
-      "Melt half the butter, add dry ingredients, stir until well mixed, then stir into boiling soup; cook one minute, strain, add remaining butter, and sprinkle with parsley"
+      {
+        "text": "Pick over peas and soak several hours, drain, add cold water, pork, and onion",
+        "station": "counter"
+      },
+      {
+        "text": "Simmer three or four hours, or until soft; rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add butter and flour cooked together, salt, and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Dilute with milk, adding more if necessary",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -775,101 +887,30 @@
       "Salt"
     ],
     "steps": [
-      "Wash, pare, and cut potatoes in halves",
-      "Wash, pare, and cut turnips in one-quarter inch slices",
-      "Parboil together ten minutes, drain, add onion cut in slices, and three cups boiling water",
-      "Cook until vegetables are soft; drain, reserving the water to add to vegetables after rubbing them through a sieve",
-      "Add milk, reheat, and bind with butter and flour cooked together",
-      "Season with salt and pepper"
-    ]
-  },
-  {
-    "name": "Salmon Soup",
-    "ingredients": [
-      "Salmon",
-      "Scalded milk",
-      "Butter",
-      "Flour",
-      "Salt"
-    ],
-    "steps": [
-      "Drain oil from salmon, remove skin and bones, rub through a sieve",
-      "Add gradually the milk, season, and bind"
-    ]
-  },
-  {
-    "name": "Squash Soup",
-    "ingredients": [
-      "Cooked squash",
-      "Milk",
-      "Onion",
-      "Butter",
-      "Flour",
-      "Salt",
-      "Few grains pepper"
-    ],
-    "steps": [
-      "Rub squash through a sieve before measuring",
-      "Scald milk with onion, remove onion, and add milk to squash; season, and bind"
-    ]
-  },
-  {
-    "name": "Cream of Tomato Soup",
-    "ingredients": [
-      "Tomatoes",
-      "Sugar",
-      "Soda",
-      "Milk",
-      "Onion",
-      "Flour",
-      "Salt",
-      "Pepper"
-    ],
-    "steps": [
-      "Scald milk with onion, remove onion, and thicken milk with flour diluted with cold water until thin enough to pour, being careful that the mixture is free from lumps; cook twenty minutes, stirring constantly at first",
-      "Cook tomatoes with sugar fifteen minutes, add soda, and rub through a sieve; combine mixtures, and strain into tureen over butter, salt, and pepper"
-    ]
-  },
-  {
-    "name": "Fritter Beans",
-    "ingredients": [
-      "Egg",
-      "Milk",
-      "Salt"
-    ],
-    "steps": [
-      "Beat egg until light, add milk, salt, and flour",
-      "Put through colander or pastry tube into deep fat, and fry until brown; drain on brown paper"
-    ]
-  },
-  {
-    "name": "Oyster Stuffing",
-    "ingredients": [
-      "Cracker crumbs",
-      "Melted butter",
-      "Salt",
-      "Pepper",
-      "Lemon juice",
-      "Finely chopped parsley"
-    ],
-    "steps": [
-      "Add seasonings and butter to cracker crumbs",
-      "Clean oysters, and remove tough muscles; add soft parts to mixture, with two tablespoons oyster liquor to moisten"
-    ]
-  },
-  {
-    "name": "Terrapin à la Baltimore",
-    "ingredients": [
-      "Terrapin",
-      "White Stock",
-      "Wine",
-      "Cayenne",
-      "Butter",
-      "Salt and pepper"
-    ],
-    "steps": [
-      "To stock and wine add terrapin meat, with bones cut in pieces and entrails cut in smaller pieces; then cook slowly until liquor is reduced one-half",
-      "Add liver separated in pieces, eggs, butter, salt, pepper, and cayenne"
+      {
+        "text": "Wash, pare, and cut potatoes in halves",
+        "station": "counter"
+      },
+      {
+        "text": "Wash, pare, and cut turnips in one-quarter inch slices",
+        "station": "counter"
+      },
+      {
+        "text": "Parboil together ten minutes, drain, add onion cut in slices, and three cups boiling water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook until vegetables are soft; drain, reserving the water to add to vegetables after rubbing them through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add milk, reheat, and bind with butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Season with salt and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -885,22 +926,22 @@
       "Eggs"
     ],
     "steps": [
-      "Melt the butter, add flour, and pour on slowly the cream",
-      "Add terrapin meat with bones cut in pieces, entrails cut smaller, liver separated in pieces, eggs of terrapin, and mushrooms",
-      "Season with salt and cayenne",
-      "Just before serving, add eggs slightly beaten and two tablespoons Sherry wine"
-    ]
-  },
-  {
-    "name": "Buttered Lobster",
-    "ingredients": [
-      "Lobster",
-      "Butter",
-      "Salt and pepper"
-    ],
-    "steps": [
-      "Remove lobster meat from shell and chop slightly",
-      "Melt butter, add lobster, and when heated, season and serve garnished with lobster claws"
+      {
+        "text": "Melt the butter, add flour, and pour on slowly the cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add terrapin meat with bones cut in pieces, entrails cut smaller, liver separated in pieces, eggs of terrapin, and mushrooms",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt and cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Just before serving, add eggs slightly beaten and two tablespoons Sherry wine",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -912,28 +953,30 @@
       "Few grains cayenne"
     ],
     "steps": [
-      "Remove lobster meat from shell and cut in cubes",
-      "Heat in White Sauce and add seasonings",
-      "Refill lobster shells, cover with buttered crumbs, and bake until crumbs are brown",
-      "To prevent lobster shells from curling over lobster while baking, insert small wooden skewers of sufficient length to keep shell in its original shape",
-      "To assist in preserving color of shell, brush over with olive oil before putting into oven",
-      "Scalloped lobster may be baked in buttered scallop shells, or in a buttered baking-dish"
-    ]
-  },
-  {
-    "name": "Lobster Farci",
-    "ingredients": [
-      "Chopped lobster meat",
-      "Egg yolks",
-      "Chopped parsley",
-      "White Sauce I",
-      "Slight grating nutmeg",
-      "Buttered crumbs",
-      "Salt"
-    ],
-    "steps": [
-      "To lobster meat add yolks of eggs rubbed to a paste, parsley, sauce, and seasonings to taste",
-      "Fill lobster shells, cover with buttered crumbs, and bake until crumbs are brown"
+      {
+        "text": "Remove lobster meat from shell and cut in cubes",
+        "station": "counter"
+      },
+      {
+        "text": "Heat in White Sauce and add seasonings",
+        "station": "stovetop"
+      },
+      {
+        "text": "Refill lobster shells, cover with buttered crumbs, and bake until crumbs are brown",
+        "station": "oven"
+      },
+      {
+        "text": "To prevent lobster shells from curling over lobster while baking, insert small wooden skewers of sufficient length to keep shell in its original shape",
+        "station": "oven"
+      },
+      {
+        "text": "To assist in preserving color of shell, brush over with olive oil before putting into oven",
+        "station": "oven"
+      },
+      {
+        "text": "Scalloped lobster may be baked in buttered scallop shells, or in a buttered baking-dish",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -945,11 +988,89 @@
       "Salt"
     ],
     "steps": [
-      "Mix salt and flour, and add milk gradually to form a smooth paste; then add eggs beaten until very light",
-      "Cover bottom of hot pan with some of beef fat tried out from roast, pour mixture in pan one-half inch deep",
-      "Bake twenty minutes in hot oven, basting after well risen, with some of the fat from pan in which meat is roasting",
-      "Cut in squares for serving",
-      "Bake, if preferred, in greased, hissing hot iron gem pans"
+      {
+        "text": "Mix salt and flour, and add milk gradually to form a smooth paste; then add eggs beaten until very light",
+        "station": "counter"
+      },
+      {
+        "text": "Cover bottom of hot pan with some of beef fat tried out from roast, pour mixture in pan one-half inch deep",
+        "station": "oven"
+      },
+      {
+        "text": "Bake twenty minutes in hot oven, basting after well risen, with some of the fat from pan in which meat is roasting",
+        "station": "oven"
+      },
+      {
+        "text": "Cut in squares for serving",
+        "station": "counter"
+      },
+      {
+        "text": "Bake, if preferred, in greased, hissing hot iron gem pans",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "name": "Dumplings",
+    "ingredients": [
+      "Flour",
+      "Baking powder",
+      "Salt",
+      "Butter"
+    ],
+    "steps": [
+      {
+        "text": "Mix and sift dry ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Work in butter with tips of fingers, and add milk gradually, using a knife for mixing",
+        "station": "counter"
+      },
+      {
+        "text": "Toss on a floured board, pat, and roll out to one-half inch in thickness",
+        "station": "counter"
+      },
+      {
+        "text": "Shape with biscuit-cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Place closely together in a buttered steamer, put over kettle of boiling water, cover closely, and steam twelve minutes",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "name": "Mutton Broth",
+    "ingredients": [
+      "Mutton",
+      "Cold water",
+      "Salt",
+      "Few grins pepper",
+      "Rice or"
+    ],
+    "steps": [
+      {
+        "text": "Wipe meat, remove skin and fat, and cut in small pieces",
+        "station": "counter"
+      },
+      {
+        "text": "Put into kettle with bones, and cover with cold water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Heat gradually to boiling-point, skim, then season with salt and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook slowly until meat is tender, strain, and remove fat",
+        "station": "stovetop"
+      },
+      {
+        "text": "Reheat to boiling-point, add rice or barley, and cook until rice or barley is tender",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -962,12 +1083,30 @@
       "Salt"
     ],
     "steps": [
-      "Clean, dress, and cut chicken in pieces for serving",
-      "Put butter in a hot frying-pan, add chicken, and cook ten minutes; then add liver and gizzard and cook ten minutes longer",
-      "Cut onions in thin slices, and add to chicken with curry powder and salt",
-      "Add enough boiling water to cover, and simmer until chicken is tender",
-      "Remove chicken; strain, and thicken liquor with flour diluted with enough cold water to pour easily",
-      "Pour gravy over chicken, and serve with a border of rice or Turkish Pilaf"
+      {
+        "text": "Clean, dress, and cut chicken in pieces for serving",
+        "station": "counter"
+      },
+      {
+        "text": "Put butter in a hot frying-pan, add chicken, and cook ten minutes; then add liver and gizzard and cook ten minutes longer",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cut onions in thin slices, and add to chicken with curry powder and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Add enough boiling water to cover, and simmer until chicken is tender",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove chicken; strain, and thicken liquor with flour diluted with enough cold water to pour easily",
+        "station": "counter"
+      },
+      {
+        "text": "Pour gravy over chicken, and serve with a border of rice or Turkish Pilaf",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -980,25 +1119,26 @@
       "Cream"
     ],
     "steps": [
-      "Shell and blanch chestnuts",
-      "Cook in boiling salted water until soft",
-      "Drain and mash, using a potato ricer",
-      "Add one-half the butter, salt, pepper, and cream",
-      "Melt remaining butter, mix with cracker crumbs, then combine mixtures"
-    ]
-  },
-  {
-    "name": "Thin White Sauce",
-    "ingredients": [
-      "Butter",
-      "Flour",
-      "Scalded milk",
-      "Salt"
-    ],
-    "steps": [
-      "Put butter in saucepan, stir until melted and bubbling; add flour mixed with seasonings, and stir until thoroughly blended",
-      "Pour on gradually the milk, adding about one-third at a time, stirring until well mixed, then beating until smooth and glossy",
-      "If a wire whisk is used, all the milk may be added at once"
+      {
+        "text": "Shell and blanch chestnuts",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in boiling salted water until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain and mash, using a potato ricer",
+        "station": "counter"
+      },
+      {
+        "text": "Add one-half the butter, salt, pepper, and cream",
+        "station": "counter"
+      },
+      {
+        "text": "Melt remaining butter, mix with cracker crumbs, then combine mixtures",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1009,10 +1149,22 @@
       "Cream or milk"
     ],
     "steps": [
-      "Cover onions with boiling water, cook five minutes, drain, again cover with boiling water, and cook until soft; drain, and rub through a sieve",
-      "Add to sauce with cream",
-      "Season with salt and pepper",
-      "Serve with mutton, pork chops, or “hard-boiled” eggs"
+      {
+        "text": "Cover onions with boiling water, cook five minutes, drain, again cover with boiling water, and cook until soft; drain, and rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add to sauce with cream",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt and pepper",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with mutton, pork chops, or “hard-boiled” eggs",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1024,60 +1176,18 @@
       "Salt"
     ],
     "steps": [
-      "Melt one-half the butter, add flour with seasonings, and pour on gradually hot water",
-      "Boil five minutes, and add remaining butter in small pieces",
-      "To be served with boiled or baked fish"
-    ]
-  },
-  {
-    "name": "Brown Sauce II (Espagnole)",
-    "ingredients": [
-      "Butter",
-      "Carrot",
-      "Onion",
-      "Bay leaf",
-      "Thyme",
-      "Parsley",
-      "Peppercorns",
-      "Flour",
-      "Brown Stock"
-    ],
-    "steps": [
-      "Cook butter with carrot, onion, bay leaf, thyme, parsley, and peppercorns, until brown, stirring constantly, care being taken that butter is not allowed to burn; add flour, and when well browned, add stock gradually",
-      "Bring to boiling-point, strain, and season with salt and pepper"
-    ]
-  },
-  {
-    "name": "Tomato Sauce I (without Stock)",
-    "ingredients": [
-      "Tomatoes or",
-      "Fresh stewed tomatoes",
-      "Onion",
-      "Butter",
-      "Flour",
-      "Salt"
-    ],
-    "steps": [
-      "Cook onion with tomatoes fifteen minutes, rub through a strainer, and add to butter and flour (to which seasonings have been added) cooked together",
-      "If tomatoes are very acid, add a few grains of soda",
-      "If tomatoes are to retain their red color it is necessary to brown butter and flour together before adding the tomatoes"
-    ]
-  },
-  {
-    "name": "Tomato Cream Sauce",
-    "ingredients": [
-      "Tomatoes",
-      "Thyme",
-      "Celery",
-      "Onion",
-      "Bay leaf",
-      "White Sauce I",
-      "Salt",
-      "Few grains cayenne"
-    ],
-    "steps": [
-      "Cook tomatoes twenty minutes with seasonings; rub through a strainer, add soda, then White Sauce",
-      "Serve with Baked Fish or Lobster Cutlets"
+      {
+        "text": "Melt one-half the butter, add flour with seasonings, and pour on gradually hot water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil five minutes, and add remaining butter in small pieces",
+        "station": "stovetop"
+      },
+      {
+        "text": "To be served with boiled or baked fish",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1094,9 +1204,18 @@
       "Salt"
     ],
     "steps": [
-      "Melt butter, add flour, and pour on gradually White Stock",
-      "Just before serving add remaining ingredients",
-      "Serve with boiled or steamed fish"
+      {
+        "text": "Melt butter, add flour, and pour on gradually White Stock",
+        "station": "stovetop"
+      },
+      {
+        "text": "Just before serving add remaining ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with boiled or steamed fish",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1110,36 +1229,18 @@
       "Pepper"
     ],
     "steps": [
-      "Wash oysters, reserve liquor, heat, strain, add oysters, and cook until plump",
-      "Remove oysters, and make a sauce of butter, flour, oyster liquor, and milk",
-      "Add oysters, and season with salt and pepper"
-    ]
-  },
-  {
-    "name": "Maître d’Hôtel Butter",
-    "ingredients": [
-      "Butter",
-      "Salt",
-      "Pepper",
-      "Finely chopped parsley"
-    ],
-    "steps": [
-      "Put butter in a bowl, and with small wooden spoon work until creamy",
-      "Add salt, pepper, and parsley, then lemon juice very slowly"
-    ]
-  },
-  {
-    "name": "Tartar Sauce",
-    "ingredients": [
-      "Vinegar",
-      "Lemon juice",
-      "Salt",
-      "Worcestershire Sauce",
-      "Butter"
-    ],
-    "steps": [
-      "Mix vinegar, lemon juice, salt, and Worcestershire Sauce in a small bowl, and heat over hot water",
-      "Brown the butter in an omelet pan, and strain into first mixture"
+      {
+        "text": "Wash oysters, reserve liquor, heat, strain, add oysters, and cook until plump",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove oysters, and make a sauce of butter, flour, oyster liquor, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Add oysters, and season with salt and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1154,9 +1255,18 @@
       "Butter"
     ],
     "steps": [
-      "Cook milk thirty minutes in double boiler, with fine bread crumbs and onion stuck with cloves",
-      "Remove onion, add salt, cayenne, and two tablespoons butter",
-      "Usually served poured around roast partridge or grouse, and sprinkled with coarse crumbs browned in remaining butter"
+      {
+        "text": "Cook milk thirty minutes in double boiler, with fine bread crumbs and onion stuck with cloves",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove onion, add salt, cayenne, and two tablespoons butter",
+        "station": "counter"
+      },
+      {
+        "text": "Usually served poured around roast partridge or grouse, and sprinkled with coarse crumbs browned in remaining butter",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1169,9 +1279,18 @@
       "Butter"
     ],
     "steps": [
-      "Wash rice, add to milk, and cook in double boiler until soft",
-      "Rub through a fine strainer, return to double boiler, add onion stuck with cloves, and cook fifteen minutes",
-      "Remove onion, add butter, salt, and pepper"
+      {
+        "text": "Wash rice, add to milk, and cook in double boiler until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Rub through a fine strainer, return to double boiler, add onion stuck with cloves, and cook fifteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove onion, add butter, salt, and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1188,10 +1307,22 @@
       "Cream"
     ],
     "steps": [
-      "Melt butter, add flour, and pour on gradually White Stock; then add salt, pepper, mustard, chives, and horseradish",
-      "Cook two minutes, strain, add cream and lemon juice",
-      "Reheat before serving",
-      "Serve with Beef Tenderloins or Hamburg Steaks"
+      {
+        "text": "Melt butter, add flour, and pour on gradually White Stock; then add salt, pepper, mustard, chives, and horseradish",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook two minutes, strain, add cream and lemon juice",
+        "station": "stovetop"
+      },
+      {
+        "text": "Reheat before serving",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with Beef Tenderloins or Hamburg Steaks",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1204,9 +1335,18 @@
       "Paprika"
     ],
     "steps": [
-      "Chop corn, and add dry ingredients mixed and sifted, then add yolks of eggs beaten until thick, and fold in whites of eggs beaten stiff",
-      "Cook in a frying-pan in fresh hot lard",
-      "Drain on paper"
+      {
+        "text": "Chop corn, and add dry ingredients mixed and sifted, then add yolks of eggs beaten until thick, and fold in whites of eggs beaten stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in a frying-pan in fresh hot lard",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain on paper",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1222,11 +1362,26 @@
       "Corn-starch"
     ],
     "steps": [
-      "Cook first four ingredients twenty minutes, rub all through a sieve except seeds, and season with salt and pepper",
-      "Melt butter, and when bubbling, add corn-starch and tomato gradually; cook two minutes, then add egg slightly beaten",
-      "Pour into a buttered shallow tin, and cool",
-      "Turn on a board, cut in squares, diamonds, or strips",
-      "Roll in crumbs, egg, and crumbs again, fry in deep fat, and drain"
+      {
+        "text": "Cook first four ingredients twenty minutes, rub all through a sieve except seeds, and season with salt and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Melt butter, and when bubbling, add corn-starch and tomato gradually; cook two minutes, then add egg slightly beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour into a buttered shallow tin, and cool",
+        "station": "counter"
+      },
+      {
+        "text": "Turn on a board, cut in squares, diamonds, or strips",
+        "station": "counter"
+      },
+      {
+        "text": "Roll in crumbs, egg, and crumbs again, fry in deep fat, and drain",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1241,11 +1396,26 @@
       "Egg yolks"
     ],
     "steps": [
-      "Mix corn-starch, flour, sugar, and salt",
-      "Dilute with cold milk and add beaten yolks; then add gradually to scalded milk and cook fifteen minutes in double boiler",
-      "Add cherries, pour into a buttered shallow tin, and cool",
-      "Turn on a board, cut in squares, dip in flour, egg, and crumbs, fry in deep fat, and drain",
-      "Serve with Maraschino Sauce"
+      {
+        "text": "Mix corn-starch, flour, sugar, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Dilute with cold milk and add beaten yolks; then add gradually to scalded milk and cook fifteen minutes in double boiler",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add cherries, pour into a buttered shallow tin, and cool",
+        "station": "counter"
+      },
+      {
+        "text": "Turn on a board, cut in squares, dip in flour, egg, and crumbs, fry in deep fat, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Maraschino Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1257,10 +1427,22 @@
       "Salt"
     ],
     "steps": [
-      "Mix farina, sugar, and salt, add to milk, and cook in double boiler twenty minutes, stirring constantly until mixture has thickened",
-      "Add egg slightly beaten, pour into a buttered shallow pan, and brush over with one egg slightly beaten and diluted with one tablespoon milk",
-      "Brown in a moderate oven",
-      "Cut in squares, and serve with a cube of jelly on each square"
+      {
+        "text": "Mix farina, sugar, and salt, add to milk, and cook in double boiler twenty minutes, stirring constantly until mixture has thickened",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add egg slightly beaten, pour into a buttered shallow pan, and brush over with one egg slightly beaten and diluted with one tablespoon milk",
+        "station": "counter"
+      },
+      {
+        "text": "Brown in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Cut in squares, and serve with a cube of jelly on each square",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1274,12 +1456,30 @@
       "Egg yolks"
     ],
     "steps": [
-      "Melt butter, and when bubbling, add flour, corn-starch, salt, and milk, gradually",
-      "Cook three minutes, stirring constantly",
-      "Add yolks of eggs slightly beaten, and one-half cup cheese",
-      "Pour into a buttered shallow pan, and cool",
-      "Turn on a board, cut in squares, diamonds, or strips",
-      "Place on a platter, sprinkle with remaining cheese, and brown in oven"
+      {
+        "text": "Melt butter, and when bubbling, add flour, corn-starch, salt, and milk, gradually",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook three minutes, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add yolks of eggs slightly beaten, and one-half cup cheese",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered shallow pan, and cool",
+        "station": "counter"
+      },
+      {
+        "text": "Turn on a board, cut in squares, diamonds, or strips",
+        "station": "counter"
+      },
+      {
+        "text": "Place on a platter, sprinkle with remaining cheese, and brown in oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1291,12 +1491,30 @@
       "Eggs"
     ],
     "steps": [
-      "Put butter in small saucepan and pour on water",
-      "As soon as water again reaches boiling-point, add flour all at once and stir until mixture leaves sides of saucepan, cleaving to spoon",
-      "Remove from fire and add eggs unbeaten, one at a time, beating mixture thoroughly between addition of eggs",
-      "Drop by spoonfuls and fry in deep fat until well puffed and browned",
-      "Drain, make an opening, and fill with preserve or marmalade",
-      "Sprinkle with powdered sugar and serve on a folded napkin"
+      {
+        "text": "Put butter in small saucepan and pour on water",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as water again reaches boiling-point, add flour all at once and stir until mixture leaves sides of saucepan, cleaving to spoon",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire and add eggs unbeaten, one at a time, beating mixture thoroughly between addition of eggs",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls and fry in deep fat until well puffed and browned",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain, make an opening, and fill with preserve or marmalade",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with powdered sugar and serve on a folded napkin",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1310,23 +1528,22 @@
       "Salt"
     ],
     "steps": [
-      "Clean clams, drain from their liquor, and chop",
-      "Beat eggs until light, add milk and flour mixed and sifted with baking powder, then add chopped clams, and season highly with salt and pepper",
-      "Drop by spoonfuls, and fry in deep fat",
-      "Drain on brown paper, and serve at once on a folded napkin"
-    ]
-  },
-  {
-    "name": "Chestnut Croquettes",
-    "ingredients": [
-      "Mashed French chestnuts",
-      "Thick cream",
-      "Egg yolks",
-      "Sugar"
-    ],
-    "steps": [
-      "Mix ingredients in order given",
-      "Shape in balls, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain"
+      {
+        "text": "Clean clams, drain from their liquor, and chop",
+        "station": "counter"
+      },
+      {
+        "text": "Beat eggs until light, add milk and flour mixed and sifted with baking powder, then add chopped clams, and season highly with salt and pepper",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls, and fry in deep fat",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain on brown paper, and serve at once on a folded napkin",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1340,9 +1557,18 @@
       "Salt"
     ],
     "steps": [
-      "Mix ingredients in order given, cook two minutes, and cool",
-      "Shape a little larger than French chestnuts, dip in crumbs, egg, and crumbs again",
-      "Fry in deep fat, and drain on brown paper"
+      {
+        "text": "Mix ingredients in order given, cook two minutes, and cool",
+        "station": "stovetop"
+      },
+      {
+        "text": "Shape a little larger than French chestnuts, dip in crumbs, egg, and crumbs again",
+        "station": "counter"
+      },
+      {
+        "text": "Fry in deep fat, and drain on brown paper",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1354,9 +1580,18 @@
       "Lemon juice"
     ],
     "steps": [
-      "Add sauce to salmon, then add seasonings",
-      "Spread on a plate to cool",
-      "Shape, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain"
+      {
+        "text": "Add sauce to salmon, then add seasonings",
+        "station": "counter"
+      },
+      {
+        "text": "Spread on a plate to cool",
+        "station": "counter"
+      },
+      {
+        "text": "Shape, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1369,9 +1604,18 @@
       "Lemon"
     ],
     "steps": [
-      "Add seasonings to lobster, then add Thick White Sauce",
-      "Cool, shape, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain",
-      "Serve with Tomato Cream Sauce"
+      {
+        "text": "Add seasonings to lobster, then add Thick White Sauce",
+        "station": "counter"
+      },
+      {
+        "text": "Cool, shape, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Tomato Cream Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1385,39 +1629,22 @@
       "Cabbage"
     ],
     "steps": [
-      "Mix beef and rice, and add salt, pepper, and cayenne",
-      "Cook cabbage leaves two minutes in boiling water to cover",
-      "In each leaf put two tablespoons mixture, and fold leaf to enclose mixture",
-      "Cook one hour in Tomato Sauce"
-    ]
-  },
-  {
-    "name": "Swedish Timbales",
-    "ingredients": [
-      "Flour",
-      "Salt",
-      "Sugar",
-      "Milk",
-      "Egg"
-    ],
-    "steps": [
-      "Mix dry ingredients, add milk gradually, and beaten egg; then add olive oil",
-      "Shape, using a hot timbale iron, fry in deep fat until crisp and brown; take from iron and invert on brown paper to drain"
-    ]
-  },
-  {
-    "name": "Crab meat, Indienne",
-    "ingredients": [
-      "Butter",
-      "Finely chopped onion",
-      "Flour",
-      "Curry powder",
-      "Chicken stock",
-      "Crab meat"
-    ],
-    "steps": [
-      "Cook butter with onion three minutes, add flour mixed with curry powder and chicken stock",
-      "When boiling-point is reached add crab meat and season with salt"
+      {
+        "text": "Mix beef and rice, and add salt, pepper, and cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Cook cabbage leaves two minutes in boiling water to cover",
+        "station": "stovetop"
+      },
+      {
+        "text": "In each leaf put two tablespoons mixture, and fold leaf to enclose mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Cook one hour in Tomato Sauce",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1430,10 +1657,22 @@
       "Few grains cayenne"
     ],
     "steps": [
-      "Clean scallops, drain, and heat to the boiling-point; drain again, and reserve liquor",
-      "Cream the butter, add mustard, salt, cayenne, two-thirds cup reserved liquor, and scallops chopped",
-      "Let stand one-half hour",
-      "Put in a baking-dish, cover with crumbs, and bake twenty minutes"
+      {
+        "text": "Clean scallops, drain, and heat to the boiling-point; drain again, and reserve liquor",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cream the butter, add mustard, salt, cayenne, two-thirds cup reserved liquor, and scallops chopped",
+        "station": "counter"
+      },
+      {
+        "text": "Let stand one-half hour",
+        "station": "counter"
+      },
+      {
+        "text": "Put in a baking-dish, cover with crumbs, and bake twenty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1450,9 +1689,18 @@
       "Worcestershire Sauce"
     ],
     "steps": [
-      "Melt butter, add flour mixed with dry seasonings, and pour on gradually the milk",
-      "Add Kornlet, egg slightly beaten, and Worcestershire Sauce",
-      "Pour into a buttered baking-dish, cover with crumbs, and bake until crumbs are brown"
+      {
+        "text": "Melt butter, add flour mixed with dry seasonings, and pour on gradually the milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add Kornlet, egg slightly beaten, and Worcestershire Sauce",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered baking-dish, cover with crumbs, and bake until crumbs are brown",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1465,37 +1713,62 @@
       "Egg whites"
     ],
     "steps": [
-      "Mix cheese with flour and seasonings",
-      "Beat whites of eggs until stiff, and add to first mixture",
-      "Shape in small balls, roll in cracker dust, fry in deep fat, and drain on brown paper",
-      "Serve with salad course"
+      {
+        "text": "Mix cheese with flour and seasonings",
+        "station": "counter"
+      },
+      {
+        "text": "Beat whites of eggs until stiff, and add to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Shape in small balls, roll in cracker dust, fry in deep fat, and drain on brown paper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with salad course",
+        "station": "counter"
+      }
     ]
   },
   {
-    "name": "Indian Pudding",
+    "name": "Quail Pies",
     "ingredients": [
-      "Scalded milk",
-      "Indian meal",
-      "Molasses",
-      "Salt"
+      "Quails",
+      "Carrot",
+      "Celery",
+      "Onion",
+      "Parsley",
+      "Bay leaf",
+      "Peppercorns",
+      "Flour",
+      "Salt and pepper"
     ],
     "steps": [
-      "Pour milk slowly on meal, cook in double boiler twenty minutes, add molasses, salt, and ginger; pour into buttered pudding-dish and bake two hours in slow oven; serve with cream",
-      "If baked too rapidly it will not whey",
-      "Ginger may be omitted"
-    ]
-  },
-  {
-    "name": "Cerealine Pudding",
-    "ingredients": [
-      "Scalded milk",
-      "Cerealine",
-      "Molasses",
-      "Salt"
-    ],
-    "steps": [
-      "Pour milk on cerealine, add remaining ingredients, pour into buttered pudding-dish, and bake one hour in slow oven",
-      "Serve with cream"
+      {
+        "text": "Remove breasts and legs from birds, season with salt and pepper, dredge with flour, and sauté in butter",
+        "station": "counter"
+      },
+      {
+        "text": "To butter in pan add vegetables and peppercorns, and cook five minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Separate backs of birds in pieces, cover with cold water, add vegetables, and cook slowly one hour",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain stock from vegetables, and thicken with flour diluted with enough cold water to pour easily",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt, pepper, and wine",
+        "station": "counter"
+      },
+      {
+        "text": "Allow one bird to each individual dish, sauce to make sufficiently moist, and cover with plain or puff paste, in which make two incisions, through which the legs of the bird should extend",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1509,11 +1782,26 @@
       "Salt"
     ],
     "steps": [
-      "Soak tapioca two hours in cold water to cover",
-      "Pour scalded milk over Indian meal, molasses, butter, and salt",
-      "Cook in double boiler until mixture thickens",
-      "Add tapioca drained from water, turn into buttered pudding-dish, and pour over remaining milk, but do not stir",
-      "Bake one and one-fourth hours in a slow oven"
+      {
+        "text": "Soak tapioca two hours in cold water to cover",
+        "station": "counter"
+      },
+      {
+        "text": "Pour scalded milk over Indian meal, molasses, butter, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in double boiler until mixture thickens",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add tapioca drained from water, turn into buttered pudding-dish, and pour over remaining milk, but do not stir",
+        "station": "counter"
+      },
+      {
+        "text": "Bake one and one-fourth hours in a slow oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1526,24 +1814,18 @@
       "Sour apples"
     ],
     "steps": [
-      "Soak tapioca one hour in cold water to cover, drain, add boiling water and salt; cook in double boiler until transparent",
-      "Core and pare apples, arrange in buttered pudding-dish, fill cavities with sugar, pour over tapioca, and bake in moderate oven until apples are soft",
-      "Serve with sugar and cream or Cream Sauce I",
-      "Minute Tapioca requires no soaking"
-    ]
-  },
-  {
-    "name": "Peach Tapioca",
-    "ingredients": [
-      "Peaches",
-      "Powdered sugar",
-      "Tapioca",
-      "Boiling water",
-      "Sugar"
-    ],
-    "steps": [
-      "Drain peaches, sprinkle with powdered sugar, and let stand one hour; soak tapioca one hour in cold water to cover; to peach syrup add enough boiling water to make three cups; heat to boiling-point, add tapioca drained from cold water, sugar, and salt; then cook in a double boiler until transparent",
-      "Line a mould or pudding-dish with peaches cut in quarters, fill with tapioca, and bake in moderate oven thirty minutes; cool slightly, turn on a dish, and serve with Cream Sauce I"
+      {
+        "text": "Soak tapioca one hour in cold water to cover, drain, add boiling water and salt; cook in double boiler until transparent",
+        "station": "stovetop"
+      },
+      {
+        "text": "Core and pare apples, arrange in buttered pudding-dish, fill cavities with sugar, pour over tapioca, and bake in moderate oven until apples are soft",
+        "station": "oven"
+      },
+      {
+        "text": "Serve with sugar and cream or Cream Sauce I",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1556,9 +1838,18 @@
       "Grated nutmeg"
     ],
     "steps": [
-      "Cut loaf in halves, remove soft part, and crumb by rubbing through a colander; melt butter and stir in lightly with fork; cover bottom of buttered pudding-dish with crumbs and spread over one-half the apples, sprinkle with one-half sugar, nutmeg, lemon juice, and rind mixed together; repeat cover with remaining crumbs, and bake forty minutes in moderate oven",
-      "Cover at first to prevent crumbs browning too rapidly",
-      "Serve with sugar and cream"
+      {
+        "text": "Cut loaf in halves, remove soft part, and crumb by rubbing through a colander; melt butter and stir in lightly with fork; cover bottom of buttered pudding-dish with crumbs and spread over one-half the apples, sprinkle with one-half sugar, nutmeg, lemon juice, and rind mixed together; repeat cover with remaining crumbs, and bake forty minutes in moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Cover at first to prevent crumbs browning too rapidly",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with sugar and cream",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1573,9 +1864,18 @@
       "Vanilla or"
     ],
     "steps": [
-      "Soak bread crumbs in milk, set aside until cool; add sugar, butter, eggs slightly beaten, salt, and flavoring; bake one hour in buttered pudding-dish in slow oven; serve with Vanilla Sauce",
-      "In preparing bread crumbs for puddings avoid using outside crusts",
-      "With a coarse grater there need be but little waste"
+      {
+        "text": "Soak bread crumbs in milk, set aside until cool; add sugar, butter, eggs slightly beaten, salt, and flavoring; bake one hour in buttered pudding-dish in slow oven; serve with Vanilla Sauce",
+        "station": "oven"
+      },
+      {
+        "text": "In preparing bread crumbs for puddings avoid using outside crusts",
+        "station": "counter"
+      },
+      {
+        "text": "With a coarse grater there need be but little waste",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1588,12 +1888,22 @@
       "Salt"
     ],
     "steps": [
-      "Remove end crusts from bread, cut loaf in one-half inch slices, spread each slice generously with butter; arrange in buttered pudding-dish, buttered side down",
-      "Beat eggs slightly, add sugar, salt, and milk; strain, and pour over bread; let stand thirty minutes",
-      "Bake one hour in slow oven, covering the first half-hour of baking",
-      "The top of pudding should be well browned",
-      "Serve with Hard or Creamy Sauce",
-      "Three-fourths cup raisins, parboiled in boiling water to cover and seeded, may be sprinkled between layers of bread"
+      {
+        "text": "Remove end crusts from bread, cut loaf in one-half inch slices, spread each slice generously with butter; arrange in buttered pudding-dish, buttered side down",
+        "station": "counter"
+      },
+      {
+        "text": "Beat eggs slightly, add sugar, salt, and milk; strain, and pour over bread; let stand thirty minutes",
+        "station": "counter"
+      },
+      {
+        "text": "Bake one hour in slow oven, covering the first half-hour of baking",
+        "station": "oven"
+      },
+      {
+        "text": "Serve with Hard or Creamy Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1606,39 +1916,26 @@
       "Egg"
     ],
     "steps": [
-      "Moisten cracker crumbs with boiling water, and let stand until cool",
-      "Add milk, molasses, egg slightly beaten, and raisins seeded and cut in pieces",
-      "Turn into a buttered pudding mould, and steam eight hours",
-      "Let stand in mould to cool",
-      "Serve cold with Cream Sauce II"
-    ]
-  },
-  {
-    "name": "Cottage Pudding",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Egg",
-      "Milk",
-      "Flour",
-      "Baking powder"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, and egg well beaten; mix and sift flour, baking powder, and salt; add alternately with milk to first mixture; turn into buttered cake pan; bake thirty-five minutes",
-      "Serve with Vanilla or Hard Sauce"
-    ]
-  },
-  {
-    "name": "Custard Soufflé",
-    "ingredients": [
-      "Butter",
-      "Flour",
-      "Scalded milk",
-      "Eggs"
-    ],
-    "steps": [
-      "Melt butter, add flour, and gradually hot milk; when well thickened, pour on to yolks of eggs beaten until thick and lemon-colored, and mixed with sugar; cool, and cut and fold in whites of eggs beaten stiff and dry",
-      "Turn into buttered pudding-dish, and bake from thirty to thirty-five minutes in slow oven; take from oven and serve at once,—if not served immediately it is sure to fall; serve with Creamy or Foamy Sauce"
+      {
+        "text": "Moisten cracker crumbs with boiling water, and let stand until cool",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add milk, molasses, egg slightly beaten, and raisins seeded and cut in pieces",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered pudding mould, and steam eight hours",
+        "station": "stovetop"
+      },
+      {
+        "text": "Let stand in mould to cool",
+        "station": "counter"
+      },
+      {
+        "text": "Serve cold with Cream Sauce II",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1655,11 +1952,26 @@
       "Whites two eggs"
     ],
     "steps": [
-      "Scald milk, add rice and salt, and cook until rice is soft",
-      "Add butter, sugar, chocolate, vanilla, and raisins",
-      "Cut and fold in the whites of eggs, beaten until stiff, and cream, beaten until stiff",
-      "Pour into a buttered baking-dish, and bake fifteen minutes",
-      "Cover with a meringue made of the whites of three eggs, six tablespoons powdered sugar, and one-half teaspoon vanilla; then brown in a moderate oven"
+      {
+        "text": "Scald milk, add rice and salt, and cook until rice is soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add butter, sugar, chocolate, vanilla, and raisins",
+        "station": "counter"
+      },
+      {
+        "text": "Cut and fold in the whites of eggs, beaten until stiff, and cream, beaten until stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered baking-dish, and bake fifteen minutes",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with a meringue made of the whites of three eggs, six tablespoons powdered sugar, and one-half teaspoon vanilla; then brown in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1673,39 +1985,18 @@
       "Milk"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and eggs well beaten",
-      "Mix and sift flour and baking powder and add alternately with milk to first mixture, stir in berries, turn into buttered mould, cover, and steam three hours",
-      "Serve with thin cream, sweetened and flavored with nutmeg"
-    ]
-  },
-  {
-    "name": "Ginger Pudding",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Egg",
-      "Flour",
-      "Baking powder",
-      "Salt",
-      "Ginger"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, and egg well beaten; mix and sift dry ingredients; add alternately with milk to first mixture",
-      "Turn into buttered mould, cover, and steam two hours; serve with Vanilla Sauce"
-    ]
-  },
-  {
-    "name": "Snowballs",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Milk",
-      "Flour",
-      "Baking powder"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, milk, and flour mixed and sifted with baking powder; then add the whites of eggs beaten stiff",
-      "Steam thirty-five minutes in buttered cups; serve with preserved fruit, quince marmalade, or strawberry sauce"
+      {
+        "text": "Cream the butter, add sugar gradually, and eggs well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour and baking powder and add alternately with milk to first mixture, stir in berries, turn into buttered mould, cover, and steam three hours",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with thin cream, sweetened and flavored with nutmeg",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1720,50 +2011,18 @@
       "Salt"
     ],
     "steps": [
-      "Melt butter, add molasses, milk, egg well beaten, dry ingredients mixed and sifted, and raisins; turn into buttered mould, cover, and steam two and one-half hours",
-      "Serve with Wine Sauce",
-      "Dates or figs cut in small pieces may be used in place of raisins"
-    ]
-  },
-  {
-    "name": "Strawberry Sauce",
-    "ingredients": [
-      "Butter",
-      "Strawberries",
-      "Powdered sugar"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, egg beaten until stiff, and strawberries",
-      "Beat until fruit is mashed"
-    ]
-  },
-  {
-    "name": "Brandy Sauce",
-    "ingredients": [
-      "Butter",
-      "Powdered sugar",
-      "Brandy",
-      "Egg yolks",
-      "Egg whites"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, then brandy very slowly, well beaten yolks, and milk or cream",
-      "Cook over hot water until it thickens as a custard, pour on to beaten whites"
-    ]
-  },
-  {
-    "name": "Rebecca Pudding",
-    "ingredients": [
-      "Scalded milk",
-      "Corn-starch",
-      "Sugar",
-      "Salt",
-      "Cold milk",
-      "Vanilla"
-    ],
-    "steps": [
-      "Mix corn-starch, sugar, and salt, dilute with cold milk, add to scalded milk, stirring constantly until mixture thickens, afterwards occasionally; cook fifteen minutes",
-      "Add flavoring and whites of eggs beaten stiff, mix thoroughly, mould, chill, and serve with Yellow Sauce I or II"
+      {
+        "text": "Melt butter, add molasses, milk, egg well beaten, dry ingredients mixed and sifted, and raisins; turn into buttered mould, cover, and steam two and one-half hours",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Wine Sauce",
+        "station": "counter"
+      },
+      {
+        "text": "Dates or figs cut in small pieces may be used in place of raisins",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1775,12 +2034,18 @@
       "Salt"
     ],
     "steps": [
-      "Beat eggs slightly, add sugar and salt; stir constantly while adding gradually hot milk",
-      "Cook in double boiler, continue stirring until mixture thickens and a coating is formed on the spoon, strain immediately; chill and flavor",
-      "If cooked too long the custard will curdle; should this happen, by using a Dover egg-beater it may be restored to a smooth consistency, but custard will not be as thick",
-      "Eggs should be beaten slightly for custard, that it may be of smooth, thick consistency",
-      "To prevent scum from forming, cover with a perforated tin",
-      "When eggs are scarce, use yolks two eggs and one-half tablespoon corn-starch"
+      {
+        "text": "Beat eggs slightly, add sugar and salt; stir constantly while adding gradually hot milk",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in double boiler, continue stirring until mixture thickens and a coating is formed on the spoon, strain immediately; chill and flavor",
+        "station": "stovetop"
+      },
+      {
+        "text": "To prevent scum from forming, cover with a perforated tin",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1791,26 +2056,18 @@
       "Sugar"
     ],
     "steps": [
-      "Pick over and wash prunes, then soak several hours in cold water to cover; cook in same water until soft; remove stones and rub prunes through a strainer, add sugar, and cook five minutes; the mixture should be of the consistency of marmalade",
-      "Beat whites of eggs until stiff, add prune mixture gradually when cold, and lemon juice",
-      "Pile lightly on buttered pudding-dish, bake twenty minutes in slow oven",
-      "Serve cold with Boiled Custard"
-    ]
-  },
-  {
-    "name": "Baked Custard",
-    "ingredients": [
-      "Scalded milk",
-      "Eggs",
-      "Sugar",
-      "Salt"
-    ],
-    "steps": [
-      "Beat eggs slightly, add sugar and salt, pour on slowly scalded milk; strain in buttered mould, set in pan of hot water",
-      "Sprinkle with nutmeg, and bake in slow oven until firm, which may be readily determined by running a silver knife through custard; if knife comes out clean, custard is done",
-      "During baking, care must be taken that water surrounding mould does not reach boiling-point, or custard will whey",
-      "Always bear in mind that eggs and milk in combination must be cooked at a low temperature",
-      "For cup custards allow four eggs to four cups milk; for large moulded custard, six eggs; if less eggs are used custard is liable to crack when turned on a serving dish"
+      {
+        "text": "Beat whites of eggs until stiff, add prune mixture gradually when cold, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Pile lightly on buttered pudding-dish, bake twenty minutes in slow oven",
+        "station": "oven"
+      },
+      {
+        "text": "Serve cold with Boiled Custard",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1822,11 +2079,26 @@
       "Vanilla"
     ],
     "steps": [
-      "Put sugar in omelet pan, stir constantly over hot part of range until melted to a syrup of light brown color",
-      "Add gradually to milk, being careful that milk does not bubble up and go over, as is liable on account of high temperature of sugar",
-      "As soon as sugar is melted in milk, add mixture gradually to eggs slightly beaten; add salt and flavoring, then strain in buttered mould",
-      "Bake as custard",
-      "Chill, and serve with Caramel Sauce"
+      {
+        "text": "Put sugar in omelet pan, stir constantly over hot part of range until melted to a syrup of light brown color",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add gradually to milk, being careful that milk does not bubble up and go over, as is liable on account of high temperature of sugar",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as sugar is melted in milk, add mixture gradually to eggs slightly beaten; add salt and flavoring, then strain in buttered mould",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bake as custard",
+        "station": "oven"
+      },
+      {
+        "text": "Chill, and serve with Caramel Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1839,23 +2111,18 @@
       "Salt"
     ],
     "steps": [
-      "Scald milk with coffee, and strain",
-      "Beat eggs slightly; add sugar, salt, vanilla, and milk",
-      "Strain into buttered individual moulds, set in pan of hot water, and bake until firm"
-    ]
-  },
-  {
-    "name": "Lemon Jelly",
-    "ingredients": [
-      "Box gelatine or",
-      "Granulated gelatine",
-      "Cold water",
-      "Boiling water",
-      "Sugar"
-    ],
-    "steps": [
-      "Soak gelatine twenty minutes in cold water, dissolve in boiling water, strain, and add to sugar and lemon juice",
-      "Turn into mould, and chill"
+      {
+        "text": "Scald milk with coffee, and strain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Beat eggs slightly; add sugar, salt, vanilla, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Strain into buttered individual moulds, set in pan of hot water, and bake until firm",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -1869,11 +2136,22 @@
       "Cold water"
     ],
     "steps": [
-      "Wipe three-fourths box kumquats, cut in slices, add cold water to cover, bring slowly to boiling-point, and cook slowly one-half hour; then strain; there should be one and one-half cups juice",
-      "Add sugar, wine, and curaçoa",
-      "Soak gelatine in cold water, and add to first mixture heated to boiling-point; then add salt",
-      "Strain, turn into individual mould, and chill",
-      "Remove to serving dish, and garnish with halves of kumquats, cooked in syrup until soft, drained, and rolled in sugar"
+      {
+        "text": "Add sugar, wine, and curaçoa",
+        "station": "counter"
+      },
+      {
+        "text": "Soak gelatine in cold water, and add to first mixture heated to boiling-point; then add salt",
+        "station": "stovetop"
+      },
+      {
+        "text": "Strain, turn into individual mould, and chill",
+        "station": "counter"
+      },
+      {
+        "text": "Remove to serving dish, and garnish with halves of kumquats, cooked in syrup until soft, drained, and rolled in sugar",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -1886,10 +2164,22 @@
       "Vanilla"
     ],
     "steps": [
-      "Dissolve gelatine in boiling water, add sugar, and as soon as dissolved set bowl containing mixture in pan of ice-water; then add whites of eggs and vanilla and beat until mixture thickens",
-      "Turn into a shallow pan, first dipped in cold water, and let stand until thoroughly chilled",
-      "Remove from pan and cut in pieces the size and shape of marshmallows; then roll in macaroons which have been dried and rolled",
-      "Serve with sugar and cream"
+      {
+        "text": "Dissolve gelatine in boiling water, add sugar, and as soon as dissolved set bowl containing mixture in pan of ice-water; then add whites of eggs and vanilla and beat until mixture thickens",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn into a shallow pan, first dipped in cold water, and let stand until thoroughly chilled",
+        "station": "counter"
+      },
+      {
+        "text": "Remove from pan and cut in pieces the size and shape of marshmallows; then roll in macaroons which have been dried and rolled",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with sugar and cream",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1905,10 +2195,22 @@
       "Vanilla or"
     ],
     "steps": [
-      "Scald milk with gelatine, add sugar, pour slowly on yolks of eggs slightly beaten",
-      "Return to double boiler and cook until thickened, stirring constantly; remove from range, add salt, flavoring, and whites of eggs beaten stiff",
-      "Turn into individual moulds, first dipped in cold water, and chill; serve with cream",
-      "More gelatine will be required if large moulds are used"
+      {
+        "text": "Scald milk with gelatine, add sugar, pour slowly on yolks of eggs slightly beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Return to double boiler and cook until thickened, stirring constantly; remove from range, add salt, flavoring, and whites of eggs beaten stiff",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn into individual moulds, first dipped in cold water, and chill; serve with cream",
+        "station": "counter"
+      },
+      {
+        "text": "More gelatine will be required if large moulds are used",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1922,28 +2224,18 @@
       "Vanilla"
     ],
     "steps": [
-      "Mix coffee infusion, milk, one-half of the sugar and gelatine, and heat in double boiler",
-      "Add remaining sugar, salt, and yolks of eggs slightly beaten; cook until mixture thickens, remove from range, add whites of eggs beaten until stiff and vanilla",
-      "Mould, chill, and serve with cream"
-    ]
-  },
-  {
-    "name": "Macaroon Cream",
-    "ingredients": [
-      "Box gelatine or",
-      "Granulated gelatine",
-      "Cold water",
-      "Scalded milk",
-      "Egg yolks",
-      "Sugar",
-      "Salt",
-      "Pounded macaroons",
-      "Vanilla"
-    ],
-    "steps": [
-      "Soak gelatine in cold water",
-      "Make custard of milk, yolks of eggs, sugar, and salt; add gelatine, and strain into pan set in ice-water",
-      "Add macaroons and flavoring, stirring until it begins to thicken; then add whites of eggs beaten stiff, mould, chill, and serve garnished with macaroons"
+      {
+        "text": "Mix coffee infusion, milk, one-half of the sugar and gelatine, and heat in double boiler",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add remaining sugar, salt, and yolks of eggs slightly beaten; cook until mixture thickens, remove from range, add whites of eggs beaten until stiff and vanilla",
+        "station": "stovetop"
+      },
+      {
+        "text": "Mould, chill, and serve with cream",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1959,24 +2251,18 @@
       "Egg whites"
     ],
     "steps": [
-      "Soak gelatine in cold water, dissolve in boiling water, strain, and add sugar, lemon juice, orange juice, and pulp",
-      "Chill in pan of ice-water; when quite thick, beat with wire spoon or whisk until frothy, then add whites of eggs beaten stiff, and fold in cream",
-      "Line a mould with sections of oranges, turn in mixture, smooth evenly, and chill"
-    ]
-  },
-  {
-    "name": "Pineapple Bavarian Cream",
-    "ingredients": [
-      "Box gelatine or",
-      "Granulated gelatine",
-      "Cold water",
-      "Grated pineapple",
-      "Sugar",
-      "Lemon juice"
-    ],
-    "steps": [
-      "Soak gelatine in cold water",
-      "Heat pineapple, add sugar, lemon juice, and soaked gelatine; chill in pan of ice-water, stirring constantly; when it begins to thicken, fold in whip from cream, mould, and chill"
+      {
+        "text": "Soak gelatine in cold water, dissolve in boiling water, strain, and add sugar, lemon juice, orange juice, and pulp",
+        "station": "stovetop"
+      },
+      {
+        "text": "Chill in pan of ice-water; when quite thick, beat with wire spoon or whisk until frothy, then add whites of eggs beaten stiff, and fold in cream",
+        "station": "counter"
+      },
+      {
+        "text": "Line a mould with sections of oranges, turn in mixture, smooth evenly, and chill",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -1989,37 +2275,26 @@
       "Powdered sugar"
     ],
     "steps": [
-      "Soak gelatine in cold water, dissolve in boiling water, and add sugar and wine",
-      "Strain into a bowl, set in pan of ice-water, and beat until mixture thickens slightly",
-      "Add to mixture whip from cream, and beat until mixture is thick enough to hold its shape",
-      "Mould and chill",
-      "Garnish with Sauterne Jelly"
-    ]
-  },
-  {
-    "name": "Canton Sherbet",
-    "ingredients": [
-      "Water",
-      "Sugar",
-      "Canton ginger",
-      "Orange juice"
-    ],
-    "steps": [
-      "Cut ginger in small pieces, add water and sugar, boil fifteen minutes; add fruit juice, cool, strain, and freeze",
-      "To be used in place of punch at a course dinner",
-      "This quantity is enough to serve twelve persons"
-    ]
-  },
-  {
-    "name": "Sicilian Sorbet",
-    "ingredients": [
-      "Peaches",
-      "Sugar",
-      "Orange juice"
-    ],
-    "steps": [
-      "Press peaches through a sieve, add sugar and fruit juices",
-      "Freeze and serve"
+      {
+        "text": "Soak gelatine in cold water, dissolve in boiling water, and add sugar and wine",
+        "station": "stovetop"
+      },
+      {
+        "text": "Strain into a bowl, set in pan of ice-water, and beat until mixture thickens slightly",
+        "station": "counter"
+      },
+      {
+        "text": "Add to mixture whip from cream, and beat until mixture is thick enough to hold its shape",
+        "station": "counter"
+      },
+      {
+        "text": "Mould and chill",
+        "station": "counter"
+      },
+      {
+        "text": "Garnish with Sauterne Jelly",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2031,22 +2306,22 @@
       "Lemon juice"
     ],
     "steps": [
-      "Drain apricots, and add to syrup the pulp rubbed through a sieve",
-      "Add sugar, wine, and lemon juice",
-      "Freeze to a mush, then fold in the whip obtained from cream",
-      "Let stand one and one-half hours, and serve in glasses"
-    ]
-  },
-  {
-    "name": "Cranberry Frappé",
-    "ingredients": [
-      "Cranberries",
-      "Water",
-      "Sugar"
-    ],
-    "steps": [
-      "Cook cranberries and water eight minutes; then force through a sieve",
-      "Add sugar and lemon juice, and freeze to a mush, using equal parts of ice and salt"
+      {
+        "text": "Drain apricots, and add to syrup the pulp rubbed through a sieve",
+        "station": "counter"
+      },
+      {
+        "text": "Add sugar, wine, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze to a mush, then fold in the whip obtained from cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Let stand one and one-half hours, and serve in glasses",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2058,9 +2333,18 @@
       "Orange juice"
     ],
     "steps": [
-      "Make a syrup by boiling sugar and water twenty minutes",
-      "Add cider, orange juice, and lemon juice",
-      "Cool, strain, and freeze to a mush"
+      {
+        "text": "Make a syrup by boiling sugar and water twenty minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add cider, orange juice, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Cool, strain, and freeze to a mush",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2071,24 +2355,18 @@
       "Grated pineapple"
     ],
     "steps": [
-      "Make syrup by boiling sugar and water fifteen minutes; strain, cool, add pineapple, and freeze to a mush",
-      "Fold in whip from cream; let stand thirty minutes before serving",
-      "Serve in frappé glasses and garnish with candied pineapple"
-    ]
-  },
-  {
-    "name": "Punch Hollandaise",
-    "ingredients": [
-      "Water",
-      "Sugar",
-      "Lemon juice",
-      "Rind one lemon",
-      "Grated pineapple",
-      "Brandy"
-    ],
-    "steps": [
-      "Cook sugar, water, and lemon rind fifteen minutes, add lemon juice and pineapple, cool, strain, freeze to a mush, add strong liquors, and continue freezing",
-      "Serve in frappé glasses on a plate covered with a doily"
+      {
+        "text": "Make syrup by boiling sugar and water fifteen minutes; strain, cool, add pineapple, and freeze to a mush",
+        "station": "stovetop"
+      },
+      {
+        "text": "Fold in whip from cream; let stand thirty minutes before serving",
+        "station": "counter"
+      },
+      {
+        "text": "Serve in frappé glasses and garnish with candied pineapple",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2103,25 +2381,18 @@
       "Bottles ginger ale"
     ],
     "steps": [
-      "Make a syrup by boiling sugar and water fifteen minutes",
-      "Add jelly, and, as soon as dissolved, add a piece of ice to cool mixture; then add fruit juices, ale, and brandy",
-      "Color red, freeze to a mush, serve in glasses, and insert in each glass a small sprig of holly with berries"
-    ]
-  },
-  {
-    "name": "Coup Sicilienne",
-    "ingredients": [
-      "Shredded pineapple",
-      "Oranges",
-      "Bananas sliced",
-      "Maraschino",
-      "Lemon juice",
-      "Few grains salt"
-    ],
-    "steps": [
-      "Mix ingredients, sweeten to taste, and chill",
-      "Serve in champagne glasses having glasses two-thirds full",
-      "Cover fruit to fill glasses with Strawberry Ice II and garnish with strawberries and angelica"
+      {
+        "text": "Make a syrup by boiling sugar and water fifteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add jelly, and, as soon as dissolved, add a piece of ice to cool mixture; then add fruit juices, ale, and brandy",
+        "station": "counter"
+      },
+      {
+        "text": "Color red, freeze to a mush, serve in glasses, and insert in each glass a small sprig of holly with berries",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2133,35 +2404,18 @@
       "Arrowroot"
     ],
     "steps": [
-      "Scald milk with coffee, and let stand twenty minutes",
-      "Mix remaining ingredients, and pour on gradually the hot infusion which has been strained",
-      "Cook five minutes, and serve hot"
-    ]
-  },
-  {
-    "name": "Orange Ice Cream",
-    "ingredients": [
-      "Heavy cream",
-      "Thin cream",
-      "Orange juice"
-    ],
-    "steps": [
-      "Add cream slowly to orange juice, sweeten to taste, and freeze",
-      "Serve with canned strawberries or fresh fruit mashed and sweetened"
-    ]
-  },
-  {
-    "name": "Coffee Ice Cream",
-    "ingredients": [
-      "Cream",
-      "Milk",
-      "Mocha coffee",
-      "Sugar",
-      "Salt"
-    ],
-    "steps": [
-      "Scald milk with coffee, add one cup sugar; mix egg yolks slightly beaten with one-fourth cup sugar, and salt; combine mixtures, cook over hot water until thickened, add one cup cream, and let stand on back of range twenty-five minutes; cool, add remaining cream, and strain through double cheese-cloth; freeze",
-      "Coffee Ice Cream may be served with Maraschino cherries or in halves of cantaloupes"
+      {
+        "text": "Scald milk with coffee, and let stand twenty minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Mix remaining ingredients, and pour on gradually the hot infusion which has been strained",
+        "station": "counter"
+      },
+      {
+        "text": "Cook five minutes, and serve hot",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2175,11 +2429,26 @@
       "Vanilla"
     ],
     "steps": [
-      "Make custard of milk, eggs, one-third of the sugar, and salt",
-      "Caramelize remaining sugar, add nut meats, and turn into a slightly buttered pan",
-      "Cool, pound, and pass through a purée strainer",
-      "Add to custard, cool, then add one cup heavy cream, beaten until stiff, and vanilla",
-      "Freeze and mould"
+      {
+        "text": "Make custard of milk, eggs, one-third of the sugar, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Caramelize remaining sugar, add nut meats, and turn into a slightly buttered pan",
+        "station": "counter"
+      },
+      {
+        "text": "Cool, pound, and pass through a purée strainer",
+        "station": "counter"
+      },
+      {
+        "text": "Add to custard, cool, then add one cup heavy cream, beaten until stiff, and vanilla",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze and mould",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2191,28 +2460,22 @@
       "Salt"
     ],
     "steps": [
-      "Blanch almonds cut in pieces crosswise, and bake in a shallow pan until well browned, shaking pan frequently; then finely chop",
-      "Caramelize one-half of the sugar, and add slowly to two cups of the cream scalded",
-      "As soon as sugar is melted, add nuts, remaining sugar, and salt",
-      "Cool, add remaining cream, and freeze",
-      "A few grains salt is always an improvement to any ice cream mixture"
-    ]
-  },
-  {
-    "name": "Fig Ice Cream",
-    "ingredients": [
-      "Milk",
-      "Sugar",
-      "Egg yolks",
-      "Salt",
-      "Figs, finely chopped",
-      "Heavy cream",
-      "Egg whites",
-      "Vanilla"
-    ],
-    "steps": [
-      "Make custard of yolks of eggs, sugar, and milk; strain, add figs, cool, and flavor",
-      "Add whites of eggs beaten until stiff and heavy cream beaten until stiff; freeze and mould"
+      {
+        "text": "Blanch almonds cut in pieces crosswise, and bake in a shallow pan until well browned, shaking pan frequently; then finely chop",
+        "station": "oven"
+      },
+      {
+        "text": "Caramelize one-half of the sugar, and add slowly to two cups of the cream scalded",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as sugar is melted, add nuts, remaining sugar, and salt",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool, add remaining cream, and freeze",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2229,12 +2492,30 @@
       "Green Coloring"
     ],
     "steps": [
-      "Mix first four ingredients, and add junket tablets dissolved in cold water",
-      "Turn into a pudding-dish and let stand until set",
-      "Add flavoring and coloring",
-      "Freeze, mould, and serve garnished with halves of peaches, filling cavities with halves of blanched almonds",
-      "Turn peaches into a saucepan, add one-third cup sugar, and cook slowly until syrup is thick",
-      "Cool before garnishing ice cream"
+      {
+        "text": "Mix first four ingredients, and add junket tablets dissolved in cold water",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a pudding-dish and let stand until set",
+        "station": "counter"
+      },
+      {
+        "text": "Add flavoring and coloring",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze, mould, and serve garnished with halves of peaches, filling cavities with halves of blanched almonds",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn peaches into a saucepan, add one-third cup sugar, and cook slowly until syrup is thick",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool before garnishing ice cream",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2247,53 +2528,18 @@
       "Small bunch violets"
     ],
     "steps": [
-      "Mix first four ingredients",
-      "Remove stems from violets, and pound violets in a mortar until well macerated, then strain through cheese-cloth",
-      "Add extract to first mixture; color, freeze, and mould",
-      "Serve garnished with fresh or candied violets; the light purple cultivated violets should be used and the result will be most gratifying"
-    ]
-  },
-  {
-    "name": "Frozen Tom and Jerry",
-    "ingredients": [
-      "Milk",
-      "Sugar",
-      "Egg yolks",
-      "Salt",
-      "Cream",
-      "Rum"
-    ],
-    "steps": [
-      "Make a custard of first four ingredients; strain, cool, add cream, and freeze to a mush",
-      "Add rum and brandy, and finish the freezing"
-    ]
-  },
-  {
-    "name": "Covington Cream",
-    "ingredients": [
-      "Sugar",
-      "Formosa tea infusion",
-      "Rum"
-    ],
-    "steps": [
-      "Mix ingredients, and freeze to a mush",
-      "Serve in frappé glasses"
-    ]
-  },
-  {
-    "name": "Manhattan Pudding",
-    "ingredients": [
-      "Orange juice",
-      "Lemon juice",
-      "Sugar",
-      "Heavy cream",
-      "Powdered sugar",
-      "Vanilla"
-    ],
-    "steps": [
-      "Mix fruit juices and sweeten to taste",
-      "Turn mixture in brick mould",
-      "Whip cream, and add sugar, vanilla, and nut meats; pour over the first mixture to overflow mould; cover with buttered paper, fit on cover, pack in salt and ice, and let stand three hours"
+      {
+        "text": "Mix first four ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Remove stems from violets, and pound violets in a mortar until well macerated, then strain through cheese-cloth",
+        "station": "counter"
+      },
+      {
+        "text": "Add extract to first mixture; color, freeze, and mould",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2305,38 +2551,18 @@
       "Heavy cream"
     ],
     "steps": [
-      "Boil sugar and water until syrup will thread when dropped from tip of spoon",
-      "Pour slowly on the beaten whites of eggs, and continue the beating until mixture is cool",
-      "Add cream beaten until stiff, and vanilla; then freeze"
-    ]
-  },
-  {
-    "name": "Café Parfait",
-    "ingredients": [
-      "Milk",
-      "Mocha coffee",
-      "Egg yolks",
-      "Salt",
-      "Sugar"
-    ],
-    "steps": [
-      "Scald milk with coffee, and add one-half the sugar; without straining, use this mixture for making custard, with eggs, salt, and remaining sugar; add one cup cream and let stand thirty minutes; cool, strain through double cheese-cloth, add remaining cream, and freeze",
-      "Line a mould, fill with Italian Meringue, cover, pack in salt and ice, using two parts crushed ice to one part rock salt, and let stand three hours"
-    ]
-  },
-  {
-    "name": "Italian Meringue",
-    "ingredients": [
-      "Sugar",
-      "Water",
-      "Gelatine or",
-      "Granulated gelatine",
-      "Egg whites",
-      "Thin cream"
-    ],
-    "steps": [
-      "Make syrup by boiling sugar and water; pour slowly on beaten whites of eggs, and continue beating",
-      "Place in pan of ice-water, and beat until cold; dissolve gelatine in small quantity boiling water; strain into mixture; whip cream, fold in whip, and flavor"
+      {
+        "text": "Boil sugar and water until syrup will thread when dropped from tip of spoon",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour slowly on the beaten whites of eggs, and continue the beating until mixture is cool",
+        "station": "counter"
+      },
+      {
+        "text": "Add cream beaten until stiff, and vanilla; then freeze",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -2350,11 +2576,26 @@
       "Pineapple syrup"
     ],
     "steps": [
-      "Make custard of first four ingredients, strain, cool, add cream, pineapple syrup, and chestnuts; then freeze",
-      "To prepare chestnuts, shell, cook in boiling water until soft, and force through a strainer",
-      "Line a two-quart melon mould with part of mixture; to remainder add one-half cup candied fruit cut in small pieces, one-quarter cup Sultana raisins, and eight chestnuts broken in pieces, first soaked several hours in Maraschino syrup",
-      "Fill mould, cover, pack in salt and ice, and let stand two hours",
-      "Serve with whipped cream, sweetened and flavored with Maraschino syrup"
+      {
+        "text": "Make custard of first four ingredients, strain, cool, add cream, pineapple syrup, and chestnuts; then freeze",
+        "station": "stovetop"
+      },
+      {
+        "text": "To prepare chestnuts, shell, cook in boiling water until soft, and force through a strainer",
+        "station": "stovetop"
+      },
+      {
+        "text": "Line a two-quart melon mould with part of mixture; to remainder add one-half cup candied fruit cut in small pieces, one-quarter cup Sultana raisins, and eight chestnuts broken in pieces, first soaked several hours in Maraschino syrup",
+        "station": "counter"
+      },
+      {
+        "text": "Fill mould, cover, pack in salt and ice, and let stand two hours",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with whipped cream, sweetened and flavored with Maraschino syrup",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2368,11 +2609,26 @@
       "Heavy cream"
     ],
     "steps": [
-      "Boil sugar and water eight minutes, then add orange juice",
-      "Scald cream, add yolks of eggs, and cook over hot water until mixture thickens",
-      "Cool, add to first mixture with heavy cream beaten stiff",
-      "Freeze; when nearly frozen, add orange peel",
-      "Line a melon mould with Orange Ice, fill with Orange Delicious, pack in salt and ice, and let stand one and one-half hours"
+      {
+        "text": "Boil sugar and water eight minutes, then add orange juice",
+        "station": "stovetop"
+      },
+      {
+        "text": "Scald cream, add yolks of eggs, and cook over hot water until mixture thickens",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool, add to first mixture with heavy cream beaten stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze; when nearly frozen, add orange peel",
+        "station": "stovetop"
+      },
+      {
+        "text": "Line a melon mould with Orange Ice, fill with Orange Delicious, pack in salt and ice, and let stand one and one-half hours",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2386,9 +2642,18 @@
       "Cold water"
     ],
     "steps": [
-      "Wash and hull berries, sprinkle with sugar, and let stand one hour; mash, and rub through a fine sieve; add gelatine soaked in cold and dissolved in boiling water",
-      "Set in pan of ice-water and stir until it begins to thicken; then fold in whip from cream, put in mould, cover, pack in salt and ice, and let stand four hours",
-      "Raspberries may be used in place of strawberries"
+      {
+        "text": "Wash and hull berries, sprinkle with sugar, and let stand one hour; mash, and rub through a fine sieve; add gelatine soaked in cold and dissolved in boiling water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Set in pan of ice-water and stir until it begins to thicken; then fold in whip from cream, put in mould, cover, pack in salt and ice, and let stand four hours",
+        "station": "counter"
+      },
+      {
+        "text": "Raspberries may be used in place of strawberries",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2401,38 +2666,26 @@
       "Sugar"
     ],
     "steps": [
-      "Heat one can pineapple, and drain",
-      "To one cup of the syrup, add gelatine soaked in cold water, lemon juice, and sugar",
-      "Strain and cool",
-      "As mixture thickens, fold in the whip from cream",
-      "Mould, pack in salt and ice, and let stand four hours"
-    ]
-  },
-  {
-    "name": "Iced Madeira Sauce",
-    "ingredients": [
-      "Orange juice",
-      "Lemon juice",
-      "Madeira wine",
-      "Sugar",
-      "Boiling water"
-    ],
-    "steps": [
-      "Freeze fruit juice and wine; boil sugar and water, pour on slowly to beaten whites of eggs, set in pan of salted ice-water, and stir until cold",
-      "Add to frozen mixture"
-    ]
-  },
-  {
-    "name": "Blueberry Pie",
-    "ingredients": [
-      "Berries",
-      "Flour",
-      "Sugar"
-    ],
-    "steps": [
-      "Line a deep plate with Plain Paste, fill with berries slightly dredged with flour; sprinkle with sugar and salt, cover, and bake forty-five to fifty minutes in a moderate oven",
-      "For sweetening, some prefer to use one-third molasses, the remaining two-thirds to be sugar",
-      "Six green grapes (from which seeds have been removed) cut in small pieces much improve the flavor, particularly where huckleberries are used in place of blueberries"
+      {
+        "text": "Heat one can pineapple, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "To one cup of the syrup, add gelatine soaked in cold water, lemon juice, and sugar",
+        "station": "counter"
+      },
+      {
+        "text": "Strain and cool",
+        "station": "counter"
+      },
+      {
+        "text": "As mixture thickens, fold in the whip from cream",
+        "station": "counter"
+      },
+      {
+        "text": "Mould, pack in salt and ice, and let stand four hours",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2444,9 +2697,18 @@
       "Egg yolks"
     ],
     "steps": [
-      "Mix flour and sugar, add yolks of eggs slightly beaten and diluted with water",
-      "Wash currants, drain, remove stems, then measure; add to first mixture and bake in one crust; cool, and cover with Meringue I",
-      "Cook in slow oven until delicately browned"
+      {
+        "text": "Mix flour and sugar, add yolks of eggs slightly beaten and diluted with water",
+        "station": "counter"
+      },
+      {
+        "text": "Wash currants, drain, remove stems, then measure; add to first mixture and bake in one crust; cool, and cover with Meringue I",
+        "station": "oven"
+      },
+      {
+        "text": "Cook in slow oven until delicately browned",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2458,10 +2720,22 @@
       "Milk"
     ],
     "steps": [
-      "Beat eggs slightly, add sugar, salt, and milk",
-      "Line plate with paste, and build up a fluted rim",
-      "Strain in the mixture and sprinkle with few gratings nutmeg",
-      "Bake in quick oven at first to set rim, decrease the heat afterwards, as egg and milk in combination need to be cooked at low temperature"
+      {
+        "text": "Beat eggs slightly, add sugar, salt, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Line plate with paste, and build up a fluted rim",
+        "station": "counter"
+      },
+      {
+        "text": "Strain in the mixture and sprinkle with few gratings nutmeg",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in quick oven at first to set rim, decrease the heat afterwards, as egg and milk in combination need to be cooked at low temperature",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2473,12 +2747,30 @@
       "Butter"
     ],
     "steps": [
-      "Wash prunes and soak in enough cold water to cover",
-      "Cook in same water until soft",
-      "Remove stones, cut prunes in quarters, and mix with sugar and lemon juice",
-      "Reduce liquor to one and one-half tablespoons",
-      "Line plate with paste, cover with prunes, pour over liquor, dot over with butter, and dredge with flour",
-      "Put on an upper crust and bake in a moderate oven"
+      {
+        "text": "Wash prunes and soak in enough cold water to cover",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in same water until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove stones, cut prunes in quarters, and mix with sugar and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Reduce liquor to one and one-half tablespoons",
+        "station": "stovetop"
+      },
+      {
+        "text": "Line plate with paste, cover with prunes, pour over liquor, dot over with butter, and dredge with flour",
+        "station": "counter"
+      },
+      {
+        "text": "Put on an upper crust and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2492,9 +2784,18 @@
       "Salt"
     ],
     "steps": [
-      "Mix soda with sour milk and add to molasses",
-      "Sift together remaining dry ingredients, combine mixtures, add butter, and beat vigorously",
-      "Pour into a buttered shallow pan, and bake twenty-five minutes in a moderate oven"
+      {
+        "text": "Mix soda with sour milk and add to molasses",
+        "station": "counter"
+      },
+      {
+        "text": "Sift together remaining dry ingredients, combine mixtures, add butter, and beat vigorously",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered shallow pan, and bake twenty-five minutes in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2509,28 +2810,22 @@
       "Ginger"
     ],
     "steps": [
-      "Put butter and molasses in saucepan and cook until boiling-point is reached",
-      "Remove from fire, add soda, and beat vigorously",
-      "Then add milk, egg well beaten, and remaining ingredients mixed and sifted",
-      "Bake fifteen minutes in buttered small tin pans, having pans two-thirds filled with mixture"
-    ]
-  },
-  {
-    "name": "Cambridge Gingerbread",
-    "ingredients": [
-      "Butter",
-      "Boiling water",
-      "Molasses",
-      "Egg",
-      "Flour",
-      "Soda",
-      "Salt",
-      "Cinnamon",
-      "Ginger"
-    ],
-    "steps": [
-      "Melt butter in water, add molasses, egg well beaten, and dry ingredients mixed and sifted",
-      "Bake in a buttered shallow pan"
+      {
+        "text": "Put butter and molasses in saucepan and cook until boiling-point is reached",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, add soda, and beat vigorously",
+        "station": "counter"
+      },
+      {
+        "text": "Then add milk, egg well beaten, and remaining ingredients mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Bake fifteen minutes in buttered small tin pans, having pans two-thirds filled with mixture",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2544,9 +2839,18 @@
       "Ginger"
     ],
     "steps": [
-      "Beat eggs until light, and add sugar gradually",
-      "Mix and sift dry ingredients, and add alternately with cream to first mixture",
-      "Turn into a buttered cake pan, and bake thirty minutes in a moderate oven"
+      {
+        "text": "Beat eggs until light, and add sugar gradually",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift dry ingredients, and add alternately with cream to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered cake pan, and bake thirty minutes in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2560,11 +2864,26 @@
       "Salt"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, milk, and dry ingredients mixed and sifted",
-      "Put some of mixture on an inverted dripping-pan and roll as thinly as possible to cover pan",
-      "Mark dough with a coarse grater",
-      "Sprinkle with sugar and bake in a moderate oven",
-      "Before removing from pan, cut in strips four and one-half inches long by one and one-half inches wide"
+      {
+        "text": "Cream the butter, add sugar gradually, milk, and dry ingredients mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Put some of mixture on an inverted dripping-pan and roll as thinly as possible to cover pan",
+        "station": "counter"
+      },
+      {
+        "text": "Mark dough with a coarse grater",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with sugar and bake in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Before removing from pan, cut in strips four and one-half inches long by one and one-half inches wide",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2577,27 +2896,22 @@
       "Salt"
     ],
     "steps": [
-      "Mix flour, sugar, ginger, and salt",
-      "Work in butter, using tips of fingers, and add just enough molasses to hold ingredients together",
-      "Let stand over night to get thoroughly chilled",
-      "Roll very thin, shape, and bake in a moderate oven"
-    ]
-  },
-  {
-    "name": "Card Gingerbread",
-    "ingredients": [
-      "Butter",
-      "Brown sugar",
-      "Egg",
-      "Molasses",
-      "Flour",
-      "Ginger",
-      "Salt",
-      "Soda"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, egg well beaten, molasses, and flour mixed and sifted with ginger, salt, soda, and cinnamon",
-      "Chill, roll in sheets to one-fourth inch in thickness, bake on a buttered sheet, and cut in squares"
+      {
+        "text": "Mix flour, sugar, ginger, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Work in butter, using tips of fingers, and add just enough molasses to hold ingredients together",
+        "station": "counter"
+      },
+      {
+        "text": "Let stand over night to get thoroughly chilled",
+        "station": "counter"
+      },
+      {
+        "text": "Roll very thin, shape, and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2610,12 +2924,26 @@
       "Ginger"
     ],
     "steps": [
-      "Heat molasses to boiling-point and pour over shortening",
-      "Add dry ingredients mixed and sifted",
-      "Toss one-fourth of mixture on a floured board and roll as thinly as possible; shape with a small round cutter, first dipped in flour",
-      "Place near together on a buttered sheet and bake in a moderate oven",
-      "Gather up the trimmings and roll with another portion of dough",
-      "During rolling, the bowl containing mixture should be kept in a cool place, or it will be necessary to add more flour to dough, which makes cookies hard rather than crisp and short"
+      {
+        "text": "Heat molasses to boiling-point and pour over shortening",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add dry ingredients mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Toss one-fourth of mixture on a floured board and roll as thinly as possible; shape with a small round cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Place near together on a buttered sheet and bake in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Gather up the trimmings and roll with another portion of dough",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2629,28 +2957,26 @@
       "Salt"
     ],
     "steps": [
-      "Add soda to molasses and beat thoroughly; add milk, shortening, ginger, salt, and flour",
-      "Enough flour must be used to make mixture of right consistency to drop easily from spoon",
-      "Let stand several hours in a cold place to thoroughly chill",
-      "Toss one-half mixture at a time on slightly floured board and roll lightly to one-fourth inch thickness",
-      "Shape with a round cutter, first dipped in flour",
-      "Bake on a buttered sheet"
-    ]
-  },
-  {
-    "name": "Oatmeal Cookies",
-    "ingredients": [
-      "Egg",
-      "Sugar",
-      "Thin cream",
-      "Milk",
-      "Fine oatmeal",
-      "Flour",
-      "Baking powder"
-    ],
-    "steps": [
-      "Beat egg until light, add sugar, cream, and milk; then add oatmeal, flour, baking powder, and salt, mixed and sifted",
-      "Toss on a floured board, roll, cut in shape, and bake in a moderate oven"
+      {
+        "text": "Add soda to molasses and beat thoroughly; add milk, shortening, ginger, salt, and flour",
+        "station": "counter"
+      },
+      {
+        "text": "Let stand several hours in a cold place to thoroughly chill",
+        "station": "counter"
+      },
+      {
+        "text": "Toss one-half mixture at a time on slightly floured board and roll lightly to one-fourth inch thickness",
+        "station": "counter"
+      },
+      {
+        "text": "Shape with a round cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Bake on a buttered sheet",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2663,27 +2989,26 @@
       "Salt"
     ],
     "steps": [
-      "Beat egg until light, add gradually sugar, and then stir in remaining ingredients",
-      "Drop mixture by teaspoonfuls on a thoroughly greased inverted dripping-pan one inch apart",
-      "Spread into circular shape with a case knife first dipped in cold water",
-      "Bake in a moderate oven until delicately browned",
-      "To give variety use two-thirds cup rolled oats and fill cup with shredded cocoanut"
-    ]
-  },
-  {
-    "name": "Rich Cookies",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Egg well beaten",
-      "Flour",
-      "Vanilla"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, egg, flour, and vanilla",
-      "Drop from tip of spoon in small portions on buttered sheet two inches apart",
-      "Spread thinly with a knife first dipped in cold water",
-      "Put four Sultana raisins on each cookie, almonds blanched and cut in strips, or citron cut in small pieces"
+      {
+        "text": "Beat egg until light, add gradually sugar, and then stir in remaining ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Drop mixture by teaspoonfuls on a thoroughly greased inverted dripping-pan one inch apart",
+        "station": "counter"
+      },
+      {
+        "text": "Spread into circular shape with a case knife first dipped in cold water",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in a moderate oven until delicately browned",
+        "station": "oven"
+      },
+      {
+        "text": "To give variety use two-thirds cup rolled oats and fill cup with shredded cocoanut",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2698,11 +3023,26 @@
       "Flour"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, egg well beaten, soda mixed with milk, salt and flour to make a soft dough",
-      "Chill and shape, using a round cutter",
-      "On the centres of one-half the pieces put currant jelly",
-      "Make three small openings in remaining halves, using a thimble, and put pieces together",
-      "Press edges slightly, and bake in a rather hot oven, that jumbles may keep in good shape"
+      {
+        "text": "Cream the butter, add sugar gradually, egg well beaten, soda mixed with milk, salt and flour to make a soft dough",
+        "station": "counter"
+      },
+      {
+        "text": "Chill and shape, using a round cutter",
+        "station": "counter"
+      },
+      {
+        "text": "On the centres of one-half the pieces put currant jelly",
+        "station": "counter"
+      },
+      {
+        "text": "Make three small openings in remaining halves, using a thimble, and put pieces together",
+        "station": "counter"
+      },
+      {
+        "text": "Press edges slightly, and bake in a rather hot oven, that jumbles may keep in good shape",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2716,10 +3056,22 @@
       "Baking powder"
     ],
     "steps": [
-      "Beat eggs until light, add sugar gradually, cocoanut, cream, and flour mixed and sifted with baking powder and salt",
-      "Chill thoroughly, toss on a floured board, pat, and roll one-half inch thick",
-      "Sprinkle with cocoanut, roll one-fourth inch thick, and shape with a small round cutter, first dipped in flour",
-      "Bake on a buttered sheet in a moderate oven"
+      {
+        "text": "Beat eggs until light, add sugar gradually, cocoanut, cream, and flour mixed and sifted with baking powder and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Chill thoroughly, toss on a floured board, pat, and roll one-half inch thick",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with cocoanut, roll one-fourth inch thick, and shape with a small round cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Bake on a buttered sheet in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2735,12 +3087,22 @@
       "Finely chopped peanuts"
     ],
     "steps": [
-      "Cream the butter, add sugar, and egg well beaten",
-      "Mix and sift baking powder, salt, and flour; add to first mixture; then add milk, peanuts, and lemon juice",
-      "Drop from a teaspoon on an unbuttered sheet one inch apart, and place one-half peanut on top of each",
-      "Bake twelve to fifteen minutes in a slow oven",
-      "This recipe will make twenty-four cookies",
-      "One pint peanuts when shelled should yield one-half cup"
+      {
+        "text": "Cream the butter, add sugar, and egg well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift baking powder, salt, and flour; add to first mixture; then add milk, peanuts, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Drop from a teaspoon on an unbuttered sheet one inch apart, and place one-half peanut on top of each",
+        "station": "counter"
+      },
+      {
+        "text": "Bake twelve to fifteen minutes in a slow oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2755,9 +3117,18 @@
       "Baking powder"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, egg well beaten, salt, and chocolate melted",
-      "Beat well, and add flour mixed and sifted with baking powder alternately with milk",
-      "Chill, roll very thin, then shape with a small cutter, first dipped in flour, and bake in a moderate oven"
+      {
+        "text": "Cream the butter, add sugar gradually, egg well beaten, salt, and chocolate melted",
+        "station": "stovetop"
+      },
+      {
+        "text": "Beat well, and add flour mixed and sifted with baking powder alternately with milk",
+        "station": "counter"
+      },
+      {
+        "text": "Chill, roll very thin, then shape with a small cutter, first dipped in flour, and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2770,11 +3141,26 @@
       "Vanilla"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, eggs slightly beaten, flour, and flavoring",
-      "Drop by spoonfuls on an inverted buttered dripping-pan",
-      "Spread very thinly, using a knife, in circular shapes about three inches in diameter",
-      "Sprinkle with almonds, and bake in a slow oven",
-      "Remove from pan, and shape at once over the handle of a wooden spoon"
+      {
+        "text": "Cream the butter, add sugar gradually, eggs slightly beaten, flour, and flavoring",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls on an inverted buttered dripping-pan",
+        "station": "counter"
+      },
+      {
+        "text": "Spread very thinly, using a knife, in circular shapes about three inches in diameter",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with almonds, and bake in a slow oven",
+        "station": "oven"
+      },
+      {
+        "text": "Remove from pan, and shape at once over the handle of a wooden spoon",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2787,10 +3173,22 @@
       "Flour"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and egg well beaten",
-      "Mix and sift flour and baking powder, add alternately with milk to first mixture",
-      "Bake thirty minutes in a shallow pan",
-      "Spread with Chocolate Frosting"
+      {
+        "text": "Cream the butter, add sugar gradually, and egg well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour and baking powder, add alternately with milk to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Bake thirty minutes in a shallow pan",
+        "station": "oven"
+      },
+      {
+        "text": "Spread with Chocolate Frosting",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2803,43 +3201,26 @@
       "Flour"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, eggs well beaten, and milk",
-      "Then add flour mixed and sifted with baking powder",
-      "Bake in a thin sheet in a dripping-pan",
-      "Cut in halves, spread one-half with Orange Filling",
-      "Put over other half, and cover with Orange Frosting"
-    ]
-  },
-  {
-    "name": "Quick Cake",
-    "ingredients": [
-      "Soft butter",
-      "Brown sugar",
-      "Eggs",
-      "Milk",
-      "Flour",
-      "Baking powder",
-      "Cinnamon",
-      "Grated nutmeg"
-    ],
-    "steps": [
-      "Put ingredients in a bowl and beat all together for three minutes, using a wooden cake spoon",
-      "Bake in a buttered and floured cake pan thirty-five to forty minutes",
-      "If directions are followed this makes a most satisfactory cake; but if ingredients are added separately it will not prove a success"
-    ]
-  },
-  {
-    "name": "Boston Favorite Cake",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Eggs",
-      "Milk",
-      "Flour"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, eggs beaten until light, then milk and flour mixed and sifted with baking powder",
-      "This recipe makes two loaves, or one-half the mixture may be baked in individual tins"
+      {
+        "text": "Cream the butter, add sugar gradually, eggs well beaten, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Then add flour mixed and sifted with baking powder",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in a thin sheet in a dripping-pan",
+        "station": "oven"
+      },
+      {
+        "text": "Cut in halves, spread one-half with Orange Filling",
+        "station": "counter"
+      },
+      {
+        "text": "Put over other half, and cover with Orange Frosting",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2855,9 +3236,18 @@
       "Mace"
     ],
     "steps": [
-      "Put unbeaten eggs in a bowl, add sugar and cream, and beat vigorously",
-      "Mix and sift remaining ingredients, then add to first mixture",
-      "Bake thirty minutes in a shallow cake pan"
+      {
+        "text": "Put unbeaten eggs in a bowl, add sugar and cream, and beat vigorously",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift remaining ingredients, then add to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Bake thirty minutes in a shallow cake pan",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2873,9 +3263,18 @@
       "Currants mixed with"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and eggs and egg yolk well beaten",
-      "Then add milk, flour mixed and sifted with baking powder, and currants",
-      "Bake forty minutes in buttered and floured cake pan"
+      {
+        "text": "Cream the butter, add sugar gradually, and eggs and egg yolk well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Then add milk, flour mixed and sifted with baking powder, and currants",
+        "station": "counter"
+      },
+      {
+        "text": "Bake forty minutes in buttered and floured cake pan",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2891,10 +3290,22 @@
       "Egg whites"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, yolks of eggs well beaten, and water",
-      "Mix and sift flour, corn-starch, and baking powder, and add to first mixture; then add whites of eggs beaten until stiff",
-      "After putting in pan, cover with almonds and sprinkle with powdered sugar",
-      "Bake forty minutes in a moderate oven"
+      {
+        "text": "Cream the butter, add sugar gradually, yolks of eggs well beaten, and water",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour, corn-starch, and baking powder, and add to first mixture; then add whites of eggs beaten until stiff",
+        "station": "counter"
+      },
+      {
+        "text": "After putting in pan, cover with almonds and sprinkle with powdered sugar",
+        "station": "counter"
+      },
+      {
+        "text": "Bake forty minutes in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -2909,25 +3320,18 @@
       "Egg whites"
     ],
     "steps": [
-      "Mix ingredients in order given",
-      "Bake forty-five minutes in a moderate oven",
-      "Cover with White Mountain Cream, crease in squares, and put one-half walnut on each square"
-    ]
-  },
-  {
-    "name": "Spanish Cake",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Egg yolks",
-      "Milk",
-      "Flour",
-      "Baking powder",
-      "Cinnamon"
-    ],
-    "steps": [
-      "Mix ingredients in order given",
-      "Bake in shallow tins and spread between and on top Caramel Frosting"
+      {
+        "text": "Mix ingredients in order given",
+        "station": "counter"
+      },
+      {
+        "text": "Bake forty-five minutes in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with White Mountain Cream, crease in squares, and put one-half walnut on each square",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2941,9 +3345,18 @@
       "Baking powder"
     ],
     "steps": [
-      "Put butter and sugar in a bowl, and stir until well mixed; add eggs well beaten, then milk, and flour mixed and sifted with baking powder and mace",
-      "Bake in individual tins",
-      "Cover with Chocolate Frosting"
+      {
+        "text": "Put butter and sugar in a bowl, and stir until well mixed; add eggs well beaten, then milk, and flour mixed and sifted with baking powder and mace",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in individual tins",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with Chocolate Frosting",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2959,9 +3372,52 @@
       "Flour"
     ],
     "steps": [
-      "Cream the butter; add cocoa, yolks of eggs well beaten, sugar mixed with cinnamon and clove, and water",
-      "Beat the whites of eggs, and add to first mixture alternately with flour mixed and sifted with baking powder",
-      "Bake in small tins from fifteen to twenty minutes"
+      {
+        "text": "Cream the butter; add cocoa, yolks of eggs well beaten, sugar mixed with cinnamon and clove, and water",
+        "station": "counter"
+      },
+      {
+        "text": "Beat the whites of eggs, and add to first mixture alternately with flour mixed and sifted with baking powder",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in small tins from fifteen to twenty minutes",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "name": "Cream Cakes",
+    "ingredients": [
+      "Butter",
+      "Boiling water",
+      "Eggs"
+    ],
+    "steps": [
+      {
+        "text": "Pour butter and water in saucepan and place on front of range",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as boiling-point is reached, add flour all at once, and stir vigorously",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire as soon as mixed, and add unbeaten eggs one at a time, beating, until thoroughly mixed, between the addition of eggs",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls on a buttered sheet, one and one-half inches apart, shaping with handle of spoon as nearly circular as possible, having mixture slightly piled in centre",
+        "station": "counter"
+      },
+      {
+        "text": "Bake thirty minutes in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "With a sharp knife make a cut in each large enough to admit of Cream Filling",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2974,10 +3430,22 @@
       "Powdered sugar"
     ],
     "steps": [
-      "Cream the butter, add flour gradually, mixed and sifted with soda, then add lemon juice",
-      "Beat whites of eggs until stiff; add sugar gradually, and combine the mixtures",
-      "Bake fifty minutes in a long shallow pan",
-      "Cover with Opera Caramel Frosting"
+      {
+        "text": "Cream the butter, add flour gradually, mixed and sifted with soda, then add lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Beat whites of eggs until stiff; add sugar gradually, and combine the mixtures",
+        "station": "counter"
+      },
+      {
+        "text": "Bake fifty minutes in a long shallow pan",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with Opera Caramel Frosting",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -2991,9 +3459,18 @@
       "Mace"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and continue beating; then add yolks of eggs beaten until thick and lemon-colored, whites of eggs beaten until stiff and dry, flour, mace, and brandy",
-      "Beat vigorously five minutes",
-      "Bake in a deep pan one and one-fourth hours in a slow oven; or if to be used for fancy ornamented cakes, bake thirty to thirty-five minutes in a dripping-pan"
+      {
+        "text": "Cream the butter, add sugar gradually, and continue beating; then add yolks of eggs beaten until thick and lemon-colored, whites of eggs beaten until stiff and dry, flour, mace, and brandy",
+        "station": "counter"
+      },
+      {
+        "text": "Beat vigorously five minutes",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in a deep pan one and one-fourth hours in a slow oven; or if to be used for fancy ornamented cakes, bake thirty to thirty-five minutes in a dripping-pan",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -3006,23 +3483,22 @@
       "Powdered sugar"
     ],
     "steps": [
-      "Cream the butter, and add flour gradually, mixed and sifted with ginger",
-      "Beat the yolks of the eggs until thick and lemon-colored, and add sugar gradually",
-      "Combine mixtures, add whites of eggs, beaten until stiff, and sift over baking powder",
-      "Beat thoroughly, turn into a buttered deep cake pan, and bake one hour in a moderate oven"
-    ]
-  },
-  {
-    "name": "French Cream Filling",
-    "ingredients": [
-      "Thick cream",
-      "Milk",
-      "Powdered sugar",
-      "White one egg"
-    ],
-    "steps": [
-      "Dilute cream with milk and beat until stiff, using Dover egg-beater",
-      "Add sugar, white of egg beaten until stiff, and vanilla"
+      {
+        "text": "Cream the butter, and add flour gradually, mixed and sifted with ginger",
+        "station": "counter"
+      },
+      {
+        "text": "Beat the yolks of the eggs until thick and lemon-colored, and add sugar gradually",
+        "station": "counter"
+      },
+      {
+        "text": "Combine mixtures, add whites of eggs, beaten until stiff, and sift over baking powder",
+        "station": "counter"
+      },
+      {
+        "text": "Beat thoroughly, turn into a buttered deep cake pan, and bake one hour in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
@@ -3036,22 +3512,18 @@
       "Egg slightly beaten"
     ],
     "steps": [
-      "Mix ingredients in order given",
-      "Cook ten minutes in double boiler, stirring constantly",
-      "Cool before spreading"
-    ]
-  },
-  {
-    "name": "Chocolate Filling",
-    "ingredients": [
-      "Squares chocolate",
-      "Powdered sugar",
-      "Milk",
-      "Egg yolks"
-    ],
-    "steps": [
-      "Melt chocolate over hot water, add one-half the sugar, and milk; add remaining sugar, and yolk of egg; then cook in double boiler until it thickens, stirring constantly at first, that mixture may be perfectly smooth",
-      "Cool slightly, flavor, and spread"
+      {
+        "text": "Mix ingredients in order given",
+        "station": "counter"
+      },
+      {
+        "text": "Cook ten minutes in double boiler, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool before spreading",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3062,9 +3534,18 @@
       "Boiling water"
     ],
     "steps": [
-      "Mix ingredients in the order given and cook in double boiler until thick enough to spread",
-      "Spread while hot",
-      "Figs may be chopped quickly by forcing through a meat chopper, stirring occasionally"
+      {
+        "text": "Mix ingredients in the order given and cook in double boiler until thick enough to spread",
+        "station": "stovetop"
+      },
+      {
+        "text": "Spread while hot",
+        "station": "counter"
+      },
+      {
+        "text": "Figs may be chopped quickly by forcing through a meat chopper, stirring occasionally",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3076,10 +3557,18 @@
       "Hot water"
     ],
     "steps": [
-      "Put sugar and milk in a saucepan, heat slowly to boiling-point without stirring, and boil six minutes",
-      "Break marshmallows in pieces and melt in double boiler, add hot water, and cook until mixture is smooth, then add hot syrup gradually, stirring constantly",
-      "Beat until cool enough to spread, then add vanilla",
-      "This may be used for both filling and frosting"
+      {
+        "text": "Put sugar and milk in a saucepan, heat slowly to boiling-point without stirring, and boil six minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Break marshmallows in pieces and melt in double boiler, add hot water, and cook until mixture is smooth, then add hot syrup gradually, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Beat until cool enough to spread, then add vanilla",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3090,9 +3579,45 @@
       "Confectioners’ sugar"
     ],
     "steps": [
-      "Dissolve gelatine in boiling water",
-      "Add sugar and flavoring and beat until of right consistency to spread",
-      "Crease in squares when slightly hardened"
+      {
+        "text": "Dissolve gelatine in boiling water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add sugar and flavoring and beat until of right consistency to spread",
+        "station": "counter"
+      },
+      {
+        "text": "Crease in squares when slightly hardened",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "name": "White Mountain Cream",
+    "ingredients": [
+      "Sugar",
+      "Boiling water",
+      "Egg whites",
+      "Vanilla or"
+    ],
+    "steps": [
+      {
+        "text": "Put sugar and water in saucepan, and stir to prevent sugar from adhering to saucepan; heat gradually to boiling-point, and boil without stirring until syrup will thread when dropped from tip of spoon or tines of silver fork",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour syrup gradually on beaten white of egg, beating mixture constantly, and continue beating until of right consistency to spread; then add flavoring and pour over cake, spreading evenly with back of spoon",
+        "station": "counter"
+      },
+      {
+        "text": "Crease as soon as firm",
+        "station": "counter"
+      },
+      {
+        "text": "Frosting beaten too long may be improved by adding a few drops of lemon juice or boiling water",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -3103,10 +3628,22 @@
       "Butter"
     ],
     "steps": [
-      "Put butter in saucepan; when melted, add sugar and milk",
-      "Stir, to be sure that sugar does not adhere to saucepan, heat to boiling-point, and boil without stirring thirteen minutes",
-      "Remove from fire, and beat until of right consistency to spread; then add flavoring and pour over cake, spreading evenly with back of spoon",
-      "Crease as soon as firm"
+      {
+        "text": "Put butter in saucepan; when melted, add sugar and milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Stir, to be sure that sugar does not adhere to saucepan, heat to boiling-point, and boil without stirring thirteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, and beat until of right consistency to spread; then add flavoring and pour over cake, spreading evenly with back of spoon",
+        "station": "counter"
+      },
+      {
+        "text": "Crease as soon as firm",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3117,21 +3654,54 @@
       "Brown sugar"
     ],
     "steps": [
-      "Put butter in saucepan, and when melted add sugar and water",
-      "Bring to boiling-point, and let boil sixteen minutes",
-      "Pour over corn, and stir until every kernel is well coated with sugar"
+      {
+        "text": "Put butter in saucepan, and when melted add sugar and water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bring to boiling-point, and let boil sixteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour over corn, and stir until every kernel is well coated with sugar",
+        "station": "counter"
+      }
     ]
   },
   {
-    "name": "Molasses Candy",
+    "name": "Buttercups",
     "ingredients": [
-      "Porto Rico molasses",
+      "Molasses",
       "Sugar",
-      "Butter"
+      "Boiling water",
+      "Butter",
+      "Cream of tartar"
     ],
     "steps": [
-      "An iron kettle with a rounding bottom (Scotch kettle) or copper kettle is best for candy making",
-      "If one has no copper kettle, a granite kettle is best for sugar candies"
+      {
+        "text": "Boil ingredients (except fondant) until, when tried in cold water, a firm ball may be formed in the fingers, not stirring until the last few minutes of cooking",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour on a buttered platter, and when cool enough to handle, pull until light-colored",
+        "station": "counter"
+      },
+      {
+        "text": "Shape on a floured board, having strip wide enough to enclose a roll of fondant one inch in diameter",
+        "station": "counter"
+      },
+      {
+        "text": "Place fondant on candy, bring edges of candy together, and press firmly over fondant",
+        "station": "counter"
+      },
+      {
+        "text": "With both hands pull candy into a long strip",
+        "station": "counter"
+      },
+      {
+        "text": "Cut in small pieces; each piece will consist of fondant encircled with molasses candy",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3142,26 +3712,26 @@
       "Boiling water"
     ],
     "steps": [
-      "Boil ingredients together without stirring, until, when tried in cold water, mixture will become brittle",
-      "Turn on a well buttered platter to cool",
-      "As edges cool, fold towards centre",
-      "As soon as it can be handled, pull until white and glossy",
-      "While pulling, flavor as desired, using vanilla, orange extract, coffee extract, oil of sassafras, or melted chocolate",
-      "Cut in sticks or small pieces"
-    ]
-  },
-  {
-    "name": "Butter Scotch",
-    "ingredients": [
-      "Sugar",
-      "Molasses",
-      "Vinegar",
-      "Boiling water"
-    ],
-    "steps": [
-      "Boil ingredients together until, when tried in cold water, mixture will become brittle",
-      "Turn into a well buttered pan; when slightly cool, mark with a sharp-pointed knife in squares",
-      "This candy is much improved by cooking a small piece of vanilla bean with other ingredients"
+      {
+        "text": "Boil ingredients together without stirring, until, when tried in cold water, mixture will become brittle",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn on a well buttered platter to cool",
+        "station": "counter"
+      },
+      {
+        "text": "As edges cool, fold towards centre",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as it can be handled, pull until white and glossy",
+        "station": "counter"
+      },
+      {
+        "text": "Cut in sticks or small pieces",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3174,11 +3744,26 @@
       "Squares chocolate"
     ],
     "steps": [
-      "Put butter into kettle; when melted, add molasses, sugar, and milk",
-      "Stir until sugar is dissolved, and when boiling-point is reached, add chocolate, stirring constantly until chocolate is melted",
-      "Boil until, when tried in cold water, a firm ball may be formed in the fingers",
-      "Add vanilla just after taking from fire",
-      "Turn into a buttered pan, cool, and mark in small squares"
+      {
+        "text": "Put butter into kettle; when melted, add molasses, sugar, and milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Stir until sugar is dissolved, and when boiling-point is reached, add chocolate, stirring constantly until chocolate is melted",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil until, when tried in cold water, a firm ball may be formed in the fingers",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add vanilla just after taking from fire",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered pan, cool, and mark in small squares",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3190,10 +3775,18 @@
       "Shredded cocoanut"
     ],
     "steps": [
-      "Put butter into granite saucepan; when melted, add sugar and milk, and stir until sugar is dissolved",
-      "Heat to boiling-point, and boil twelve minutes; remove from fire, add cocoanut and vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
-      "Pour at once into a buttered pan, cool slightly, and mark in squares",
-      "One-half cup nut meat, broken in pieces, may be used in place of cocoanut"
+      {
+        "text": "Put butter into granite saucepan; when melted, add sugar and milk, and stir until sugar is dissolved",
+        "station": "stovetop"
+      },
+      {
+        "text": "Heat to boiling-point, and boil twelve minutes; remove from fire, add cocoanut and vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour at once into a buttered pan, cool slightly, and mark in squares",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3205,11 +3798,26 @@
       "Squares chocolate"
     ],
     "steps": [
-      "Put butter into granite saucepan; when melted, add sugar and milk",
-      "Heat to boiling-point; then add chocolate, and stir constantly until chocolate is melted",
-      "Boil thirteen minutes, remove from fire, add vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
-      "Pour at once into a buttered pan, cool slightly, and mark in squares",
-      "Omit vanilla, if desired, and add, while cooking, one-fourth teaspoon cinnamon"
+      {
+        "text": "Put butter into granite saucepan; when melted, add sugar and milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Heat to boiling-point; then add chocolate, and stir constantly until chocolate is melted",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil thirteen minutes, remove from fire, add vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour at once into a buttered pan, cool slightly, and mark in squares",
+        "station": "counter"
+      },
+      {
+        "text": "Omit vanilla, if desired, and add, while cooking, one-fourth teaspoon cinnamon",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -3220,10 +3828,22 @@
       "Boiling water"
     ],
     "steps": [
-      "Break sugar in pieces; put into a saucepan with cream and water",
-      "Bring to boiling-point, and boil until a soft ball is formed when tried in cold water",
-      "Remove from fire, beat until creamy, add nut meat, and pour into a buttered tin",
-      "Cool slightly, and mark in squares"
+      {
+        "text": "Break sugar in pieces; put into a saucepan with cream and water",
+        "station": "counter"
+      },
+      {
+        "text": "Bring to boiling-point, and boil until a soft ball is formed when tried in cold water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, beat until creamy, add nut meat, and pour into a buttered tin",
+        "station": "counter"
+      },
+      {
+        "text": "Cool slightly, and mark in squares",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3235,10 +3855,22 @@
       "Few grains cayenne"
     ],
     "steps": [
-      "Beat eggs slightly, add one-half teaspoon melted butter, salt, cayenne, and cheese",
-      "Melt remaining butter, add mixture, and cook until firm, without stirring",
-      "Roll, and sprinkle with grated cheese",
-      "Serve with Graham bread sandwiches"
+      {
+        "text": "Beat eggs slightly, add one-half teaspoon melted butter, salt, cayenne, and cheese",
+        "station": "stovetop"
+      },
+      {
+        "text": "Melt remaining butter, add mixture, and cook until firm, without stirring",
+        "station": "stovetop"
+      },
+      {
+        "text": "Roll, and sprinkle with grated cheese",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with Graham bread sandwiches",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3253,9 +3885,18 @@
       "Butter"
     ],
     "steps": [
-      "Pick over beef and chop finely, add tomatoes, cheese, onion juice, cinnamon, and cayenne",
-      "Melt butter, add mixture, and when heated, add eggs well beaten",
-      "Cook until eggs are of creamy consistency, stirring and scraping from bottom of pan"
+      {
+        "text": "Pick over beef and chop finely, add tomatoes, cheese, onion juice, cinnamon, and cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add mixture, and when heated, add eggs well beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook until eggs are of creamy consistency, stirring and scraping from bottom of pan",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -3271,11 +3912,22 @@
       "Egg yolk"
     ],
     "steps": [
-      "Clean oysters, heat to boiling-point, and drain",
-      "Reserve liquor and strain through double thickness of cheese-cloth; there should be three-fourths cup",
-      "Cook butter and mushrooms five minutes, add flour, and oyster liquor gradually; then cook three minutes",
-      "Add seasonings, oysters, egg, and Sherry wine",
-      "Serve on zephyrettes or pieces of toasted bread"
+      {
+        "text": "Clean oysters, heat to boiling-point, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook butter and mushrooms five minutes, add flour, and oyster liquor gradually; then cook three minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add seasonings, oysters, egg, and Sherry wine",
+        "station": "counter"
+      },
+      {
+        "text": "Serve on zephyrettes or pieces of toasted bread",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3289,11 +3941,26 @@
       "Thin cream"
     ],
     "steps": [
-      "Clean and drain oysters",
-      "Melt butter, add oysters, and cook until oysters are plump",
-      "Then add seasonings, cream, and egg yolks slightly beaten",
-      "Cook until sauce is slightly thickened, stirring constantly",
-      "Serve on zephyrettes or pieces of toasted bread"
+      {
+        "text": "Clean and drain oysters",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add oysters, and cook until oysters are plump",
+        "station": "stovetop"
+      },
+      {
+        "text": "Then add seasonings, cream, and egg yolks slightly beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Cook until sauce is slightly thickened, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve on zephyrettes or pieces of toasted bread",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3309,9 +3976,18 @@
       "Egg yolks"
     ],
     "steps": [
-      "Remove lobster meat from shell and cut in small cubes",
-      "Melt butter, add flour, seasonings, and cream gradually",
-      "Add lobster, and when heated, add egg yolks and wine"
+      {
+        "text": "Remove lobster meat from shell and cut in small cubes",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add flour, seasonings, and cream gradually",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add lobster, and when heated, add egg yolks and wine",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -3327,11 +4003,26 @@
       "Thin cream"
     ],
     "steps": [
-      "Remove lobster meat from shell and cut in slices",
-      "Melt butter, add lobster, and cook three minutes",
-      "Add seasonings and wine, cook one minute, then add cream and yolks of eggs slightly beaten",
-      "Stir until thickened",
-      "Serve with toast or Puff Paste Points"
+      {
+        "text": "Remove lobster meat from shell and cut in slices",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add lobster, and cook three minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add seasonings and wine, cook one minute, then add cream and yolks of eggs slightly beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Stir until thickened",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with toast or Puff Paste Points",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3345,10 +4036,22 @@
       "Thin cream"
     ],
     "steps": [
-      "Clean clams, remove soft parts, and finely chop hard parts",
-      "Melt butter, add chopped clams, seasonings, and wine",
-      "Cook eight minutes, add soft part of clams, and cream",
-      "Cook two minutes, then add egg yolks slightly beaten, diluted with some of the hot sauce"
+      {
+        "text": "Clean clams, remove soft parts, and finely chop hard parts",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add chopped clams, seasonings, and wine",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook eight minutes, add soft part of clams, and cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook two minutes, then add egg yolks slightly beaten, diluted with some of the hot sauce",
+        "station": "stovetop"
+      }
     ]
   },
   {
@@ -3364,10 +4067,22 @@
       "Egg yolks"
     ],
     "steps": [
-      "Clean shrimps and cook three minutes in two tablespoons butter",
-      "Add salt, cayenne, and lemon juice, and cook one minute",
-      "Remove shrimps, and put remaining butter in chafing-dish, add flour and cream; when thickened, add yolks of eggs slightly beaten, shrimps, and wine",
-      "Serve with toast or Puff Paste Points"
+      {
+        "text": "Clean shrimps and cook three minutes in two tablespoons butter",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add salt, cayenne, and lemon juice, and cook one minute",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove shrimps, and put remaining butter in chafing-dish, add flour and cream; when thickened, add yolks of eggs slightly beaten, shrimps, and wine",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with toast or Puff Paste Points",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3380,27 +4095,22 @@
       "Anchovy essence"
     ],
     "steps": [
-      "Make a sauce of butter, flour, and milk",
-      "Mash yolks of eggs and mix with Anchovy essence, add to sauce, then add fish",
-      "Serve as soon as heated",
-      "Serve on pieces of toasted Graham bread"
-    ]
-  },
-  {
-    "name": "Minced Mutton",
-    "ingredients": [
-      "Chopped cooked mutton",
-      "Egg yolks",
-      "Mixed mustard",
-      "Salt",
-      "Cayenne",
-      "Cream"
-    ],
-    "steps": [
-      "Mash the yolks, and season with mustard, salt, and cayenne",
-      "Add cream and mutton",
-      "When thoroughly heated add wine",
-      "Serve on toast"
+      {
+        "text": "Make a sauce of butter, flour, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Mash yolks of eggs and mix with Anchovy essence, add to sauce, then add fish",
+        "station": "counter"
+      },
+      {
+        "text": "Serve as soon as heated",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve on pieces of toasted Graham bread",
+        "station": "counter"
+      }
     ]
   },
   {
@@ -3412,9 +4122,18 @@
       "Lemon juice"
     ],
     "steps": [
-      "Stuff figs with almonds",
-      "Put sugar, lemon juice, and wine in chafing-dish; when heated, add figs, cover, and cook until figs are tender, turning and basting often",
-      "Serve with Lady Fingers"
+      {
+        "text": "Stuff figs with almonds",
+        "station": "counter"
+      },
+      {
+        "text": "Put sugar, lemon juice, and wine in chafing-dish; when heated, add figs, cover, and cook until figs are tender, turning and basting often",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Lady Fingers",
+        "station": "counter"
+      }
     ]
   }
 ]

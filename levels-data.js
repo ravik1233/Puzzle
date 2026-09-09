@@ -6,155 +6,91 @@
   root.DINNER_RUSH_LEVELS = [
   {
     "id": "stage-1",
-    "name": "Stage 1: Fritter Beans",
-    "recipeName": "Fritter Beans",
+    "name": "Stage 1: Prune Whip",
+    "recipeName": "Prune Whip",
     "ingredients": [
-      "Egg",
-      "Milk",
-      "Salt"
+      "Prunes",
+      "Egg whites",
+      "Sugar"
     ],
     "decoys": [
-      "Shredded pineapple",
-      "Grated pineapple"
+      "Arrowroot",
+      "Bottles ginger ale"
     ],
     "steps": [
-      "Beat egg until light, add milk, salt, and flour",
-      "Put through colander or pastry tube into deep fat, and fry until brown; drain on brown paper"
+      {
+        "text": "Beat whites of eggs until stiff, add prune mixture gradually when cold, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Pile lightly on buttered pudding-dish, bake twenty minutes in slow oven",
+        "station": "oven"
+      },
+      {
+        "text": "Serve cold with Boiled Custard",
+        "station": "stovetop"
+      }
     ]
   },
   {
     "id": "stage-2",
-    "name": "Stage 2: Strawberry Sauce",
-    "recipeName": "Strawberry Sauce",
+    "name": "Stage 2: Pineapple Cream",
+    "recipeName": "Pineapple Cream",
     "ingredients": [
-      "Butter",
-      "Strawberries",
-      "Powdered sugar"
+      "Water",
+      "Sugar",
+      "Grated pineapple"
     ],
     "decoys": [
-      "Paprika",
-      "Egg"
+      "Marrowfat peas",
+      "Sauterne"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, egg beaten until stiff, and strawberries",
-      "Beat until fruit is mashed"
+      {
+        "text": "Make syrup by boiling sugar and water fifteen minutes; strain, cool, add pineapple, and freeze to a mush",
+        "station": "stovetop"
+      },
+      {
+        "text": "Fold in whip from cream; let stand thirty minutes before serving",
+        "station": "counter"
+      },
+      {
+        "text": "Serve in frappé glasses and garnish with candied pineapple",
+        "station": "counter"
+      }
     ]
   },
   {
     "id": "stage-3",
-    "name": "Stage 3: Cranberry Frappé",
-    "recipeName": "Cranberry Frappé",
+    "name": "Stage 3: Fig Filling",
+    "recipeName": "Fig Filling",
     "ingredients": [
-      "Cranberries",
-      "Water",
-      "Sugar"
+      "Figs, finely chopped",
+      "Sugar",
+      "Boiling water"
     ],
     "decoys": [
-      "Lobster",
-      "Chopped parsley"
+      "Orange juice and pulp",
+      "White Sauce II"
     ],
     "steps": [
-      "Cook cranberries and water eight minutes; then force through a sieve",
-      "Add sugar and lemon juice, and freeze to a mush, using equal parts of ice and salt"
+      {
+        "text": "Mix ingredients in the order given and cook in double boiler until thick enough to spread",
+        "station": "stovetop"
+      },
+      {
+        "text": "Spread while hot",
+        "station": "counter"
+      },
+      {
+        "text": "Figs may be chopped quickly by forcing through a meat chopper, stirring occasionally",
+        "station": "counter"
+      }
     ]
   },
   {
     "id": "stage-4",
-    "name": "Stage 4: Covington Cream",
-    "recipeName": "Covington Cream",
-    "ingredients": [
-      "Sugar",
-      "Formosa tea infusion",
-      "Rum"
-    ],
-    "decoys": [
-      "Apricots",
-      "Green Coloring"
-    ],
-    "steps": [
-      "Mix ingredients, and freeze to a mush",
-      "Serve in frappé glasses"
-    ]
-  },
-  {
-    "id": "stage-5",
-    "name": "Stage 5: Chestnut Croquettes",
-    "recipeName": "Chestnut Croquettes",
-    "ingredients": [
-      "Mashed French chestnuts",
-      "Thick cream",
-      "Egg yolks",
-      "Sugar"
-    ],
-    "decoys": [
-      "Orange juice and pulp",
-      "Orange juice"
-    ],
-    "steps": [
-      "Mix ingredients in order given",
-      "Shape in balls, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain"
-    ]
-  },
-  {
-    "id": "stage-6",
-    "name": "Stage 6: Custard Soufflé",
-    "recipeName": "Custard Soufflé",
-    "ingredients": [
-      "Butter",
-      "Flour",
-      "Scalded milk",
-      "Eggs"
-    ],
-    "decoys": [
-      "Yvette Cordial",
-      "Figs, finely chopped"
-    ],
-    "steps": [
-      "Melt butter, add flour, and gradually hot milk; when well thickened, pour on to yolks of eggs beaten until thick and lemon-colored, and mixed with sugar; cool, and cut and fold in whites of eggs beaten stiff and dry",
-      "Turn into buttered pudding-dish, and bake from thirty to thirty-five minutes in slow oven; take from oven and serve at once,—if not served immediately it is sure to fall; serve with Creamy or Foamy Sauce"
-    ]
-  },
-  {
-    "id": "stage-7",
-    "name": "Stage 7: Blueberry Pie",
-    "recipeName": "Blueberry Pie",
-    "ingredients": [
-      "Berries",
-      "Flour",
-      "Sugar"
-    ],
-    "decoys": [
-      "Potatoes",
-      "Rye flour"
-    ],
-    "steps": [
-      "Line a deep plate with Plain Paste, fill with berries slightly dredged with flour; sprinkle with sugar and salt, cover, and bake forty-five to fifty minutes in a moderate oven",
-      "For sweetening, some prefer to use one-third molasses, the remaining two-thirds to be sugar",
-      "Six green grapes (from which seeds have been removed) cut in small pieces much improve the flavor, particularly where huckleberries are used in place of blueberries"
-    ]
-  },
-  {
-    "id": "stage-8",
-    "name": "Stage 8: Chocolate Filling",
-    "recipeName": "Chocolate Filling",
-    "ingredients": [
-      "Squares chocolate",
-      "Powdered sugar",
-      "Milk",
-      "Egg yolks"
-    ],
-    "decoys": [
-      "Yvette Cordial",
-      "Egg whites"
-    ],
-    "steps": [
-      "Melt chocolate over hot water, add one-half the sugar, and milk; add remaining sugar, and yolk of egg; then cook in double boiler until it thickens, stirring constantly at first, that mixture may be perfectly smooth",
-      "Cool slightly, flavor, and spread"
-    ]
-  },
-  {
-    "id": "stage-9",
-    "name": "Stage 9: Gelatine Frosting",
+    "name": "Stage 4: Gelatine Frosting",
     "recipeName": "Gelatine Frosting",
     "ingredients": [
       "Boiling water",
@@ -162,39 +98,55 @@
       "Confectioners’ sugar"
     ],
     "decoys": [
-      "Washed figs",
-      "Dried split peas"
+      "Soda",
+      "Cloves"
     ],
     "steps": [
-      "Dissolve gelatine in boiling water",
-      "Add sugar and flavoring and beat until of right consistency to spread",
-      "Crease in squares when slightly hardened"
+      {
+        "text": "Dissolve gelatine in boiling water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add sugar and flavoring and beat until of right consistency to spread",
+        "station": "counter"
+      },
+      {
+        "text": "Crease in squares when slightly hardened",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-10",
-    "name": "Stage 10: Twin Mountain Muffins",
-    "recipeName": "Twin Mountain Muffins",
+    "id": "stage-5",
+    "name": "Stage 5: Sugared Popped Corn",
+    "recipeName": "Sugared Popped Corn",
     "ingredients": [
+      "Popped corn",
       "Butter",
-      "Sugar",
-      "Egg",
-      "Milk",
-      "Flour"
+      "Brown sugar"
     ],
     "decoys": [
-      "Yellow ginger",
-      "Cayenne",
-      "Chopped lobster meat"
+      "Sliced apples",
+      "Confectioners’ sugar"
     ],
     "steps": [
-      "Cream the butter; add sugar and egg well beaten; sift baking powder with flour, and add to the first mixture, alternating with milk",
-      "Bake in buttered tin gem pans twenty-five minutes"
+      {
+        "text": "Put butter in saucepan, and when melted add sugar and water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bring to boiling-point, and let boil sixteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour over corn, and stir until every kernel is well coated with sugar",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-11",
-    "name": "Stage 11: Cereal with Fruit",
+    "id": "stage-6",
+    "name": "Stage 6: Cereal with Fruit",
     "recipeName": "Cereal with Fruit",
     "ingredients": [
       "Wheat Germ",
@@ -203,19 +155,56 @@
       "Salt"
     ],
     "decoys": [
-      "Bottles ginger ale",
-      "Granulated gelatin",
-      "Sweet cider"
+      "Heavy cream",
+      "Yeast cake"
     ],
     "steps": [
-      "Mix cereal, salt, and cold water; add to boiling water placed on front of range",
-      "Boil five minutes, steam in double boiler thirty minutes; stir in dates, and serve with cream",
-      "To serve for breakfast, or as a simple dessert"
+      {
+        "text": "Mix cereal, salt, and cold water; add to boiling water placed on front of range",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil five minutes, steam in double boiler thirty minutes; stir in dates, and serve with cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "To serve for breakfast, or as a simple dessert",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-12",
-    "name": "Stage 12: Scrambled Eggs",
+    "id": "stage-7",
+    "name": "Stage 7: Rissoto Creole",
+    "recipeName": "Rissoto Creole",
+    "ingredients": [
+      "Butter",
+      "Rice",
+      "Highly seasoned",
+      "Brown Stock"
+    ],
+    "decoys": [
+      "Thick White Sauce",
+      "Cabbage"
+    ],
+    "steps": [
+      {
+        "text": "Melt butter in hot frying-pan, add rice, and stir constantly until rice is well browned",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add stock heated to boiling-point, and cook in double boiler until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn on a serving dish, garnish with pimentoes cut in fancy shapes, and cover with",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-8",
+    "name": "Stage 8: Scrambled Eggs",
     "recipeName": "Scrambled Eggs",
     "ingredients": [
       "Eggs",
@@ -224,40 +213,59 @@
       "Pepper"
     ],
     "decoys": [
-      "Pounded macaroons",
-      "Figs, finely chopped",
-      "Rind one lemon"
+      "Rolled oats",
+      "Clove"
     ],
     "steps": [
-      "Beat eggs slightly with silver fork; add salt, pepper, and milk",
-      "Heat omelet pan, put in butter, and when melted, turn in the mixture",
-      "Cook until of creamy consistency, stirring and scraping from bottom of the pan"
+      {
+        "text": "Beat eggs slightly with silver fork; add salt, pepper, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Heat omelet pan, put in butter, and when melted, turn in the mixture",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook until of creamy consistency, stirring and scraping from bottom of the pan",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-13",
-    "name": "Stage 13: Salmon Soup",
-    "recipeName": "Salmon Soup",
+    "id": "stage-9",
+    "name": "Stage 9: Eggs in Batter",
+    "recipeName": "Eggs in Batter",
     "ingredients": [
-      "Salmon",
-      "Scalded milk",
-      "Butter",
-      "Flour",
-      "Salt"
+      "Egg",
+      "Thick cream",
+      "Fine stale bread crumbs"
     ],
     "decoys": [
-      "Blade of mace",
-      "Salt and pepper",
-      "Carrot"
+      "Marrowfat peas",
+      "Scallops"
     ],
     "steps": [
-      "Drain oil from salmon, remove skin and bones, rub through a sieve",
-      "Add gradually the milk, season, and bind"
+      {
+        "text": "Mix cream, bread crumbs, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Put one-half tablespoon of mixture in egg-shirrer",
+        "station": "counter"
+      },
+      {
+        "text": "Slip in egg, and cover with remaining mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Bake six minutes in moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-14",
-    "name": "Stage 14: Soubise Sauce",
+    "id": "stage-10",
+    "name": "Stage 10: Soubise Sauce",
     "recipeName": "Soubise Sauce",
     "ingredients": [
       "Sliced onions",
@@ -265,125 +273,119 @@
       "Cream or milk"
     ],
     "decoys": [
-      "Celery",
-      "Crab meat",
-      "Egg well beaten"
+      "Confectioners’ sugar",
+      "Cold milk"
     ],
     "steps": [
-      "Cover onions with boiling water, cook five minutes, drain, again cover with boiling water, and cook until soft; drain, and rub through a sieve",
-      "Add to sauce with cream",
-      "Season with salt and pepper",
-      "Serve with mutton, pork chops, or “hard-boiled” eggs"
+      {
+        "text": "Cover onions with boiling water, cook five minutes, drain, again cover with boiling water, and cook until soft; drain, and rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add to sauce with cream",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt and pepper",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with mutton, pork chops, or “hard-boiled” eggs",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-15",
-    "name": "Stage 15: Tartar Sauce",
-    "recipeName": "Tartar Sauce",
-    "ingredients": [
-      "Vinegar",
-      "Lemon juice",
-      "Salt",
-      "Worcestershire Sauce",
-      "Butter"
-    ],
-    "decoys": [
-      "Shredded cocoanut",
-      "Porto Rico molasses",
-      "Square melted chocolate"
-    ],
-    "steps": [
-      "Mix vinegar, lemon juice, salt, and Worcestershire Sauce in a small bowl, and heat over hot water",
-      "Brown the butter in an omelet pan, and strain into first mixture"
-    ]
-  },
-  {
-    "id": "stage-16",
-    "name": "Stage 16: Swedish Timbales",
-    "recipeName": "Swedish Timbales",
-    "ingredients": [
-      "Flour",
-      "Salt",
-      "Sugar",
-      "Milk",
-      "Egg"
-    ],
-    "decoys": [
-      "Baking power",
-      "Finely chopped onion",
-      "Popped corn"
-    ],
-    "steps": [
-      "Mix dry ingredients, add milk gradually, and beaten egg; then add olive oil",
-      "Shape, using a hot timbale iron, fry in deep fat until crisp and brown; take from iron and invert on brown paper to drain"
-    ]
-  },
-  {
-    "id": "stage-17",
-    "name": "Stage 17: Peach Tapioca",
-    "recipeName": "Peach Tapioca",
-    "ingredients": [
-      "Peaches",
-      "Powdered sugar",
-      "Tapioca",
-      "Boiling water",
-      "Sugar"
-    ],
-    "decoys": [
-      "Pounded cardamon seeds",
-      "Washed figs",
-      "Vinegar"
-    ],
-    "steps": [
-      "Drain peaches, sprinkle with powdered sugar, and let stand one hour; soak tapioca one hour in cold water to cover; to peach syrup add enough boiling water to make three cups; heat to boiling-point, add tapioca drained from cold water, sugar, and salt; then cook in a double boiler until transparent",
-      "Line a mould or pudding-dish with peaches cut in quarters, fill with tapioca, and bake in moderate oven thirty minutes; cool slightly, turn on a dish, and serve with Cream Sauce I"
-    ]
-  },
-  {
-    "id": "stage-18",
-    "name": "Stage 18: Brandy Sauce",
-    "recipeName": "Brandy Sauce",
+    "id": "stage-11",
+    "name": "Stage 11: Drawn Butter Sauce",
+    "recipeName": "Drawn Butter Sauce",
     "ingredients": [
       "Butter",
-      "Powdered sugar",
-      "Brandy",
-      "Egg yolks",
-      "Egg whites"
+      "Flour",
+      "Hot water",
+      "Salt"
     ],
     "decoys": [
-      "Pounded cardamon seeds",
-      "Granulated gelatine",
-      "Cold water"
+      "Grated nutmeg",
+      "Yeast cakes"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, then brandy very slowly, well beaten yolks, and milk or cream",
-      "Cook over hot water until it thickens as a custard, pour on to beaten whites"
+      {
+        "text": "Melt one-half the butter, add flour with seasonings, and pour on gradually hot water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil five minutes, and add remaining butter in small pieces",
+        "station": "stovetop"
+      },
+      {
+        "text": "To be served with boiled or baked fish",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-19",
-    "name": "Stage 19: Lemon Jelly",
-    "recipeName": "Lemon Jelly",
+    "id": "stage-12",
+    "name": "Stage 12: Salmon Croquettes",
+    "recipeName": "Salmon Croquettes",
     "ingredients": [
-      "Box gelatine or",
-      "Granulated gelatine",
-      "Cold water",
-      "Boiling water",
-      "Sugar"
+      "Cold flaked salmon",
+      "Thick White Sauce",
+      "Few grains cayenne",
+      "Lemon juice"
     ],
     "decoys": [
-      "Grated rind  orange",
-      "Milk, scalded",
-      "Almond extract"
+      "Egg yolk",
+      "Junket Tablets"
     ],
     "steps": [
-      "Soak gelatine twenty minutes in cold water, dissolve in boiling water, strain, and add to sugar and lemon juice",
-      "Turn into mould, and chill"
+      {
+        "text": "Add sauce to salmon, then add seasonings",
+        "station": "counter"
+      },
+      {
+        "text": "Spread on a plate to cool",
+        "station": "counter"
+      },
+      {
+        "text": "Shape, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-20",
-    "name": "Stage 20: Pomona Frappé",
+    "id": "stage-13",
+    "name": "Stage 13: Boiled Custard",
+    "recipeName": "Boiled Custard",
+    "ingredients": [
+      "Scalded milk",
+      "Egg yolks",
+      "Sugar",
+      "Salt"
+    ],
+    "decoys": [
+      "Graham flour",
+      "Melted butter",
+      "Apricots"
+    ],
+    "steps": [
+      {
+        "text": "Beat eggs slightly, add sugar and salt; stir constantly while adding gradually hot milk",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in double boiler, continue stirring until mixture thickens and a coating is formed on the spoon, strain immediately; chill and flavor",
+        "station": "stovetop"
+      },
+      {
+        "text": "To prevent scum from forming, cover with a perforated tin",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-14",
+    "name": "Stage 14: Pomona Frappé",
     "recipeName": "Pomona Frappé",
     "ingredients": [
       "Sugar",
@@ -392,19 +394,58 @@
       "Orange juice"
     ],
     "decoys": [
-      "Powdered sugar",
-      "Vanilla",
-      "Worcestershire Sauce"
+      "Ginger",
+      "Salt",
+      "Velouté Sauce"
     ],
     "steps": [
-      "Make a syrup by boiling sugar and water twenty minutes",
-      "Add cider, orange juice, and lemon juice",
-      "Cool, strain, and freeze to a mush"
+      {
+        "text": "Make a syrup by boiling sugar and water twenty minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add cider, orange juice, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Cool, strain, and freeze to a mush",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-21",
-    "name": "Stage 21: Angel Parfait",
+    "id": "stage-15",
+    "name": "Stage 15: Coffee Sauce",
+    "recipeName": "Coffee Sauce",
+    "ingredients": [
+      "Milk",
+      "Ground coffee",
+      "Sugar",
+      "Arrowroot"
+    ],
+    "decoys": [
+      "Butter",
+      "Prepared powdered cocoa",
+      "Boiling water"
+    ],
+    "steps": [
+      {
+        "text": "Scald milk with coffee, and let stand twenty minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Mix remaining ingredients, and pour on gradually the hot infusion which has been strained",
+        "station": "counter"
+      },
+      {
+        "text": "Cook five minutes, and serve hot",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-16",
+    "name": "Stage 16: Angel Parfait",
     "recipeName": "Angel Parfait",
     "ingredients": [
       "Sugar",
@@ -413,82 +454,184 @@
       "Heavy cream"
     ],
     "decoys": [
-      "Formosa tea infusion",
-      "Beef extract",
-      "Crab meat"
+      "Baker’s chocolate",
+      "Quails",
+      "Thin cream"
     ],
     "steps": [
-      "Boil sugar and water until syrup will thread when dropped from tip of spoon",
-      "Pour slowly on the beaten whites of eggs, and continue the beating until mixture is cool",
-      "Add cream beaten until stiff, and vanilla; then freeze"
+      {
+        "text": "Boil sugar and water until syrup will thread when dropped from tip of spoon",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour slowly on the beaten whites of eggs, and continue the beating until mixture is cool",
+        "station": "counter"
+      },
+      {
+        "text": "Add cream beaten until stiff, and vanilla; then freeze",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-17",
+    "name": "Stage 17: Currant Pie",
+    "recipeName": "Currant Pie",
+    "ingredients": [
+      "Currants",
+      "Sugar",
+      "Flour",
+      "Egg yolks"
+    ],
+    "decoys": [
+      "Hot water",
+      "Anchovy essence",
+      "Chopped walnut meats"
+    ],
+    "steps": [
+      {
+        "text": "Mix flour and sugar, add yolks of eggs slightly beaten and diluted with water",
+        "station": "counter"
+      },
+      {
+        "text": "Wash currants, drain, remove stems, then measure; add to first mixture and bake in one crust; cool, and cover with Meringue I",
+        "station": "oven"
+      },
+      {
+        "text": "Cook in slow oven until delicately browned",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-18",
+    "name": "Stage 18: Marshmallow Paste",
+    "recipeName": "Marshmallow Paste",
+    "ingredients": [
+      "Sugar",
+      "Milk",
+      "Marshmallows",
+      "Hot water"
+    ],
+    "decoys": [
+      "Blade of mace",
+      "Kornlet",
+      "Egg whites"
+    ],
+    "steps": [
+      {
+        "text": "Put sugar and milk in a saucepan, heat slowly to boiling-point without stirring, and boil six minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Break marshmallows in pieces and melt in double boiler, add hot water, and cook until mixture is smooth, then add hot syrup gradually, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Beat until cool enough to spread, then add vanilla",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-19",
+    "name": "Stage 19: Milk Frosting",
+    "recipeName": "Milk Frosting",
+    "ingredients": [
+      "Sugar",
+      "Milk",
+      "Butter"
+    ],
+    "decoys": [
+      "Cold water",
+      "Bottles ginger ale",
+      "Small baker’s stale loaf"
+    ],
+    "steps": [
+      {
+        "text": "Put butter in saucepan; when melted, add sugar and milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Stir, to be sure that sugar does not adhere to saucepan, heat to boiling-point, and boil without stirring thirteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, and beat until of right consistency to spread; then add flavoring and pour over cake, spreading evenly with back of spoon",
+        "station": "counter"
+      },
+      {
+        "text": "Crease as soon as firm",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-20",
+    "name": "Stage 20: Cocoanut Cream Candy",
+    "recipeName": "Cocoanut Cream Candy",
+    "ingredients": [
+      "Sugar",
+      "Milk",
+      "Butter",
+      "Shredded cocoanut"
+    ],
+    "decoys": [
+      "Grated nutmeg",
+      "Fine stale bread crumbs",
+      "Few grains cinnamon"
+    ],
+    "steps": [
+      {
+        "text": "Put butter into granite saucepan; when melted, add sugar and milk, and stir until sugar is dissolved",
+        "station": "stovetop"
+      },
+      {
+        "text": "Heat to boiling-point, and boil twelve minutes; remove from fire, add cocoanut and vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour at once into a buttered pan, cool slightly, and mark in squares",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-21",
+    "name": "Stage 21: Maple Sugar Candy",
+    "recipeName": "Maple Sugar Candy",
+    "ingredients": [
+      "Soft maple sugar",
+      "Thin cream",
+      "Boiling water"
+    ],
+    "decoys": [
+      "Baker’s chocolate",
+      "Apricots",
+      "White Sauce II"
+    ],
+    "steps": [
+      {
+        "text": "Break sugar in pieces; put into a saucepan with cream and water",
+        "station": "counter"
+      },
+      {
+        "text": "Bring to boiling-point, and boil until a soft ball is formed when tried in cold water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, beat until creamy, add nut meat, and pour into a buttered tin",
+        "station": "counter"
+      },
+      {
+        "text": "Cool slightly, and mark in squares",
+        "station": "counter"
+      }
     ]
   },
   {
     "id": "stage-22",
-    "name": "Stage 22: Iced Madeira Sauce",
-    "recipeName": "Iced Madeira Sauce",
-    "ingredients": [
-      "Orange juice",
-      "Lemon juice",
-      "Madeira wine",
-      "Sugar",
-      "Boiling water"
-    ],
-    "decoys": [
-      "Shredded pineapple",
-      "Cream of tartar",
-      "Buttered crumbs"
-    ],
-    "steps": [
-      "Freeze fruit juice and wine; boil sugar and water, pour on slowly to beaten whites of eggs, set in pan of salted ice-water, and stir until cold",
-      "Add to frozen mixture"
-    ]
-  },
-  {
-    "id": "stage-23",
-    "name": "Stage 23: Boston Favorite Cake",
-    "recipeName": "Boston Favorite Cake",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Eggs",
-      "Milk",
-      "Flour"
-    ],
-    "decoys": [
-      "Cold water",
-      "Parsley",
-      "Peppercorns"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, eggs beaten until light, then milk and flour mixed and sifted with baking powder",
-      "This recipe makes two loaves, or one-half the mixture may be baked in individual tins"
-    ]
-  },
-  {
-    "id": "stage-24",
-    "name": "Stage 24: Butter Scotch",
-    "recipeName": "Butter Scotch",
-    "ingredients": [
-      "Sugar",
-      "Molasses",
-      "Vinegar",
-      "Boiling water"
-    ],
-    "decoys": [
-      "Egg whites",
-      "Chopped walnut meats",
-      "Lemon juice"
-    ],
-    "steps": [
-      "Boil ingredients together until, when tried in cold water, mixture will become brittle",
-      "Turn into a well buttered pan; when slightly cool, mark with a sharp-pointed knife in squares",
-      "This candy is much improved by cooking a small piece of vanilla bean with other ingredients"
-    ]
-  },
-  {
-    "id": "stage-25",
-    "name": "Stage 25: Fig Cups",
+    "name": "Stage 22: Fig Cups",
     "recipeName": "Fig Cups",
     "ingredients": [
       "Washed figs",
@@ -498,87 +641,95 @@
     ],
     "decoys": [
       "Sliced onions",
-      "Yeast cakes",
-      "Bananas sliced"
+      "White corn meal",
+      "Terrapin"
     ],
     "steps": [
-      "Stuff figs with almonds",
-      "Put sugar, lemon juice, and wine in chafing-dish; when heated, add figs, cover, and cook until figs are tender, turning and basting often",
-      "Serve with Lady Fingers"
+      {
+        "text": "Stuff figs with almonds",
+        "station": "counter"
+      },
+      {
+        "text": "Put sugar, lemon juice, and wine in chafing-dish; when heated, add figs, cover, and cook until figs are tender, turning and basting often",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Lady Fingers",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-26",
-    "name": "Stage 26: Third Bread",
-    "recipeName": "Third Bread",
+    "id": "stage-23",
+    "name": "Stage 23: German Toast",
+    "recipeName": "German Toast",
     "ingredients": [
-      "Lukewarm water",
-      "Yeast cake",
+      "Eggs",
       "Salt",
-      "Molasses",
-      "Rye flour",
-      "Granulated corn meal"
+      "Sugar",
+      "Milk"
     ],
     "decoys": [
-      "Egg whites",
-      "Water",
-      "Shredded cocoanut",
-      "Cinnamon"
+      "Brown Stock",
+      "Brandy",
+      "Cold water"
     ],
     "steps": [
-      "Dissolve yeast cake in water, add remaining ingredients, and mix thoroughly",
-      "Let rise, shape, let rise again, and bake as Entire Wheat Bread"
+      {
+        "text": "Beat eggs slightly, add salt, sugar, and milk; strain into a shallow dish",
+        "station": "counter"
+      },
+      {
+        "text": "Soak bread in mixture until soft",
+        "station": "counter"
+      },
+      {
+        "text": "Cook on a hot, well-greased griddle; brown on one side, turn and brown other side",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve for breakfast or luncheon, or with a sauce for dessert",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-27",
-    "name": "Stage 27: Waffles",
-    "recipeName": "Waffles",
+    "id": "stage-24",
+    "name": "Stage 24: French Omelet",
+    "recipeName": "French Omelet",
     "ingredients": [
-      "Flour",
-      "Baking powder",
-      "Salt",
+      "Eggs",
       "Milk",
-      "Egg yolks",
-      "Egg whites"
-    ],
-    "decoys": [
-      "Milk or Chicken Stock",
-      "Corn",
-      "Granulated corn meal",
-      "Ice"
-    ],
-    "steps": [
-      "Mix and sift dry ingredients; add milk gradually, yolks of eggs well beaten, butter, and whites of eggs beaten stiff; cook on a greased hot waffle-iron",
-      "Serve with maple syrup"
-    ]
-  },
-  {
-    "id": "stage-28",
-    "name": "Stage 28: Oyster Stuffing",
-    "recipeName": "Oyster Stuffing",
-    "ingredients": [
-      "Cracker crumbs",
-      "Melted butter",
       "Salt",
-      "Pepper",
-      "Lemon juice",
-      "Finely chopped parsley"
+      "Pepper"
     ],
     "decoys": [
-      "Bay leaf",
-      "Rye flour",
-      "Smoked dried beef",
-      "Formosa tea infusion"
+      "Grated pineapple",
+      "Kornlet",
+      "Extract lemon or"
     ],
     "steps": [
-      "Add seasonings and butter to cracker crumbs",
-      "Clean oysters, and remove tough muscles; add soft parts to mixture, with two tablespoons oyster liquor to moisten"
+      {
+        "text": "Beat eggs slightly, just enough to blend yolks and whites, add the milk and seasonings",
+        "station": "counter"
+      },
+      {
+        "text": "Put butter in hot omelet pan; when melted, turn in the mixture; as it cooks, prick and pick up with a fork until the whole is of creamy consistency",
+        "station": "stovetop"
+      },
+      {
+        "text": "Place on hotter part of range that it may brown quickly underneath",
+        "station": "counter"
+      },
+      {
+        "text": "Fold, and turn on hot platter",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-29",
-    "name": "Stage 29: Rice Sauce",
+    "id": "stage-25",
+    "name": "Stage 25: Rice Sauce",
     "recipeName": "Rice Sauce",
     "ingredients": [
       "Rice",
@@ -588,20 +739,59 @@
       "Butter"
     ],
     "decoys": [
-      "Box gelatine or",
-      "Lemon",
-      "Cinnamon",
-      "Ice"
+      "Soda",
+      "Pearl tapioca",
+      "Molasses"
     ],
     "steps": [
-      "Wash rice, add to milk, and cook in double boiler until soft",
-      "Rub through a fine strainer, return to double boiler, add onion stuck with cloves, and cook fifteen minutes",
-      "Remove onion, add butter, salt, and pepper"
+      {
+        "text": "Wash rice, add to milk, and cook in double boiler until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Rub through a fine strainer, return to double boiler, add onion stuck with cloves, and cook fifteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove onion, add butter, salt, and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-30",
-    "name": "Stage 30: Farina Cakes with Jelly",
+    "id": "stage-26",
+    "name": "Stage 26: Corn Fritters",
+    "recipeName": "Corn Fritters",
+    "ingredients": [
+      "Corn",
+      "Flour",
+      "Baking powder",
+      "Salt",
+      "Paprika"
+    ],
+    "decoys": [
+      "Egg slightly beaten",
+      "Thick cream",
+      "Kumquat juice"
+    ],
+    "steps": [
+      {
+        "text": "Chop corn, and add dry ingredients mixed and sifted, then add yolks of eggs beaten until thick, and fold in whites of eggs beaten stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in a frying-pan in fresh hot lard",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain on paper",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-27",
+    "name": "Stage 27: Farina Cakes with Jelly",
     "recipeName": "Farina Cakes with Jelly",
     "ingredients": [
       "Scalded milk",
@@ -610,67 +800,125 @@
       "Salt"
     ],
     "decoys": [
-      "Dried lima beans",
-      "Hot water",
-      "Pounded macaroons",
-      "Junket Tablets"
+      "Soft maple sugar",
+      "Granulated gelatin",
+      "Cinnamon"
     ],
     "steps": [
-      "Mix farina, sugar, and salt, add to milk, and cook in double boiler twenty minutes, stirring constantly until mixture has thickened",
-      "Add egg slightly beaten, pour into a buttered shallow pan, and brush over with one egg slightly beaten and diluted with one tablespoon milk",
-      "Brown in a moderate oven",
-      "Cut in squares, and serve with a cube of jelly on each square"
+      {
+        "text": "Mix farina, sugar, and salt, add to milk, and cook in double boiler twenty minutes, stirring constantly until mixture has thickened",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add egg slightly beaten, pour into a buttered shallow pan, and brush over with one egg slightly beaten and diluted with one tablespoon milk",
+        "station": "counter"
+      },
+      {
+        "text": "Brown in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Cut in squares, and serve with a cube of jelly on each square",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-28",
+    "name": "Stage 28: Lobster Croquettes",
+    "recipeName": "Lobster Croquettes",
+    "ingredients": [
+      "Chopped lobster meat",
+      "Salt",
+      "Mustard",
+      "Few grains cayenne",
+      "Lemon"
+    ],
+    "decoys": [
+      "Yeast cakes",
+      "Orange juice and pulp",
+      "Rolled oats"
+    ],
+    "steps": [
+      {
+        "text": "Add seasonings to lobster, then add Thick White Sauce",
+        "station": "counter"
+      },
+      {
+        "text": "Cool, shape, dip in crumbs, egg, and crumbs again, fry in deep fat, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Tomato Cream Sauce",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-29",
+    "name": "Stage 29: Apple Tapioca",
+    "recipeName": "Apple Tapioca",
+    "ingredients": [
+      "Pearl or Minute Tapioca",
+      "Cold water",
+      "Boiling water",
+      "Salt",
+      "Sour apples"
+    ],
+    "decoys": [
+      "Granulated gelatine",
+      "White Sauce II",
+      "Mutton"
+    ],
+    "steps": [
+      {
+        "text": "Soak tapioca one hour in cold water to cover, drain, add boiling water and salt; cook in double boiler until transparent",
+        "station": "stovetop"
+      },
+      {
+        "text": "Core and pare apples, arrange in buttered pudding-dish, fill cavities with sugar, pour over tapioca, and bake in moderate oven until apples are soft",
+        "station": "oven"
+      },
+      {
+        "text": "Serve with sugar and cream or Cream Sauce I",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-30",
+    "name": "Stage 30: Scalloped Apples",
+    "recipeName": "Scalloped Apples",
+    "ingredients": [
+      "Small baker’s stale loaf",
+      "Butter",
+      "Sliced apples",
+      "Sugar",
+      "Grated nutmeg"
+    ],
+    "decoys": [
+      "Granulated gelatine",
+      "Almond extract",
+      "Slight grating nutmeg"
+    ],
+    "steps": [
+      {
+        "text": "Cut loaf in halves, remove soft part, and crumb by rubbing through a colander; melt butter and stir in lightly with fork; cover bottom of buttered pudding-dish with crumbs and spread over one-half the apples, sprinkle with one-half sugar, nutmeg, lemon juice, and rind mixed together; repeat cover with remaining crumbs, and bake forty minutes in moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Cover at first to prevent crumbs browning too rapidly",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with sugar and cream",
+        "station": "counter"
+      }
     ]
   },
   {
     "id": "stage-31",
-    "name": "Stage 31: Crab meat, Indienne",
-    "recipeName": "Crab meat, Indienne",
-    "ingredients": [
-      "Butter",
-      "Finely chopped onion",
-      "Flour",
-      "Curry powder",
-      "Chicken stock",
-      "Crab meat"
-    ],
-    "decoys": [
-      "Mustard",
-      "Grated mild cheese",
-      "Baking power",
-      "Mocha coffee"
-    ],
-    "steps": [
-      "Cook butter with onion three minutes, add flour mixed with curry powder and chicken stock",
-      "When boiling-point is reached add crab meat and season with salt"
-    ]
-  },
-  {
-    "id": "stage-32",
-    "name": "Stage 32: Cottage Pudding",
-    "recipeName": "Cottage Pudding",
-    "ingredients": [
-      "Butter",
-      "Sugar",
-      "Egg",
-      "Milk",
-      "Flour",
-      "Baking powder"
-    ],
-    "decoys": [
-      "Vanilla or",
-      "Ginger",
-      "Sliced apples",
-      "Finely chopped onion"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, and egg well beaten; mix and sift flour, baking powder, and salt; add alternately with milk to first mixture; turn into buttered cake pan; bake thirty-five minutes",
-      "Serve with Vanilla or Hard Sauce"
-    ]
-  },
-  {
-    "id": "stage-33",
-    "name": "Stage 33: Coffee Custard",
+    "name": "Stage 31: Coffee Custard",
     "recipeName": "Coffee Custard",
     "ingredients": [
       "Milk",
@@ -680,20 +928,28 @@
       "Salt"
     ],
     "decoys": [
-      "Tomatoes",
-      "Orange juice",
-      "Brown Stock",
-      "Vanilla or"
+      "Yeast cake",
+      "Figs, finely chopped",
+      "Chicken"
     ],
     "steps": [
-      "Scald milk with coffee, and strain",
-      "Beat eggs slightly; add sugar, salt, vanilla, and milk",
-      "Strain into buttered individual moulds, set in pan of hot water, and bake until firm"
+      {
+        "text": "Scald milk with coffee, and strain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Beat eggs slightly; add sugar, salt, vanilla, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Strain into buttered individual moulds, set in pan of hot water, and bake until firm",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-34",
-    "name": "Stage 34: Apricot Sorbet",
+    "id": "stage-32",
+    "name": "Stage 32: Apricot Sorbet",
     "recipeName": "Apricot Sorbet",
     "ingredients": [
       "Apricots",
@@ -702,67 +958,203 @@
       "Lemon juice"
     ],
     "decoys": [
-      "Granulated gelatin",
-      "Grated pineapple",
-      "Canton ginger",
-      "Vinegar"
+      "Box gelatine or",
+      "Cream",
+      "Carrot"
     ],
     "steps": [
-      "Drain apricots, and add to syrup the pulp rubbed through a sieve",
-      "Add sugar, wine, and lemon juice",
-      "Freeze to a mush, then fold in the whip obtained from cream",
-      "Let stand one and one-half hours, and serve in glasses"
+      {
+        "text": "Drain apricots, and add to syrup the pulp rubbed through a sieve",
+        "station": "counter"
+      },
+      {
+        "text": "Add sugar, wine, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze to a mush, then fold in the whip obtained from cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Let stand one and one-half hours, and serve in glasses",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-33",
+    "name": "Stage 33: Praline Ice Cream",
+    "recipeName": "Praline Ice Cream",
+    "ingredients": [
+      "Cream",
+      "Sugar",
+      "Jordan almonds",
+      "Salt"
+    ],
+    "decoys": [
+      "Chopped lobster meat",
+      "Olives",
+      "Apricots"
+    ],
+    "steps": [
+      {
+        "text": "Blanch almonds cut in pieces crosswise, and bake in a shallow pan until well browned, shaking pan frequently; then finely chop",
+        "station": "oven"
+      },
+      {
+        "text": "Caramelize one-half of the sugar, and add slowly to two cups of the cream scalded",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as sugar is melted, add nuts, remaining sugar, and salt",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool, add remaining cream, and freeze",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-34",
+    "name": "Stage 34: Violet Ice Cream",
+    "recipeName": "Violet Ice Cream",
+    "ingredients": [
+      "Cream",
+      "Sugar",
+      "Few grains salt",
+      "Yvette Cordial",
+      "Small bunch violets"
+    ],
+    "decoys": [
+      "Shredded cocoanut",
+      "Marrowfat peas",
+      "Whites two eggs"
+    ],
+    "steps": [
+      {
+        "text": "Mix first four ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Remove stems from violets, and pound violets in a mortar until well macerated, then strain through cheese-cloth",
+        "station": "counter"
+      },
+      {
+        "text": "Add extract to first mixture; color, freeze, and mould",
+        "station": "stovetop"
+      }
     ]
   },
   {
     "id": "stage-35",
-    "name": "Stage 35: Frozen Tom and Jerry",
-    "recipeName": "Frozen Tom and Jerry",
+    "name": "Stage 35: Custard Pie",
+    "recipeName": "Custard Pie",
     "ingredients": [
-      "Milk",
+      "Eggs",
       "Sugar",
-      "Egg yolks",
       "Salt",
-      "Cream",
-      "Rum"
+      "Milk"
     ],
     "decoys": [
-      "Warm wheat mush",
-      "Vanilla",
-      "Lukewarm water",
-      "Strawberries"
+      "Water",
+      "Vanilla or",
+      "White stock"
     ],
     "steps": [
-      "Make a custard of first four ingredients; strain, cool, add cream, and freeze to a mush",
-      "Add rum and brandy, and finish the freezing"
+      {
+        "text": "Beat eggs slightly, add sugar, salt, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Line plate with paste, and build up a fluted rim",
+        "station": "counter"
+      },
+      {
+        "text": "Strain in the mixture and sprinkle with few gratings nutmeg",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in quick oven at first to set rim, decrease the heat afterwards, as egg and milk in combination need to be cooked at low temperature",
+        "station": "oven"
+      }
     ]
   },
   {
     "id": "stage-36",
-    "name": "Stage 36: Marshmallow Paste",
-    "recipeName": "Marshmallow Paste",
+    "name": "Stage 36: White Mountain Cream",
+    "recipeName": "White Mountain Cream",
     "ingredients": [
       "Sugar",
-      "Milk",
-      "Marshmallows",
-      "Hot water"
+      "Boiling water",
+      "Egg whites",
+      "Vanilla or"
     ],
     "decoys": [
-      "French chestnuts",
-      "Paprika",
-      "Few grains pepper",
-      "White Stock"
+      "Chicken",
+      "Bay leaf",
+      "Sherry or Madeira wine"
     ],
     "steps": [
-      "Put sugar and milk in a saucepan, heat slowly to boiling-point without stirring, and boil six minutes",
-      "Break marshmallows in pieces and melt in double boiler, add hot water, and cook until mixture is smooth, then add hot syrup gradually, stirring constantly",
-      "Beat until cool enough to spread, then add vanilla",
-      "This may be used for both filling and frosting"
+      {
+        "text": "Put sugar and water in saucepan, and stir to prevent sugar from adhering to saucepan; heat gradually to boiling-point, and boil without stirring until syrup will thread when dropped from tip of spoon or tines of silver fork",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour syrup gradually on beaten white of egg, beating mixture constantly, and continue beating until of right consistency to spread; then add flavoring and pour over cake, spreading evenly with back of spoon",
+        "station": "counter"
+      },
+      {
+        "text": "Crease as soon as firm",
+        "station": "counter"
+      },
+      {
+        "text": "Frosting beaten too long may be improved by adding a few drops of lemon juice or boiling water",
+        "station": "stovetop"
+      }
     ]
   },
   {
     "id": "stage-37",
-    "name": "Stage 37: Cheese Omelet",
+    "name": "Stage 37: Ice Cream Candy",
+    "recipeName": "Ice Cream Candy",
+    "ingredients": [
+      "Sugar",
+      "Cream of tartar",
+      "Boiling water"
+    ],
+    "decoys": [
+      "Kumquat juice",
+      "Stale bread crumbs",
+      "Chopped mushrooms",
+      "Extract lemon or"
+    ],
+    "steps": [
+      {
+        "text": "Boil ingredients together without stirring, until, when tried in cold water, mixture will become brittle",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn on a well buttered platter to cool",
+        "station": "counter"
+      },
+      {
+        "text": "As edges cool, fold towards centre",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as it can be handled, pull until white and glossy",
+        "station": "counter"
+      },
+      {
+        "text": "Cut in sticks or small pieces",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-38",
+    "name": "Stage 38: Cheese Omelet",
     "recipeName": "Cheese Omelet",
     "ingredients": [
       "Eggs",
@@ -771,45 +1163,99 @@
       "Few grains cayenne"
     ],
     "decoys": [
-      "Thin cream",
-      "Shredded almonds",
-      "Cloves",
-      "Macaroni"
+      "White corn meal",
+      "Rolled oats",
+      "Egg yolk",
+      "Large flat white turnip"
     ],
     "steps": [
-      "Beat eggs slightly, add one-half teaspoon melted butter, salt, cayenne, and cheese",
-      "Melt remaining butter, add mixture, and cook until firm, without stirring",
-      "Roll, and sprinkle with grated cheese",
-      "Serve with Graham bread sandwiches"
-    ]
-  },
-  {
-    "id": "stage-38",
-    "name": "Stage 38: Raised Muffins",
-    "recipeName": "Raised Muffins",
-    "ingredients": [
-      "Scalded milk",
-      "Boiling water",
-      "Butter",
-      "Sugar",
-      "Salt",
-      "Yeast cake",
-      "Egg"
-    ],
-    "decoys": [
-      "Squares chocolate",
-      "Scallops",
-      "Mocha coffee",
-      "Fine oatmeal"
-    ],
-    "steps": [
-      "Add butter, sugar, and salt to milk and water; when lukewarm, add yeast cake, and when dissolved, egg well beaten, and flour; beat thoroughly, cover, and let rise over night",
-      "In morning, fill buttered muffin rings two-thirds full; let rise until rings are full, and bake thirty minutes in hot oven"
+      {
+        "text": "Beat eggs slightly, add one-half teaspoon melted butter, salt, cayenne, and cheese",
+        "station": "stovetop"
+      },
+      {
+        "text": "Melt remaining butter, add mixture, and cook until firm, without stirring",
+        "station": "stovetop"
+      },
+      {
+        "text": "Roll, and sprinkle with grated cheese",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with Graham bread sandwiches",
+        "station": "counter"
+      }
     ]
   },
   {
     "id": "stage-39",
-    "name": "Stage 39: Imperial Muffins",
+    "name": "Stage 39: Entire Wheat Bread",
+    "recipeName": "Entire Wheat Bread",
+    "ingredients": [
+      "Scalded milk",
+      "Sugar or",
+      "Molasses",
+      "Salt",
+      "Yeast cake dissolved in",
+      "Lukewarm water"
+    ],
+    "decoys": [
+      "Rice",
+      "Yellow ginger",
+      "Thin cream",
+      "Currants mixed with"
+    ],
+    "steps": [
+      {
+        "text": "Add sweetening and salt to milk; cool, and when lukewarm add dissolved yeast cake and flour; beat well, cover, and let rise to double its bulk",
+        "station": "counter"
+      },
+      {
+        "text": "Again beat, and turn into greased bread pans, having pans one-half full; let rise, and bake",
+        "station": "oven"
+      },
+      {
+        "text": "Entire Wheat Bread should not quite double its bulk during last rising",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-40",
+    "name": "Stage 40: Health Food Muffins",
+    "recipeName": "Health Food Muffins",
+    "ingredients": [
+      "Warm wheat mush",
+      "Brown sugar",
+      "Salt",
+      "Butter",
+      "Yeast cake",
+      "Lukewarm water"
+    ],
+    "decoys": [
+      "Peppercorns",
+      "Hot water",
+      "Worcestershire Sauce",
+      "Box strawberries"
+    ],
+    "steps": [
+      {
+        "text": "Mix first four ingredients, add yeast cake dissolved in lukewarm water, and flour to knead",
+        "station": "counter"
+      },
+      {
+        "text": "Cover, and let rise over night",
+        "station": "counter"
+      },
+      {
+        "text": "In the morning cut down, fill hot buttered gem pans two-thirds full and bake in a moderate oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-41",
+    "name": "Stage 41: Imperial Muffins",
     "recipeName": "Imperial Muffins",
     "ingredients": [
       "Scalded milk",
@@ -820,44 +1266,29 @@
       "Butter"
     ],
     "decoys": [
-      "Highly seasoned",
-      "Milk, scalded",
-      "Square melted chocolate",
-      "Rye meal"
+      "Seeded raisins",
+      "Chopped lobster meat",
+      "Coffee infusion",
+      "Box gelatine (scant) or"
     ],
     "steps": [
-      "Add sugar and salt to milk; when lukewarm add dissolved yeast cake, and one and one-fourth cups flour",
-      "Cover, and let rise until light, then add corn meal, remaining flour, and butter",
-      "Let rise over night; in the morning fill buttered muffin rings two-thirds full; let rise until rings are full and bake thirty minutes in hot oven"
+      {
+        "text": "Add sugar and salt to milk; when lukewarm add dissolved yeast cake, and one and one-fourth cups flour",
+        "station": "counter"
+      },
+      {
+        "text": "Cover, and let rise until light, then add corn meal, remaining flour, and butter",
+        "station": "counter"
+      },
+      {
+        "text": "Let rise over night; in the morning fill buttered muffin rings two-thirds full; let rise until rings are full and bake thirty minutes in hot oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-40",
-    "name": "Stage 40: Rye Gems",
-    "recipeName": "Rye Gems",
-    "ingredients": [
-      "Rye flour",
-      "Flour",
-      "Baking powder",
-      "Salt",
-      "Molasses",
-      "Milk",
-      "Eggs"
-    ],
-    "decoys": [
-      "Tapioca",
-      "Hominy",
-      "Egg whites",
-      "Coffee infusion"
-    ],
-    "steps": [
-      "Mix and sift dry ingredients, add molasses, milk, eggs well beaten, and butter",
-      "Bake in hot oven in buttered gem pans twenty-five minutes"
-    ]
-  },
-  {
-    "id": "stage-41",
-    "name": "Stage 41: Fried Drop Cakes",
+    "id": "stage-42",
+    "name": "Stage 42: Fried Drop Cakes",
     "recipeName": "Fried Drop Cakes",
     "ingredients": [
       "Flour",
@@ -868,44 +1299,62 @@
       "Egg"
     ],
     "decoys": [
-      "Few grains pepper",
-      "Tapioca",
-      "Fine stale bread crumbs",
-      "Potatoes"
+      "Extract lemon or",
+      "Ginger",
+      "Paprika",
+      "Chopped lobster meat"
     ],
     "steps": [
-      "Beat egg until light; add milk, dry ingredients mixed and sifted, and melted butter",
-      "Drop by spoonfuls in hot, new, deep fat; fry until light brown and cooked through, which must at first be determined by piercing with a skewer, or breaking apart",
-      "Remove with a skimmer, and drain on brown paper"
-    ]
-  },
-  {
-    "id": "stage-42",
-    "name": "Stage 42: Kornlet Soup",
-    "recipeName": "Kornlet Soup",
-    "ingredients": [
-      "Kornlet",
-      "Cold water",
-      "Milk, scalded",
-      "Butter",
-      "Chopped onion",
-      "Flour",
-      "Salt"
-    ],
-    "decoys": [
-      "Warm wheat mush",
-      "Sweet cider",
-      "Few grains salt",
-      "Pearl or Minute Tapioca"
-    ],
-    "steps": [
-      "Cook kornlet in cold water twenty minutes; rub through a sieve, and add milk",
-      "Fry butter and onion three minutes; remove onion, add flour, salt, and pepper, and stir into boiling soup"
+      {
+        "text": "Beat egg until light; add milk, dry ingredients mixed and sifted, and melted butter",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drop by spoonfuls in hot, new, deep fat; fry until light brown and cooked through, which must at first be determined by piercing with a skewer, or breaking apart",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove with a skimmer, and drain on brown paper",
+        "station": "counter"
+      }
     ]
   },
   {
     "id": "stage-43",
-    "name": "Stage 43: Yorkshire Pudding",
+    "name": "Stage 43: Macaroni, Italian Style",
+    "recipeName": "Macaroni, Italian Style",
+    "ingredients": [
+      "Macaroni",
+      "Butter",
+      "Flour",
+      "Scalded milk",
+      "Grated cheese",
+      "Salt and paprika"
+    ],
+    "decoys": [
+      "Chestnut purée",
+      "Cold milk",
+      "Olives",
+      "Orange juice"
+    ],
+    "steps": [
+      {
+        "text": "Break macaroni in one-inch pieces and cook in boiling salted water, drain, and reheat in sauce made of butter, flour, and milk, to which is added cheese",
+        "station": "stovetop"
+      },
+      {
+        "text": "As soon as cheese is melted, season with salt and paprika, and turn on to a serving dish",
+        "station": "stovetop"
+      },
+      {
+        "text": "Sprinkle with ham, and garnish with parsley",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-44",
+    "name": "Stage 44: Yorkshire Pudding",
     "recipeName": "Yorkshire Pudding",
     "ingredients": [
       "Milk",
@@ -914,23 +1363,76 @@
       "Salt"
     ],
     "decoys": [
-      "Parsley",
-      "Chestnut purée",
-      "White corn meal",
-      "Thin cream",
-      "Small potatoes"
+      "White Stock III",
+      "Currants mixed with",
+      "Velouté Sauce",
+      "Thick White Sauce"
     ],
     "steps": [
-      "Mix salt and flour, and add milk gradually to form a smooth paste; then add eggs beaten until very light",
-      "Cover bottom of hot pan with some of beef fat tried out from roast, pour mixture in pan one-half inch deep",
-      "Bake twenty minutes in hot oven, basting after well risen, with some of the fat from pan in which meat is roasting",
-      "Cut in squares for serving",
-      "Bake, if preferred, in greased, hissing hot iron gem pans"
+      {
+        "text": "Mix salt and flour, and add milk gradually to form a smooth paste; then add eggs beaten until very light",
+        "station": "counter"
+      },
+      {
+        "text": "Cover bottom of hot pan with some of beef fat tried out from roast, pour mixture in pan one-half inch deep",
+        "station": "oven"
+      },
+      {
+        "text": "Bake twenty minutes in hot oven, basting after well risen, with some of the fat from pan in which meat is roasting",
+        "station": "oven"
+      },
+      {
+        "text": "Cut in squares for serving",
+        "station": "counter"
+      },
+      {
+        "text": "Bake, if preferred, in greased, hissing hot iron gem pans",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-44",
-    "name": "Stage 44: Oyster Sauce",
+    "id": "stage-45",
+    "name": "Stage 45: Dumplings",
+    "recipeName": "Dumplings",
+    "ingredients": [
+      "Flour",
+      "Baking powder",
+      "Salt",
+      "Butter"
+    ],
+    "decoys": [
+      "Pounded cardamon seeds",
+      "Soft maple sugar",
+      "Blade of mace",
+      "Shortening, melted"
+    ],
+    "steps": [
+      {
+        "text": "Mix and sift dry ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Work in butter with tips of fingers, and add milk gradually, using a knife for mixing",
+        "station": "counter"
+      },
+      {
+        "text": "Toss on a floured board, pat, and roll out to one-half inch in thickness",
+        "station": "counter"
+      },
+      {
+        "text": "Shape with biscuit-cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Place closely together in a buttered steamer, put over kettle of boiling water, cover closely, and steam twelve minutes",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-46",
+    "name": "Stage 46: Oyster Sauce",
     "recipeName": "Oyster Sauce",
     "ingredients": [
       "Oysters",
@@ -941,21 +1443,62 @@
       "Pepper"
     ],
     "decoys": [
-      "Cold water",
-      "Shredded almonds",
-      "Finely chopped parsley",
       "Lobster",
-      "Fine stale bread crumbs"
+      "Onions",
+      "Small bunch violets",
+      "Chopped salted almonds"
     ],
     "steps": [
-      "Wash oysters, reserve liquor, heat, strain, add oysters, and cook until plump",
-      "Remove oysters, and make a sauce of butter, flour, oyster liquor, and milk",
-      "Add oysters, and season with salt and pepper"
+      {
+        "text": "Wash oysters, reserve liquor, heat, strain, add oysters, and cook until plump",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove oysters, and make a sauce of butter, flour, oyster liquor, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Add oysters, and season with salt and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-45",
-    "name": "Stage 45: Devilled Scallops",
+    "id": "stage-47",
+    "name": "Stage 47: Chestnut Roulettes",
+    "recipeName": "Chestnut Roulettes",
+    "ingredients": [
+      "Chestnut purée",
+      "Eggs",
+      "Few drops onion juice",
+      "Butter",
+      "Heavy cream",
+      "Salt"
+    ],
+    "decoys": [
+      "Ice",
+      "Few grins pepper",
+      "Confectioners’ sugar",
+      "Kornlet"
+    ],
+    "steps": [
+      {
+        "text": "Mix ingredients in order given, cook two minutes, and cool",
+        "station": "stovetop"
+      },
+      {
+        "text": "Shape a little larger than French chestnuts, dip in crumbs, egg, and crumbs again",
+        "station": "counter"
+      },
+      {
+        "text": "Fry in deep fat, and drain on brown paper",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-48",
+    "name": "Stage 48: Devilled Scallops",
     "recipeName": "Devilled Scallops",
     "ingredients": [
       "Scallops",
@@ -965,72 +1508,138 @@
       "Few grains cayenne"
     ],
     "decoys": [
-      "Vanilla or",
-      "Wheat Germ",
-      "Chopped lobster meat",
-      "Oranges",
-      "Dried lima beans"
+      "Celery",
+      "Junket Tablets",
+      "Egg, well beaten",
+      "Box strawberries"
     ],
     "steps": [
-      "Clean scallops, drain, and heat to the boiling-point; drain again, and reserve liquor",
-      "Cream the butter, add mustard, salt, cayenne, two-thirds cup reserved liquor, and scallops chopped",
-      "Let stand one-half hour",
-      "Put in a baking-dish, cover with crumbs, and bake twenty minutes"
+      {
+        "text": "Clean scallops, drain, and heat to the boiling-point; drain again, and reserve liquor",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cream the butter, add mustard, salt, cayenne, two-thirds cup reserved liquor, and scallops chopped",
+        "station": "counter"
+      },
+      {
+        "text": "Let stand one-half hour",
+        "station": "counter"
+      },
+      {
+        "text": "Put in a baking-dish, cover with crumbs, and bake twenty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-46",
-    "name": "Stage 46: Apple Tapioca",
-    "recipeName": "Apple Tapioca",
+    "id": "stage-49",
+    "name": "Stage 49: Cheese Balls",
+    "recipeName": "Cheese Balls",
     "ingredients": [
-      "Pearl or Minute Tapioca",
-      "Cold water",
-      "Boiling water",
+      "Grated mild cheese",
+      "Flour",
       "Salt",
-      "Sour apples"
+      "Few grains cayenne",
+      "Egg whites"
     ],
     "decoys": [
-      "Egg, well beaten",
-      "Small bunch violets",
-      "Chestnut purée",
-      "Beef extract",
+      "Scallops",
+      "Jordan almonds",
+      "Cracker crumbs",
       "Molasses"
     ],
     "steps": [
-      "Soak tapioca one hour in cold water to cover, drain, add boiling water and salt; cook in double boiler until transparent",
-      "Core and pare apples, arrange in buttered pudding-dish, fill cavities with sugar, pour over tapioca, and bake in moderate oven until apples are soft",
-      "Serve with sugar and cream or Cream Sauce I",
-      "Minute Tapioca requires no soaking"
+      {
+        "text": "Mix cheese with flour and seasonings",
+        "station": "counter"
+      },
+      {
+        "text": "Beat whites of eggs until stiff, and add to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Shape in small balls, roll in cracker dust, fry in deep fat, and drain on brown paper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with salad course",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-47",
-    "name": "Stage 47: Ginger Pudding",
-    "recipeName": "Ginger Pudding",
+    "id": "stage-50",
+    "name": "Stage 50: Bread and Butter Pudding",
+    "recipeName": "Bread and Butter Pudding",
+    "ingredients": [
+      "Small baker’s stale loaf",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Salt"
+    ],
+    "decoys": [
+      "Orange juice and pulp",
+      "Egg whites",
+      "Onions",
+      "Flour"
+    ],
+    "steps": [
+      {
+        "text": "Remove end crusts from bread, cut loaf in one-half inch slices, spread each slice generously with butter; arrange in buttered pudding-dish, buttered side down",
+        "station": "counter"
+      },
+      {
+        "text": "Beat eggs slightly, add sugar, salt, and milk; strain, and pour over bread; let stand thirty minutes",
+        "station": "counter"
+      },
+      {
+        "text": "Bake one hour in slow oven, covering the first half-hour of baking",
+        "station": "oven"
+      },
+      {
+        "text": "Serve with Hard or Creamy Sauce",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-51",
+    "name": "Stage 51: Steamed Cranberry Pudding",
+    "recipeName": "Steamed Cranberry Pudding",
     "ingredients": [
       "Butter",
       "Sugar",
-      "Egg",
+      "Eggs",
       "Flour",
       "Baking powder",
-      "Salt",
-      "Ginger"
+      "Milk"
     ],
     "decoys": [
-      "Yeast cake",
-      "Grated nutmeg",
-      "Fine stale bread crumbs",
       "Parsley",
-      "Onions"
+      "Clams",
+      "Onion",
+      "Marshmallows"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and egg well beaten; mix and sift dry ingredients; add alternately with milk to first mixture",
-      "Turn into buttered mould, cover, and steam two hours; serve with Vanilla Sauce"
+      {
+        "text": "Cream the butter, add sugar gradually, and eggs well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour and baking powder and add alternately with milk to first mixture, stir in berries, turn into buttered mould, cover, and steam three hours",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with thin cream, sweetened and flavored with nutmeg",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-48",
-    "name": "Stage 48: Caramel Custard",
+    "id": "stage-52",
+    "name": "Stage 52: Caramel Custard",
     "recipeName": "Caramel Custard",
     "ingredients": [
       "Scalded milk",
@@ -1039,23 +1648,73 @@
       "Vanilla"
     ],
     "decoys": [
-      "Terrapin",
-      "Salmon",
-      "Heavy cream",
-      "Carrot",
-      "Farina"
+      "Molasses",
+      "Celery",
+      "Few grins pepper",
+      "Cold flaked salmon"
     ],
     "steps": [
-      "Put sugar in omelet pan, stir constantly over hot part of range until melted to a syrup of light brown color",
-      "Add gradually to milk, being careful that milk does not bubble up and go over, as is liable on account of high temperature of sugar",
-      "As soon as sugar is melted in milk, add mixture gradually to eggs slightly beaten; add salt and flavoring, then strain in buttered mould",
-      "Bake as custard",
-      "Chill, and serve with Caramel Sauce"
+      {
+        "text": "Put sugar in omelet pan, stir constantly over hot part of range until melted to a syrup of light brown color",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add gradually to milk, being careful that milk does not bubble up and go over, as is liable on account of high temperature of sugar",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as sugar is melted in milk, add mixture gradually to eggs slightly beaten; add salt and flavoring, then strain in buttered mould",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bake as custard",
+        "station": "oven"
+      },
+      {
+        "text": "Chill, and serve with Caramel Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-49",
-    "name": "Stage 49: Coffee Soufflé",
+    "id": "stage-53",
+    "name": "Stage 53: Toasted Marshmallows",
+    "recipeName": "Toasted Marshmallows",
+    "ingredients": [
+      "Granulated gelatine",
+      "Boiling water",
+      "Sugar",
+      "Egg whites",
+      "Vanilla"
+    ],
+    "decoys": [
+      "Confectioners’ sugar",
+      "French chestnuts",
+      "Bay leaf",
+      "Finely chopped chives"
+    ],
+    "steps": [
+      {
+        "text": "Dissolve gelatine in boiling water, add sugar, and as soon as dissolved set bowl containing mixture in pan of ice-water; then add whites of eggs and vanilla and beat until mixture thickens",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn into a shallow pan, first dipped in cold water, and let stand until thoroughly chilled",
+        "station": "counter"
+      },
+      {
+        "text": "Remove from pan and cut in pieces the size and shape of marshmallows; then roll in macaroons which have been dried and rolled",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with sugar and cream",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-54",
+    "name": "Stage 54: Coffee Soufflé",
     "recipeName": "Coffee Soufflé",
     "ingredients": [
       "Coffee infusion",
@@ -1066,46 +1725,29 @@
       "Vanilla"
     ],
     "decoys": [
-      "Vinegar",
-      "Farina",
-      "Small bunch violets",
-      "Worcestershire Sauce",
-      "Cold boiled halibut"
-    ],
-    "steps": [
-      "Mix coffee infusion, milk, one-half of the sugar and gelatine, and heat in double boiler",
-      "Add remaining sugar, salt, and yolks of eggs slightly beaten; cook until mixture thickens, remove from range, add whites of eggs beaten until stiff and vanilla",
-      "Mould, chill, and serve with cream"
-    ]
-  },
-  {
-    "id": "stage-50",
-    "name": "Stage 50: Praline Ice Cream",
-    "recipeName": "Praline Ice Cream",
-    "ingredients": [
-      "Cream",
-      "Sugar",
+      "Indian meal",
       "Jordan almonds",
-      "Salt"
-    ],
-    "decoys": [
-      "Thyme",
-      "Mace",
-      "Mixed mustard",
-      "Potatoes",
-      "Cold boiled halibut"
+      "Sliced apples",
+      "Macaroni"
     ],
     "steps": [
-      "Blanch almonds cut in pieces crosswise, and bake in a shallow pan until well browned, shaking pan frequently; then finely chop",
-      "Caramelize one-half of the sugar, and add slowly to two cups of the cream scalded",
-      "As soon as sugar is melted, add nuts, remaining sugar, and salt",
-      "Cool, add remaining cream, and freeze",
-      "A few grains salt is always an improvement to any ice cream mixture"
+      {
+        "text": "Mix coffee infusion, milk, one-half of the sugar and gelatine, and heat in double boiler",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add remaining sugar, salt, and yolks of eggs slightly beaten; cook until mixture thickens, remove from range, add whites of eggs beaten until stiff and vanilla",
+        "station": "stovetop"
+      },
+      {
+        "text": "Mould, chill, and serve with cream",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-51",
-    "name": "Stage 51: Strawberry Mousse",
+    "id": "stage-55",
+    "name": "Stage 55: Strawberry Mousse",
     "recipeName": "Strawberry Mousse",
     "ingredients": [
       "Thin cream",
@@ -1116,21 +1758,62 @@
       "Cold water"
     ],
     "decoys": [
-      "Grated nutmeg",
-      "Soft butter",
-      "Farina",
-      "Macaroni",
-      "Chestnut purée"
+      "Clams",
+      "Soda",
+      "Lemon",
+      "Onion"
     ],
     "steps": [
-      "Wash and hull berries, sprinkle with sugar, and let stand one hour; mash, and rub through a fine sieve; add gelatine soaked in cold and dissolved in boiling water",
-      "Set in pan of ice-water and stir until it begins to thicken; then fold in whip from cream, put in mould, cover, pack in salt and ice, and let stand four hours",
-      "Raspberries may be used in place of strawberries"
+      {
+        "text": "Wash and hull berries, sprinkle with sugar, and let stand one hour; mash, and rub through a fine sieve; add gelatine soaked in cold and dissolved in boiling water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Set in pan of ice-water and stir until it begins to thicken; then fold in whip from cream, put in mould, cover, pack in salt and ice, and let stand four hours",
+        "station": "counter"
+      },
+      {
+        "text": "Raspberries may be used in place of strawberries",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-52",
-    "name": "Stage 52: Soft Sugar Gingerbread",
+    "id": "stage-56",
+    "name": "Stage 56: Sour Milk Gingerbread",
+    "recipeName": "Sour Milk Gingerbread",
+    "ingredients": [
+      "Molasses",
+      "Sour milk",
+      "Flour",
+      "Soda",
+      "Ginger",
+      "Salt"
+    ],
+    "decoys": [
+      "Milk",
+      "Tomatoes",
+      "Worcestershire Sauce",
+      "Orange juice"
+    ],
+    "steps": [
+      {
+        "text": "Mix soda with sour milk and add to molasses",
+        "station": "counter"
+      },
+      {
+        "text": "Sift together remaining dry ingredients, combine mixtures, add butter, and beat vigorously",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered shallow pan, and bake twenty-five minutes in a moderate oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-57",
+    "name": "Stage 57: Soft Sugar Gingerbread",
     "recipeName": "Soft Sugar Gingerbread",
     "ingredients": [
       "Eggs",
@@ -1141,46 +1824,65 @@
       "Ginger"
     ],
     "decoys": [
-      "Mustard",
-      "Mashed French chestnuts",
-      "Shredded almonds",
-      "Extract lemon or",
-      "Shortening"
+      "Chopped beef",
+      "Cream or milk",
+      "Chicken",
+      "Sherry"
     ],
     "steps": [
-      "Beat eggs until light, and add sugar gradually",
-      "Mix and sift dry ingredients, and add alternately with cream to first mixture",
-      "Turn into a buttered cake pan, and bake thirty minutes in a moderate oven"
+      {
+        "text": "Beat eggs until light, and add sugar gradually",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift dry ingredients, and add alternately with cream to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered cake pan, and bake thirty minutes in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-53",
-    "name": "Stage 53: Oatmeal Cookies",
-    "recipeName": "Oatmeal Cookies",
+    "id": "stage-58",
+    "name": "Stage 58: Christmas English Gingerbread",
+    "recipeName": "Christmas English Gingerbread",
     "ingredients": [
-      "Egg",
-      "Sugar",
-      "Thin cream",
-      "Milk",
-      "Fine oatmeal",
       "Flour",
-      "Baking powder"
+      "Butter",
+      "Sugar",
+      "Ginger",
+      "Salt"
     ],
     "decoys": [
-      "Sweet cider",
-      "Vanilla",
-      "Finely chopped parsley",
-      "Chestnut purée",
-      "Squares chocolate"
+      "Dried lima beans",
+      "Boiling water",
+      "Brown sugar",
+      "Mace"
     ],
     "steps": [
-      "Beat egg until light, add sugar, cream, and milk; then add oatmeal, flour, baking powder, and salt, mixed and sifted",
-      "Toss on a floured board, roll, cut in shape, and bake in a moderate oven"
+      {
+        "text": "Mix flour, sugar, ginger, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Work in butter, using tips of fingers, and add just enough molasses to hold ingredients together",
+        "station": "counter"
+      },
+      {
+        "text": "Let stand over night to get thoroughly chilled",
+        "station": "counter"
+      },
+      {
+        "text": "Roll very thin, shape, and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-54",
-    "name": "Stage 54: One Egg Cake",
+    "id": "stage-59",
+    "name": "Stage 59: One Egg Cake",
     "recipeName": "One Egg Cake",
     "ingredients": [
       "Butter",
@@ -1190,22 +1892,33 @@
       "Flour"
     ],
     "decoys": [
-      "Made mustard",
-      "Pounded cardamon seeds",
-      "Blade of mace",
-      "Confectioners’ sugar",
-      "Pearl or Minute Tapioca"
+      "Shrimps",
+      "Indian meal",
+      "Whites two eggs",
+      "Corn-starch"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and egg well beaten",
-      "Mix and sift flour and baking powder, add alternately with milk to first mixture",
-      "Bake thirty minutes in a shallow pan",
-      "Spread with Chocolate Frosting"
+      {
+        "text": "Cream the butter, add sugar gradually, and egg well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour and baking powder, add alternately with milk to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Bake thirty minutes in a shallow pan",
+        "station": "oven"
+      },
+      {
+        "text": "Spread with Chocolate Frosting",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-55",
-    "name": "Stage 55: Cup Cakes",
+    "id": "stage-60",
+    "name": "Stage 60: Cup Cakes",
     "recipeName": "Cup Cakes",
     "ingredients": [
       "Butter",
@@ -1216,21 +1929,109 @@
       "Baking powder"
     ],
     "decoys": [
-      "Molasses",
-      "Heavy cream",
-      "Cold flaked salmon",
-      "Mustard",
-      "Salt and pepper"
+      "Lukewarm water",
+      "Junket Tablets",
+      "Chopped lobster meat",
+      "Currants"
     ],
     "steps": [
-      "Put butter and sugar in a bowl, and stir until well mixed; add eggs well beaten, then milk, and flour mixed and sifted with baking powder and mace",
-      "Bake in individual tins",
-      "Cover with Chocolate Frosting"
+      {
+        "text": "Put butter and sugar in a bowl, and stir until well mixed; add eggs well beaten, then milk, and flour mixed and sifted with baking powder and mace",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in individual tins",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with Chocolate Frosting",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-56",
-    "name": "Stage 56: Pound Cake",
+    "id": "stage-61",
+    "name": "Stage 61: Cream Cakes",
+    "recipeName": "Cream Cakes",
+    "ingredients": [
+      "Butter",
+      "Boiling water",
+      "Eggs"
+    ],
+    "decoys": [
+      "Stale bread crumbs",
+      "Worcestershire Sauce",
+      "Egg, well beaten",
+      "Cold water",
+      "Few grains salt"
+    ],
+    "steps": [
+      {
+        "text": "Pour butter and water in saucepan and place on front of range",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as boiling-point is reached, add flour all at once, and stir vigorously",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire as soon as mixed, and add unbeaten eggs one at a time, beating, until thoroughly mixed, between the addition of eggs",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls on a buttered sheet, one and one-half inches apart, shaping with handle of spoon as nearly circular as possible, having mixture slightly piled in centre",
+        "station": "counter"
+      },
+      {
+        "text": "Bake thirty minutes in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "With a sharp knife make a cut in each large enough to admit of Cream Filling",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-62",
+    "name": "Stage 62: Queen Cake",
+    "recipeName": "Queen Cake",
+    "ingredients": [
+      "Butter",
+      "Flour",
+      "Soda",
+      "Egg whites",
+      "Powdered sugar"
+    ],
+    "decoys": [
+      "Salt and paprika",
+      "Currants mixed with",
+      "Chopped salted almonds",
+      "Granulated gelatin",
+      "Few drops onion juice"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add flour gradually, mixed and sifted with soda, then add lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Beat whites of eggs until stiff; add sugar gradually, and combine the mixtures",
+        "station": "counter"
+      },
+      {
+        "text": "Bake fifty minutes in a long shallow pan",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with Opera Caramel Frosting",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-63",
+    "name": "Stage 63: Pound Cake",
     "recipeName": "Pound Cake",
     "ingredients": [
       "Butter",
@@ -1241,21 +2042,67 @@
       "Mace"
     ],
     "decoys": [
-      "Squares chocolate",
-      "Granulated corn meal",
-      "Chopped parsley",
-      "Buttered crumbs",
-      "Baker’s chocolate"
+      "Few grains pepper",
+      "Chestnut purée",
+      "Carrot",
+      "Small potatoes",
+      "Large flat white turnip"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, and continue beating; then add yolks of eggs beaten until thick and lemon-colored, whites of eggs beaten until stiff and dry, flour, mace, and brandy",
-      "Beat vigorously five minutes",
-      "Bake in a deep pan one and one-fourth hours in a slow oven; or if to be used for fancy ornamented cakes, bake thirty to thirty-five minutes in a dripping-pan"
+      {
+        "text": "Cream the butter, add sugar gradually, and continue beating; then add yolks of eggs beaten until thick and lemon-colored, whites of eggs beaten until stiff and dry, flour, mace, and brandy",
+        "station": "counter"
+      },
+      {
+        "text": "Beat vigorously five minutes",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in a deep pan one and one-fourth hours in a slow oven; or if to be used for fancy ornamented cakes, bake thirty to thirty-five minutes in a dripping-pan",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-57",
-    "name": "Stage 57: Orange Filling",
+    "id": "stage-64",
+    "name": "Stage 64: New York Gingerbread",
+    "recipeName": "New York Gingerbread",
+    "ingredients": [
+      "Butter",
+      "Flour",
+      "Yellow ginger",
+      "Eggs",
+      "Powdered sugar"
+    ],
+    "decoys": [
+      "Wheat Germ",
+      "Coffee infusion",
+      "Thick White Sauce",
+      "Egg yolks",
+      "Cold milk"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, and add flour gradually, mixed and sifted with ginger",
+        "station": "counter"
+      },
+      {
+        "text": "Beat the yolks of the eggs until thick and lemon-colored, and add sugar gradually",
+        "station": "counter"
+      },
+      {
+        "text": "Combine mixtures, add whites of eggs, beaten until stiff, and sift over baking powder",
+        "station": "counter"
+      },
+      {
+        "text": "Beat thoroughly, turn into a buttered deep cake pan, and bake one hour in a moderate oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-65",
+    "name": "Stage 65: Orange Filling",
     "recipeName": "Orange Filling",
     "ingredients": [
       "Sugar",
@@ -1266,21 +2113,30 @@
       "Egg slightly beaten"
     ],
     "decoys": [
+      "Prepared powdered cocoa",
+      "Egg",
       "Corn",
-      "Rolled Oats",
-      "Yeast cake dissolved in",
-      "Squares chocolate",
-      "Popped corn"
+      "Currants mixed with",
+      "Kornlet"
     ],
     "steps": [
-      "Mix ingredients in order given",
-      "Cook ten minutes in double boiler, stirring constantly",
-      "Cool before spreading"
+      {
+        "text": "Mix ingredients in order given",
+        "station": "counter"
+      },
+      {
+        "text": "Cook ten minutes in double boiler, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool before spreading",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-58",
-    "name": "Stage 58: Chocolate Cream Candy",
+    "id": "stage-66",
+    "name": "Stage 66: Chocolate Cream Candy",
     "recipeName": "Chocolate Cream Candy",
     "ingredients": [
       "Sugar",
@@ -1289,50 +2145,110 @@
       "Squares chocolate"
     ],
     "decoys": [
-      "Velouté Sauce",
-      "Kumquat juice",
-      "Canton ginger",
-      "Heavy cream",
-      "Salt and paprika"
+      "Cracker crumbs",
+      "Sour apples",
+      "Oysters",
+      "Shortening",
+      "Pearl or Minute Tapioca"
     ],
     "steps": [
-      "Put butter into granite saucepan; when melted, add sugar and milk",
-      "Heat to boiling-point; then add chocolate, and stir constantly until chocolate is melted",
-      "Boil thirteen minutes, remove from fire, add vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
-      "Pour at once into a buttered pan, cool slightly, and mark in squares",
-      "Omit vanilla, if desired, and add, while cooking, one-fourth teaspoon cinnamon"
+      {
+        "text": "Put butter into granite saucepan; when melted, add sugar and milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Heat to boiling-point; then add chocolate, and stir constantly until chocolate is melted",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil thirteen minutes, remove from fire, add vanilla, and beat until creamy and mixture begins to sugar slightly around edge of saucepan",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour at once into a buttered pan, cool slightly, and mark in squares",
+        "station": "counter"
+      },
+      {
+        "text": "Omit vanilla, if desired, and add, while cooking, one-fourth teaspoon cinnamon",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-59",
-    "name": "Stage 59: Rolled Oats Bread",
-    "recipeName": "Rolled Oats Bread",
+    "id": "stage-67",
+    "name": "Stage 67: Fish à la Provençale",
+    "recipeName": "Fish à la Provençale",
     "ingredients": [
-      "Boiling water",
-      "Molasses",
-      "Salt",
       "Butter",
-      "Yeast cake dissolved in",
-      "Lukewarm water",
-      "Rolled Oats"
+      "Flour",
+      "Milk",
+      "Egg yolks",
+      "Anchovy essence"
     ],
     "decoys": [
-      "Almond extract",
-      "Thick cream",
-      "Whites two eggs",
-      "Confectioners’ sugar",
-      "Fine stale bread crumbs",
-      "Chopped mushrooms"
+      "Few grains cayenne",
+      "Highly seasoned",
+      "Soft maple sugar",
+      "Macaroni",
+      "Whites two eggs"
     ],
     "steps": [
-      "Add boiling water to oats and let stand one hour; add molasses, salt, butter, dissolved yeast cake, and flour; let rise, beat thoroughly, turn into buttered bread pans, let rise again, and bake",
-      "By using one-half cup less flour, the dough is better suited for biscuits, but, being soft, is difficult to handle",
-      "To make shaping of biscuits easy, take up mixture by spoonfuls, drop into plate of flour, and have palms of hands well covered with flour before attempting to shape"
+      {
+        "text": "Make a sauce of butter, flour, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Mash yolks of eggs and mix with Anchovy essence, add to sauce, then add fish",
+        "station": "counter"
+      },
+      {
+        "text": "Serve as soon as heated",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve on pieces of toasted Graham bread",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-60",
-    "name": "Stage 60: Raised Oatmeal Muffins",
+    "id": "stage-68",
+    "name": "Stage 68: Sticks",
+    "recipeName": "Sticks",
+    "ingredients": [
+      "Scalded milk",
+      "Butter",
+      "Sugar",
+      "Salt",
+      "Yeast cake dissolved in",
+      "Lukewarm water",
+      "Egg whites"
+    ],
+    "decoys": [
+      "Arrowroot",
+      "Beef extract",
+      "Melted butter",
+      "Pearl or Minute Tapioca",
+      "Figs, finely chopped"
+    ],
+    "steps": [
+      {
+        "text": "Add butter, sugar, and salt to milk; when lukewarm, add dissolved yeast cake, white of egg well beaten, and flour",
+        "station": "counter"
+      },
+      {
+        "text": "Knead, let rise, shape, let rise again, and start baking in a hot oven, reducing heat, that sticks may be crisp and dry",
+        "station": "oven"
+      },
+      {
+        "text": "To shape sticks, first shape as small biscuits, roll on board (where there is no flour) with hands until eight inches in length, keeping of uniform size and rounded ends, which may be done by bringing fingers close to, but not over, ends of sticks",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-69",
+    "name": "Stage 69: Raised Oatmeal Muffins",
     "recipeName": "Raised Oatmeal Muffins",
     "ingredients": [
       "Scalded milk",
@@ -1343,23 +2259,34 @@
       "Cold cooked oatmeal"
     ],
     "decoys": [
-      "Sugar or",
-      "Yolks of eggs",
-      "Cream of tartar",
-      "Carrot",
-      "Chopped cooked mutton",
-      "Terrapin"
+      "Rice or",
+      "Warm cooked hominy",
+      "French chestnuts",
+      "Water",
+      "Marshmallows"
     ],
     "steps": [
-      "Add sugar and salt to scalded milk; when lukewarm, add dissolved yeast cake",
-      "Work oatmeal into flour with tips of fingers, and add to first mixture; beat thoroughly, cover, and let rise over night",
-      "In morning, fill buttered iron gem pans two-thirds full, let rise on back of range that pan may gradually heat and mixture rise to fill pan",
-      "Bake in moderate oven twenty-five to thirty minutes"
+      {
+        "text": "Add sugar and salt to scalded milk; when lukewarm, add dissolved yeast cake",
+        "station": "counter"
+      },
+      {
+        "text": "Work oatmeal into flour with tips of fingers, and add to first mixture; beat thoroughly, cover, and let rise over night",
+        "station": "counter"
+      },
+      {
+        "text": "In morning, fill buttered iron gem pans two-thirds full, let rise on back of range that pan may gradually heat and mixture rise to fill pan",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bake in moderate oven twenty-five to thirty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-61",
-    "name": "Stage 61: Cream Scones",
+    "id": "stage-70",
+    "name": "Stage 70: Cream Scones",
     "recipeName": "Cream Scones",
     "ingredients": [
       "Flour",
@@ -1370,23 +2297,34 @@
       "Eggs"
     ],
     "decoys": [
-      "Vanilla or",
-      "Brown Stock",
-      "Anchovy essence",
-      "Yeast cake",
-      "Salt and pepper",
-      "Mustard"
+      "Scallops",
+      "Parsley",
+      "Stale bread crumbs",
+      "Rolled oats",
+      "Smoked dried beef"
     ],
     "steps": [
-      "Mix and sift together flour, baking powder, sugar, and salt",
-      "Rub in butter with tips of fingers; add eggs well beaten, and cream",
-      "Toss on a floured board, pat, and roll to three-fourths inch in thickness",
-      "Cut in squares, brush with white of egg, sprinkle with sugar, and bake in a hot oven fifteen minutes"
+      {
+        "text": "Mix and sift together flour, baking powder, sugar, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Rub in butter with tips of fingers; add eggs well beaten, and cream",
+        "station": "counter"
+      },
+      {
+        "text": "Toss on a floured board, pat, and roll to three-fourths inch in thickness",
+        "station": "counter"
+      },
+      {
+        "text": "Cut in squares, brush with white of egg, sprinkle with sugar, and bake in a hot oven fifteen minutes",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-62",
-    "name": "Stage 62: White Corn Cake",
+    "id": "stage-71",
+    "name": "Stage 71: White Corn Cake",
     "recipeName": "White Corn Cake",
     "ingredients": [
       "Butter",
@@ -1398,22 +2336,68 @@
       "Baking powder"
     ],
     "decoys": [
-      "Scalded milk",
-      "Eggs",
-      "Finely chopped chives",
-      "Whites two eggs",
-      "Yolks of eggs",
-      "Heavy cream"
+      "Few grains pepper",
+      "Coffee infusion",
+      "Yeast cake dissolved in",
+      "Clove",
+      "Chopped mushrooms"
     ],
     "steps": [
-      "Cream the butter; add sugar gradually; add milk, alternating with dry ingredients, mixed and sifted",
-      "Beat thoroughly; add whites of eggs beaten stiff",
-      "Bake in buttered cake pan thirty minutes"
+      {
+        "text": "Cream the butter; add sugar gradually; add milk, alternating with dry ingredients, mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Beat thoroughly; add whites of eggs beaten stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in buttered cake pan thirty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-63",
-    "name": "Stage 63: Rich Omelet",
+    "id": "stage-72",
+    "name": "Stage 72: Eggs à la Suisse",
+    "recipeName": "Eggs à la Suisse",
+    "ingredients": [
+      "Eggs",
+      "Cream",
+      "Butter",
+      "Salt",
+      "Pepper",
+      "Cayenne"
+    ],
+    "decoys": [
+      "Clams",
+      "Jordan almonds",
+      "Shredded almonds",
+      "Lukewarm water",
+      "French chestnuts"
+    ],
+    "steps": [
+      {
+        "text": "Heat a small omelet pan, put in butter, and when melted, add cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Slip in the eggs one at a time, sprinkle with salt, pepper, and a few grains of cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Finish cooking, and serve on buttered toast",
+        "station": "stovetop"
+      },
+      {
+        "text": "Strain cream over the toast",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-73",
+    "name": "Stage 73: Rich Omelet",
     "recipeName": "Rich Omelet",
     "ingredients": [
       "Flour",
@@ -1423,24 +2407,38 @@
       "Butter"
     ],
     "decoys": [
-      "Cold cooked oatmeal",
-      "Sliced onions",
-      "Milk, scalded",
-      "Hot liquid",
-      "Tomatoes or",
-      "Egg yolks"
+      "Sugar",
+      "Pepper",
+      "Vanilla",
+      "Grated cheese",
+      "Soft maple sugar"
     ],
     "steps": [
-      "Mix salt and flour, and add gradually milk",
-      "Beat eggs until thick and lemon-colored, then add to first mixture",
-      "Heat iron frying-pan and put in two-thirds of the butter; when butter is melted, pour in mixture",
-      "As it cooks, lift with a griddle-cake turner so that uncooked part may run underneath; add remaining butter as needed, and continue lifting the cooked part until it is firm throughout",
-      "Place on hotter part of range to brown; roll, and turn on hot platter"
+      {
+        "text": "Mix salt and flour, and add gradually milk",
+        "station": "counter"
+      },
+      {
+        "text": "Beat eggs until thick and lemon-colored, then add to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Heat iron frying-pan and put in two-thirds of the butter; when butter is melted, pour in mixture",
+        "station": "stovetop"
+      },
+      {
+        "text": "As it cooks, lift with a griddle-cake turner so that uncooked part may run underneath; add remaining butter as needed, and continue lifting the cooked part until it is firm throughout",
+        "station": "stovetop"
+      },
+      {
+        "text": "Place on hotter part of range to brown; roll, and turn on hot platter",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-64",
-    "name": "Stage 64: Scalloped Lobster",
+    "id": "stage-74",
+    "name": "Stage 74: Scalloped Lobster",
     "recipeName": "Scalloped Lobster",
     "ingredients": [
       "Lobster",
@@ -1449,52 +2447,203 @@
       "Few grains cayenne"
     ],
     "decoys": [
-      "Maraschino",
-      "Junket Tablets",
-      "Few grains salt",
-      "Mustard",
-      "Squash",
-      "Pearl or Minute Tapioca"
+      "Baker’s chocolate",
+      "Beef extract",
+      "Square melted chocolate",
+      "Milk",
+      "Currants mixed with"
     ],
     "steps": [
-      "Remove lobster meat from shell and cut in cubes",
-      "Heat in White Sauce and add seasonings",
-      "Refill lobster shells, cover with buttered crumbs, and bake until crumbs are brown",
-      "To prevent lobster shells from curling over lobster while baking, insert small wooden skewers of sufficient length to keep shell in its original shape",
-      "To assist in preserving color of shell, brush over with olive oil before putting into oven",
-      "Scalloped lobster may be baked in buttered scallop shells, or in a buttered baking-dish"
+      {
+        "text": "Remove lobster meat from shell and cut in cubes",
+        "station": "counter"
+      },
+      {
+        "text": "Heat in White Sauce and add seasonings",
+        "station": "stovetop"
+      },
+      {
+        "text": "Refill lobster shells, cover with buttered crumbs, and bake until crumbs are brown",
+        "station": "oven"
+      },
+      {
+        "text": "To prevent lobster shells from curling over lobster while baking, insert small wooden skewers of sufficient length to keep shell in its original shape",
+        "station": "oven"
+      },
+      {
+        "text": "To assist in preserving color of shell, brush over with olive oil before putting into oven",
+        "station": "oven"
+      },
+      {
+        "text": "Scalloped lobster may be baked in buttered scallop shells, or in a buttered baking-dish",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-65",
-    "name": "Stage 65: Tomato Cream Sauce",
-    "recipeName": "Tomato Cream Sauce",
+    "id": "stage-75",
+    "name": "Stage 75: Mutton Broth",
+    "recipeName": "Mutton Broth",
     "ingredients": [
-      "Tomatoes",
-      "Thyme",
-      "Celery",
-      "Onion",
-      "Bay leaf",
-      "White Sauce I",
+      "Mutton",
+      "Cold water",
       "Salt",
-      "Few grains cayenne"
+      "Few grins pepper",
+      "Rice or"
     ],
     "decoys": [
-      "Mace",
-      "Baking power",
-      "Warm cooked hominy",
-      "Chicken",
-      "Canton ginger",
-      "Fresh stewed tomatoes"
+      "Cold cooked oatmeal",
+      "Box gelatine (scant) or",
+      "Shredded almonds",
+      "Brown Stock",
+      "Marshmallows"
     ],
     "steps": [
-      "Cook tomatoes twenty minutes with seasonings; rub through a strainer, add soda, then White Sauce",
-      "Serve with Baked Fish or Lobster Cutlets"
+      {
+        "text": "Wipe meat, remove skin and fat, and cut in small pieces",
+        "station": "counter"
+      },
+      {
+        "text": "Put into kettle with bones, and cover with cold water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Heat gradually to boiling-point, skim, then season with salt and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook slowly until meat is tender, strain, and remove fat",
+        "station": "stovetop"
+      },
+      {
+        "text": "Reheat to boiling-point, add rice or barley, and cook until rice or barley is tender",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-66",
-    "name": "Stage 66: Clam Fritters",
+    "id": "stage-76",
+    "name": "Stage 76: Chestnut Stuffing",
+    "recipeName": "Chestnut Stuffing",
+    "ingredients": [
+      "French chestnuts",
+      "Butter",
+      "Salt",
+      "Pepper",
+      "Cream"
+    ],
+    "decoys": [
+      "Pounded cardamon seeds",
+      "Granulated gelatine",
+      "Marrowfat peas",
+      "Thin cream",
+      "Ground coffee"
+    ],
+    "steps": [
+      {
+        "text": "Shell and blanch chestnuts",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in boiling salted water until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain and mash, using a potato ricer",
+        "station": "counter"
+      },
+      {
+        "text": "Add one-half the butter, salt, pepper, and cream",
+        "station": "counter"
+      },
+      {
+        "text": "Melt remaining butter, mix with cracker crumbs, then combine mixtures",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-77",
+    "name": "Stage 77: Bread Sauce",
+    "recipeName": "Bread Sauce",
+    "ingredients": [
+      "Milk",
+      "Fine stale bread crumbs",
+      "Onion",
+      "Cloves",
+      "Salt",
+      "Few grains cayenne",
+      "Butter"
+    ],
+    "decoys": [
+      "Brown Stock",
+      "Washed figs",
+      "Lemon",
+      "Stale bread crumbs",
+      "Granulated gelatin"
+    ],
+    "steps": [
+      {
+        "text": "Cook milk thirty minutes in double boiler, with fine bread crumbs and onion stuck with cloves",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove onion, add salt, cayenne, and two tablespoons butter",
+        "station": "counter"
+      },
+      {
+        "text": "Usually served poured around roast partridge or grouse, and sprinkled with coarse crumbs browned in remaining butter",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-78",
+    "name": "Stage 78: Queen Fritters",
+    "recipeName": "Queen Fritters",
+    "ingredients": [
+      "Butter",
+      "Boiling water",
+      "Flour",
+      "Eggs"
+    ],
+    "decoys": [
+      "Shortening",
+      "Sour apples",
+      "Salt and pepper",
+      "Highly seasoned",
+      "Baker’s chocolate"
+    ],
+    "steps": [
+      {
+        "text": "Put butter in small saucepan and pour on water",
+        "station": "counter"
+      },
+      {
+        "text": "As soon as water again reaches boiling-point, add flour all at once and stir until mixture leaves sides of saucepan, cleaving to spoon",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire and add eggs unbeaten, one at a time, beating mixture thoroughly between addition of eggs",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls and fry in deep fat until well puffed and browned",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain, make an opening, and fill with preserve or marmalade",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with powdered sugar and serve on a folded napkin",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-79",
+    "name": "Stage 79: Clam Fritters",
     "recipeName": "Clam Fritters",
     "ingredients": [
       "Clams",
@@ -1505,23 +2654,72 @@
       "Salt"
     ],
     "decoys": [
-      "Corn",
-      "Sour milk",
-      "Yvette Cordial",
-      "Gelatine or",
-      "Chicken",
-      "Sherry or Madeira wine"
+      "Thick White Sauce",
+      "Brown Stock",
+      "Cold boiled halibut",
+      "Grated mild cheese",
+      "Boiling water"
     ],
     "steps": [
-      "Clean clams, drain from their liquor, and chop",
-      "Beat eggs until light, add milk and flour mixed and sifted with baking powder, then add chopped clams, and season highly with salt and pepper",
-      "Drop by spoonfuls, and fry in deep fat",
-      "Drain on brown paper, and serve at once on a folded napkin"
+      {
+        "text": "Clean clams, drain from their liquor, and chop",
+        "station": "counter"
+      },
+      {
+        "text": "Beat eggs until light, add milk and flour mixed and sifted with baking powder, then add chopped clams, and season highly with salt and pepper",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls, and fry in deep fat",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain on brown paper, and serve at once on a folded napkin",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-67",
-    "name": "Stage 67: Bread Pudding",
+    "id": "stage-80",
+    "name": "Stage 80: Beef and Rice Croquettes",
+    "recipeName": "Beef and Rice Croquettes",
+    "ingredients": [
+      "Chopped beef",
+      "Rice",
+      "Salt",
+      "Pepper",
+      "Few grains cayenne",
+      "Cabbage"
+    ],
+    "decoys": [
+      "Lukewarm milk",
+      "Heavy cream",
+      "Pearl tapioca",
+      "Pounded cardamon seeds",
+      "Lemon"
+    ],
+    "steps": [
+      {
+        "text": "Mix beef and rice, and add salt, pepper, and cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Cook cabbage leaves two minutes in boiling water to cover",
+        "station": "stovetop"
+      },
+      {
+        "text": "In each leaf put two tablespoons mixture, and fold leaf to enclose mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Cook one hour in Tomato Sauce",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-81",
+    "name": "Stage 81: Bread Pudding",
     "recipeName": "Bread Pudding",
     "ingredients": [
       "Stale bread crumbs",
@@ -1533,22 +2731,71 @@
       "Vanilla or"
     ],
     "decoys": [
-      "Canton ginger",
-      "Corn meal",
-      "Chopped salted almonds",
-      "Finely chopped parsley",
-      "Onions",
-      "Sour milk"
+      "Figs, finely chopped",
+      "Grated nutmeg",
+      "Whites two eggs",
+      "Box gelatine (scant) or",
+      "Anchovy essence"
     ],
     "steps": [
-      "Soak bread crumbs in milk, set aside until cool; add sugar, butter, eggs slightly beaten, salt, and flavoring; bake one hour in buttered pudding-dish in slow oven; serve with Vanilla Sauce",
-      "In preparing bread crumbs for puddings avoid using outside crusts",
-      "With a coarse grater there need be but little waste"
+      {
+        "text": "Soak bread crumbs in milk, set aside until cool; add sugar, butter, eggs slightly beaten, salt, and flavoring; bake one hour in buttered pudding-dish in slow oven; serve with Vanilla Sauce",
+        "station": "oven"
+      },
+      {
+        "text": "In preparing bread crumbs for puddings avoid using outside crusts",
+        "station": "counter"
+      },
+      {
+        "text": "With a coarse grater there need be but little waste",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-68",
-    "name": "Stage 68: Graham Pudding",
+    "id": "stage-82",
+    "name": "Stage 82: Bangor Pudding",
+    "recipeName": "Bangor Pudding",
+    "ingredients": [
+      "Cracker crumbs",
+      "Boiling water",
+      "Milk",
+      "Molasses",
+      "Egg"
+    ],
+    "decoys": [
+      "Clams",
+      "Chopped mushrooms",
+      "Flour",
+      "Worcestershire Sauce",
+      "White stock"
+    ],
+    "steps": [
+      {
+        "text": "Moisten cracker crumbs with boiling water, and let stand until cool",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add milk, molasses, egg slightly beaten, and raisins seeded and cut in pieces",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered pudding mould, and steam eight hours",
+        "station": "stovetop"
+      },
+      {
+        "text": "Let stand in mould to cool",
+        "station": "counter"
+      },
+      {
+        "text": "Serve cold with Cream Sauce II",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-83",
+    "name": "Stage 83: Graham Pudding",
     "recipeName": "Graham Pudding",
     "ingredients": [
       "Butter",
@@ -1560,22 +2807,68 @@
       "Salt"
     ],
     "decoys": [
-      "Few grains salt",
-      "Smoked dried beef",
-      "Few grains cinnamon",
-      "Chestnut purée",
-      "Made mustard",
-      "Washed figs"
+      "Chopped lobster meat",
+      "Mutton",
+      "Chopped mushrooms",
+      "Prunes",
+      "Few drops onion juice"
     ],
     "steps": [
-      "Melt butter, add molasses, milk, egg well beaten, dry ingredients mixed and sifted, and raisins; turn into buttered mould, cover, and steam two and one-half hours",
-      "Serve with Wine Sauce",
-      "Dates or figs cut in small pieces may be used in place of raisins"
+      {
+        "text": "Melt butter, add molasses, milk, egg well beaten, dry ingredients mixed and sifted, and raisins; turn into buttered mould, cover, and steam two and one-half hours",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Wine Sauce",
+        "station": "counter"
+      },
+      {
+        "text": "Dates or figs cut in small pieces may be used in place of raisins",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-69",
-    "name": "Stage 69: Ivory Cream",
+    "id": "stage-84",
+    "name": "Stage 84: Kumquat Jelly",
+    "recipeName": "Kumquat Jelly",
+    "ingredients": [
+      "Kumquat juice",
+      "Sugar",
+      "Sauterne",
+      "Orange Curaçoa",
+      "Granulated gelatine",
+      "Cold water"
+    ],
+    "decoys": [
+      "Flour",
+      "Cinnamon",
+      "Mustard",
+      "Box strawberries",
+      "Brandy"
+    ],
+    "steps": [
+      {
+        "text": "Add sugar, wine, and curaçoa",
+        "station": "counter"
+      },
+      {
+        "text": "Soak gelatine in cold water, and add to first mixture heated to boiling-point; then add salt",
+        "station": "stovetop"
+      },
+      {
+        "text": "Strain, turn into individual mould, and chill",
+        "station": "counter"
+      },
+      {
+        "text": "Remove to serving dish, and garnish with halves of kumquats, cooked in syrup until soft, drained, and rolled in sugar",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-85",
+    "name": "Stage 85: Ivory Cream",
     "recipeName": "Ivory Cream",
     "ingredients": [
       "Granulated gelatine",
@@ -1585,51 +2878,117 @@
       "Powdered sugar"
     ],
     "decoys": [
-      "Celery salt",
-      "Cinnamon",
-      "Cloves",
-      "Corn meal",
-      "Stale bread crumbs",
-      "Apricots"
+      "Clams",
+      "Orange Curaçoa",
+      "White Sauce II",
+      "Kornlet",
+      "Beef extract",
+      "Slight grating nutmeg"
     ],
     "steps": [
-      "Soak gelatine in cold water, dissolve in boiling water, and add sugar and wine",
-      "Strain into a bowl, set in pan of ice-water, and beat until mixture thickens slightly",
-      "Add to mixture whip from cream, and beat until mixture is thick enough to hold its shape",
-      "Mould and chill",
-      "Garnish with Sauterne Jelly"
+      {
+        "text": "Soak gelatine in cold water, dissolve in boiling water, and add sugar and wine",
+        "station": "stovetop"
+      },
+      {
+        "text": "Strain into a bowl, set in pan of ice-water, and beat until mixture thickens slightly",
+        "station": "counter"
+      },
+      {
+        "text": "Add to mixture whip from cream, and beat until mixture is thick enough to hold its shape",
+        "station": "counter"
+      },
+      {
+        "text": "Mould and chill",
+        "station": "counter"
+      },
+      {
+        "text": "Garnish with Sauterne Jelly",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-70",
-    "name": "Stage 70: Fig Ice Cream",
-    "recipeName": "Fig Ice Cream",
+    "id": "stage-86",
+    "name": "Stage 86: Lenox Punch",
+    "recipeName": "Lenox Punch",
     "ingredients": [
-      "Milk",
+      "Water",
       "Sugar",
-      "Egg yolks",
-      "Salt",
-      "Figs, finely chopped",
-      "Heavy cream",
-      "Egg whites",
-      "Vanilla"
+      "Tumbler currant jelly",
+      "Ice",
+      "Orange juice",
+      "Lemon juice",
+      "Bottles ginger ale"
     ],
     "decoys": [
-      "Grated pineapple",
-      "Madeira wine",
-      "Arrowroot",
-      "Tumbler currant jelly",
-      "Yvette Cordial",
-      "Finely chopped onion"
+      "Clove",
+      "Soda",
+      "Few grains cinnamon",
+      "White Stock III",
+      "Yolks two eggs",
+      "Cold flaked salmon"
     ],
     "steps": [
-      "Make custard of yolks of eggs, sugar, and milk; strain, add figs, cool, and flavor",
-      "Add whites of eggs beaten until stiff and heavy cream beaten until stiff; freeze and mould"
+      {
+        "text": "Make a syrup by boiling sugar and water fifteen minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add jelly, and, as soon as dissolved, add a piece of ice to cool mixture; then add fruit juices, ale, and brandy",
+        "station": "counter"
+      },
+      {
+        "text": "Color red, freeze to a mush, serve in glasses, and insert in each glass a small sprig of holly with berries",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-71",
-    "name": "Stage 71: Prune Pie",
+    "id": "stage-87",
+    "name": "Stage 87: Pineapple Mousse",
+    "recipeName": "Pineapple Mousse",
+    "ingredients": [
+      "Granulated gelatine",
+      "Cold water",
+      "Pineapple syrup",
+      "Lemon juice",
+      "Sugar"
+    ],
+    "decoys": [
+      "Sour milk",
+      "Indian meal",
+      "Onions",
+      "Salt and paprika",
+      "Egg whites",
+      "Thin cream"
+    ],
+    "steps": [
+      {
+        "text": "Heat one can pineapple, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "To one cup of the syrup, add gelatine soaked in cold water, lemon juice, and sugar",
+        "station": "counter"
+      },
+      {
+        "text": "Strain and cool",
+        "station": "counter"
+      },
+      {
+        "text": "As mixture thickens, fold in the whip from cream",
+        "station": "counter"
+      },
+      {
+        "text": "Mould, pack in salt and ice, and let stand four hours",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-88",
+    "name": "Stage 88: Prune Pie",
     "recipeName": "Prune Pie",
     "ingredients": [
       "Prunes",
@@ -1638,25 +2997,85 @@
       "Butter"
     ],
     "decoys": [
-      "Anchovy essence",
-      "Large flat white turnip",
-      "Peaches",
-      "Yeast cake",
-      "Yellow ginger",
-      "Warm wheat mush"
+      "Cabbage",
+      "Whole eggs",
+      "Small potatoes",
+      "Finely chopped chives",
+      "Vanilla",
+      "Thick cream"
     ],
     "steps": [
-      "Wash prunes and soak in enough cold water to cover",
-      "Cook in same water until soft",
-      "Remove stones, cut prunes in quarters, and mix with sugar and lemon juice",
-      "Reduce liquor to one and one-half tablespoons",
-      "Line plate with paste, cover with prunes, pour over liquor, dot over with butter, and dredge with flour",
-      "Put on an upper crust and bake in a moderate oven"
+      {
+        "text": "Wash prunes and soak in enough cold water to cover",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in same water until soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove stones, cut prunes in quarters, and mix with sugar and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Reduce liquor to one and one-half tablespoons",
+        "station": "stovetop"
+      },
+      {
+        "text": "Line plate with paste, cover with prunes, pour over liquor, dot over with butter, and dredge with flour",
+        "station": "counter"
+      },
+      {
+        "text": "Put on an upper crust and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-72",
-    "name": "Stage 72: Scottish Fancies",
+    "id": "stage-89",
+    "name": "Stage 89: Ginger Snaps",
+    "recipeName": "Ginger Snaps",
+    "ingredients": [
+      "Molasses",
+      "Shortening",
+      "Flour",
+      "Soda",
+      "Ginger"
+    ],
+    "decoys": [
+      "Yvette Cordial",
+      "Pineapple syrup",
+      "White corn meal",
+      "Corn",
+      "Sauterne",
+      "Baking powder"
+    ],
+    "steps": [
+      {
+        "text": "Heat molasses to boiling-point and pour over shortening",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add dry ingredients mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Toss one-fourth of mixture on a floured board and roll as thinly as possible; shape with a small round cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Place near together on a buttered sheet and bake in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Gather up the trimmings and roll with another portion of dough",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-90",
+    "name": "Stage 90: Scottish Fancies",
     "recipeName": "Scottish Fancies",
     "ingredients": [
       "Egg",
@@ -1666,24 +3085,78 @@
       "Salt"
     ],
     "decoys": [
-      "Jordan almonds",
-      "Cinnamon",
-      "Salmon",
-      "Egg slightly beaten",
-      "Almond extract",
-      "Pearl tapioca"
+      "White corn meal",
+      "Yeast cakes",
+      "Ginger",
+      "Seeded raisins",
+      "Thick cream",
+      "Chopped lobster meat"
     ],
     "steps": [
-      "Beat egg until light, add gradually sugar, and then stir in remaining ingredients",
-      "Drop mixture by teaspoonfuls on a thoroughly greased inverted dripping-pan one inch apart",
-      "Spread into circular shape with a case knife first dipped in cold water",
-      "Bake in a moderate oven until delicately browned",
-      "To give variety use two-thirds cup rolled oats and fill cup with shredded cocoanut"
+      {
+        "text": "Beat egg until light, add gradually sugar, and then stir in remaining ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Drop mixture by teaspoonfuls on a thoroughly greased inverted dripping-pan one inch apart",
+        "station": "counter"
+      },
+      {
+        "text": "Spread into circular shape with a case knife first dipped in cold water",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in a moderate oven until delicately browned",
+        "station": "oven"
+      },
+      {
+        "text": "To give variety use two-thirds cup rolled oats and fill cup with shredded cocoanut",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-73",
-    "name": "Stage 73: Chocolate Cookies",
+    "id": "stage-91",
+    "name": "Stage 91: Cocoanut Cream Cookies",
+    "recipeName": "Cocoanut Cream Cookies",
+    "ingredients": [
+      "Eggs",
+      "Sugar",
+      "Thick cream",
+      "Shredded cocoanut",
+      "Flour",
+      "Baking powder"
+    ],
+    "decoys": [
+      "Sugar or",
+      "Melted butter",
+      "Box strawberries",
+      "Cabbage",
+      "Cayenne",
+      "Clams"
+    ],
+    "steps": [
+      {
+        "text": "Beat eggs until light, add sugar gradually, cocoanut, cream, and flour mixed and sifted with baking powder and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Chill thoroughly, toss on a floured board, pat, and roll one-half inch thick",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with cocoanut, roll one-fourth inch thick, and shape with a small round cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Bake on a buttered sheet in a moderate oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-92",
+    "name": "Stage 92: Chocolate Cookies",
     "recipeName": "Chocolate Cookies",
     "ingredients": [
       "Butter",
@@ -1695,22 +3168,115 @@
       "Baking powder"
     ],
     "decoys": [
-      "Currants mixed with",
-      "Cold boiled halibut",
-      "Macaroni",
-      "Carrot",
-      "Brown Stock",
-      "Washed figs"
+      "Thin cream",
+      "Chopped walnut meats",
+      "Quails",
+      "Rolled oats",
+      "Grated cheese",
+      "Fine stale bread crumbs"
     ],
     "steps": [
-      "Cream the butter, add sugar gradually, egg well beaten, salt, and chocolate melted",
-      "Beat well, and add flour mixed and sifted with baking powder alternately with milk",
-      "Chill, roll very thin, then shape with a small cutter, first dipped in flour, and bake in a moderate oven"
+      {
+        "text": "Cream the butter, add sugar gradually, egg well beaten, salt, and chocolate melted",
+        "station": "stovetop"
+      },
+      {
+        "text": "Beat well, and add flour mixed and sifted with baking powder alternately with milk",
+        "station": "counter"
+      },
+      {
+        "text": "Chill, roll very thin, then shape with a small cutter, first dipped in flour, and bake in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-74",
-    "name": "Stage 74: Walnut Cake",
+    "id": "stage-93",
+    "name": "Stage 93: Swedish Wafers",
+    "recipeName": "Swedish Wafers",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Flour",
+      "Vanilla"
+    ],
+    "decoys": [
+      "Cabbage",
+      "Highly seasoned",
+      "Squares chocolate",
+      "Anchovy essence",
+      "Tumbler currant jelly",
+      "Grated mild cheese"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, eggs slightly beaten, flour, and flavoring",
+        "station": "counter"
+      },
+      {
+        "text": "Drop by spoonfuls on an inverted buttered dripping-pan",
+        "station": "counter"
+      },
+      {
+        "text": "Spread very thinly, using a knife, in circular shapes about three inches in diameter",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with almonds, and bake in a slow oven",
+        "station": "oven"
+      },
+      {
+        "text": "Remove from pan, and shape at once over the handle of a wooden spoon",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-94",
+    "name": "Stage 94: Orange Cake",
+    "recipeName": "Orange Cake",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Milk",
+      "Flour"
+    ],
+    "decoys": [
+      "Pearl tapioca",
+      "Parsley",
+      "Tomatoes",
+      "Chopped walnut meats",
+      "Cream",
+      "Sweet cider"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, eggs well beaten, and milk",
+        "station": "counter"
+      },
+      {
+        "text": "Then add flour mixed and sifted with baking powder",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in a thin sheet in a dripping-pan",
+        "station": "oven"
+      },
+      {
+        "text": "Cut in halves, spread one-half with Orange Filling",
+        "station": "counter"
+      },
+      {
+        "text": "Put over other half, and cover with Orange Frosting",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-95",
+    "name": "Stage 95: Walnut Cake",
     "recipeName": "Walnut Cake",
     "ingredients": [
       "Butter",
@@ -1722,22 +3288,73 @@
       "Egg whites"
     ],
     "decoys": [
-      "Strawberries",
-      "Fresh stewed tomatoes",
-      "Marshmallows",
-      "Box gelatine (scant) or",
-      "Tomatoes",
-      "Kumquat juice"
+      "Rice or",
+      "Squares chocolate",
+      "Currants mixed with",
+      "Sauterne",
+      "Chestnut purée",
+      "Few drops onion juice"
     ],
     "steps": [
-      "Mix ingredients in order given",
-      "Bake forty-five minutes in a moderate oven",
-      "Cover with White Mountain Cream, crease in squares, and put one-half walnut on each square"
+      {
+        "text": "Mix ingredients in order given",
+        "station": "counter"
+      },
+      {
+        "text": "Bake forty-five minutes in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with White Mountain Cream, crease in squares, and put one-half walnut on each square",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-75",
-    "name": "Stage 75: Eggs à la Caracas",
+    "id": "stage-96",
+    "name": "Stage 96: Chocolate Caramels",
+    "recipeName": "Chocolate Caramels",
+    "ingredients": [
+      "Butter",
+      "Molasses",
+      "Brown sugar",
+      "Milk",
+      "Squares chocolate"
+    ],
+    "decoys": [
+      "Grated nutmeg",
+      "Confectioners’ sugar",
+      "Sour apples",
+      "Arrowroot",
+      "Lemon juice",
+      "Yeast cake dissolved in"
+    ],
+    "steps": [
+      {
+        "text": "Put butter into kettle; when melted, add molasses, sugar, and milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Stir until sugar is dissolved, and when boiling-point is reached, add chocolate, stirring constantly until chocolate is melted",
+        "station": "stovetop"
+      },
+      {
+        "text": "Boil until, when tried in cold water, a firm ball may be formed in the fingers",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add vanilla just after taking from fire",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered pan, cool, and mark in small squares",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-97",
+    "name": "Stage 97: Eggs à la Caracas",
     "recipeName": "Eggs à la Caracas",
     "ingredients": [
       "Smoked dried beef",
@@ -1749,50 +3366,110 @@
       "Butter"
     ],
     "decoys": [
-      "Rye meal",
-      "Fine stale bread crumbs",
-      "Bananas sliced",
-      "Chicken stock",
-      "Cayenne",
-      "Egg yolks"
+      "Clams",
+      "Salt and pepper",
+      "Warm wheat mush",
+      "Confectioners’ sugar",
+      "Box gelatine (scant) or",
+      "Grated rind  orange"
     ],
     "steps": [
-      "Pick over beef and chop finely, add tomatoes, cheese, onion juice, cinnamon, and cayenne",
-      "Melt butter, add mixture, and when heated, add eggs well beaten",
-      "Cook until eggs are of creamy consistency, stirring and scraping from bottom of pan"
+      {
+        "text": "Pick over beef and chop finely, add tomatoes, cheese, onion juice, cinnamon, and cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add mixture, and when heated, add eggs well beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook until eggs are of creamy consistency, stirring and scraping from bottom of pan",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-76",
-    "name": "Stage 76: Minced Mutton",
-    "recipeName": "Minced Mutton",
+    "id": "stage-98",
+    "name": "Stage 98: Clams à la Newburg",
+    "recipeName": "Clams à la Newburg",
     "ingredients": [
-      "Chopped cooked mutton",
-      "Egg yolks",
-      "Mixed mustard",
+      "Clams",
+      "Butter",
       "Salt",
-      "Cayenne",
-      "Cream"
+      "Few grains cayenne",
+      "Sherry or Madeira wine",
+      "Thin cream"
     ],
     "decoys": [
-      "Almond extract",
-      "Molasses",
-      "Orange juice",
-      "Cream or milk",
-      "Cold boiled halibut",
-      "Grated cheese",
-      "Few grains salt"
+      "Sherry",
+      "Wheat Germ",
+      "Carrot",
+      "Blade of mace",
+      "Few drops onion juice",
+      "Box gelatine or"
     ],
     "steps": [
-      "Mash the yolks, and season with mustard, salt, and cayenne",
-      "Add cream and mutton",
-      "When thoroughly heated add wine",
-      "Serve on toast"
+      {
+        "text": "Clean clams, remove soft parts, and finely chop hard parts",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add chopped clams, seasonings, and wine",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook eight minutes, add soft part of clams, and cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook two minutes, then add egg yolks slightly beaten, diluted with some of the hot sauce",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-77",
-    "name": "Stage 77: Raised Hominy Muffins",
+    "id": "stage-99",
+    "name": "Stage 99: Swedish Bread",
+    "recipeName": "Swedish Bread",
+    "ingredients": [
+      "Scalded milk",
+      "Yeast cake",
+      "Flour",
+      "Melted butter",
+      "Sugar",
+      "Egg, well beaten",
+      "Salt"
+    ],
+    "decoys": [
+      "Celery",
+      "Extract lemon or",
+      "Hominy",
+      "Mace",
+      "Square melted chocolate",
+      "Graham flour"
+    ],
+    "steps": [
+      {
+        "text": "Add yeast cake to one-half cup milk which has been allowed to cool until lukewarm; as soon as dissolved add one-half cup flour, beat thoroughly, cover, and let rise",
+        "station": "counter"
+      },
+      {
+        "text": "Stir until thoroughly mixed, cover, and again let rise; then add remaining ingredients and one and one-half cups flour",
+        "station": "counter"
+      },
+      {
+        "text": "Toss on a floured cloth and knead, using one-half cup flour, cover, and again let rise",
+        "station": "counter"
+      },
+      {
+        "text": "Shape as Swedish Tea Braid or Tea Ring I or II, and bake",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-100",
+    "name": "Stage 100: Raised Hominy Muffins",
     "recipeName": "Raised Hominy Muffins",
     "ingredients": [
       "Warm cooked hominy",
@@ -1804,24 +3481,35 @@
       "Lukewarm water"
     ],
     "decoys": [
-      "Rum",
-      "Rice",
-      "Soft maple sugar",
-      "Thick White Sauce",
-      "Finely chopped chives",
-      "Vanilla",
-      "Sliced onions"
+      "Curry powder",
+      "Made mustard",
+      "French chestnuts",
+      "Popped corn",
+      "Box strawberries",
+      "Cayenne"
     ],
     "steps": [
-      "Mix first five ingredients; when lukewarm add yeast cake, dissolved in lukewarm water and flour",
-      "Cover, and let rise over night",
-      "In the morning cut down, fill hot buttered gem pans two-thirds full, let rise one hour, and bake in a moderate oven",
-      "Unless cooked hominy is rather stiff more flour will be needed"
+      {
+        "text": "Mix first five ingredients; when lukewarm add yeast cake, dissolved in lukewarm water and flour",
+        "station": "counter"
+      },
+      {
+        "text": "Cover, and let rise over night",
+        "station": "counter"
+      },
+      {
+        "text": "In the morning cut down, fill hot buttered gem pans two-thirds full, let rise one hour, and bake in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Unless cooked hominy is rather stiff more flour will be needed",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-78",
-    "name": "Stage 78: Egg Soufflé",
+    "id": "stage-101",
+    "name": "Stage 101: Egg Soufflé",
     "recipeName": "Egg Soufflé",
     "ingredients": [
       "Butter",
@@ -1832,25 +3520,122 @@
       "Salt"
     ],
     "decoys": [
-      "Fresh stewed tomatoes",
-      "Few grains pepper",
-      "Whole eggs",
-      "Shredded cocoanut",
-      "Grated rind  orange",
-      "Washed figs",
-      "Shortening"
+      "Squares chocolate",
+      "Ginger",
+      "Finely chopped chives",
+      "Orange juice",
+      "Molasses",
+      "Brown sugar"
     ],
     "steps": [
-      "Cream the butter, add flour, and pour on gradually scalded milk and cream",
-      "Cook in double boiler five minutes, and add yolks of eggs, beaten until thick and lemon-colored",
-      "Remove from fire, add seasonings, and fold in whites of eggs beaten until stiff and dry",
-      "Turn into a buttered dish, or buttered individual moulds, set in pan of hot water, and bake in a slow oven until firm",
-      "Egg Soufflé may be served with White Sauce I, highly seasoned with celery salt, paprika, and onion juice"
+      {
+        "text": "Cream the butter, add flour, and pour on gradually scalded milk and cream",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in double boiler five minutes, and add yolks of eggs, beaten until thick and lemon-colored",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, add seasonings, and fold in whites of eggs beaten until stiff and dry",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a buttered dish, or buttered individual moulds, set in pan of hot water, and bake in a slow oven until firm",
+        "station": "oven"
+      },
+      {
+        "text": "Egg Soufflé may be served with White Sauce I, highly seasoned with celery salt, paprika, and onion juice",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-79",
-    "name": "Stage 79: Corn Soup",
+    "id": "stage-102",
+    "name": "Stage 102: Plain Omelet",
+    "recipeName": "Plain Omelet",
+    "ingredients": [
+      "Eggs",
+      "Salt",
+      "Few grains pepper",
+      "Hot water",
+      "Butter"
+    ],
+    "decoys": [
+      "Large flat white turnip",
+      "Fine stale bread crumbs",
+      "Macaroni",
+      "Kumquat juice",
+      "Pineapple syrup",
+      "Thick cream"
+    ],
+    "steps": [
+      {
+        "text": "Separate yolks from whites",
+        "station": "counter"
+      },
+      {
+        "text": "Beat yolks until thick and lemon-colored; add salt, pepper, and hot water",
+        "station": "counter"
+      },
+      {
+        "text": "Beat whites until stiff and dry, cutting and folding them into first mixture until they have taken up mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Heat omelet pan, and butter sides and bottom",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn in mixture, spread evenly, place on range where it will cook slowly, occasionally turning the pan that omelet may brown evenly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Fold, and turn on hot platter, and pour around one and one-half cups Thin White Sauce",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-103",
+    "name": "Stage 103: Cream of Lima Bean Soup",
+    "recipeName": "Cream of Lima Bean Soup",
+    "ingredients": [
+      "Dried lima beans",
+      "Cold water",
+      "Onion",
+      "Carrot",
+      "Cream or milk",
+      "Butter",
+      "Flour",
+      "Salt"
+    ],
+    "decoys": [
+      "Baking power",
+      "Cold boiled halibut",
+      "Cloves",
+      "Slight grating nutmeg",
+      "Shortening, melted",
+      "Chicken"
+    ],
+    "steps": [
+      {
+        "text": "Soak beans over night; in the morning drain and add cold water; cook until soft, and rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cut vegetables in small cubes, and cook five minutes in half the butter; remove vegetables, add flour, salt, and pepper, and stir into boiling soup",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add cream, reheat, strain, and add remaining butter in small pieces",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-104",
+    "name": "Stage 104: Corn Soup",
     "recipeName": "Corn Soup",
     "ingredients": [
       "Corn",
@@ -1862,82 +3647,161 @@
       "Salt"
     ],
     "decoys": [
-      "Ginger",
-      "Marshmallows",
-      "Fine stale bread crumbs",
-      "Highly seasoned",
-      "Macaroni",
-      "Clams",
-      "Cream of tartar"
-    ],
-    "steps": [
-      "Chop the corn, add water, and simmer twenty minutes; rub through a sieve",
-      "Scald milk with onion, remove onion, and add milk to corn",
-      "Bind with butter and flour cooked together",
-      "Add salt and pepper"
-    ]
-  },
-  {
-    "id": "stage-80",
-    "name": "Stage 80: Brown Sauce II (Espagnole)",
-    "recipeName": "Brown Sauce II (Espagnole)",
-    "ingredients": [
-      "Butter",
-      "Carrot",
-      "Onion",
-      "Bay leaf",
-      "Thyme",
-      "Parsley",
-      "Peppercorns",
-      "Flour",
-      "Brown Stock"
-    ],
-    "decoys": [
-      "Mixed mustard",
-      "Brown sugar",
-      "Chopped parsley",
-      "Whole eggs",
-      "Fine stale bread crumbs",
-      "Egg whites",
-      "Washed figs"
-    ],
-    "steps": [
-      "Cook butter with carrot, onion, bay leaf, thyme, parsley, and peppercorns, until brown, stirring constantly, care being taken that butter is not allowed to burn; add flour, and when well browned, add stock gradually",
-      "Bring to boiling-point, strain, and season with salt and pepper"
-    ]
-  },
-  {
-    "id": "stage-81",
-    "name": "Stage 81: Kumquat Jelly",
-    "recipeName": "Kumquat Jelly",
-    "ingredients": [
-      "Kumquat juice",
-      "Sugar",
-      "Sauterne",
-      "Orange Curaçoa",
-      "Granulated gelatine",
-      "Cold water"
-    ],
-    "decoys": [
-      "Bananas sliced",
-      "Shredded almonds",
       "Sugar or",
-      "Marrowfat peas",
-      "Salt and pepper",
-      "Extract lemon or",
-      "Arrowroot"
+      "Tomatoes",
+      "Sour apples",
+      "Paprika",
+      "Pineapple syrup",
+      "Confectioners’ sugar"
     ],
     "steps": [
-      "Wipe three-fourths box kumquats, cut in slices, add cold water to cover, bring slowly to boiling-point, and cook slowly one-half hour; then strain; there should be one and one-half cups juice",
-      "Add sugar, wine, and curaçoa",
-      "Soak gelatine in cold water, and add to first mixture heated to boiling-point; then add salt",
-      "Strain, turn into individual mould, and chill",
-      "Remove to serving dish, and garnish with halves of kumquats, cooked in syrup until soft, drained, and rolled in sugar"
+      {
+        "text": "Chop the corn, add water, and simmer twenty minutes; rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Scald milk with onion, remove onion, and add milk to corn",
+        "station": "stovetop"
+      },
+      {
+        "text": "Bind with butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add salt and pepper",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-82",
-    "name": "Stage 82: Burnt Walnut Bisque",
+    "id": "stage-105",
+    "name": "Stage 105: Chicken Curry",
+    "recipeName": "Chicken Curry",
+    "ingredients": [
+      "Chicken",
+      "Butter",
+      "Onions",
+      "Curry powder",
+      "Salt"
+    ],
+    "decoys": [
+      "Clams",
+      "Sugar",
+      "Cream",
+      "Egg",
+      "Egg whites",
+      "Confectioners’ sugar"
+    ],
+    "steps": [
+      {
+        "text": "Clean, dress, and cut chicken in pieces for serving",
+        "station": "counter"
+      },
+      {
+        "text": "Put butter in a hot frying-pan, add chicken, and cook ten minutes; then add liver and gizzard and cook ten minutes longer",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cut onions in thin slices, and add to chicken with curry powder and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Add enough boiling water to cover, and simmer until chicken is tender",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove chicken; strain, and thicken liquor with flour diluted with enough cold water to pour easily",
+        "station": "counter"
+      },
+      {
+        "text": "Pour gravy over chicken, and serve with a border of rice or Turkish Pilaf",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-106",
+    "name": "Stage 106: Newton Tapioca",
+    "recipeName": "Newton Tapioca",
+    "ingredients": [
+      "Pearl tapioca",
+      "Scalded milk",
+      "Indian meal",
+      "Molasses",
+      "Butter",
+      "Salt"
+    ],
+    "decoys": [
+      "Pearl or Minute Tapioca",
+      "Granulated gelatin",
+      "Whole eggs",
+      "Cream of tartar",
+      "Shrimps",
+      "Shredded cocoanut"
+    ],
+    "steps": [
+      {
+        "text": "Soak tapioca two hours in cold water to cover",
+        "station": "counter"
+      },
+      {
+        "text": "Pour scalded milk over Indian meal, molasses, butter, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Cook in double boiler until mixture thickens",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add tapioca drained from water, turn into buttered pudding-dish, and pour over remaining milk, but do not stir",
+        "station": "counter"
+      },
+      {
+        "text": "Bake one and one-fourth hours in a slow oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-107",
+    "name": "Stage 107: Orange Charlotte",
+    "recipeName": "Orange Charlotte",
+    "ingredients": [
+      "Box gelatine or",
+      "Granulated gelatine",
+      "Cold water",
+      "Boiling water",
+      "Sugar",
+      "Lemon juice",
+      "Orange juice and pulp",
+      "Egg whites"
+    ],
+    "decoys": [
+      "Ground coffee",
+      "Prunes",
+      "Grated horseradish",
+      "Small potatoes",
+      "Ginger",
+      "Powdered sugar"
+    ],
+    "steps": [
+      {
+        "text": "Soak gelatine in cold water, dissolve in boiling water, strain, and add sugar, lemon juice, orange juice, and pulp",
+        "station": "stovetop"
+      },
+      {
+        "text": "Chill in pan of ice-water; when quite thick, beat with wire spoon or whisk until frothy, then add whites of eggs beaten stiff, and fold in cream",
+        "station": "counter"
+      },
+      {
+        "text": "Line a mould with sections of oranges, turn in mixture, smooth evenly, and chill",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-108",
+    "name": "Stage 108: Burnt Walnut Bisque",
     "recipeName": "Burnt Walnut Bisque",
     "ingredients": [
       "Scalded milk",
@@ -1948,25 +3812,83 @@
       "Vanilla"
     ],
     "decoys": [
-      "Oysters",
-      "Washed figs",
-      "Cream",
-      "Canton ginger",
-      "Brown Stock",
-      "Baking power",
-      "Flour"
+      "Mustard",
+      "Sauterne",
+      "Grated horseradish",
+      "Thick cream",
+      "Worcestershire Sauce",
+      "Chopped salted almonds"
     ],
     "steps": [
-      "Make custard of milk, eggs, one-third of the sugar, and salt",
-      "Caramelize remaining sugar, add nut meats, and turn into a slightly buttered pan",
-      "Cool, pound, and pass through a purée strainer",
-      "Add to custard, cool, then add one cup heavy cream, beaten until stiff, and vanilla",
-      "Freeze and mould"
+      {
+        "text": "Make custard of milk, eggs, one-third of the sugar, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Caramelize remaining sugar, add nut meats, and turn into a slightly buttered pan",
+        "station": "counter"
+      },
+      {
+        "text": "Cool, pound, and pass through a purée strainer",
+        "station": "counter"
+      },
+      {
+        "text": "Add to custard, cool, then add one cup heavy cream, beaten until stiff, and vanilla",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze and mould",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-83",
-    "name": "Stage 83: Orange Delicious",
+    "id": "stage-109",
+    "name": "Stage 109: Nesselrode Pudding",
+    "recipeName": "Nesselrode Pudding",
+    "ingredients": [
+      "Milk",
+      "Sugar",
+      "Egg yolks",
+      "Salt",
+      "Thin cream",
+      "Pineapple syrup"
+    ],
+    "decoys": [
+      "Coffee infusion",
+      "Squares chocolate",
+      "Corn meal",
+      "Stale bread crumbs",
+      "Egg whites",
+      "Anchovy essence",
+      "Mutton"
+    ],
+    "steps": [
+      {
+        "text": "Make custard of first four ingredients, strain, cool, add cream, pineapple syrup, and chestnuts; then freeze",
+        "station": "stovetop"
+      },
+      {
+        "text": "To prepare chestnuts, shell, cook in boiling water until soft, and force through a strainer",
+        "station": "stovetop"
+      },
+      {
+        "text": "Line a two-quart melon mould with part of mixture; to remainder add one-half cup candied fruit cut in small pieces, one-quarter cup Sultana raisins, and eight chestnuts broken in pieces, first soaked several hours in Maraschino syrup",
+        "station": "counter"
+      },
+      {
+        "text": "Fill mould, cover, pack in salt and ice, and let stand two hours",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with whipped cream, sweetened and flavored with Maraschino syrup",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-110",
+    "name": "Stage 110: Orange Delicious",
     "recipeName": "Orange Delicious",
     "ingredients": [
       "Sugar",
@@ -1977,83 +3899,169 @@
       "Heavy cream"
     ],
     "decoys": [
-      "Porto Rico molasses",
-      "Grated rind  orange",
-      "Clove",
-      "Figs, finely chopped",
-      "Shredded pineapple",
-      "Rolled Oats",
-      "Grated mild cheese"
-    ],
-    "steps": [
-      "Boil sugar and water eight minutes, then add orange juice",
-      "Scald cream, add yolks of eggs, and cook over hot water until mixture thickens",
-      "Cool, add to first mixture with heavy cream beaten stiff",
-      "Freeze; when nearly frozen, add orange peel",
-      "Line a melon mould with Orange Ice, fill with Orange Delicious, pack in salt and ice, and let stand one and one-half hours"
-    ]
-  },
-  {
-    "id": "stage-84",
-    "name": "Stage 84: Cambridge Gingerbread",
-    "recipeName": "Cambridge Gingerbread",
-    "ingredients": [
-      "Butter",
-      "Boiling water",
-      "Molasses",
-      "Egg",
-      "Flour",
-      "Soda",
-      "Salt",
-      "Cinnamon",
-      "Ginger"
-    ],
-    "decoys": [
-      "Peaches",
-      "Cold cooked oatmeal",
-      "Onions",
-      "White Sauce II",
-      "Marshmallows",
-      "Whites two eggs",
-      "Grated nutmeg"
-    ],
-    "steps": [
-      "Melt butter in water, add molasses, egg well beaten, and dry ingredients mixed and sifted",
-      "Bake in a buttered shallow pan"
-    ]
-  },
-  {
-    "id": "stage-85",
-    "name": "Stage 85: Ginger Snaps",
-    "recipeName": "Ginger Snaps",
-    "ingredients": [
-      "Molasses",
-      "Shortening",
-      "Flour",
-      "Soda",
-      "Ginger"
-    ],
-    "decoys": [
-      "Velouté Sauce",
-      "Sliced apples",
-      "Cold milk",
-      "Indian meal",
-      "Granulated gelatine",
-      "Yvette Cordial",
+      "Soft maple sugar",
+      "Highly seasoned",
+      "Hominy",
+      "Prunes",
+      "Corn-starch",
+      "Small bunch violets",
       "Cinnamon"
     ],
     "steps": [
-      "Heat molasses to boiling-point and pour over shortening",
-      "Add dry ingredients mixed and sifted",
-      "Toss one-fourth of mixture on a floured board and roll as thinly as possible; shape with a small round cutter, first dipped in flour",
-      "Place near together on a buttered sheet and bake in a moderate oven",
-      "Gather up the trimmings and roll with another portion of dough",
-      "During rolling, the bowl containing mixture should be kept in a cool place, or it will be necessary to add more flour to dough, which makes cookies hard rather than crisp and short"
+      {
+        "text": "Boil sugar and water eight minutes, then add orange juice",
+        "station": "stovetop"
+      },
+      {
+        "text": "Scald cream, add yolks of eggs, and cook over hot water until mixture thickens",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool, add to first mixture with heavy cream beaten stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze; when nearly frozen, add orange peel",
+        "station": "stovetop"
+      },
+      {
+        "text": "Line a melon mould with Orange Ice, fill with Orange Delicious, pack in salt and ice, and let stand one and one-half hours",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-86",
-    "name": "Stage 86: Cream Cake",
+    "id": "stage-111",
+    "name": "Stage 111: Soft Molasses Gingerbread",
+    "recipeName": "Soft Molasses Gingerbread",
+    "ingredients": [
+      "Molasses",
+      "Butter",
+      "Soda",
+      "Sour milk",
+      "Egg",
+      "Flour",
+      "Ginger"
+    ],
+    "decoys": [
+      "Slight grating nutmeg",
+      "Baker’s chocolate",
+      "Cream or milk",
+      "Clams",
+      "Cold milk",
+      "Chopped walnut meats",
+      "Shrimps"
+    ],
+    "steps": [
+      {
+        "text": "Put butter and molasses in saucepan and cook until boiling-point is reached",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove from fire, add soda, and beat vigorously",
+        "station": "counter"
+      },
+      {
+        "text": "Then add milk, egg well beaten, and remaining ingredients mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Bake fifteen minutes in buttered small tin pans, having pans two-thirds filled with mixture",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-112",
+    "name": "Stage 112: Hard Sugar Gingerbread",
+    "recipeName": "Hard Sugar Gingerbread",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Milk",
+      "Flour",
+      "Baking powder",
+      "Salt"
+    ],
+    "decoys": [
+      "Sugar or",
+      "Few grains salt",
+      "White Stock III",
+      "Tumbler currant jelly",
+      "Warm cooked hominy",
+      "Sauterne",
+      "Melted butter"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, milk, and dry ingredients mixed and sifted",
+        "station": "counter"
+      },
+      {
+        "text": "Put some of mixture on an inverted dripping-pan and roll as thinly as possible to cover pan",
+        "station": "counter"
+      },
+      {
+        "text": "Mark dough with a coarse grater",
+        "station": "counter"
+      },
+      {
+        "text": "Sprinkle with sugar and bake in a moderate oven",
+        "station": "oven"
+      },
+      {
+        "text": "Before removing from pan, cut in strips four and one-half inches long by one and one-half inches wide",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-113",
+    "name": "Stage 113: Soft Molasses Cookies",
+    "recipeName": "Soft Molasses Cookies",
+    "ingredients": [
+      "Molasses",
+      "Soda",
+      "Sour milk",
+      "Shortening, melted",
+      "Ginger",
+      "Salt"
+    ],
+    "decoys": [
+      "Shortening",
+      "Wheat Germ",
+      "French chestnuts",
+      "Dried split peas",
+      "Velouté Sauce",
+      "Anchovy essence",
+      "Sour apples"
+    ],
+    "steps": [
+      {
+        "text": "Add soda to molasses and beat thoroughly; add milk, shortening, ginger, salt, and flour",
+        "station": "counter"
+      },
+      {
+        "text": "Let stand several hours in a cold place to thoroughly chill",
+        "station": "counter"
+      },
+      {
+        "text": "Toss one-half mixture at a time on slightly floured board and roll lightly to one-fourth inch thickness",
+        "station": "counter"
+      },
+      {
+        "text": "Shape with a round cutter, first dipped in flour",
+        "station": "counter"
+      },
+      {
+        "text": "Bake on a buttered sheet",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-114",
+    "name": "Stage 114: Cream Cake",
     "recipeName": "Cream Cake",
     "ingredients": [
       "Eggs",
@@ -2066,23 +4074,70 @@
       "Mace"
     ],
     "decoys": [
-      "Potatoes",
-      "Lukewarm water",
-      "Chopped beef",
-      "Soft butter",
-      "French chestnuts",
-      "Cold flaked salmon",
-      "Wine"
+      "Velouté Sauce",
+      "Farina",
+      "Milk",
+      "Marrowfat peas",
+      "Kumquat juice",
+      "Bay leaf",
+      "Pineapple syrup"
     ],
     "steps": [
-      "Put unbeaten eggs in a bowl, add sugar and cream, and beat vigorously",
-      "Mix and sift remaining ingredients, then add to first mixture",
-      "Bake thirty minutes in a shallow cake pan"
+      {
+        "text": "Put unbeaten eggs in a bowl, add sugar and cream, and beat vigorously",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift remaining ingredients, then add to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Bake thirty minutes in a shallow cake pan",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-87",
-    "name": "Stage 87: Chocolate Sponge",
+    "id": "stage-115",
+    "name": "Stage 115: Currant Cake",
+    "recipeName": "Currant Cake",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Egg yolks",
+      "Milk",
+      "Flour",
+      "Baking powder",
+      "Currants mixed with"
+    ],
+    "decoys": [
+      "Cream",
+      "Cinnamon",
+      "Boiling water",
+      "Salt",
+      "Cayenne",
+      "Highly seasoned",
+      "Box gelatine (scant) or"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, and eggs and egg yolk well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Then add milk, flour mixed and sifted with baking powder, and currants",
+        "station": "counter"
+      },
+      {
+        "text": "Bake forty minutes in buttered and floured cake pan",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-116",
+    "name": "Stage 116: Chocolate Sponge",
     "recipeName": "Chocolate Sponge",
     "ingredients": [
       "Butter",
@@ -2096,22 +4151,122 @@
     ],
     "decoys": [
       "Ground coffee",
-      "Cloves",
-      "Thick White Sauce",
-      "Sliced onions",
-      "Scalded milk",
-      "Few grains cayenne",
-      "Finely chopped parsley"
+      "Ice",
+      "Mustard",
+      "Sour apples",
+      "Oysters",
+      "Cracker crumbs",
+      "Anchovy essence"
     ],
     "steps": [
-      "Cream the butter; add cocoa, yolks of eggs well beaten, sugar mixed with cinnamon and clove, and water",
-      "Beat the whites of eggs, and add to first mixture alternately with flour mixed and sifted with baking powder",
-      "Bake in small tins from fifteen to twenty minutes"
+      {
+        "text": "Cream the butter; add cocoa, yolks of eggs well beaten, sugar mixed with cinnamon and clove, and water",
+        "station": "counter"
+      },
+      {
+        "text": "Beat the whites of eggs, and add to first mixture alternately with flour mixed and sifted with baking powder",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in small tins from fifteen to twenty minutes",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-88",
-    "name": "Stage 88: Lobster à la Delmonico",
+    "id": "stage-117",
+    "name": "Stage 117: Buttercups",
+    "recipeName": "Buttercups",
+    "ingredients": [
+      "Molasses",
+      "Sugar",
+      "Boiling water",
+      "Butter",
+      "Cream of tartar"
+    ],
+    "decoys": [
+      "Shortening",
+      "Baker’s chocolate",
+      "Grated nutmeg",
+      "Milk",
+      "Farina",
+      "Whites two eggs",
+      "Paprika"
+    ],
+    "steps": [
+      {
+        "text": "Boil ingredients (except fondant) until, when tried in cold water, a firm ball may be formed in the fingers, not stirring until the last few minutes of cooking",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour on a buttered platter, and when cool enough to handle, pull until light-colored",
+        "station": "counter"
+      },
+      {
+        "text": "Shape on a floured board, having strip wide enough to enclose a roll of fondant one inch in diameter",
+        "station": "counter"
+      },
+      {
+        "text": "Place fondant on candy, bring edges of candy together, and press firmly over fondant",
+        "station": "counter"
+      },
+      {
+        "text": "With both hands pull candy into a long strip",
+        "station": "counter"
+      },
+      {
+        "text": "Cut in small pieces; each piece will consist of fondant encircled with molasses candy",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-118",
+    "name": "Stage 118: Oysters à la Thorndike",
+    "recipeName": "Oysters à la Thorndike",
+    "ingredients": [
+      "Oysters",
+      "Butter",
+      "Salt",
+      "Few grains cayenne",
+      "Slight grating nutmeg",
+      "Thin cream"
+    ],
+    "decoys": [
+      "Orange juice and pulp",
+      "Squares chocolate",
+      "Cold water",
+      "Cracker crumbs",
+      "Lukewarm milk",
+      "Marrowfat peas",
+      "Yellow ginger"
+    ],
+    "steps": [
+      {
+        "text": "Clean and drain oysters",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add oysters, and cook until oysters are plump",
+        "station": "stovetop"
+      },
+      {
+        "text": "Then add seasonings, cream, and egg yolks slightly beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Cook until sauce is slightly thickened, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve on zephyrettes or pieces of toasted bread",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-119",
+    "name": "Stage 119: Lobster à la Delmonico",
     "recipeName": "Lobster à la Delmonico",
     "ingredients": [
       "Lobster",
@@ -2124,23 +4279,125 @@
       "Egg yolks"
     ],
     "decoys": [
-      "Water",
-      "White corn meal",
-      "Fine oatmeal",
-      "Grated horseradish",
-      "Paprika",
-      "Pounded cardamon seeds",
-      "Ginger"
+      "Marshmallows",
+      "Large flat white turnip",
+      "White Sauce II",
+      "Few drops onion juice",
+      "Grated rind  orange",
+      "Egg",
+      "Cinnamon"
     ],
     "steps": [
-      "Remove lobster meat from shell and cut in small cubes",
-      "Melt butter, add flour, seasonings, and cream gradually",
-      "Add lobster, and when heated, add egg yolks and wine"
+      {
+        "text": "Remove lobster meat from shell and cut in small cubes",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add flour, seasonings, and cream gradually",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add lobster, and when heated, add egg yolks and wine",
+        "station": "stovetop"
+      }
     ]
   },
   {
-    "id": "stage-89",
-    "name": "Stage 89: Pea Soup",
+    "id": "stage-120",
+    "name": "Stage 120: Fruit Short Cake",
+    "recipeName": "Fruit Short Cake",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Egg",
+      "Milk",
+      "Flour",
+      "Baking powder"
+    ],
+    "decoys": [
+      "Lukewarm water",
+      "Shortening, melted",
+      "Confectioners’ sugar",
+      "Sugar or",
+      "Parsley",
+      "Farina",
+      "Grated mild cheese"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, and egg well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour, baking powder, and salt, adding alternately with milk to first mixture",
+        "station": "counter"
+      },
+      {
+        "text": "Beat thoroughly, and bake in a buttered round tin",
+        "station": "oven"
+      },
+      {
+        "text": "Cool, spread thickly with sweetened fruit, and cover with Cream Sauce I or II",
+        "station": "counter"
+      },
+      {
+        "text": "Fresh strawberries, peaches, apricots, raspberries, or canned quince or pineapple may be used",
+        "station": "counter"
+      },
+      {
+        "text": "Dilute cream for Cream Sauce with fruit syrup in place of milk",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-121",
+    "name": "Stage 121: Halibut Soup",
+    "recipeName": "Halibut Soup",
+    "ingredients": [
+      "Cold boiled halibut",
+      "Milk",
+      "Onion",
+      "Blade of mace",
+      "Butter",
+      "Flour",
+      "Salt"
+    ],
+    "decoys": [
+      "Made mustard",
+      "Cold flaked salmon",
+      "Small potatoes",
+      "Heavy cream",
+      "Finely chopped chives",
+      "Figs, finely chopped",
+      "Few grains cayenne"
+    ],
+    "steps": [
+      {
+        "text": "Rub fish through a sieve",
+        "station": "counter"
+      },
+      {
+        "text": "Scald milk with onion and mace",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove seasonings, and add fish",
+        "station": "counter"
+      },
+      {
+        "text": "Bind with half the butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add salt, pepper, and the remaining butter in small pieces",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-122",
+    "name": "Stage 122: Pea Soup",
     "recipeName": "Pea Soup",
     "ingredients": [
       "Marrowfat peas",
@@ -2153,24 +4410,78 @@
       "Salt"
     ],
     "decoys": [
-      "Jordan almonds",
-      "Rye meal",
-      "Seeded raisins",
-      "White Sauce II",
-      "Molasses",
-      "Indian meal",
-      "Madeira wine"
+      "Prepared powdered cocoa",
+      "Rolled oats",
+      "Highly seasoned",
+      "Wine",
+      "Soft maple sugar",
+      "Graham flour",
+      "Heavy cream"
     ],
     "steps": [
-      "Drain peas from their liquor, add sugar and cold water, and simmer twenty minutes",
-      "Rub through a sieve, reheat, and thicken with butter and flour cooked together",
-      "Scald milk with onion, remove onion, and add milk to pea mixture, season with salt and pepper",
-      "Peas too old to serve as a vegetable may be utilized for soups"
+      {
+        "text": "Drain peas from their liquor, add sugar and cold water, and simmer twenty minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Rub through a sieve, reheat, and thicken with butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Scald milk with onion, remove onion, and add milk to pea mixture, season with salt and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Peas too old to serve as a vegetable may be utilized for soups",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-90",
-    "name": "Stage 90: Washington Terrapin",
+    "id": "stage-123",
+    "name": "Stage 123: Split Pea Soup",
+    "recipeName": "Split Pea Soup",
+    "ingredients": [
+      "Dried split peas",
+      "Cold water",
+      "Milk",
+      "Onion",
+      "Butter",
+      "Flour",
+      "Salt",
+      "Pepper"
+    ],
+    "decoys": [
+      "Confectioners’ sugar",
+      "Highly seasoned",
+      "Junket Tablets",
+      "Pearl or Minute Tapioca",
+      "Rice",
+      "Mustard",
+      "Sugar or"
+    ],
+    "steps": [
+      {
+        "text": "Pick over peas and soak several hours, drain, add cold water, pork, and onion",
+        "station": "counter"
+      },
+      {
+        "text": "Simmer three or four hours, or until soft; rub through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add butter and flour cooked together, salt, and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Dilute with milk, adding more if necessary",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-124",
+    "name": "Stage 124: Washington Terrapin",
     "recipeName": "Washington Terrapin",
     "ingredients": [
       "Terrapin",
@@ -2183,24 +4494,75 @@
       "Eggs"
     ],
     "decoys": [
-      "Yeast cakes",
-      "Sherry or Madeira wine",
-      "Hot liquid",
-      "Lobster",
-      "Grated nutmeg",
-      "Graham flour",
-      "Cranberries"
+      "Prunes",
+      "Milk or Chicken Stock",
+      "Washed figs",
+      "Cracker crumbs",
+      "Whites two eggs",
+      "Made mustard",
+      "Pepper"
     ],
     "steps": [
-      "Melt the butter, add flour, and pour on slowly the cream",
-      "Add terrapin meat with bones cut in pieces, entrails cut smaller, liver separated in pieces, eggs of terrapin, and mushrooms",
-      "Season with salt and cayenne",
-      "Just before serving, add eggs slightly beaten and two tablespoons Sherry wine"
+      {
+        "text": "Melt the butter, add flour, and pour on slowly the cream",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add terrapin meat with bones cut in pieces, entrails cut smaller, liver separated in pieces, eggs of terrapin, and mushrooms",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt and cayenne",
+        "station": "counter"
+      },
+      {
+        "text": "Just before serving, add eggs slightly beaten and two tablespoons Sherry wine",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-91",
-    "name": "Stage 91: Cherry Fritters",
+    "id": "stage-125",
+    "name": "Stage 125: Olive and Almond Sauce",
+    "recipeName": "Olive and Almond Sauce",
+    "ingredients": [
+      "Butter",
+      "Flour",
+      "White Stock",
+      "Cream",
+      "Shredded almonds",
+      "Beef extract",
+      "Olives",
+      "Lemon juice",
+      "Salt"
+    ],
+    "decoys": [
+      "White corn meal",
+      "Sour milk",
+      "Melted butter",
+      "Sour apples",
+      "Yeast cake",
+      "Chopped mushrooms",
+      "Anchovy essence"
+    ],
+    "steps": [
+      {
+        "text": "Melt butter, add flour, and pour on gradually White Stock",
+        "station": "stovetop"
+      },
+      {
+        "text": "Just before serving add remaining ingredients",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with boiled or steamed fish",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-126",
+    "name": "Stage 126: Cherry Fritters",
     "recipeName": "Cherry Fritters",
     "ingredients": [
       "Scalded milk",
@@ -2212,25 +4574,88 @@
       "Egg yolks"
     ],
     "decoys": [
-      "Chicken stock",
-      "Prepared powdered cocoa",
-      "Yeast cake dissolved in",
-      "Parsley",
-      "Shredded cocoanut",
-      "Whole eggs",
-      "Finely chopped parsley"
+      "Few drops onion juice",
+      "Ground coffee",
+      "Pounded cardamon seeds",
+      "Wheat Germ",
+      "Shortening, melted",
+      "Currants mixed with",
+      "Sherry"
     ],
     "steps": [
-      "Mix corn-starch, flour, sugar, and salt",
-      "Dilute with cold milk and add beaten yolks; then add gradually to scalded milk and cook fifteen minutes in double boiler",
-      "Add cherries, pour into a buttered shallow tin, and cool",
-      "Turn on a board, cut in squares, dip in flour, egg, and crumbs, fry in deep fat, and drain",
-      "Serve with Maraschino Sauce"
+      {
+        "text": "Mix corn-starch, flour, sugar, and salt",
+        "station": "counter"
+      },
+      {
+        "text": "Dilute with cold milk and add beaten yolks; then add gradually to scalded milk and cook fifteen minutes in double boiler",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add cherries, pour into a buttered shallow tin, and cool",
+        "station": "counter"
+      },
+      {
+        "text": "Turn on a board, cut in squares, dip in flour, egg, and crumbs, fry in deep fat, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Serve with Maraschino Sauce",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-92",
-    "name": "Stage 92: Mock Crabs",
+    "id": "stage-127",
+    "name": "Stage 127: Gnocchi à la Romaine",
+    "recipeName": "Gnocchi à la Romaine",
+    "ingredients": [
+      "Butter",
+      "Flour",
+      "Corn-starch",
+      "Salt",
+      "Scalded milk",
+      "Egg yolks"
+    ],
+    "decoys": [
+      "Brown Stock",
+      "Mustard",
+      "White corn meal",
+      "Grated horseradish",
+      "Wine",
+      "Ground coffee",
+      "Sherry"
+    ],
+    "steps": [
+      {
+        "text": "Melt butter, and when bubbling, add flour, corn-starch, salt, and milk, gradually",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook three minutes, stirring constantly",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add yolks of eggs slightly beaten, and one-half cup cheese",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered shallow pan, and cool",
+        "station": "counter"
+      },
+      {
+        "text": "Turn on a board, cut in squares, diamonds, or strips",
+        "station": "counter"
+      },
+      {
+        "text": "Place on a platter, sprinkle with remaining cheese, and brown in oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-128",
+    "name": "Stage 128: Mock Crabs",
     "recipeName": "Mock Crabs",
     "ingredients": [
       "Butter",
@@ -2244,55 +4669,74 @@
       "Worcestershire Sauce"
     ],
     "decoys": [
-      "Mace",
+      "Brandy",
+      "Rice or",
+      "Pounded cardamon seeds",
       "Warm wheat mush",
-      "Granulated gelatin",
-      "Rye flour",
-      "Porto Rico molasses",
-      "Chopped lobster meat",
-      "Pearl tapioca",
-      "Chicken stock"
+      "Bottles ginger ale",
+      "Soda",
+      "Lukewarm milk"
     ],
     "steps": [
-      "Melt butter, add flour mixed with dry seasonings, and pour on gradually the milk",
-      "Add Kornlet, egg slightly beaten, and Worcestershire Sauce",
-      "Pour into a buttered baking-dish, cover with crumbs, and bake until crumbs are brown"
+      {
+        "text": "Melt butter, add flour mixed with dry seasonings, and pour on gradually the milk",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add Kornlet, egg slightly beaten, and Worcestershire Sauce",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered baking-dish, cover with crumbs, and bake until crumbs are brown",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-93",
-    "name": "Stage 93: Macaroon Cream",
-    "recipeName": "Macaroon Cream",
+    "id": "stage-129",
+    "name": "Stage 129: Spanish Cream",
+    "recipeName": "Spanish Cream",
     "ingredients": [
       "Box gelatine or",
-      "Granulated gelatine",
-      "Cold water",
-      "Scalded milk",
+      "Granulated gelatin",
+      "Milk",
+      "Egg whites",
       "Egg yolks",
       "Sugar",
       "Salt",
-      "Pounded macaroons",
-      "Vanilla"
+      "Vanilla or"
     ],
     "decoys": [
-      "Lukewarm water",
-      "Marshmallows",
-      "Washed figs",
-      "Shrimps",
-      "Chopped walnut meats",
-      "Dried lima beans",
-      "Hot liquid",
-      "Cabbage"
+      "Few grains cinnamon",
+      "Sherry",
+      "White corn meal",
+      "Beef extract",
+      "Indian meal",
+      "Tomatoes",
+      "Dried lima beans"
     ],
     "steps": [
-      "Soak gelatine in cold water",
-      "Make custard of milk, yolks of eggs, sugar, and salt; add gelatine, and strain into pan set in ice-water",
-      "Add macaroons and flavoring, stirring until it begins to thicken; then add whites of eggs beaten stiff, mould, chill, and serve garnished with macaroons"
+      {
+        "text": "Scald milk with gelatine, add sugar, pour slowly on yolks of eggs slightly beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Return to double boiler and cook until thickened, stirring constantly; remove from range, add salt, flavoring, and whites of eggs beaten stiff",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn into individual moulds, first dipped in cold water, and chill; serve with cream",
+        "station": "counter"
+      },
+      {
+        "text": "More gelatine will be required if large moulds are used",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-94",
-    "name": "Stage 94: Jelly Jumbles",
+    "id": "stage-130",
+    "name": "Stage 130: Jelly Jumbles",
     "recipeName": "Jelly Jumbles",
     "ingredients": [
       "Butter",
@@ -2304,89 +4748,124 @@
       "Flour"
     ],
     "decoys": [
-      "Cranberries",
-      "Figs, finely chopped",
-      "Brandy",
-      "Kumquat juice",
-      "Chopped salted almonds",
-      "Sauterne",
-      "Rum",
-      "White Stock"
-    ],
-    "steps": [
-      "Cream the butter, add sugar gradually, egg well beaten, soda mixed with milk, salt and flour to make a soft dough",
-      "Chill and shape, using a round cutter",
-      "On the centres of one-half the pieces put currant jelly",
-      "Make three small openings in remaining halves, using a thimble, and put pieces together",
-      "Press edges slightly, and bake in a rather hot oven, that jumbles may keep in good shape"
-    ]
-  },
-  {
-    "id": "stage-95",
-    "name": "Stage 95: Shrimps à la Newburg",
-    "recipeName": "Shrimps à la Newburg",
-    "ingredients": [
-      "Shrimps",
-      "Butter",
-      "Salt",
-      "Few grains cayenne",
-      "Lemon juice",
-      "Flour",
-      "Cream",
-      "Egg yolks"
-    ],
-    "decoys": [
-      "Squash",
-      "Rolled Oats",
-      "Potatoes",
-      "Salt and paprika",
+      "Few grains pepper",
       "Washed figs",
-      "Extract lemon or",
-      "Lukewarm water",
-      "Egg well beaten"
+      "Tomatoes",
+      "Large flat white turnip",
+      "Sour apples",
+      "Sugar or",
+      "Thick White Sauce"
     ],
     "steps": [
-      "Clean shrimps and cook three minutes in two tablespoons butter",
-      "Add salt, cayenne, and lemon juice, and cook one minute",
-      "Remove shrimps, and put remaining butter in chafing-dish, add flour and cream; when thickened, add yolks of eggs slightly beaten, shrimps, and wine",
-      "Serve with toast or Puff Paste Points"
+      {
+        "text": "Cream the butter, add sugar gradually, egg well beaten, soda mixed with milk, salt and flour to make a soft dough",
+        "station": "counter"
+      },
+      {
+        "text": "Chill and shape, using a round cutter",
+        "station": "counter"
+      },
+      {
+        "text": "On the centres of one-half the pieces put currant jelly",
+        "station": "counter"
+      },
+      {
+        "text": "Make three small openings in remaining halves, using a thimble, and put pieces together",
+        "station": "counter"
+      },
+      {
+        "text": "Press edges slightly, and bake in a rather hot oven, that jumbles may keep in good shape",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-96",
-    "name": "Stage 96: Split Pea Soup",
-    "recipeName": "Split Pea Soup",
+    "id": "stage-131",
+    "name": "Stage 131: Peanut Cookies",
+    "recipeName": "Peanut Cookies",
     "ingredients": [
-      "Dried split peas",
-      "Cold water",
-      "Milk",
-      "Onion",
       "Butter",
-      "Flour",
+      "Sugar",
+      "Egg",
+      "Baking powder",
       "Salt",
-      "Pepper"
+      "Flour",
+      "Milk",
+      "Finely chopped peanuts"
     ],
     "decoys": [
-      "Chopped parsley",
-      "Cream of tartar",
-      "Vinegar",
-      "Onions",
-      "Granulated gelatin",
-      "Beef extract",
-      "White one egg",
-      "Egg well beaten"
+      "Rolled oats",
+      "Figs, finely chopped",
+      "Confectioners’ sugar",
+      "Sauterne",
+      "Hot water",
+      "Highly seasoned",
+      "Eggs"
     ],
     "steps": [
-      "Pick over peas and soak several hours, drain, add cold water, pork, and onion",
-      "Simmer three or four hours, or until soft; rub through a sieve",
-      "Add butter and flour cooked together, salt, and pepper",
-      "Dilute with milk, adding more if necessary",
-      "The water in which a ham has been cooked may be used; in such case omit salt"
+      {
+        "text": "Cream the butter, add sugar, and egg well beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift baking powder, salt, and flour; add to first mixture; then add milk, peanuts, and lemon juice",
+        "station": "counter"
+      },
+      {
+        "text": "Drop from a teaspoon on an unbuttered sheet one inch apart, and place one-half peanut on top of each",
+        "station": "counter"
+      },
+      {
+        "text": "Bake twelve to fifteen minutes in a slow oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-97",
-    "name": "Stage 97: Oysters à la D’Uxelles",
+    "id": "stage-132",
+    "name": "Stage 132: Velvet Cake",
+    "recipeName": "Velvet Cake",
+    "ingredients": [
+      "Butter",
+      "Sugar",
+      "Egg yolks",
+      "Cold water",
+      "Flour",
+      "Corn-starch",
+      "Baking powder",
+      "Egg whites"
+    ],
+    "decoys": [
+      "Brandy",
+      "Ground coffee",
+      "Shredded almonds",
+      "Worcestershire Sauce",
+      "Sugar or",
+      "Pounded cardamon seeds",
+      "Boiling water"
+    ],
+    "steps": [
+      {
+        "text": "Cream the butter, add sugar gradually, yolks of eggs well beaten, and water",
+        "station": "counter"
+      },
+      {
+        "text": "Mix and sift flour, corn-starch, and baking powder, and add to first mixture; then add whites of eggs beaten until stiff",
+        "station": "counter"
+      },
+      {
+        "text": "After putting in pan, cover with almonds and sprinkle with powdered sugar",
+        "station": "counter"
+      },
+      {
+        "text": "Bake forty minutes in a moderate oven",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-133",
+    "name": "Stage 133: Oysters à la D’Uxelles",
     "recipeName": "Oysters à la D’Uxelles",
     "ingredients": [
       "Oysters",
@@ -2399,26 +4878,265 @@
       "Egg yolk"
     ],
     "decoys": [
-      "Prepared powdered cocoa",
-      "Milk",
-      "Yolks two eggs",
-      "Green Coloring",
-      "Box strawberries",
-      "Cold milk",
-      "Vanilla",
-      "Melted butter"
+      "Macaroni",
+      "White Stock III",
+      "Melted butter",
+      "Sherry",
+      "Grated nutmeg",
+      "Sliced onions",
+      "Cayenne",
+      "Yellow ginger"
     ],
     "steps": [
-      "Clean oysters, heat to boiling-point, and drain",
-      "Reserve liquor and strain through double thickness of cheese-cloth; there should be three-fourths cup",
-      "Cook butter and mushrooms five minutes, add flour, and oyster liquor gradually; then cook three minutes",
-      "Add seasonings, oysters, egg, and Sherry wine",
-      "Serve on zephyrettes or pieces of toasted bread"
+      {
+        "text": "Clean oysters, heat to boiling-point, and drain",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook butter and mushrooms five minutes, add flour, and oyster liquor gradually; then cook three minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add seasonings, oysters, egg, and Sherry wine",
+        "station": "counter"
+      },
+      {
+        "text": "Serve on zephyrettes or pieces of toasted bread",
+        "station": "counter"
+      }
     ]
   },
   {
-    "id": "stage-98",
-    "name": "Stage 98: Coffee Cakes (Brioche)",
+    "id": "stage-134",
+    "name": "Stage 134: Shrimps à la Newburg",
+    "recipeName": "Shrimps à la Newburg",
+    "ingredients": [
+      "Shrimps",
+      "Butter",
+      "Salt",
+      "Few grains cayenne",
+      "Lemon juice",
+      "Flour",
+      "Cream",
+      "Egg yolks"
+    ],
+    "decoys": [
+      "Dried lima beans",
+      "Olives",
+      "Macaroni",
+      "Kumquat juice",
+      "Prepared powdered cocoa",
+      "Chopped lobster meat",
+      "Warm wheat mush",
+      "Shredded cocoanut"
+    ],
+    "steps": [
+      {
+        "text": "Clean shrimps and cook three minutes in two tablespoons butter",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add salt, cayenne, and lemon juice, and cook one minute",
+        "station": "stovetop"
+      },
+      {
+        "text": "Remove shrimps, and put remaining butter in chafing-dish, add flour and cream; when thickened, add yolks of eggs slightly beaten, shrimps, and wine",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with toast or Puff Paste Points",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-135",
+    "name": "Stage 135: Hominy Gems",
+    "recipeName": "Hominy Gems",
+    "ingredients": [
+      "Hominy",
+      "Salt",
+      "Boiling water",
+      "Scalded milk",
+      "Corn meal",
+      "Sugar",
+      "Butter",
+      "Eggs"
+    ],
+    "decoys": [
+      "Orange Curaçoa",
+      "Sour apples",
+      "Yellow ginger",
+      "Pepper",
+      "Rice or",
+      "Water",
+      "Orange juice and pulp",
+      "Cream of tartar"
+    ],
+    "steps": [
+      {
+        "text": "Add hominy mixed with salt to boiling water and let stand until hominy absorbs water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add scalded milk to corn meal, then add sugar and butter",
+        "station": "counter"
+      },
+      {
+        "text": "Combine mixtures, cool slightly, add yolks of eggs beaten until thick, and whites of eggs beaten until stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Sift in baking powder and beat thoroughly",
+        "station": "counter"
+      },
+      {
+        "text": "Bake in hot buttered gem pans",
+        "station": "oven"
+      }
+    ]
+  },
+  {
+    "id": "stage-136",
+    "name": "Stage 136: Russian Sauce",
+    "recipeName": "Russian Sauce",
+    "ingredients": [
+      "Butter",
+      "Flour",
+      "White Stock III",
+      "Salt",
+      "Few grains pepper",
+      "Finely chopped chives",
+      "Made mustard",
+      "Grated horseradish",
+      "Cream"
+    ],
+    "decoys": [
+      "Few grains cinnamon",
+      "Lobster",
+      "Cabbage",
+      "Egg slightly beaten",
+      "Rice",
+      "Sherry",
+      "Melted butter",
+      "Hot water"
+    ],
+    "steps": [
+      {
+        "text": "Melt butter, add flour, and pour on gradually White Stock; then add salt, pepper, mustard, chives, and horseradish",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook two minutes, strain, add cream and lemon juice",
+        "station": "stovetop"
+      },
+      {
+        "text": "Reheat before serving",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with Beef Tenderloins or Hamburg Steaks",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-137",
+    "name": "Stage 137: Tomato Fritters",
+    "recipeName": "Tomato Fritters",
+    "ingredients": [
+      "Tomatoes",
+      "Cloves",
+      "Sugar",
+      "Onion",
+      "Salt",
+      "Few grains cayenne",
+      "Butter",
+      "Corn-starch"
+    ],
+    "decoys": [
+      "Yvette Cordial",
+      "Cream of tartar",
+      "Sauterne",
+      "Cayenne",
+      "Sour milk",
+      "Mace",
+      "Orange juice",
+      "Popped corn"
+    ],
+    "steps": [
+      {
+        "text": "Cook first four ingredients twenty minutes, rub all through a sieve except seeds, and season with salt and pepper",
+        "station": "stovetop"
+      },
+      {
+        "text": "Melt butter, and when bubbling, add corn-starch and tomato gradually; cook two minutes, then add egg slightly beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Pour into a buttered shallow tin, and cool",
+        "station": "counter"
+      },
+      {
+        "text": "Turn on a board, cut in squares, diamonds, or strips",
+        "station": "counter"
+      },
+      {
+        "text": "Roll in crumbs, egg, and crumbs again, fry in deep fat, and drain",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-138",
+    "name": "Stage 138: Lobster à la Newburg",
+    "recipeName": "Lobster à la Newburg",
+    "ingredients": [
+      "Lobster",
+      "Butter",
+      "Salt",
+      "Few grains cayenne",
+      "Slight grating nutmeg",
+      "Sherry",
+      "Brandy",
+      "Thin cream"
+    ],
+    "decoys": [
+      "White Stock III",
+      "Currants",
+      "Few grains pepper",
+      "Rice or",
+      "Cabbage",
+      "Arrowroot",
+      "Water",
+      "Brown sugar"
+    ],
+    "steps": [
+      {
+        "text": "Remove lobster meat from shell and cut in slices",
+        "station": "counter"
+      },
+      {
+        "text": "Melt butter, add lobster, and cook three minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add seasonings and wine, cook one minute, then add cream and yolks of eggs slightly beaten",
+        "station": "stovetop"
+      },
+      {
+        "text": "Stir until thickened",
+        "station": "counter"
+      },
+      {
+        "text": "Serve with toast or Puff Paste Points",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-139",
+    "name": "Stage 139: Coffee Cakes (Brioche)",
     "recipeName": "Coffee Cakes (Brioche)",
     "ingredients": [
       "Scalded milk",
@@ -2432,26 +5150,92 @@
       "Flour"
     ],
     "decoys": [
-      "Heavy cream",
-      "Oranges",
-      "Highly seasoned",
-      "Fine oatmeal",
-      "Mustard",
-      "Washed figs",
-      "Coffee infusion",
-      "Rye meal"
+      "Thick White Sauce",
+      "Yellow ginger",
+      "Thick cream",
+      "Small baker’s stale loaf",
+      "Chopped mushrooms",
+      "Corn meal",
+      "Made mustard",
+      "Curry powder"
     ],
     "steps": [
-      "Cool milk; when lukewarm, add yeast cakes, and when they are dissolved add remaining ingredients, and beat thoroughly with hand ten minutes; let rise six hours",
-      "Keep in ice-box over night; in morning turn on floured board, roll in long rectangular piece one-fourth inch thick; spread with softened butter, fold from sides toward centre to make three layers",
-      "Cut off pieces three-fourths inch wide; cover and let rise",
-      "Take each piece separately in hands and twist from ends in opposite directions, coil and bring ends together at top of cake",
-      "Let rise in pans and bake twenty minutes in a moderate oven; cool and brush over with confectioners’ sugar, moistened with boiling water to spread, and flavored with vanilla"
+      {
+        "text": "Cool milk; when lukewarm, add yeast cakes, and when they are dissolved add remaining ingredients, and beat thoroughly with hand ten minutes; let rise six hours",
+        "station": "counter"
+      },
+      {
+        "text": "Keep in ice-box over night; in morning turn on floured board, roll in long rectangular piece one-fourth inch thick; spread with softened butter, fold from sides toward centre to make three layers",
+        "station": "counter"
+      },
+      {
+        "text": "Cut off pieces three-fourths inch wide; cover and let rise",
+        "station": "counter"
+      },
+      {
+        "text": "Take each piece separately in hands and twist from ends in opposite directions, coil and bring ends together at top of cake",
+        "station": "counter"
+      },
+      {
+        "text": "Let rise in pans and bake twenty minutes in a moderate oven; cool and brush over with confectioners’ sugar, moistened with boiling water to spread, and flavored with vanilla",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-99",
-    "name": "Stage 99: Chocolate Rice Meringue",
+    "id": "stage-140",
+    "name": "Stage 140: Swiss Potato Soup",
+    "recipeName": "Swiss Potato Soup",
+    "ingredients": [
+      "Small potatoes",
+      "Large flat white turnip",
+      "Boiling water",
+      "Scalded milk",
+      "Onion",
+      "Butter",
+      "Flour",
+      "Salt"
+    ],
+    "decoys": [
+      "Sherry or Madeira wine",
+      "Yolks two eggs",
+      "Egg, well beaten",
+      "Anchovy essence",
+      "Few drops onion juice",
+      "Farina",
+      "Made mustard",
+      "Currants"
+    ],
+    "steps": [
+      {
+        "text": "Wash, pare, and cut potatoes in halves",
+        "station": "counter"
+      },
+      {
+        "text": "Wash, pare, and cut turnips in one-quarter inch slices",
+        "station": "counter"
+      },
+      {
+        "text": "Parboil together ten minutes, drain, add onion cut in slices, and three cups boiling water",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook until vegetables are soft; drain, reserving the water to add to vegetables after rubbing them through a sieve",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add milk, reheat, and bind with butter and flour cooked together",
+        "station": "stovetop"
+      },
+      {
+        "text": "Season with salt and pepper",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-141",
+    "name": "Stage 141: Chocolate Rice Meringue",
     "recipeName": "Chocolate Rice Meringue",
     "ingredients": [
       "Milk",
@@ -2465,26 +5249,145 @@
       "Whites two eggs"
     ],
     "decoys": [
-      "Egg well beaten",
-      "Sauterne",
-      "Cream of tartar",
-      "White Sauce II",
-      "Ice",
-      "Currants mixed with",
-      "Corn-starch",
-      "Egg slightly beaten"
+      "Indian meal",
+      "Onion",
+      "Thick cream",
+      "Apricots",
+      "Bottles ginger ale",
+      "Small potatoes",
+      "Box gelatine (scant) or",
+      "Rolled oats"
     ],
     "steps": [
-      "Scald milk, add rice and salt, and cook until rice is soft",
-      "Add butter, sugar, chocolate, vanilla, and raisins",
-      "Cut and fold in the whites of eggs, beaten until stiff, and cream, beaten until stiff",
-      "Pour into a buttered baking-dish, and bake fifteen minutes",
-      "Cover with a meringue made of the whites of three eggs, six tablespoons powdered sugar, and one-half teaspoon vanilla; then brown in a moderate oven"
+      {
+        "text": "Scald milk, add rice and salt, and cook until rice is soft",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add butter, sugar, chocolate, vanilla, and raisins",
+        "station": "counter"
+      },
+      {
+        "text": "Cut and fold in the whites of eggs, beaten until stiff, and cream, beaten until stiff",
+        "station": "counter"
+      },
+      {
+        "text": "Pour into a buttered baking-dish, and bake fifteen minutes",
+        "station": "oven"
+      },
+      {
+        "text": "Cover with a meringue made of the whites of three eggs, six tablespoons powdered sugar, and one-half teaspoon vanilla; then brown in a moderate oven",
+        "station": "oven"
+      }
     ]
   },
   {
-    "id": "stage-100",
-    "name": "Stage 100: Junket Ice Cream with Peaches",
+    "id": "stage-142",
+    "name": "Stage 142: Egg Croquettes",
+    "recipeName": "Egg Croquettes",
+    "ingredients": [
+      "Eggs",
+      "Butter",
+      "Onion",
+      "Flour",
+      "White stock",
+      "Salt",
+      "Pepper",
+      "Egg yolks",
+      "Stale bread crumbs"
+    ],
+    "decoys": [
+      "White Sauce II",
+      "Sour apples",
+      "Grated nutmeg",
+      "Celery",
+      "Lukewarm milk",
+      "Corn meal",
+      "Clams",
+      "Grated horseradish"
+    ],
+    "steps": [
+      {
+        "text": "Poach eggs and dry on a towel",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cook butter with onion three minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Add flour and, gradually, stock",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt and pepper; then add yolks of eggs slightly beaten",
+        "station": "counter"
+      },
+      {
+        "text": "Cook one minute, and cool",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cover eggs with mixture, roll in bread crumbs and cheese, using equal parts, dip in egg, again roll in crumbs, fry in deep fat, and drain on brown paper",
+        "station": "stovetop"
+      }
+    ]
+  },
+  {
+    "id": "stage-143",
+    "name": "Stage 143: Quail Pies",
+    "recipeName": "Quail Pies",
+    "ingredients": [
+      "Quails",
+      "Carrot",
+      "Celery",
+      "Onion",
+      "Parsley",
+      "Bay leaf",
+      "Peppercorns",
+      "Flour",
+      "Salt and pepper"
+    ],
+    "decoys": [
+      "Brown Stock",
+      "Shrimps",
+      "Thin cream",
+      "Heavy cream",
+      "Chopped walnut meats",
+      "Prunes",
+      "Kumquat juice",
+      "Whites two eggs"
+    ],
+    "steps": [
+      {
+        "text": "Remove breasts and legs from birds, season with salt and pepper, dredge with flour, and sauté in butter",
+        "station": "counter"
+      },
+      {
+        "text": "To butter in pan add vegetables and peppercorns, and cook five minutes",
+        "station": "stovetop"
+      },
+      {
+        "text": "Separate backs of birds in pieces, cover with cold water, add vegetables, and cook slowly one hour",
+        "station": "stovetop"
+      },
+      {
+        "text": "Drain stock from vegetables, and thicken with flour diluted with enough cold water to pour easily",
+        "station": "counter"
+      },
+      {
+        "text": "Season with salt, pepper, and wine",
+        "station": "counter"
+      },
+      {
+        "text": "Allow one bird to each individual dish, sauce to make sufficiently moist, and cover with plain or puff paste, in which make two incisions, through which the legs of the bird should extend",
+        "station": "counter"
+      }
+    ]
+  },
+  {
+    "id": "stage-144",
+    "name": "Stage 144: Junket Ice Cream with Peaches",
     "recipeName": "Junket Ice Cream with Peaches",
     "ingredients": [
       "Lukewarm milk",
@@ -2498,22 +5401,40 @@
       "Green Coloring"
     ],
     "decoys": [
-      "Finely chopped chives",
-      "Sherry",
-      "Chestnut purée",
-      "Hot water",
-      "Graham flour",
-      "Sugar or",
-      "Shrimps",
-      "Fine oatmeal"
+      "Box gelatine or",
+      "Worcestershire Sauce",
+      "Powdered sugar",
+      "Chopped walnut meats",
+      "Grated mild cheese",
+      "Scalded milk",
+      "Carrot",
+      "Few grains cinnamon"
     ],
     "steps": [
-      "Mix first four ingredients, and add junket tablets dissolved in cold water",
-      "Turn into a pudding-dish and let stand until set",
-      "Add flavoring and coloring",
-      "Freeze, mould, and serve garnished with halves of peaches, filling cavities with halves of blanched almonds",
-      "Turn peaches into a saucepan, add one-third cup sugar, and cook slowly until syrup is thick",
-      "Cool before garnishing ice cream"
+      {
+        "text": "Mix first four ingredients, and add junket tablets dissolved in cold water",
+        "station": "counter"
+      },
+      {
+        "text": "Turn into a pudding-dish and let stand until set",
+        "station": "counter"
+      },
+      {
+        "text": "Add flavoring and coloring",
+        "station": "counter"
+      },
+      {
+        "text": "Freeze, mould, and serve garnished with halves of peaches, filling cavities with halves of blanched almonds",
+        "station": "stovetop"
+      },
+      {
+        "text": "Turn peaches into a saucepan, add one-third cup sugar, and cook slowly until syrup is thick",
+        "station": "stovetop"
+      },
+      {
+        "text": "Cool before garnishing ice cream",
+        "station": "counter"
+      }
     ]
   }
 ];

@@ -65,11 +65,24 @@ for (const block of blocks) {
 // Split instructions into steps at natural clause boundaries (the
 // original prose is written as semicolon/period-separated actions).
 // ---------------------------------------------------------------------
+// Real instructions in this book start with an imperative verb ("Cook the
+// tomatoes...", "Bake forty minutes..."). Trailing asides about variations
+// or substitutions instead start with a noun, number, or filler word
+// ("For sweetening, some prefer...", "Six green grapes... improve the
+// flavor") -- those aren't sequential actions and would make a nonsense
+// step, so drop anything that doesn't open like a real instruction.
+const ASIDE_START_RX = /^(for|some|the|this|these|that|those|a|an|one|two|three|four|five|six|seven|eight|nine|ten|if|when|while|many|most|any|all|note|otherwise|instead|it|there|eggs|minute|by)\b/i;
+// Advisory/explanatory phrasing anywhere in the sentence, not just at the
+// start ("Eggs should be beaten slightly, that it may be smooth" reads as
+// a tip about why, not a command to do something right now).
+const ASIDE_PHRASE_RX = /\b(should be|must be|requires? no|is preferable|are preferable|may be found|will be found|it is well to|it is best to|in this case|for this purpose|as desired|to vary|for variety|better suited)\b/i;
+
 function splitSteps(instructions) {
   const raw = instructions.split(/(?<=[.;])\s+(?=[A-Z])/);
   const steps = raw
     .map((s) => s.replace(/[.;]\s*$/, "").trim())
-    .filter((s) => s.length >= 12 && s.split(" ").length >= 3);
+    .filter((s) => s.length >= 12 && s.split(" ").length >= 3)
+    .filter((s) => !ASIDE_START_RX.test(s) && !ASIDE_PHRASE_RX.test(s));
   return steps;
 }
 
@@ -114,6 +127,22 @@ function coreIngredient(line) {
 const REFERENCES_ANOTHER_RECIPE = /\b(same as|see |recipe for|directions for|as for|like )\b/i;
 
 // ---------------------------------------------------------------------
+// Classify each step by the kitchen station its action happens at, from
+// the real verbs in the real text. Oven checked first (least ambiguous),
+// then stovetop, else it's prep/assembly work at the counter.
+// ---------------------------------------------------------------------
+const OVEN_RX = /\b(bake|baked|baking|roast|roasting|roasted|oven|broil|broiling)\b/i;
+const STOVETOP_RX = /\b(boil|boiling|boiled|simmer|simmering|simmered|fry|frying|fried|saut[ée]|saute[ds]?|grill|grilling|steam|steaming|stew|stewing|poach|poaching|scald|scalding|skillet|griddle|stovetop|stove|kettle|double boiler|reduce|reducing|melt(ed|ing)?|heat(ed|ing)?|cook(ed|ing)?|freeze|freezing)\b/i;
+
+function classifyStation(text) {
+  // "baking powder" / "baking soda" are ingredients, not oven actions.
+  const noLeavening = text.replace(/\bbaking (powder|soda)\b/gi, "");
+  if (OVEN_RX.test(noLeavening)) return "oven";
+  if (STOVETOP_RX.test(noLeavening)) return "stovetop";
+  return "counter";
+}
+
+// ---------------------------------------------------------------------
 // Curate: filter to a modern-friendly, well-shaped subset.
 // ---------------------------------------------------------------------
 const BLOCKLIST = [
@@ -137,16 +166,24 @@ for (const r of parsed) {
   if (r.ingredients.some((i) => i.includes("%"))) continue; // nutritional composition table, not a real ingredient list
   if (!/^[\d⅛¼⅓½⅔¾]/.test(r.ingredients[0]) && !/^(a|an|few|bit|salt|pepper|dash)\b/i.test(r.ingredients[0])) continue;
   if (!isModernFriendly(r.name, r.ingredients)) continue;
-  const steps = splitSteps(r.instructions);
-  if (steps.length < 2 || steps.length > 6) continue;
+  const stepTexts = splitSteps(r.instructions);
+  // Minimum 3 steps: with only 2, sorting/placing degenerates into a
+  // single coin-flip swap instead of a real puzzle.
+  if (stepTexts.length < 3 || stepTexts.length > 6) continue;
   if (r.name.length > 30) continue;
   if (/\b(I{2,}|III|IV|V)$/.test(r.name)) continue; // skip "Recipe III" style variants, keep "Recipe I" as the canonical one... actually skip these too for cleanliness
   if (/ I$/.test(r.name)) continue; // numbered variant naming looks odd in a level list; keep base name only
-  if (steps.some((s) => REFERENCES_ANOTHER_RECIPE.test(s))) continue; // depends on another recipe -- not playable standalone
+  if (stepTexts.some((s) => REFERENCES_ANOTHER_RECIPE.test(s))) continue; // depends on another recipe -- not playable standalone
 
   const core = r.ingredients.map(coreIngredient).filter((c) => c.length >= 3 && c.length <= 24 && !/\d/.test(c) && /^[A-Z]/.test(c));
   if (core.length !== r.ingredients.length) continue; // skip if any ingredient failed to reduce cleanly
   if (new Set(core.map((c) => c.toLowerCase())).size !== core.length) continue; // skip duplicate core ingredients
+
+  const steps = stepTexts.map((text) => ({ text, station: classifyStation(text) }));
+  const distinctStations = new Set(steps.map((s) => s.station));
+  // Need real classification tension: if every step lands in the same
+  // station, placing them is trivial (nothing to actually decide).
+  if (distinctStations.size < 2) continue;
 
   seen.add(r.name);
   curated.push({

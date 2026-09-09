@@ -333,63 +333,81 @@ body {
   30% { background: var(--voided); border-color: var(--voided); color: #fff; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .pantry-card.wrong-flash { animation: none; }
+  .pantry-card.wrong-flash, .step-card.wrong-flash { animation: none; }
 }
 
-/* ---------- method ---------- */
-.method-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* ---------- stations ---------- */
+.station-zones {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+.station-zone {
+  border: 1.5px dashed var(--line);
+  border-radius: 10px;
+  padding: 8px 10px 10px;
+  background: var(--surface-2);
+}
+.station-zone h4 {
+  margin: 0 0 6px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.zone-drop {
+  min-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
-.method-item {
+.zone-drop.hover { outline: 2px dashed var(--flame); outline-offset: 2px; border-radius: 8px; }
+
+.station-tray {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-height: 40px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.step-card {
+  max-width: 100%;
   border: 1.5px solid var(--line);
-  background: var(--surface-2);
-  border-radius: 9px;
-  padding: 10px 12px;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  line-height: 1.3;
   cursor: grab;
   touch-action: none;
   user-select: none;
 }
-.method-item:active { cursor: grabbing; }
-.method-item.drag-source { opacity: 0.35; }
-.method-item.correct { border-color: var(--pass); background: color-mix(in srgb, var(--pass) 12%, var(--surface-2)); }
-.method-item.incorrect { border-color: var(--voided); background: color-mix(in srgb, var(--voided) 10%, var(--surface-2)); }
-.method-index {
-  flex-shrink: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--muted);
+.step-card:active { cursor: grabbing; }
+.step-card.placed { border-color: var(--flame); }
+.step-card.found {
+  border-color: var(--pass);
+  background: color-mix(in srgb, var(--pass) 12%, var(--surface));
+  cursor: default;
 }
-.method-text {
-  font-size: 0.86rem;
-  line-height: 1.35;
-}
-.method-ghost {
+.step-card.found::after { content: " ✓"; color: var(--pass); font-weight: 700; }
+.step-card.wrong-flash { animation: wrong-flash 0.5s; }
+.step-ghost {
   position: fixed;
   z-index: 50;
   pointer-events: none;
   background: var(--flame);
   color: var(--flame-ink);
-  border-radius: 9px;
-  padding: 10px 12px;
-  font-size: 0.86rem;
-  line-height: 1.35;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  max-width: 260px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
   opacity: 0.96;
 }

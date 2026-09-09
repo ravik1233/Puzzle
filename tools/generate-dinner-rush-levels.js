@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 /*
- * Generates the 100-level campaign for the repo root from real recipes.
+ * Generates the level campaign for the repo root from real recipes.
  *
  * Source: tools/curated-recipes.json, itself produced by
  * tools/curate-recipes.js from Fannie Farmer's "The Boston Cooking-School
@@ -12,14 +12,15 @@
  * Each level = one recipe, played in two phases:
  *   Pantry: find the recipe's real ingredients in a grid salted with
  *           decoy ingredients pulled from other recipes.
- *   Method: the recipe's real instructions, split at their natural
- *           clause breaks, shuffled -- put them back in order.
+ *   Stations: the recipe's real instruction steps, shuffled -- drag each
+ *             one to the kitchen station (Counter / Stovetop / Oven) its
+ *             real verbs say it actually happens at.
  *
- * Difficulty (decoy count, mostly) scales with level number. The 100
- * recipes used are a stratified sample across the curated pool's real
- * difficulty range (ingredient count + step count), so level 1 is
- * genuinely one of the simplest recipes and level 100 one of the most
- * involved, with a smooth spread between.
+ * The level count is NOT fixed -- every curated recipe becomes a level,
+ * ordered by difficulty (ingredient count + step count) so the campaign
+ * ramps smoothly from simplest to most involved. Add more source
+ * cookbooks/cuisines to curated-recipes.json later and the campaign
+ * just grows; nothing here needs to change.
  *
  * Usage: node tools/generate-dinner-rush-levels.js > levels-data.js
  */
@@ -51,18 +52,11 @@ function difficultyScore(r) {
   return r.ingredients.length + r.steps.length;
 }
 
-// Stratified sample: 100 recipes evenly spread across the sorted
-// difficulty range, so the campaign ramps smoothly instead of clumping.
-const sorted = CURATED.slice().sort((a, b) => difficultyScore(a) - difficultyScore(b));
-const N = 100;
-const chosen = [];
-const usedIdx = new Set();
-for (let i = 0; i < N; i++) {
-  let idx = Math.round((i * (sorted.length - 1)) / (N - 1));
-  while (usedIdx.has(idx)) idx = (idx + 1) % sorted.length; // avoid picking the same recipe twice
-  usedIdx.add(idx);
-  chosen.push(sorted[idx]);
-}
+// Use every curated recipe, ordered by difficulty -- the campaign's
+// length isn't fixed. Add more source cookbooks/cuisines to
+// curated-recipes.json later and the level count just grows with it.
+const chosen = CURATED.slice().sort((a, b) => difficultyScore(a) - difficultyScore(b));
+const N = chosen.length;
 
 // Global ingredient pool for decoys (deduplicated, case-insensitive).
 const allIngredients = [];

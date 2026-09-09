@@ -2,7 +2,8 @@
   "use strict";
 
   const LEVELS = window.DINNER_RUSH_LEVELS;
-  const { pantryCards, methodState } = window.DinnerRushEngine;
+  const { pantryCards } = window.DinnerRushEngine;
+  const STATIONS = ["counter", "stovetop", "oven"];
 
   const levelMapEl = document.getElementById("levelMap");
   const levelTitleEl = document.getElementById("levelTitle");
@@ -16,10 +17,11 @@
   const pantryProgressEl = document.getElementById("pantryProgress");
   const confirmPantryBtn = document.getElementById("confirmPantryBtn");
 
-  const methodPhaseEl = document.getElementById("methodPhase");
-  const methodListEl = document.getElementById("methodList");
-  const methodProgressEl = document.getElementById("methodProgress");
-  const confirmMethodBtn = document.getElementById("confirmMethodBtn");
+  const stationsPhaseEl = document.getElementById("stationsPhase");
+  const stationTrayEl = document.getElementById("stationTray");
+  const stationsProgressEl = document.getElementById("stationsProgress");
+  const confirmStationsBtn = document.getElementById("confirmStationsBtn");
+  const zoneEls = { counter: document.getElementById("zoneCounter"), stovetop: document.getElementById("zoneStovetop"), oven: document.getElementById("zoneOven") };
 
   const resetBtn = document.getElementById("resetBtn");
   const winOverlay = document.getElementById("winOverlay");
@@ -36,8 +38,9 @@
   let pantrySelected = new Set();
   let pantryFound = new Set();
   let pantrySolved = false;
-  let methodOrder = [];
-  let methodFeedback = null; // array of booleans per position, or null
+  let stationPlaced = new Map(); // stepIndex -> station (tentative, unconfirmed)
+  let stationFound = new Map(); // stepIndex -> station (locked correct)
+  let trayOrder = []; // step indices not yet placed anywhere
   let won = false;
 
   function loadProgress() {
@@ -108,17 +111,16 @@
     pantryFound = new Set();
     pantrySolved = false;
 
-    let order = shuffle(level.steps);
-    if (level.steps.length > 1 && order.every((s, i) => s === level.steps[i])) order = shuffle(level.steps);
-    methodOrder = order;
-    methodFeedback = null;
+    stationPlaced = new Map();
+    stationFound = new Map();
+    trayOrder = shuffle(level.steps.map((_, i) => i));
 
     recipeNameEl.textContent = level.recipeName;
     pantryPhaseEl.hidden = false;
-    methodPhaseEl.hidden = true;
+    stationsPhaseEl.hidden = true;
 
     renderPantry();
-    renderMethod();
+    renderStations();
     updateNav();
     updateLevelMapActive();
   }
@@ -172,96 +174,138 @@
       pantrySolved = true;
       setTimeout(() => {
         pantryPhaseEl.hidden = true;
-        methodPhaseEl.hidden = false;
-        methodPhaseEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        stationsPhaseEl.hidden = false;
+        stationsPhaseEl.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 350);
     }
   });
 
-  // ---------- Method phase ----------
-  function renderMethod() {
-    methodListEl.innerHTML = "";
-    methodOrder.forEach((step, i) => {
-      const li = document.createElement("li");
-      li.className = "method-item";
-      if (methodFeedback) li.classList.add(methodFeedback[i] ? "correct" : "incorrect");
-      const badge = document.createElement("span");
-      badge.className = "method-index";
-      badge.textContent = i + 1;
-      const text = document.createElement("span");
-      text.className = "method-text";
-      text.textContent = step;
-      li.appendChild(badge);
-      li.appendChild(text);
-      attachMethodDrag(li, i);
-      methodListEl.appendChild(li);
-    });
-    const correctNow = methodFeedback ? methodFeedback.filter(Boolean).length : 0;
-    methodProgressEl.textContent = `${correctNow} / ${level.steps.length} in place`;
+  // ---------- Stations phase ----------
+  function makeStepCard(idx, extraClass) {
+    const step = level.steps[idx];
+    const card = document.createElement("div");
+    card.className = "step-card" + (extraClass ? " " + extraClass : "");
+    card.textContent = step.text;
+    card.dataset.index = idx;
+    return card;
   }
 
-  function attachMethodDrag(el, index) {
+  function renderStations() {
+    STATIONS.forEach((st) => (zoneEls[st].innerHTML = ""));
+    stationTrayEl.innerHTML = "";
+
+    stationFound.forEach((st, idx) => {
+      const card = makeStepCard(idx, "found");
+      zoneEls[st].appendChild(card);
+    });
+    stationPlaced.forEach((st, idx) => {
+      const card = makeStepCard(idx, "placed");
+      attachStationDrag(card, idx);
+      zoneEls[st].appendChild(card);
+    });
+    trayOrder.forEach((idx) => {
+      const card = makeStepCard(idx);
+      attachStationDrag(card, idx);
+      stationTrayEl.appendChild(card);
+    });
+
+    stationsProgressEl.textContent = `${stationFound.size} / ${level.steps.length} placed`;
+  }
+
+  function hitTestZone(clientX, clientY) {
+    for (const st of STATIONS) {
+      const r = zoneEls[st].getBoundingClientRect();
+      if (clientX >= r.left && clientX <= r.right && clientY >= r.top && clientY <= r.bottom) return st;
+    }
+    return null;
+  }
+
+  function attachStationDrag(el, idx) {
     el.addEventListener("pointerdown", (e) => {
       if (won) return;
       e.preventDefault();
-      startMethodDrag(e, index);
+      startStationDrag(e, idx);
     });
   }
 
-  function startMethodDrag(e, index) {
-    methodFeedback = null;
-    const step = methodOrder[index];
-    const sourceEl = methodListEl.children[index];
+  function startStationDrag(e, idx) {
+    const step = level.steps[idx];
+    const sourceEl = document.querySelector(`.step-card[data-index="${idx}"]`);
     const rect = sourceEl.getBoundingClientRect();
 
     const ghost = document.createElement("div");
-    ghost.className = "method-ghost";
+    ghost.className = "step-ghost";
     ghost.style.width = rect.width + "px";
-    ghost.textContent = step;
+    ghost.textContent = step.text;
     ghost.style.left = rect.left + "px";
     ghost.style.top = rect.top + "px";
     document.body.appendChild(ghost);
-    sourceEl.classList.add("drag-source");
 
+    const offsetX = e.clientX - rect.left;
     const offsetY = e.clientY - rect.top;
 
-    function moveGhost(clientY) {
+    function moveGhost(clientX, clientY) {
+      ghost.style.left = clientX - offsetX + "px";
       ghost.style.top = clientY - offsetY + "px";
     }
-    moveGhost(e.clientY);
+    moveGhost(e.clientX, e.clientY);
+
+    function updateHover(clientX, clientY) {
+      STATIONS.forEach((st) => zoneEls[st].classList.toggle("hover", hitTestZone(clientX, clientY) === st));
+    }
+    updateHover(e.clientX, e.clientY);
 
     function onMove(ev) {
-      moveGhost(ev.clientY);
+      moveGhost(ev.clientX, ev.clientY);
+      updateHover(ev.clientX, ev.clientY);
     }
 
     function onUp(ev) {
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
       ghost.remove();
+      STATIONS.forEach((st) => zoneEls[st].classList.remove("hover"));
 
-      const items = [...methodListEl.children];
-      let targetIndex = items.length - 1;
-      for (let i = 0; i < items.length; i++) {
-        const r = items[i].getBoundingClientRect();
-        if (ev.clientY < r.top + r.height / 2) { targetIndex = i; break; }
+      const targetZone = hitTestZone(ev.clientX, ev.clientY);
+      trayOrder = trayOrder.filter((i) => i !== idx);
+      stationPlaced.delete(idx);
+      if (targetZone) {
+        stationPlaced.set(idx, targetZone);
+      } else {
+        trayOrder.push(idx);
       }
-
-      const [moved] = methodOrder.splice(index, 1);
-      methodOrder.splice(targetIndex, 0, moved);
-      renderMethod();
+      renderStations();
     }
 
     window.addEventListener("pointermove", onMove);
     window.addEventListener("pointerup", onUp);
   }
 
-  confirmMethodBtn.addEventListener("click", () => {
+  confirmStationsBtn.addEventListener("click", () => {
     if (won) return;
-    const state = methodState(level, methodOrder);
-    methodFeedback = methodOrder.map((s, i) => s === level.steps[i]);
-    renderMethod();
+    const wrongIdx = [];
+    const correctIdx = [];
+    stationPlaced.forEach((st, idx) => {
+      if (level.steps[idx].station === st) correctIdx.push(idx);
+      else wrongIdx.push(idx);
+    });
+    correctIdx.forEach((idx) => {
+      stationFound.set(idx, stationPlaced.get(idx));
+      stationPlaced.delete(idx);
+    });
+    wrongIdx.forEach((idx) => stationPlaced.delete(idx));
+    trayOrder = [...trayOrder, ...wrongIdx];
+    renderStations();
 
-    if (state.solved) {
+    wrongIdx.forEach((idx) => {
+      const card = document.querySelector(`.step-card[data-index="${idx}"]`);
+      if (card) {
+        card.classList.add("wrong-flash");
+        card.addEventListener("animationend", () => card.classList.remove("wrong-flash"), { once: true });
+      }
+    });
+
+    if (stationFound.size === level.steps.length) {
       won = true;
       progress.solved[level.id] = true;
       const levelNumber = currentLevelIndex + 1;

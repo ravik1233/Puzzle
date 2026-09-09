@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Dinner Rush</title>
-<meta name="description" content="Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.">
+<meta name="description" content="Play real 1896 recipes as puzzles: find the true ingredients, then sort the real instructions onto the right kitchen station.">
 
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1d1f">
@@ -17,7 +17,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta property="og:title" content="Dinner Rush">
-<meta property="og:description" content="Play real 1896 recipes as puzzles: find the true ingredients, then put the real instructions back in order. 100 stages.">
+<meta property="og:description" content="Play real 1896 recipes as puzzles: find the true ingredients, then sort the real instructions onto the right kitchen station.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
           <h1>Dinner Rush</h1>
         </div>
       </div>
-      <p class="tagline">Every recipe here is real, from Fannie Farmer's 1896 cookbook. Find the true ingredients, then put her real instructions back in order.</p>
+      <p class="tagline">Every recipe here is real, from Fannie Farmer's 1896 cookbook. Find the true ingredients, then sort her real instructions onto the station where each one actually happens.</p>
     </header>
 
     <div class="ticket level-nav">
@@ -68,21 +68,35 @@
       <button class="btn btn-primary" id="confirmPantryBtn">Confirm Pantry</button>
     </section>
 
-    <section class="phase-block" id="methodPhase" hidden>
+    <section class="phase-block" id="stationsPhase" hidden>
       <div class="phase-head">
-        <h3>Method</h3>
-        <p>Drag Fannie Farmer's real instructions back into the order she wrote them.</p>
-        <span class="phase-progress" id="methodProgress">0 / 0 in place</span>
+        <h3>Stations</h3>
+        <p>Drag each real instruction to the kitchen station where it actually happens.</p>
+        <span class="phase-progress" id="stationsProgress">0 / 0 placed</span>
       </div>
-      <ol class="method-list" id="methodList"></ol>
-      <button class="btn btn-primary" id="confirmMethodBtn">Confirm Method</button>
+      <div class="station-zones">
+        <div class="station-zone" data-station="counter">
+          <h4>Counter</h4>
+          <div class="zone-drop" data-zone="counter" id="zoneCounter"></div>
+        </div>
+        <div class="station-zone" data-station="stovetop">
+          <h4>Stovetop</h4>
+          <div class="zone-drop" data-zone="stovetop" id="zoneStovetop"></div>
+        </div>
+        <div class="station-zone" data-station="oven">
+          <h4>Oven</h4>
+          <div class="zone-drop" data-zone="oven" id="zoneOven"></div>
+        </div>
+      </div>
+      <div class="station-tray" id="stationTray"></div>
+      <button class="btn btn-primary" id="confirmStationsBtn">Confirm Stations</button>
     </section>
 
     <div class="controls">
       <button class="btn" id="resetBtn">Reset Stage</button>
     </div>
 
-    <p class="hint">Pantry: correct picks lock in green; wrong picks bounce back. Method: drag cards to reorder, then confirm — right spots glow green, wrong ones flash red so you know what to move.</p>
+    <p class="hint">Pantry: correct picks lock in green; wrong picks bounce back. Stations: drag a step onto Counter, Stovetop or Oven, then confirm — right stations glow green, wrong ones flash red and return to the tray.</p>
 
     <div class="win-overlay" id="winOverlay" hidden>
       <div class="win-card">
